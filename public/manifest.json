@@ -1,0 +1,17 @@
+{
+  "name": "HotelDocKorea - 에어비앤비형 커스텀 최저가 로봇",
+  "short_name": "HotelDoc",
+  "description": "7개 권역 520개 호텔 AI 프로모션 실시간 어드바이저",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#4338ca",
+  "icons": [
+    {
+      "src": "/icon.svg",
+      "sizes": "192x192 512x512",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}

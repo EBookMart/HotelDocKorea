@@ -1,0 +1,521 @@
+﻿권역,시도,세부 지역(시·군·구),이름,업종,등급,객실수,전화번호,주소,홈페이지 URL,예약/프로모션 페이지
+수도권,경기도,고양시,소노캄 고양,관광호텔업,5성,826,031-927-7700,경기도 고양시 일산동구 태극로 20 (장항동),http://www.sonohotelsresorts.com/goyang,http://www.sonohotelsresorts.com/goyang
+수도권,경기도,성남시,더블트리 바이 힐튼 서울 판교,관광호텔업,5성,432,031-678-5500,경기도 성남시 분당구 백현로 26 (정자동),https://doubletree.hilton.co.kr/hotel/seoul/doubletree-by-hilton-seoul-pangyo,https://doubletree.hilton.co.kr/hotel/seoul/doubletree-by-hilton-seoul-pangyo
+수도권,경기도,성남시,더블트리 바이 힐튼 서울 판교 레지던스,가족호텔업,5성,170,031-678-5500,경기도 성남시 분당구 백현로 26 (정자동),https://doubletree.hilton.co.kr/hotel/seoul/doubletree-by-hilton-seoul-pangyo,https://doubletree.hilton.co.kr/hotel/seoul/doubletree-by-hilton-seoul-pangyo
+수도권,서울특별시,강남구,그랜드 인터컨티넨탈 서울 파르나스,관광호텔업,5성,550,02-555-5656,서울특별시 강남구 테헤란로 521 그랜드 인터컨티넨탈 서울 파르나스 (삼성동),https://seoul.intercontinental.com/grandicparnas,https://seoul.intercontinental.com/grandicparnas
+수도권,서울특별시,강남구,노보텔 앰배서더 서울 강남,관광호텔업,5성,332,02-531-6451,서울특별시 강남구 봉은사로 130 (역삼동),https://www.ambatel.com/novotel/gangnam/ko/main.do,https://www.ambatel.com/novotel/gangnam/ko/main.do
+수도권,서울특별시,강남구,안다즈 서울 강남,관광호텔업,5성,241,02-2193-1234,서울특별시 강남구 논현로 854 (신사동),https://www.hyatt.com/andaz/selaz-andaz-seoul-gangnam,https://www.hyatt.com/andaz/selaz-andaz-seoul-gangnam
+수도권,서울특별시,강남구,인터컨티넨탈 서울 코엑스,관광호텔업,5성,656,02-3452-2500,서울특별시 강남구 봉은사로 524 (삼성동),https://seoul.intercontinental.com/iccoex/,https://seoul.intercontinental.com/iccoex/
+수도권,서울특별시,강남구,조선팰리스강남,관광호텔업,5성,254,02-727-7200,서울특별시 강남구 테헤란로 231 조선팰리스강남 (역삼동),https://josunhotel.com/hotel/josunpalace.do,https://josunhotel.com/hotel/josunpalace.do
+수도권,서울특별시,강남구,파크하얏트서울,관광호텔업,5성,185,02-2016-1234,서울특별시 강남구 테헤란로 606 (대치동),http://www.parkhyattseoul.com,http://www.parkhyattseoul.com
+수도권,서울특별시,강남구,호텔 오크우드프리미어,가족호텔업,5성,281,02-3466-7000,서울특별시 강남구 테헤란로87길 46 (삼성동),,
+수도권,서울특별시,강서구,메이필드 호텔 서울,관광호텔업,5성,239,02-2660-9000,서울특별시 강서구 방화대로 94 (외발산동),https://www.mayfield.co.kr,https://www.mayfield.co.kr
+수도권,서울특별시,광진구,"그랜드 워커힐 서울 (구, 쉐라톤 그랜드 워커힐 서울)",관광호텔업,5성,539,02-455-5000,서울특별시 광진구 워커힐로 177 워커힐호텔 (광장동),https://www.walkerhill.com/,https://www.walkerhill.com/
+수도권,서울특별시,광진구,"비스타 워커힐 서울 (구, W 서울 워커힐)",관광호텔업,5성,244,02-455-5000,서울특별시 광진구 워커힐로 177 워커힐호텔 (광장동),http://walkerhill.co.kr,http://walkerhill.co.kr
+수도권,서울특별시,마포구,호텔 나루 서울 엠갤러리,관광호텔업,5성,196,02-6410-1000,서울특별시 마포구 마포대로 8 호탤나루엠갤러리 (마포동),http://www.hotelnaruseoul.com,http://www.hotelnaruseoul.com
+수도권,서울특별시,서초구,JW 메리어트 호텔 서울,관광호텔업,5성,379,02-6282-6262,서울특별시 서초구 신반포로 176 (반포동),http://www.marriott.co.kr,http://www.marriott.co.kr
+수도권,서울특별시,송파구,롯데호텔월드,관광호텔업,5성,477,02-419-7000,서울특별시 송파구 올림픽로 240 (잠실동),https://www.lottehotel.com/world-hotel/ko.html,https://www.lottehotel.com/world-hotel/ko.html
+수도권,서울특별시,송파구,소피텔 앰배서더 서울 호텔 & 서비스드 레지던스,관광호텔업,5성,403,02-2902-6000,서울특별시 송파구 잠실로 209 (신천동),http://www.sofitel-seoul.com,http://www.sofitel-seoul.com
+수도권,서울특별시,송파구,소피텔 앰배서더 서울 호텔 & 서비스드 레지던스,가족호텔업,5성,160,02-2092-6000,서울특별시 송파구 잠실로 209 (신천동),http://www.sofitel-seoul.com,http://www.sofitel-seoul.com
+수도권,서울특별시,송파구,시그니엘서울,관광호텔업,5성,235,02-3213-1000,서울특별시 송파구 올림픽로 300 (신천동),http://www.lottehotel.com/seoul-signiel/ko.html,http://www.lottehotel.com/seoul-signiel/ko.html
+수도권,서울특별시,영등포구,메리어트 이그제큐티브 아파트먼트 서울,가족호텔업,5성,103,02-2090-8000,서울특별시 영등포구 여의대로 8 (여의도동),http://www.marriott.com/seler,http://www.marriott.com/seler
+수도권,서울특별시,영등포구,콘래드 서울 호텔,관광호텔업,5성,434,02-6137-7000,서울특별시 영등포구 국제금융로 10 (여의도동),https://www.conradseoul.co.kr/,https://www.conradseoul.co.kr/
+수도권,서울특별시,영등포구,페어몬트 앰배서더 서울,관광호텔업,5성,308,02-3395-6000,서울특별시 영등포구 여의대로 108 제호텔호 (여의도동),http://www.fairmont.co.kr/seoul,http://www.fairmont.co.kr/seoul
+수도권,서울특별시,용산구,그랜드 머큐어 앰배서더 서울 용산,가족호텔업,5성,201,02-2223-7000,서울특별시 용산구 청파로20길 95 서울드래곤시티 (한강로3가),http://www.sdc-club.com,http://www.sdc-club.com
+수도권,서울특별시,용산구,그랜드 하얏트 서울,관광호텔업,5성,615,02-797-1234,서울특별시 용산구 소월로 322 (한남동),https://www.hyatt.com/ko-kr/hotel/south-korea/grand-hyatt-seoul/selrs,https://www.hyatt.com/ko-kr/hotel/south-korea/grand-hyatt-seoul/selrs
+수도권,서울특별시,용산구,노보텔 스위트 앰배서더 서울 용산,가족호텔업,5성,264,02-2223-7000,서울특별시 용산구 청파로20길 95 서울드래곤시티 (한강로3가),http://www.seouldragoncity.com,http://www.seouldragoncity.com
+수도권,서울특별시,용산구,노보텔 앰배서더 서울 용산,관광호텔업,5성,621,02-2223-7000,서울특별시 용산구 청파로20길 95 (한강로3가),https://www.seouldragoncity.com/ko/,https://www.seouldragoncity.com/ko/
+수도권,서울특별시,용산구,몬드리안 서울 이태원,관광호텔업,5성,295,02-2076-2000,서울특별시 용산구 장문로 23 (이태원동),https://all.accor.com/hotel/b771/index.ko.shtml,https://all.accor.com/hotel/b771/index.ko.shtml
+수도권,서울특별시,종로구,JW메리어트 동대문 스퀘어 서울,관광호텔업,5성,170,02-2276-3000,서울특별시 종로구 청계천로 279 (종로6가),http://www.jwmarriottddm.com,http://www.jwmarriottddm.com
+수도권,서울특별시,종로구,포시즌스 호텔 서울,관광호텔업,5성,317,02-6388-5000,서울특별시 종로구 새문안로 97 (당주동),https://www.fourseasons.com/seoul/,https://www.fourseasons.com/seoul/
+수도권,서울특별시,중구,(주)호텔신라,관광호텔업,5성,464,02-2233-3131,서울특별시 중구 동호로 249 (장충동2가),https://www.shilla.net/seoul/index.do,https://www.shilla.net/seoul/index.do
+수도권,서울특별시,중구,노보텔 앰배서더 서울 동대문,관광호텔업,5성,331,02-3425-8000,서울특별시 중구 을지로 238 (을지로6가),http://ambatel.com/novotel/dongdaemun/ko/main.do,http://ambatel.com/novotel/dongdaemun/ko/main.do
+수도권,서울특별시,중구,노보텔 앰배서더 서울 동대문 호텔&레지던스,가족호텔업,5성,192,02-3425-8000,서울특별시 중구 을지로 238 (을지로6가),https://www.ambatel.com/novotel/dongdaemun/ko/main.do,https://www.ambatel.com/novotel/dongdaemun/ko/main.do
+수도권,서울특별시,중구,더 플라자 호텔 서울,관광호텔업,5성,306,02-771-2200,서울특별시 중구 소공로 119 (태평로2가),https://www.hoteltheplaza.com/kr/,https://www.hoteltheplaza.com/kr/
+수도권,서울특별시,중구,르메르디앙 서울 명동,관광호텔업,5성,200,02-2184-7000,서울특별시 중구 명동8나길 38 (충무로1가),,
+수도권,서울특별시,중구,반얀트리 클럽 앤 스파 서울,가족호텔업,5성,50,02-2250-8080,서울특별시 중구 장충단로 60 (장충동2가),https://www.banyantreeclub.com/kr/offers/event.asp,https://www.banyantreeclub.com/kr/offers/event.asp
+수도권,서울특별시,중구,앰배서더 서울풀만호텔,관광호텔업,5성,0,02-2270-3107,서울특별시 중구 동호로 287 앰배서더풀만호텔 (장충동2가),https://www.ambatel.com/theambassador/seoul/ko/main.do,https://www.ambatel.com/theambassador/seoul/ko/main.do
+수도권,서울특별시,중구,웨스틴 조선 서울,관광호텔업,5성,462,02-771-0500,서울특별시 중구 소공로 106 (소공동),https://josunhotel.com/hotel/westinseoul.do,https://josunhotel.com/hotel/westinseoul.do
+수도권,서울특별시,중구,호텔 롯데,관광호텔업,5성,1015,02-771-1000,서울특별시 중구 을지로 30 소공동 (소공동),https://www.lottehotel.com/global/ko.html,https://www.lottehotel.com/global/ko.html
+수도권,인천광역시,연수구,경원재 앰배서더 인천,한국전통호텔업,5성,30,032-729-1101,인천광역시 연수구 테크노파크로 200 (송도동),http://www.gyeongwonjae.co.kr/,http://www.gyeongwonjae.co.kr/
+수도권,인천광역시,연수구,쉐라톤 그랜드 인천 호텔,관광호텔업,5성,321,032-835-1000,인천광역시 연수구 컨벤시아대로 153 (송도동),https://www.marriott.co.kr/hotels/travel/selgi-sheraton-grand-incheon-hotel/?msclkid=40b5c793bbc511ec8b3107606d9372c9,https://www.marriott.co.kr/hotels/travel/selgi-sheraton-grand-incheon-hotel/?msclkid=40b5c793bbc511ec8b3107606d9372c9
+수도권,인천광역시,연수구,오크우드 프리미어 인천 호텔,가족호텔업,5성,423,032-726-2000,인천광역시 연수구 컨벤시아대로 165 (송도동),https://oakwoodpremier.co.kr/,https://oakwoodpremier.co.kr/
+수도권,인천광역시,중구,그랜드 하얏트 인천,관광호텔업,5성,523,032-745-1234,인천광역시 중구 영종해안남로321번길 208 (운서동),https://www.hyatt.com/grand-hyatt/en-US/inche-grand-hyatt-incheon,https://www.hyatt.com/grand-hyatt/en-US/inche-grand-hyatt-incheon
+수도권,인천광역시,중구,그랜드하얏트인천 웨스트타워,관광호텔업,5성,501,032-745-1234,인천광역시 중구 영종해안남로321번길 190 (운서동),https://www.hyatt.com/grand-hyatt/en-US/inche-grand-hyatt-incheon,https://www.hyatt.com/grand-hyatt/en-US/inche-grand-hyatt-incheon
+수도권,인천광역시,중구,네스트 호텔,관광호텔업,5성,370,032-743-9000,인천광역시 중구 영종해안남로 19-5 네스트 호텔 (운서동),https://www.nesthotel.co.kr,https://www.nesthotel.co.kr
+수도권,인천광역시,중구,인스파이어 엔터테인먼트 리조트,관광호텔업,5성,1275,032-580-9000,인천광역시 중구 공항문화로 127 (운서동),https://www.inspirekorea.com/,https://www.inspirekorea.com/
+수도권,인천광역시,중구,파라다이스시티,관광호텔업,5성,769,032-729-2000,인천광역시 중구 영종해안남로321번길 186 (운서동),https://www.p-city.com/,https://www.p-city.com/
+수도권,경기도,광명시,테이크호텔,관광호텔업,4성,228,02-2000-7100,경기도 광명시 신기로 22 (일직동),http://www.take-hotel.com/,http://www.take-hotel.com/
+수도권,경기도,군포시,AC호텔 바이 메리어트 서울금정,관광호텔업,4성,191,031-460-0900,경기도 군포시 군포로 697 (금정동),https://www.marriott.com/en-us/hotels/selga-ac-hotel-seoul-geumjeong/overview/,https://www.marriott.com/en-us/hotels/selga-ac-hotel-seoul-geumjeong/overview/
+수도권,경기도,성남시,(주)조선호텔앤리조트 그래비티서울판교,관광호텔업,4성,306,031-539-4800,경기도 성남시 분당구 판교역로146번길 2 그래비티타워 (백현동),https://www.marriott.com/en-us/hotels/selay-gravity-seoul-pangyo-autograph-collection/overview/,https://www.marriott.com/en-us/hotels/selay-gravity-seoul-pangyo-autograph-collection/overview/
+수도권,경기도,성남시,나인트리 바이 파르나스 서울 판교,관광호텔업,4성,315,031-5178-5099,경기도 성남시 수정구 창업로 18 (시흥동),https://nol.yanolja.com/stay/domestic/1000113873,https://nol.yanolja.com/stay/domestic/1000113873
+수도권,경기도,성남시,밀리토피아 호텔,관광호텔업,4성,176,031-727-9300,경기도 성남시 수정구 위례대로 83 밀리토피아시티 (창곡동),http://www.militopiahotel.com/,http://www.militopiahotel.com/
+수도권,경기도,성남시,코트야드 바이 메리어트 서울 판교,관광호텔업,4성,282,031-8060-2000,경기도 성남시 분당구 판교역로192번길 12 8층동 (삼평동),http://www.marriott.co.kr/hotels/travel/selpn-courtyard-seoul-pangyo,http://www.marriott.co.kr/hotels/travel/selpn-courtyard-seoul-pangyo
+수도권,경기도,수원시,노보텔 앰배서더 수원,관광호텔업,4성,287,031-547-6600,경기도 수원시 팔달구 덕영대로 902 (매산로1가),http://www.ambatel.com/novotel/suwon,http://www.ambatel.com/novotel/suwon
+수도권,경기도,수원시,라마다프라자호텔수원,관광호텔업,4성,287,031-230-0001,경기도 수원시 팔달구 중부대로 150 (인계동),http://www.ramadaplazasuwon.com,http://www.ramadaplazasuwon.com
+수도권,경기도,수원시,코트야드 메리어트 수원,관광호텔업,4성,288,031-267-5601,경기도 수원시 영통구 광교호수공원로 320 (하동),https://www.marriott.com/ko/hotels/selcw-courtyard-suwon/overview/,https://www.marriott.com/ko/hotels/selcw-courtyard-suwon/overview/
+수도권,경기도,수원시,포포인츠 바이 쉐라톤 수원,관광호텔업,4성,221,031-784-9300,경기도 수원시 팔달구 효원로307번길 27 (인계동),https://www.marriott.com/ko/hotels/selfo-four-points-suwon/overview/,https://www.marriott.com/ko/hotels/selfo-four-points-suwon/overview/
+수도권,경기도,안산시,호텔스퀘어 안산,관광호텔업,4성,203,031-490-2000,경기도 안산시 단원구 동산로 81 (원시동),http://www.hotelsquare.co.kr/,http://www.hotelsquare.co.kr/
+수도권,경기도,양평군,블룸비스타호텔앤컨퍼런스,관광호텔업,4성,290,031-770-8888,경기도 양평군 강하면 강남로 316,https://www.bloomvista.co.kr/,https://www.bloomvista.co.kr/
+수도권,경기도,여주시,썬밸리 호텔,관광호텔업,4성,202,031-880-3800,경기도 여주시 강변유원지길 45 (연양동),https://www.sunvalley.co.kr/hotel/hotel/intro,https://www.sunvalley.co.kr/hotel/hotel/intro
+수도권,경기도,화성시,라비돌 호텔 앤 리조트,관광호텔업,4성,241,031-352-7150,경기도 화성시 정남면 세자로 286 주식회사 라비돌,https://www.laviedor.com/,https://www.laviedor.com/
+수도권,경기도,화성시,롤링힐스 호텔,관광호텔업,4성,228,031-268-1000,경기도 화성시 남양읍 시청로 290,http://www.rollinghills.co.kr,http://www.rollinghills.co.kr
+수도권,경기도,화성시,호텔 푸르미르,관광호텔업,4성,239,031-8020-0000,경기도 화성시 효행로 480 (주)클라루스 호텔 푸르미르 (안녕동),http://www.hotelprumie.com,http://www.hotelprumie.com
+수도권,서울특별시,강남구,(주)호텔롯데 L7강남,관광호텔업,4성,333,02-2011-1000,서울특별시 강남구 테헤란로 415 (삼성동),https://www.lottehotel.com/gangnam-l7/ko.html,https://www.lottehotel.com/gangnam-l7/ko.html
+수도권,서울특별시,강남구,AC 호텔 바이 메리어트 서울 강남,관광호텔업,4성,274,02-2050-6000,서울특별시 강남구 테헤란로25길 10 (역삼동),http://www.marriott.co.kr/hotels/travel/selag-ac-hotel-seoul-gangnam,http://www.marriott.co.kr/hotels/travel/selag-ac-hotel-seoul-gangnam
+수도권,서울특별시,강남구,보코서울강남,가족호텔업,4성,151,02-542-0112,서울특별시 강남구 도산대로 144 (논현동),https://www.vocohotels.com/seoulgangnam,https://www.vocohotels.com/seoulgangnam
+수도권,서울특별시,강남구,신라스테이 삼성,관광호텔업,4성,309,02-2175-9182,서울특별시 강남구 영동대로 506 신라스테이 삼성 (삼성동),,
+수도권,서울특별시,강남구,아난티 앳 강남,관광호텔업,4성,118,02-2190-4000,서울특별시 강남구 논현로 734 (논현동),https://ananti.kr/ko/ganm,https://ananti.kr/ko/ganm
+수도권,서울특별시,강남구,엘리에나 호텔,관광호텔업,4성,51,02-3440-9200,서울특별시 강남구 논현로 645 엘리에나호텔 (논현동),,
+수도권,서울특별시,강남구,포포인츠 바이 쉐라톤 서울 강남,관광호텔업,4성,199,02-2160-8900,서울특별시 강남구 도산대로 203 (신사동),http://www.marriott.com/travel/selfg,http://www.marriott.com/travel/selfg
+수도권,서울특별시,강남구,호텔 리베라 서울,관광호텔업,4성,319,02-541-3111,서울특별시 강남구 영동대로 737 (청담동),,
+수도권,서울특별시,강남구,호텔 삼정,관광호텔업,4성,160,02-557-1221,서울특별시 강남구 봉은사로 150 (역삼동),https://samjunghotel.co.kr/,https://samjunghotel.co.kr/
+수도권,서울특별시,강남구,호텔 인 나인,관광호텔업,4성,152,02-311-9000,서울특별시 강남구 영동대로 618 호텔인나인 (삼성동),http://www.hotelin9.com,http://www.hotelin9.com
+수도권,서울특별시,강서구,코트야드 메리어트 서울 보타닉파크,관광호텔업,4성,261,02-6946-7000,서울특별시 강서구 마곡중앙12로 10 메리어트 호텔 (마곡동),https://www.marriott.com/ko/hotels/selcs-courtyard-seoul-botanic-park/overview/,https://www.marriott.com/ko/hotels/selcs-courtyard-seoul-botanic-park/overview/
+수도권,서울특별시,광진구,더 클래식 500 펜타즈,관광호텔업,4성,84,02-2218-5000,서울특별시 광진구 능동로 90 (자양동),http://www.theclassic500.com,http://www.theclassic500.com
+수도권,서울특별시,구로구,포포인츠 바이 쉐라톤 서울 구로,관광호텔업,4성,202,02-6905-9500,서울특별시 구로구 디지털로32길 72 (구로동),https://www.marriott.com/en-us/hotels/selfu-four-points-by-sheraton-seoul-guro/overview,https://www.marriott.com/en-us/hotels/selfu-four-points-by-sheraton-seoul-guro/overview
+수도권,서울특별시,마포구,(주)서울가든,관광호텔업,4성,372,02-710-7111,서울특별시 마포구 마포대로 58 (도화동),https://www.seoulgarden.co.kr,https://www.seoulgarden.co.kr
+수도권,서울특별시,마포구,L7 홍대 바이 롯데,관광호텔업,4성,340,02-2289-1000,서울특별시 마포구 양화로 141 (동교동),https://www.lottehotel.com/hongdae-l7/ko.html,https://www.lottehotel.com/hongdae-l7/ko.html
+수도권,서울특별시,마포구,글래드 마포,관광호텔업,4성,378,02-2197-5000,서울특별시 마포구 마포대로 92 (도화동),https://gladmapo-hotels.com/,https://gladmapo-hotels.com/
+수도권,서울특별시,마포구,라이즈 오토그래프 컬렉션 바이 메리어트,관광호텔업,4성,272,02-330-7700,서울특별시 마포구 양화로 130 (서교동),http://www.rysehotel.com,http://www.rysehotel.com
+수도권,서울특별시,마포구,머큐어 앰배서더 서울 홍대,관광호텔업,4성,270,02-3774-1101,서울특별시 마포구 양화로 144 지하 3층 (동교동),https://www.ambatel.com/mercure/hongdae/ko/main.do,https://www.ambatel.com/mercure/hongdae/ko/main.do
+수도권,서울특별시,마포구,스탠포드호텔서울,관광호텔업,4성,239,02-6016-0001,서울특별시 마포구 월드컵북로58길 15 (상암동),http://www.stanfordseoul.com/,http://www.stanfordseoul.com/
+수도권,서울특별시,마포구,아만티 호텔 서울,관광호텔업,4성,150,02-334-3111,서울특별시 마포구 월드컵북로 31,http://www.hotelamanti.com,http://www.hotelamanti.com
+수도권,서울특별시,서대문구,스위스그랜드호텔서울,관광호텔업,4성,396,02-3216-5656,서울특별시 서대문구 연희로 353 (홍은동),http://www.swissgrand.co.kr,http://www.swissgrand.co.kr
+수도권,서울특별시,서초구,더케이호텔서울,관광호텔업,4성,252,02-571-8100,서울특별시 서초구 바우뫼로12길 70 (양재동),https://www.thek-hotel.co.kr/skmh/index.do,https://www.thek-hotel.co.kr/skmh/index.do
+수도권,서울특별시,서초구,신라스테이 서초,관광호텔업,4성,305,02-2219-9000,서울특별시 서초구 효령로 427 (서초동),https://www.shillastay.com/seocho/index.do,https://www.shillastay.com/seocho/index.do
+수도권,서울특별시,서초구,오라카이 청계산 호텔,관광호텔업,4성,193,02-6200-7300,서울특별시 서초구 청계산로9길 1-7 (신원동),https://cgs.orakaihotels.com/kr/default.asp,https://cgs.orakaihotels.com/kr/default.asp
+수도권,서울특별시,서초구,힐튼 가든 인 서울 강남,관광호텔업,4성,208,02-580-8500,서울특별시 서초구 강남대로 253 (서초동),https://hiltongardeninn.hilton.co.kr,https://hiltongardeninn.hilton.co.kr
+수도권,서울특별시,영등포구,글래드 여의도,관광호텔업,4성,319,02-6222-5000,서울특별시 영등포구 의사당대로 16 글래드호텔 여의도 (여의도동),https://www.gladyeouido-hotels.com,https://www.gladyeouido-hotels.com
+수도권,서울특별시,영등포구,켄싱턴호텔 여의도,관광호텔업,4성,201,02-6670-7000,서울특별시 영등포구 국회대로76길 16 (여의도동),https://www.kensington.co.kr/hyd,https://www.kensington.co.kr/hyd
+수도권,서울특별시,영등포구,코트야드 바이 메리어트 서울 타임스퀘어,관광호텔업,4성,283,02-2638-3000,서울특별시 영등포구 영중로 15 (영등포동4가),https://www.marriott.com/selcy,https://www.marriott.com/selcy
+수도권,서울특별시,용산구,나인트리 프리미어 로카우스호텔 서울 용산,관광호텔업,4성,274,02-6923-8000,서울특별시 용산구 한강대로23길 25 (한강로3가),http://www.rokaushotel.com,http://www.rokaushotel.com
+수도권,서울특별시,용산구,이비스 스타일 앰배서더 서울 용산,관광호텔업,4성,591,02-2223-7000,서울특별시 용산구 청파로20길 95 (한강로3가),https://www.seouldragoncity.com/ko/,https://www.seouldragoncity.com/ko/
+수도권,서울특별시,용산구,포포인츠 바이 쉐라톤 조선 서울역,관광호텔업,4성,342,02-6070-7000,서울특별시 용산구 한강대로 366 (동자동),https://www.marriott.com/hotels/travel/selfp-four-points-josun-seoul-station/,https://www.marriott.com/hotels/travel/selfp-four-points-josun-seoul-station/
+수도권,서울특별시,종로구,나인트리 프리미어 호텔 인사동,관광호텔업,4성,301,02-6917-3099,서울특별시 종로구 인사동길 49 (관훈동),http://www.ninetreehotels.com/nth3/,http://www.ninetreehotels.com/nth3/
+수도권,서울특별시,종로구,아미드 호텔 서울,관광호텔업,4성,250,02-731-1000,서울특별시 종로구 인사동5길 38 (관훈동),http://amidhotel.com,http://amidhotel.com
+수도권,서울특별시,종로구,오라카이 인사동 스위츠,가족호텔업,4성,213,02-6262-8888,서울특별시 종로구 인사동4길 18 로담코 인사 빌딩 (낙원동),https://www.orakaihotels.com,https://www.orakaihotels.com
+수도권,서울특별시,종로구,오라카이대학로호텔,관광호텔업,4성,232,02-6353-7700,서울특별시 종로구 율곡로 180 (원남동),https://dh.orakaihotels.com/kr/default.asp,https://dh.orakaihotels.com/kr/default.asp
+수도권,서울특별시,중구,(주)조선호텔앤리조트 레스케이프,관광호텔업,4성,204,02-317-4000,서울특별시 중구 퇴계로 67 레스케이프호텔 (회현동1가),https://www.lescapehotel.com/,https://www.lescapehotel.com/
+수도권,서울특별시,중구,L7 명동 바이 롯데,관광호텔업,4성,251,02-6310-1000,서울특별시 중구 퇴계로 137 (충무로2가),http://www.lottehotel.com,http://www.lottehotel.com
+수도권,서울특별시,중구,나인트리 프리미어호텔 명동 2,관광호텔업,4성,408,02-6967-0999,서울특별시 중구 마른내로 28 (초동),http://www.ninetreehotel.com/ntm2,http://www.ninetreehotel.com/ntm2
+수도권,서울특별시,중구,로얄호텔서울,관광호텔업,4성,310,02-756-1112,서울특별시 중구 명동길 61 (명동1가),http://www.royal.co.kr,http://www.royal.co.kr
+수도권,서울특별시,중구,롯데시티호텔 명동,관광호텔업,4성,435,02-6112-1000,서울특별시 중구 삼일대로 362 (장교동),http://www.lottehotel.com,http://www.lottehotel.com
+수도권,서울특별시,중구,보코 언 아이에이치지 호텔,관광호텔업,4성,576,02-6923-6700,서울특별시 중구 퇴계로 52 (회현동1가),https://www.ihg.com/voco/hotels/kr/ko/seoul/selvo/hoteldetail,https://www.ihg.com/voco/hotels/kr/ko/seoul/selvo/hoteldetail
+수도권,서울특별시,중구,소테츠 호텔즈 더 스프라지르 서울 동대문,관광호텔업,4성,215,02-2198-1212,서울특별시 중구 장충단로 226 (광희동2가),https://sotetsu-hotels.com/ko/splaisir/,https://sotetsu-hotels.com/ko/splaisir/
+수도권,서울특별시,중구,소테츠 호텔즈 더 스프라지르 서울 명동,관광호텔업,4성,428,02-772-0900,서울특별시 중구 남대문로5길 15 (북창동),https://sotetsu-hotels.com/ko/splaisir/,https://sotetsu-hotels.com/ko/splaisir/
+수도권,서울특별시,중구,알로프트 서울 명동 호텔,관광호텔업,4성,223,02-2084-1000,서울특별시 중구 남대문로 56 (명동2가),https://www.marriott.com/ko/hotels/selmo-aloft-seoul-myeongdong/overview/,https://www.marriott.com/ko/hotels/selmo-aloft-seoul-myeongdong/overview/
+수도권,서울특별시,중구,코리아나 호텔,관광호텔업,4성,285,02-2171-7000,서울특별시 중구 세종대로 135 (태평로1가),http://www.koreanahotel.com,http://www.koreanahotel.com
+수도권,서울특별시,중구,코트야드 메리어트 서울 남대문,관광호텔업,4성,400,02-2211-8000,서울특별시 중구 남대문로 9 (남대문로4가),https://www.marriott.co.kr/selsn,https://www.marriott.co.kr/selsn
+수도권,서울특별시,중구,퍼시픽호텔,관광호텔업,4성,181,02-777-7811,서울특별시 중구 퇴계로20길 2 (남산동2가),http://www.thepacifichotel.co.kr,http://www.thepacifichotel.co.kr
+수도권,서울특별시,중구,포 포인츠 바이 쉐라톤 조선 명동,관광호텔업,4성,375,02-6070-7021,서울특별시 중구 삼일대로10길 36 (저동2가),https://www.josunhotel.com/hotel/fpbsmyeongdong.do,https://www.josunhotel.com/hotel/fpbsmyeongdong.do
+수도권,서울특별시,중구,프레이저 플레이스 센트럴 서울,가족호텔업,4성,269,02-2098-0510,서울특별시 중구 통일로 78 프레이저 플레이스 센트럴 서울 (순화동),https://fpcs.co.kr/,https://fpcs.co.kr/
+수도권,서울특별시,중구,프레이저플레이스남대문,관광호텔업,4성,252,02-2098-0530,서울특별시 중구 세종대로 58 (남대문로4가),http://www.fpns.co.kr/,http://www.fpns.co.kr/
+수도권,서울특별시,중구,프레지던트 호텔,관광호텔업,4성,271,02-753-3131,서울특별시 중구 을지로 16 (을지로1가),https://www.hotelpresident.co.kr/main/,https://www.hotelpresident.co.kr/main/
+수도권,서울특별시,중구,호텔 PJ,관광호텔업,4성,272,02-2280-7000,서울특별시 중구 마른내로 71 (인현동1가),http://www.hotelpj.co.kr,http://www.hotelpj.co.kr
+수도권,서울특별시,중구,호텔 스카이파크 킹스타운 동대문,가족호텔업,4성,406,02-6952-8991,서울특별시 중구 장충단로13길 20 현대시티타워 (을지로6가),http://www.skyparkhotel.com,http://www.skyparkhotel.com
+수도권,인천광역시,연수구,오라카이 송도 파크 호텔,관광호텔업,4성,275,032-210-7000,인천광역시 연수구 테크노파크로 151 (송도동),http://www.orakaihotels.com,http://www.orakaihotels.com
+수도권,인천광역시,연수구,홀리데이인인천송도호텔,관광호텔업,4성,202,032-250-0000,인천광역시 연수구 인천타워대로 251 (송도동),http://holidayinnincheonsongdo.com,http://holidayinnincheonsongdo.com
+수도권,인천광역시,중구,베스트웨스턴 프리미어 인천 에어포트 호텔,관광호텔업,4성,305,032-743-1000,인천광역시 중구 공항로424번길 48-27 (운서동),http://www.airporthotel.co.kr,http://www.airporthotel.co.kr
+수도권,인천광역시,중구,이비스 스타일 앰배서더 인천 에어포트,관광호텔업,4성,360,032-310-7200,인천광역시 중구 제2터미널대로 340 (운서동),https://www.ambatel.com/ibisstyles/incheonairport/ko/main.do,https://www.ambatel.com/ibisstyles/incheonairport/ko/main.do
+수도권,인천광역시,중구,하버파크 호텔 인천,관광호텔업,4성,213,032-770-9500,인천광역시 중구 제물량로 217 (항동3가),http://www.harborparkhotel.com,http://www.harborparkhotel.com
+수도권,경기도,고양시,어반이스트호텔,관광호텔업,3성,99,031-966-8202,경기도 고양시 덕양구 고양대로 1725 (원흥동),http://www.urban-est.co.kr,http://www.urban-est.co.kr
+수도권,경기도,광명시,라까사호텔 광명,관광호텔업,3성,194,02-6711-9000,경기도 광명시 일직로12번길 22 (일직동),https://www.hotellacasa.kr,https://www.hotellacasa.kr
+수도권,경기도,김포시,라마다 앙코르 바이 윈덤 김포 한강호텔,관광호텔업,3성,594,02-582-0700,경기도 김포시 고촌읍 아라육로152번길 169,http://www.ramadagimpohanriver.com,http://www.ramadagimpohanriver.com
+수도권,경기도,김포시,레스트호텔,관광호텔업,3성,70,031-988-3534,경기도 김포시 태장로795번길 151 (장기동),http://gimpo-rest.jalib.site/,http://gimpo-rest.jalib.site/
+수도권,경기도,김포시,아셈호텔,관광호텔업,3성,73,031-997-3230,경기도 김포시 태장로795번길 145 (장기동),https://assemhotel.modoo.at/,https://assemhotel.modoo.at/
+수도권,경기도,남양주시,호텔 더 메이,관광호텔업,3성,125,031-551-8700,경기도 남양주시 별내2로 70 (별내동),http://www.hotelthemay.com,http://www.hotelthemay.com
+수도권,경기도,부천시,고려 호텔,관광호텔업,3성,127,032-329-0001,경기도 부천시 길주로 66 (상동),,
+수도권,경기도,성남시,서머셋 센트럴 분당,관광호텔업,3성,206,02-1877-8006,경기도 성남시 분당구 황새울로311번길 36 지하3층 (서현동),https://www.discoverasr.com/ko/somerset-serviced-residence/korea-south/somerset-central-bundang,https://www.discoverasr.com/ko/somerset-serviced-residence/korea-south/somerset-central-bundang
+수도권,경기도,성남시,카인드호텔,관광호텔업,3성,92,031-781-0006,경기도 성남시 분당구 황새울로329번길 10 카인드 호텔 (서현동),http://www.kyndhotel.com,http://www.kyndhotel.com
+수도권,경기도,성남시,호텔에스알 스위츠,관광호텔업,3성,66,031-702-6565,경기도 성남시 분당구 황새울로319번길 9 (서현동),http://www.srsuites.com,http://www.srsuites.com
+수도권,경기도,수원시,르본 수원 실크로드 호텔,관광호텔업,3성,90,031-232-9981,경기도 수원시 팔달구 경수대로466번길 28 (인계동),http://www.hotelsilkroad.co.kr,http://www.hotelsilkroad.co.kr
+수도권,경기도,수원시,호텔 가덴,소형호텔업,3성,39,031-239-5572,경기도 수원시 권선구 경수대로335번길 12 (권선동),http://www.hotelgaden.com,http://www.hotelgaden.com
+수도권,경기도,수원시,호텔 리츠,관광호텔업,3성,45,031-224-1100,경기도 수원시 팔달구 권광로134번길 44-11 (인계동),http://www.hotel-ritz.co.kr/,http://www.hotel-ritz.co.kr/
+수도권,경기도,수원시,호텔아르떼,관광호텔업,3성,54,031-8067-6600,경기도 수원시 팔달구 인계로108번길 37 (인계동),http://www.hotelarte.co.kr,http://www.hotelarte.co.kr
+수도권,경기도,수원시,홈즈스테이 수원,관광호텔업,3성,242,031-233-0338,경기도 수원시 팔달구 인계로 116 (인계동),https://homes-stay.com/,https://homes-stay.com/
+수도권,경기도,안산시,엠블던호텔,관광호텔업,3성,386,031-413-2222,경기도 안산시 단원구 중앙대로 869 엠블던호텔 (고잔동),http://www.embledonhotel.com,http://www.embledonhotel.com
+수도권,경기도,안성시,호텔 마에스트로,소형호텔업,3성,25,031-8046-1111,경기도 안성시 양성면 안성맞춤대로 2134-36 호텔 마에스트로,http://www.maestrocc.co.kr,http://www.maestrocc.co.kr
+수도권,경기도,안양시,어반부띠크호텔,관광호텔업,3성,80,031-421-0000,경기도 안양시 동안구 흥안대로 497 (관양동),http://www.urbanhotel.co.kr,http://www.urbanhotel.co.kr
+수도권,경기도,양평군,쉐르빌온천관광호텔,관광호텔업,3성,68,031-774-4101,경기도 양평군 개군면 신내길7번길 37,http://www.cherevillehotel.com,http://www.cherevillehotel.com
+수도권,경기도,용인시,더숨포레스트호텔,관광호텔업,3성,83,070-1522-2777,경기도 용인시 처인구 포곡읍 성산로 633,https://hotelthesoom.modoo.at/,https://hotelthesoom.modoo.at/
+수도권,경기도,이천시,에덴 파라다이스호텔,관광호텔업,3성,72,031-645-9100,경기도 이천시 마장면 서이천로 449-79 에덴파라다이스호텔,http://www.edenparadisehotel.com,http://www.edenparadisehotel.com
+수도권,경기도,파주시,호텔 시에나,관광호텔업,3성,100,031-943-7260,경기도 파주시 소리천로 31 (야당동),http://www.hotelsienna.com/,http://www.hotelsienna.com/
+수도권,경기도,화성시,베니키아 더 에이치 호텔,관광호텔업,3성,90,031-350-6200,경기도 화성시 남양읍 역골로 3-12,http://www.thehhotel.co.kr,http://www.thehhotel.co.kr
+수도권,경기도,화성시,신라스테이 동탄,관광호텔업,3성,286,031-8036-9101,경기도 화성시 노작로 161 신라스테이동탄 (반송동),https://shillastay.com/,https://shillastay.com/
+수도권,서울특별시,강남구,글래드 강남 코엑스센터,관광호텔업,3성,282,02-6474-5000,서울특별시 강남구 테헤란로 610 (대치동),https://gladgangnamcoex-hotels.com/,https://gladgangnamcoex-hotels.com/
+수도권,서울특별시,강남구,도미인 서울 강남,관광호텔업,3성,220,02-548-5489,서울특별시 강남구 봉은사로 134 (역삼동),https://www.hotespa.net/hotels/gangnam/ko,https://www.hotespa.net/hotels/gangnam/ko
+수도권,서울특별시,강남구,라까사 호텔,관광호텔업,3성,88,02-6711-9310,서울특별시 강남구 도산대로1길 83 (신사동),https://www.hotellacasa.kr/,https://www.hotellacasa.kr/
+수도권,서울특별시,강남구,베스트웨스턴 프리미어강남호텔,관광호텔업,3성,128,02-6474-2000,서울특별시 강남구 봉은사로 139 (논현동),"http://www,bestwesterngangnam.com","http://www,bestwesterngangnam.com"
+수도권,서울특별시,강남구,스테이 호텔 강남,관광호텔업,3성,52,02-568-6200,서울특별시 강남구 논현로87길 15-4 (역삼동),http://www.stayhotel.com,http://www.stayhotel.com
+수도권,서울특별시,강남구,신라스테이 역삼,관광호텔업,3성,306,02-2054-9000,서울특별시 강남구 언주로 517 (역삼동),http://www.shillastay.com,http://www.shillastay.com
+수도권,서울특별시,강남구,알로프트 서울 강남,관광호텔업,3성,188,02-510-9700,서울특별시 강남구 영동대로 736 (청담동),http://www.aloftseoulgangnam.com,http://www.aloftseoulgangnam.com
+수도권,서울특별시,강남구,에이든 바이 베스트웨스턴 청담,관광호텔업,3성,149,02-6711-1234,서울특별시 강남구 도산대로 216 에이든 청담호텔 (논현동),http://www.aidencheongdam.com/,http://www.aidencheongdam.com/
+수도권,서울특별시,강남구,이비스 스타일 앰배서더 서울 강남,관광호텔업,3성,317,02-3011-8888,서울특별시 강남구 삼성로 431 (대치동),https://ambatel.com/ibisstyles/gangnam/ko/main.do,https://ambatel.com/ibisstyles/gangnam/ko/main.do
+수도권,서울특별시,강남구,호텔 뉴브,관광호텔업,3성,150,02-740-5000,서울특별시 강남구 선릉로85길 6 호텔뉴브 (역삼동),http://www.newvhotel.com,http://www.newvhotel.com
+수도권,서울특별시,강남구,호텔 선샤인 서울,관광호텔업,3성,109,02-548-8222,서울특별시 강남구 도산대로 205 호텔선샤인 (신사동),http://www.hotelsunshine.co.kr/seoul/,http://www.hotelsunshine.co.kr/seoul/
+수도권,서울특별시,강남구,호텔 안테룸 서울,관광호텔업,3성,112,02-542-2300,서울특별시 강남구 도산대로 153 (신사동),https://www.anteroom-seoul.com/,https://www.anteroom-seoul.com/
+수도권,서울특별시,강남구,호텔 엔트라,관광호텔업,3성,92,02-500-1531,서울특별시 강남구 도산대로 508 (청담동),http://www.entrahotel.com,http://www.entrahotel.com
+수도권,서울특별시,강남구,호텔 유리앤,관광호텔업,3성,175,02-500-2300,서울특별시 강남구 삼성로96길 20 (삼성동),http://www.uri_nhotel.com,http://www.uri_nhotel.com
+수도권,서울특별시,강남구,호텔 카푸치노,관광호텔업,3성,141,02-2038-9500,서울특별시 강남구 봉은사로 155 (논현동),https://hotelcappuccino.co.kr,https://hotelcappuccino.co.kr
+수도권,서울특별시,강남구,호텔 크레센도 서울,관광호텔업,3성,107,02-6260-8800,서울특별시 강남구 봉은사로 428 (삼성동),http://www.hotelcrescendo.co.kr/,http://www.hotelcrescendo.co.kr/
+수도권,서울특별시,강남구,호텔 페이토 삼성,관광호텔업,3성,163,02-6936-9700,서울특별시 강남구 테헤란로87길 9 (삼성동),http://www.peytohotel.com,http://www.peytohotel.com
+수도권,서울특별시,강서구,JK블라썸,관광호텔업,3성,252,02-2138-0051,서울특별시 강서구 양천로65길 41-22 JK블라썸호텔 (염창동),http://www.jkblossom.co.kr,http://www.jkblossom.co.kr
+수도권,서울특별시,강서구,SR 호텔,관광호텔업,3성,81,02-2038-8000,서울특별시 강서구 강서로 400 (등촌동),http://hotel-sr.co.kr,http://hotel-sr.co.kr
+수도권,서울특별시,강서구,나이아가라 호텔,관광호텔업,3성,98,02-3660-4000,서울특별시 강서구 양천로 743 (염창동),http://www.hotelniagara.co.kr,http://www.hotelniagara.co.kr
+수도권,서울특별시,강서구,롯데시티호텔 김포공항,관광호텔업,3성,197,02-6116-1000,서울특별시 강서구 하늘길 38 1층 (방화동),https://www.lottehotel.com/gimpo-city/ko.html,https://www.lottehotel.com/gimpo-city/ko.html
+수도권,서울특별시,강서구,호텔 엠펠리체,관광호텔업,3성,118,02-2668-3600,서울특별시 강서구 마곡동로4길 15 엠펠리체 (마곡동),http://www.hotelmfelice.com/,http://www.hotelmfelice.com/
+수도권,서울특별시,구로구,롯데시티호텔 구로,관광호텔업,3성,287,02-6210-1000,서울특별시 구로구 디지털로 300 롯데시티호텔 구로 (구로동),https://www.lottehotel.com/guro-city/ko.html,https://www.lottehotel.com/guro-city/ko.html
+수도권,서울특별시,구로구,호텔 베르누이,관광호텔업,3성,421,02-2683-9000,서울특별시 구로구 경인로 229 (오류동),https://www.bernoui.com,https://www.bernoui.com
+수도권,서울특별시,금천구,골드리버 관광호텔,관광호텔업,3성,109,02-6021-8100,서울특별시 금천구 서부샛길 584 골드리버관광호텔 (가산동),https://www.goldriverhotel.co.kr/,https://www.goldriverhotel.co.kr/
+수도권,서울특별시,금천구,엠디호텔 독산,관광호텔업,3성,258,02-2096-4000,서울특별시 금천구 시흥대로 315 (독산동),http://www.mdhoteldoksan.com,http://www.mdhoteldoksan.com
+수도권,서울특별시,금천구,팔팔호텔,관광호텔업,3성,100,02-868-8881,서울특별시 금천구 시흥대로123길 66 (독산동),https://www.88hotel.co.kr/,https://www.88hotel.co.kr/
+수도권,서울특별시,동대문구,골든씨티호텔,관광호텔업,3성,116,02-3394-9601,서울특별시 동대문구 천호대로 377 (장안동),http://www.goldencityhotel.co.kr,http://www.goldencityhotel.co.kr
+수도권,서울특별시,동대문구,더 리센츠 동대문 호텔,관광호텔업,3성,207,02-3390-7000,서울특별시 동대문구 천호대로 383 (장안동),http://www.therecenzhotel.com,http://www.therecenzhotel.com
+수도권,서울특별시,동대문구,맹그로브 신설,관광호텔업,3성,310,010-2591-8669,서울특별시 동대문구 왕산로 22 (신설동),https://mangrove.city/locations/sinseol/,https://mangrove.city/locations/sinseol/
+수도권,서울특별시,동작구,신라스테이 구로,관광호텔업,3성,309,02-2162-9102,서울특별시 동작구 시흥대로 596 (신대방동),http://www.shillastay.com,http://www.shillastay.com
+수도권,서울특별시,동작구,핸드픽트호텔 서울,관광호텔업,3성,42,02-2229-5499,서울특별시 동작구 상도로 120 (상도동),http://www.handpicked.kr,http://www.handpicked.kr
+수도권,서울특별시,마포구,나인브릭호텔,관광호텔업,3성,94,02-3141-8800,서울특별시 마포구 홍익로5길 32 (서교동),http://www.9brickhotel.com,http://www.9brickhotel.com
+수도권,서울특별시,마포구,로이넷호텔 서울 마포,관광호텔업,3성,341,02-3702-0300,서울특별시 마포구 마포대로 67 (도화동),https://www.daiwaroynet.jp/seoulmapo/,https://www.daiwaroynet.jp/seoulmapo/
+수도권,서울특별시,마포구,롯데시티호텔 마포,관광호텔업,3성,284,02-6005-1753,"서울특별시 마포구 마포대로 109 (공덕동, 롯데캐슬프레지던트)",https://www.lottehotel.com/mapo-city/ko.html,https://www.lottehotel.com/mapo-city/ko.html
+수도권,서울특별시,마포구,신라스테이 마포,관광호텔업,3성,382,02-6979-9000,서울특별시 마포구 마포대로 83 (도화동),http://www.shillastay.com,http://www.shillastay.com
+수도권,서울특별시,마포구,주니비노호텔,관광호텔업,3성,68,02-332-7771,서울특별시 마포구 양화진2길 31 (합정동),,
+수도권,서울특별시,마포구,크리에이터타운 서교,관광호텔업,3성,296,02-332-8601,서울특별시 마포구 월드컵북로5길 41 (서교동),https://localstitch.town,https://localstitch.town
+수도권,서울특별시,마포구,홀리데이 인 익스프레스 서울 홍대,관광호텔업,3성,294,02-768-3000,서울특별시 마포구 양화로 188 숙박시설동 (동교동),http://www.hiex-seoulhongdae.com/,http://www.hiex-seoulhongdae.com/
+수도권,서울특별시,서대문구,신라스테이 서대문,관광호텔업,3성,319,02-6388-9000,서울특별시 서대문구 충정로 76 (미근동),https://shillastay.com/seodaemun/index.do?lang=ko,https://shillastay.com/seodaemun/index.do?lang=ko
+수도권,서울특별시,서초구,리버사이드 호텔 서울,관광호텔업,3성,109,02-6710-1100,서울특별시 서초구 강남대로107길 6 (잠원동),http://www.riversidehotel.co.kr/intro/intro.php,http://www.riversidehotel.co.kr/intro/intro.php
+수도권,서울특별시,서초구,호텔 페이토,관광호텔업,3성,186,02-6936-8100,서울특별시 서초구 강남대로 259 (서초동),http://www.peytohotel.com,http://www.peytohotel.com
+수도권,서울특별시,성북구,아리랑힐 호텔 동대문,관광호텔업,3성,190,02-925-7000,서울특별시 성북구 아리랑로 8 (동선동4가),http://www.hotelahill.com,http://www.hotelahill.com
+수도권,서울특별시,송파구,로사나 부띠끄호텔,관광호텔업,3성,81,02-2143-3000,서울특별시 송파구 삼학사로 98 (석촌동),,
+수도권,서울특별시,송파구,오로시에 관광호텔,관광호텔업,3성,45,02-2202-5002,서울특별시 송파구 오금로11길 21-19 (방이동),https://www.orosie.kr/,https://www.orosie.kr/
+수도권,서울특별시,송파구,파로스 호텔,관광호텔업,3성,52,02-417-2700,서울특별시 송파구 올림픽로10길 5 (잠실동),https://www.hotelpharos.net/,https://www.hotelpharos.net/
+수도권,서울특별시,송파구,호텔 레이크,관광호텔업,3성,94,02-422-1001,서울특별시 송파구 석촌호수로 216 (석촌동),,
+수도권,서울특별시,송파구,호텔파크하비오,관광호텔업,3성,472,02-6925-2900,"서울특별시 송파구 송파대로 111 호텔 프론트데스크 (문정동, 파크하비오)",http://www.hotelparkhabio.co.kr/,http://www.hotelparkhabio.co.kr/
+수도권,서울특별시,영등포구,컴포트 인 여의도,관광호텔업,3성,71,02-783-2233,서울특별시 영등포구 국회대로72길 7 컴포트인여의도 (여의도동),http://www.comfortinnyeouido.co.kr,http://www.comfortinnyeouido.co.kr
+수도권,서울특별시,영등포구,호텔 로프트,관광호텔업,3성,58,02-5671-9995,서울특별시 영등포구 선유동2로 72 (당산동5가),http://lofthotel.maru.net/,http://lofthotel.maru.net/
+수도권,서울특별시,영등포구,호텔 지엠에스,관광호텔업,3성,158,02-882-2000,서울특별시 영등포구 경인로 867 (영등포동3가),,
+수도권,서울특별시,용산구,임피리얼 팰리스 부티크 호텔,관광호텔업,3성,128,02-3702-8000,서울특별시 용산구 이태원로 221 (한남동),http://imperialpalaceboutiquehotel.com,http://imperialpalaceboutiquehotel.com
+수도권,서울특별시,용산구,해밀톤관광호텔,관광호텔업,3성,166,02-3786-6000,서울특별시 용산구 이태원로 179 (이태원동),http://www.hamilton.co.kr/,http://www.hamilton.co.kr/
+수도권,서울특별시,종로구,IBC 호텔,관광호텔업,3성,55,02-2250-3000,서울특별시 종로구 난계로 241 (숭인동),http://www.hotelibc.com/,http://www.hotelibc.com/
+수도권,서울특별시,종로구,더프리마호텔 종로,관광호텔업,3성,155,02-6105-9114,서울특별시 종로구 우정국로 46 더프리마호텔 종로 (견지동),https://www.theprimahoteljongno.co.kr/kor/main/,https://www.theprimahoteljongno.co.kr/kor/main/
+수도권,서울특별시,종로구,메이플레이스 서울 동대문,관광호텔업,3성,105,02-742-8080,서울특별시 종로구 율곡로 179 (원남동),http://www.mayplace.co.kr/mobile/kor/asp/index/index.asp,http://www.mayplace.co.kr/mobile/kor/asp/index/index.asp
+수도권,서울특별시,종로구,목시 서울 인사동 호텔,관광호텔업,3성,140,02-758-1700,서울특별시 종로구 돈화문로11길 37 (낙원동),http://www.moxyseoulinsadong.com,http://www.moxyseoulinsadong.com
+수도권,서울특별시,종로구,신라스테이 광화문,관광호텔업,3성,338,02-6060-9000,서울특별시 종로구 삼봉로 71 (수송동),https://www.shillastay.com/gwanghwamun/index.do,https://www.shillastay.com/gwanghwamun/index.do
+수도권,서울특별시,종로구,이비스 앰배서더 인사동,관광호텔업,3성,363,02-6730-1101,서울특별시 종로구 삼일대로30길 31 (익선동),https://www.ambatel.com/ibis/insadong/ko/main.do,https://www.ambatel.com/ibis/insadong/ko/main.do
+수도권,서울특별시,종로구,호텔 아트리움 종로,관광호텔업,3성,139,02-767-9800,서울특별시 종로구 창경궁로 106 (인의동),https://www.seanhotelgroup.com/hotels/atrium-jongno/ko,https://www.seanhotelgroup.com/hotels/atrium-jongno/ko
+수도권,서울특별시,중구,(주)서울렉스호텔,관광호텔업,3성,108,02-752-3191,서울특별시 중구 퇴계로10길 23 (회현동1가),http://www.hotelrex.co.kr,http://www.hotelrex.co.kr
+수도권,서울특별시,중구,ENA스위트호텔,관광호텔업,3성,182,02-6020-7000,서울특별시 중구 세종대로11길 36 (서소문동),http://www.enahotel.co.kr,http://www.enahotel.co.kr
+수도권,서울특별시,중구,G2호텔,관광호텔업,3성,126,02-2277-9700,서울특별시 중구 수표로 24 (저동2가),http://www.g2hotel.co.kr,http://www.g2hotel.co.kr
+수도권,서울특별시,중구,G3 호텔,관광호텔업,3성,197,02-2277-9800,서울특별시 중구 충무로 7 (필동1가),http://www.g3hotel.co.kr/,http://www.g3hotel.co.kr/
+수도권,서울특별시,중구,나인트리 호텔 동대문,관광호텔업,3성,219,02-6926-4099,서울특별시 중구 을지로 224 (을지로5가),http://www.ninetreehotels.com/nth4,http://www.ninetreehotels.com/nth4
+수도권,서울특별시,중구,나인트리 호텔 명동,관광호텔업,3성,144,02-750-0900,서울특별시 중구 명동10길 51 나인트리호텔 명동 (충무로2가),http://www.ninetreehotels.com/nth1,http://www.ninetreehotels.com/nth1
+수도권,서울특별시,중구,뉴서울 호텔,관광호텔업,3성,185,02-735-8800,서울특별시 중구 세종대로22길 16 (태평로1가),http://www.newseoulhotel.co.kr,http://www.newseoulhotel.co.kr
+수도권,서울특별시,중구,더 그랜드호텔 명동,관광호텔업,3성,50,02-777-7900,서울특별시 중구 명동8가길 38 더그랜드호텔 (충무로2가),http://www.thegrandhotel.co.kr,http://www.thegrandhotel.co.kr
+수도권,서울특별시,중구,데이즈호텔명동,관광호텔업,3성,64,02-727-8700,서울특별시 중구 퇴계로 107 데이즈호텔명동 (충무로1가),http://www.dayshotelmd.com,http://www.dayshotelmd.com
+수도권,서울특별시,중구,라마다 서울 동대문,관광호텔업,3성,197,02-2276-3500,서울특별시 중구 동호로 354 (을지로5가),http://www.ramadaddm.com,http://www.ramadaddm.com
+수도권,서울특별시,중구,메트로 호텔,관광호텔업,3성,78,02-752-1112,서울특별시 중구 명동9가길 14 메트로호텔 (을지로2가),http://www.metrohotel.co.kr,http://www.metrohotel.co.kr
+수도권,서울특별시,중구,목시 서울 명동,관광호텔업,3성,205,02-2184-7000,서울특별시 중구 명동8나길 38 (충무로1가),,
+수도권,서울특별시,중구,베이튼호텔,관광호텔업,3성,160,02-2269-2550,서울특별시 중구 동호로 346 (오장동),http://www.baitonhotel.co.kr/homepage/kor/index/index,http://www.baitonhotel.co.kr/homepage/kor/index/index
+수도권,서울특별시,중구,사보이 호텔,관광호텔업,3성,105,02-772-7700,서울특별시 중구 명동8나길 10 (충무로1가),http://www.savoyhotel.co.kr,http://www.savoyhotel.co.kr
+수도권,서울특별시,중구,세종호텔,관광호텔업,3성,333,02-773-6000,서울특별시 중구 퇴계로 145 (충무로2가),https://www.sejong.co.kr,https://www.sejong.co.kr
+수도권,서울특별시,중구,솔라리아 니시테츠 호텔 서울,관광호텔업,3성,312,02-773-1555,서울특별시 중구 명동8길 27 엠플라자 7층-22층 (명동2가),https://www.solariaseoul.com/,https://www.solariaseoul.com/
+수도권,서울특별시,중구,스탠포드 호텔 명동,관광호텔업,3성,243,02-6260-2000,서울특별시 중구 남대문로 84 (남대문로2가),http://www.stanfordmyeongdong.com/,http://www.stanfordmyeongdong.com/
+수도권,서울특별시,중구,스테이비호텔 명동,관광호텔업,3성,97,02-2277-6300,서울특별시 중구 충무로 23-1 (충무로3가),,
+수도권,서울특별시,중구,써미트 호텔,관광호텔업,3성,190,02-2285-0540,서울특별시 중구 장충단로 198 써미트호텔 (장충동1가),http://www.summithotelseoul.com,http://www.summithotelseoul.com
+수도권,서울특별시,중구,에이큐브 호텔 동대문,관광호텔업,3성,43,02-2264-2888,서울특별시 중구 동호로35길 5 석광빌딩 (을지로5가),http://www.acubehotel.com,http://www.acubehotel.com
+수도권,서울특별시,중구,오리엔스 호텔 앤 레지던스,가족호텔업,3성,116,02-2280-8000,서울특별시 중구 삼일대로2길 50 (예장동),http://www.orienshotel.com,http://www.orienshotel.com
+수도권,서울특별시,중구,이비스 스타일 앰배서더 서울 명동,관광호텔업,3성,180,02-6020-8814,서울특별시 중구 삼일대로 302 (충무로2가),https://www.ambatel.com/ibisstyles/myeongdong/ko/main.do,https://www.ambatel.com/ibisstyles/myeongdong/ko/main.do
+수도권,서울특별시,중구,이비스 앰배서더 명동,관광호텔업,3성,279,02-6361-8888,서울특별시 중구 남대문로 78 이비스 앰배서더 명동 (명동1가),https://www.ambatel.com/ibis/myeongdong/ko/main.do,https://www.ambatel.com/ibis/myeongdong/ko/main.do
+수도권,서울특별시,중구,크라운 파크 호텔,관광호텔업,3성,204,02-750-5900,서울특별시 중구 남대문로7길 19 (소공동),http://www.crownparkhotel.co.kr,http://www.crownparkhotel.co.kr
+수도권,서울특별시,중구,트레블로지 동대문,관광호텔업,3성,242,02-2160-8888,서울특별시 중구 동호로 359 (을지로5가) (을지로5가),http://www.travelodgehotels.asia,http://www.travelodgehotels.asia
+수도권,서울특별시,중구,트레블로지 명동 남산,관광호텔업,3성,173,02-6470-5000,서울특별시 중구 수표로 16 (충무로3가),https://bit.ly/travelodgemyeongdongnamsan,https://bit.ly/travelodgemyeongdongnamsan
+수도권,서울특별시,중구,트레블로지 명동 시티홀호텔,관광호텔업,3성,129,02-6362-6000,서울특별시 중구 세종대로16길 22 (북창동),http://www.travelodgemyeongdongcityhall.com/,http://www.travelodgemyeongdongcityhall.com/
+수도권,서울특별시,중구,트레블로지 명동 을지로,관광호텔업,3성,224,02-6362-6000,서울특별시 중구 수표로 61 (을지로2가),http://www.travelodgemyeongdongeuljiro.com,http://www.travelodgemyeongdongeuljiro.com
+수도권,서울특별시,중구,호텔 28 명동,관광호텔업,3성,83,02-774-2828,서울특별시 중구 명동7길 13 명동증권빌딩 (명동1가),http://www.hotel28.co.kr,http://www.hotel28.co.kr
+수도권,서울특별시,중구,호텔 그레이스리 서울,관광호텔업,3성,336,02-6936-0100,서울특별시 중구 세종대로12길 12 (남대문로4가),https://seoul.gracery.com/kr/,https://seoul.gracery.com/kr/
+수도권,서울특별시,중구,호텔 마누,관광호텔업,3성,80,02-777-0100,서울특별시 중구 퇴계로 19 (남대문로5가),http://www.seoulista.place/,http://www.seoulista.place/
+수도권,서울특별시,중구,호텔 스카이파크 센트럴 명동점,관광호텔업,3성,312,02-752-0022,서울특별시 중구 명동9길 16 명동센트럴빌딩 (명동1가),http://www.skyparkhotel.com,http://www.skyparkhotel.com
+수도권,서울특별시,중구,호텔 프린스 서울,관광호텔업,3성,100,02-752-7111,서울특별시 중구 퇴계로 130 서울프린스호텔 (남산동2가),,
+수도권,서울특별시,중구,호텔국도,관광호텔업,3성,295,02-6466-1234,서울특별시 중구 을지로 164 (을지로4가),http://www.hotelkukdo.com,http://www.hotelkukdo.com
+수도권,서울특별시,중구,호텔미드시티명동,관광호텔업,3성,140,02-3788-5888,서울특별시 중구 다동길 30 (다동),https://www.midcity.co.kr/view/index.do,https://www.midcity.co.kr/view/index.do
+수도권,서울특별시,중랑구,라코지스테이 서울,가족호텔업,3성,68,02-433-6888,서울특별시 중랑구 망우로 232 (상봉동),http://www.lacozistay.com,http://www.lacozistay.com
+수도권,인천광역시,강화군,스토너리,소형호텔업,3성,20,032-933-9900,인천광역시 강화군 내가면 강화서로 91-5,https://stonery.kr/,https://stonery.kr/
+수도권,인천광역시,강화군,호텔 에버리치,관광호텔업,3성,70,032-934-1688,인천광역시 강화군 강화읍 화성길50번길 43,https://www.hoteleverrich.com/,https://www.hoteleverrich.com/
+수도권,인천광역시,계양구,호텔카리스,관광호텔업,3성,142,032-556-0880,인천광역시 계양구 계양대로 28 (작전동),http://www.hotelcharis.com,http://www.hotelcharis.com
+수도권,인천광역시,남동구,파크마린호텔,관광호텔업,3성,88,032-425-2700,인천광역시 남동구 소래역로 44 (논현동),,
+수도권,인천광역시,서구,호텔원티드,관광호텔업,3성,91,032-585-8900,인천광역시 서구 북항로32번길 20 호텔원티드 (원창동),http://www.hotelwanted.co.kr,http://www.hotelwanted.co.kr
+수도권,인천광역시,연수구,브릿지호텔 인천송도,관광호텔업,3성,241,032-717-0700,인천광역시 연수구 컨벤시아대로 233 (송도동),http://www.bridgehotelincheonsongdo.com,http://www.bridgehotelincheonsongdo.com
+수도권,인천광역시,옹진군,(주)선재해림풀빌라,소형호텔업,3성,20,032-880-1688,인천광역시 옹진군 영흥면 선재로226번길 107-34 .,http://www.sj-haelim.com,http://www.sj-haelim.com
+수도권,인천광역시,중구,제이앤파크호텔,관광호텔업,3성,80,032-752-9892,인천광역시 중구 용유서로 262-15 (을왕동),http://www.jnparkhotel.co.kr/,http://www.jnparkhotel.co.kr/
+수도권,인천광역시,중구,호텔 ORA,관광호텔업,3성,84,032-752-8080,인천광역시 중구 공항서로 345 (남북동),https://www.hotelora.co.kr/ko/,https://www.hotelora.co.kr/ko/
+영동권,강원도,강릉시,씨마크 호텔,관광호텔업,5성,150,033-650-7000,강원도 강릉시 해안로406번길 2 (강문동),,
+영동권,강원도,정선군,하이원 그랜드 호텔,관광호텔업,5성,727,033-1588-7789,강원도 정선군 사북읍 하이원길 265,http://www.high1.com,http://www.high1.com
+영동권,강원도,평창군,인터컨티넨탈 알펜시아 평창 리조트,관광호텔업,5성,238,033-339-0000,강원도 평창군 대관령면 솔봉로 325,https://www.alpensia.com,https://www.alpensia.com
+영동권,강원도,평창군,켄싱턴 호텔 평창,관광호텔업,5성,248,033-330-5000,강원도 평창군 진부면 진고개로 231,http://www.kensington.co.kr/hpc,http://www.kensington.co.kr/hpc
+영동권,강원도,평창군,홀리데이 인 리조트 알펜시아 평창,관광호텔업,5성,214,033-339-0000,강원도 평창군 대관령면 솔봉로 325,https://www.alpensia.com/,https://www.alpensia.com/
+영동권,강원도,홍천군,세이지우드 호텔 홍천,가족호텔업,5성,32,033-430-1600,강원도 홍천군 두촌면 광석로 898-87 2/2,http://www.sagewood.co.kr/hongcheon,http://www.sagewood.co.kr/hongcheon
+영동권,강원도,강릉시,탑스텐 강릉 호텔,관광호텔업,4성,333,033-530-4800,강원도 강릉시 옥계면 헌화로 455-34,https://www.hotel-topsten.co.kr/,https://www.hotel-topsten.co.kr/
+영동권,강원도,속초시,속초 마레몬스 호텔,관광호텔업,4성,148,033-630-7000,강원도 속초시 동해대로 3705 (대포동),http://www.maremonshotel.co.kr,http://www.maremonshotel.co.kr
+영동권,강원도,원주시,호텔 인터불고 원주,관광호텔업,4성,146,033-769-8114,강원도 원주시 동부순환로 200 (반곡동),,
+영동권,강원도,인제군,인제스피디움,관광호텔업,4성,134,033-1644-3366,강원도 인제군 기린면 상하답로 130,,
+영동권,강원도,평창군,용평 리조트 드래곤 밸리 호텔,관광호텔업,4성,195,033-330-7111,강원도 평창군 대관령면 올림픽로 715,http://www.yongpyong.co.kr,http://www.yongpyong.co.kr
+영동권,강원도,평창군,휘닉스 평창 호텔,관광호텔업,4성,130,033-330-6001,강원도 평창군 봉평면 태기로 174,https://phoenixhnr.co.kr/,https://phoenixhnr.co.kr/
+영동권,강원도,홍천군,비발디파크,관광호텔업,4성,79,033-439-7763,강원도 홍천군 서면 한치골길 262,https://www.sonohotelsresorts.com/daemyung.vp.accomodation.01_09_01.ds/dmparse.dm,https://www.sonohotelsresorts.com/daemyung.vp.accomodation.01_09_01.ds/dmparse.dm
+영동권,강원특별자치도,고성군,소노캄 호텔 델피노,가족호텔업,4성,84,033-639-8442,강원특별자치도 고성군 토성면 미시령옛길 1153,https://www.sonohotelsresorts.com/complex_dp,https://www.sonohotelsresorts.com/complex_dp
+영동권,강원특별자치도,삼척시,쏠비치 호텔 삼척,관광호텔업,4성,217,033-803-7965,강원특별자치도 삼척시 수로부인길 453 (갈천동),https://www.sonohotelsresorts.com/sb/sc/,https://www.sonohotelsresorts.com/sb/sc/
+영동권,강원특별자치도,속초시,롯데리조트 속초,관광호텔업,4성,173,033-634-1000,강원특별자치도 속초시 대포항길 186 (대포동),https://www.lotteresort.com/main/ko/index,https://www.lotteresort.com/main/ko/index
+영동권,강원특별자치도,양양군,쏠비치호텔양양,관광호텔업,4성,214,033-670-3622,강원특별자치도 양양군 손양면 선사유적로 678,https://www.sonohotelsresorts.com/sb/yy/,https://www.sonohotelsresorts.com/sb/yy/
+영동권,강원도,고성군,파랑뷰호텔,소형호텔업,3성,25,02-2628-7722,강원도 고성군 죽왕면 삼포민박촌2길 34 파랑뷰호텔,http://www.parangvue.com,http://www.parangvue.com
+영동권,강원도,동해시,동해보양온천컨벤션호텔,관광호텔업,3성,181,033-530-0700,강원도 동해시 동해대로 6285 (망상동),https://www.msgh.kr/,https://www.msgh.kr/
+영동권,강원도,속초시,더케이호텔앤리조트(주) 더케이설악산가족호텔,가족호텔업,3성,76,033-639-8100,강원도 속초시 설악산로 470-7 (도문동),https://www.thek-hotel.co.kr/srmh/,https://www.thek-hotel.co.kr/srmh/
+영동권,강원도,양양군,브리드호텔 양양,관광호텔업,3성,35,033-942-5500,강원도 양양군 현남면 인구항길 17,https://www.hwrc.co.kr/hwrc/index.do,https://www.hwrc.co.kr/hwrc/index.do
+영동권,강원도,원주시,오키드 호텔,관광호텔업,3성,85,033-901-3000,강원도 원주시 봉화로 26 오키드 호텔 (단계동),http://www.orchidhotel.co.kr,http://www.orchidhotel.co.kr
+영동권,강원도,원주시,호텔 비즈인,관광호텔업,3성,65,033-748-0100,강원도 원주시 만대로 7-1 (무실동),http://www.biz-inn.co.kr/,http://www.biz-inn.co.kr/
+영동권,강원도,철원군,한탄 리버 스파 호텔,관광호텔업,3성,68,033-455-1234,강원도 철원군 동송읍 태봉로 1799-22,,
+영동권,강원도,춘천시,레고랜드 호텔,관광호텔업,3성,154,033-815-2300,강원도 춘천시 하중도길 128 레고랜드 호텔 (중도동),https://www.legoland.kr/,https://www.legoland.kr/
+영동권,강원도,춘천시,베니키아 춘천베어스 호텔,관광호텔업,3성,78,033-245-4300,강원도 춘천시 스포츠타운길 376 (삼천동),https://www.hotelbears.co.kr/,https://www.hotelbears.co.kr/
+영동권,강원도,춘천시,춘천 세종 호텔,관광호텔업,3성,63,033-252-1191,강원도 춘천시 봉의산길 31 (봉의동),http://www.chunchonsejong.co.kr,http://www.chunchonsejong.co.kr
+영동권,강원특별자치도,강릉시,더홍씨호텔 강릉,관광호텔업,3성,45,033-641-8011,강원특별자치도 강릉시 교동광장로100번길 8 (교동),http://thehongc.kr/,http://thehongc.kr/
+영동권,강원특별자치도,동해시,뉴동해관광호텔,관광호텔업,3성,63,033-533-9215,강원특별자치도 동해시 평릉길 1 (천곡동),http://www.hotelnd.com/,http://www.hotelnd.com/
+영동권,강원특별자치도,동해시,동해현진관광호텔,관광호텔업,3성,82,033-539-2000,강원특별자치도 동해시 동굴로 125-3 . (천곡동),http://www.dhhjhotel.co.kr,http://www.dhhjhotel.co.kr
+영동권,강원특별자치도,원주시,시티호텔,관광호텔업,3성,49,033-747-1000,강원특별자치도 원주시 건강로 4 (반곡동),,
+영동권,강원특별자치도,정선군,하이원 팰리스호텔,관광호텔업,3성,197,02-1588-7789,강원특별자치도 정선군 고한읍 고한7길 399,https://www.high1.com/hotelncondo/contents.do?key=2049,https://www.high1.com/hotelncondo/contents.do?key=2049
+부산경남권,경상남도,김해시,롯데호텔앤리조트 김해,가족호텔업,5성,250,055-725-1000,경상남도 김해시 장유로 505 (신문동),https://www.lotteresort.com/gimhae/ko/about,https://www.lotteresort.com/gimhae/ko/about
+부산경남권,부산광역시,기장군,아난티 앳 부산 빌라쥬,관광호텔업,5성,114,051-662-7100,부산광역시 기장군 기장읍 기장해안로 267-7,,
+부산경남권,부산광역시,기장군,아난티 앳 부산 코브,관광호텔업,5성,310,051-509-1111,부산광역시 기장군 기장읍 기장해안로 268-32,http://ananti.kr,http://ananti.kr
+부산경남권,부산광역시,동래구,농심 호텔,관광호텔업,5성,240,051-550-2100,부산광역시 동래구 금강공원로20번길 23 (온천동),https://www.hotelnongshim.com/kr/,https://www.hotelnongshim.com/kr/
+부산경남권,부산광역시,부산진구,부산롯데호텔,관광호텔업,5성,650,051-810-5603,부산광역시 부산진구 가야대로 772 (부전동),http://www.lottehotel.com/busan-hotel/ko.html,http://www.lottehotel.com/busan-hotel/ko.html
+부산경남권,부산광역시,서구,윈덤그랜드부산,관광호텔업,5성,271,051-993-3000,부산광역시 서구 등대로 27 (암남동),http://www.wyndhamgrandbusan.com/landing/,http://www.wyndhamgrandbusan.com/landing/
+부산경남권,부산광역시,해운대구,(주)호텔롯데 시그니엘부산,관광호텔업,5성,260,051-922-1000,"부산광역시 해운대구 달맞이길 30 (주)호텔롯데 시그니엘부산 (중동, 엘시티)",https://www.lottehotel.com/busan-signiel/ko.html/,https://www.lottehotel.com/busan-signiel/ko.html/
+부산경남권,부산광역시,해운대구,그랜드조선 부산,관광호텔업,5성,330,051-922-5000,부산광역시 해운대구 해운대해변로 292 (중동),https://gjb.josunhotel.com/main.do,https://gjb.josunhotel.com/main.do
+부산경남권,부산광역시,해운대구,웨스틴 조선 부산,관광호텔업,5성,290,051-749-7000,부산광역시 해운대구 동백로 67 (우동),https://josunhotel.com/hotel/westinbusan.do,https://josunhotel.com/hotel/westinbusan.do
+부산경남권,부산광역시,해운대구,파라다이스 호텔 부산,관광호텔업,5성,532,051-742-2121,부산광역시 해운대구 해운대해변로 296 (중동),https://www.busanparadisehotel.co.kr/front,https://www.busanparadisehotel.co.kr/front
+부산경남권,부산광역시,해운대구,파크 하얏트 부산,관광호텔업,5성,269,051-990-1234,부산광역시 해운대구 마린시티1로 51 (우동),https://www.parkhyattbusan.com,https://www.parkhyattbusan.com
+부산경남권,울산광역시,남구,롯데 호텔 울산,관광호텔업,5성,200,052-960-1000,울산광역시 남구 삼산로 282 (삼산동),https://www.lottehotel.com/ulsan-hotel,https://www.lottehotel.com/ulsan-hotel
+부산경남권,경상남도,거제시,거제삼성호텔,관광호텔업,4성,166,055-531-2114,경상남도 거제시 장평3로 80-37 거제삼성호텔 (장평동),https://www.sghotel.co.kr/main.do,https://www.sghotel.co.kr/main.do
+부산경남권,경상남도,창원시,그랜드 머큐어 앰배서더 창원,관광호텔업,4성,321,055-600-0700,경상남도 창원시 성산구 원이대로 332 (대원동),http://grandmercurechangwon.com/,http://grandmercurechangwon.com/
+부산경남권,경상남도,창원시,호텔 인터내셔널,관광호텔업,4성,121,055-281-1001,경상남도 창원시 성산구 중앙대로 69 (중앙동),https://www.hi1001.co.kr,https://www.hi1001.co.kr
+부산경남권,경상남도,통영시,스탠포드호텔앤리조트 주식회사,관광호텔업,4성,144,055-725-0073,경상남도 통영시 도남로 347 (도남동),http://stanfordtongyeong.com,http://stanfordtongyeong.com
+부산경남권,부산광역시,강서구,신라스테이 서부산,관광호텔업,4성,295,051-661-9000,부산광역시 강서구 명지국제7로 38 (명지동),https://www.shillastay.com/seobusan/index.do?lang=ko,https://www.shillastay.com/seobusan/index.do?lang=ko
+부산경남권,부산광역시,남구,아바니센트럴부산,관광호텔업,4성,281,051-791-5800,부산광역시 남구 전포대로 133 아바니센트럴부산 (문현동),https://www.avanihotels.com/ko/central-busan,https://www.avanihotels.com/ko/central-busan
+부산경남권,부산광역시,동구,아스티호텔 부산역,관광호텔업,4성,360,051-409-8888,부산광역시 동구 중앙대로214번길 7-8 (초량동),https://astihotel.co.kr/,https://astihotel.co.kr/
+부산경남권,부산광역시,사하구,레이어스 호텔 하단,관광호텔업,4성,350,051-999-1700,부산광역시 사하구 낙동남로 1395 (하단동),http://www.layers-hotel.com,http://www.layers-hotel.com
+부산경남권,부산광역시,중구,코모도 호텔,관광호텔업,4성,311,051-461-9101,부산광역시 중구 중구로 151 (영주동),https://www.commodore.co.kr,https://www.commodore.co.kr
+부산경남권,부산광역시,해운대구,(주)호텔롯데 L7해운대,관광호텔업,4성,383,055-771-1000,부산광역시 해운대구 해운대로570번길 55 (우동),https://www.lottehotel.com/haeundae-l7/ko.html,https://www.lottehotel.com/haeundae-l7/ko.html
+부산경남권,부산광역시,해운대구,신라스테이 해운대,관광호텔업,4성,407,051-912-9000,부산광역시 해운대구 해운대로570번길 46 신라스테이 해운대 (우동),https://www.shillastay.com/haeundae/index.do?lang=ko,https://www.shillastay.com/haeundae/index.do?lang=ko
+부산경남권,울산광역시,동구,타니베이관광호텔,관광호텔업,4성,147,052-201-8000,울산광역시 동구 해수욕장5길 43 타니베이관광호텔 주식회사 (일산동),https://tanibayhotel.co.kr/index.php,https://tanibayhotel.co.kr/index.php
+부산경남권,울산광역시,동구,호텔현대 바이 라한 울산,관광호텔업,4성,272,052-251-2233,울산광역시 동구 방어진순환도로 875 라한호텔 울산 (전하동),http://www.lahanhotels.com,http://www.lahanhotels.com
+부산경남권,울산광역시,북구,머큐어 앰배서더 울산,관광호텔업,4성,131,052-980-1101,울산광역시 북구 강동산하2로 7 (산하동),https://www.ambatel.com/mercure/ulsan/ko/main.do,https://www.ambatel.com/mercure/ulsan/ko/main.do
+부산경남권,경상남도,거제시,호텔 리베라 거제,관광호텔업,3성,138,055-730-5000,경상남도 거제시 일운면 거제대로 2190,http://www.hotelriviera.co.kr/geoje/main/main.asp,http://www.hotelriviera.co.kr/geoje/main/main.asp
+부산경남권,경상남도,거제시,호텔스테이온,가족호텔업,3성,63,055-922-1700,경상남도 거제시 장평1로9길 21-4 (장평동),,
+부산경남권,경상남도,김해시,호텔 파인 그로브,관광호텔업,3성,66,055-310-1100,경상남도 김해시 번화1로67번길 20 파인그로브호텔 (대청동),http://홈페이지 http://pinegrovehotel.co.kr,http://홈페이지 http://pinegrovehotel.co.kr
+부산경남권,경상남도,남해군,라피스 호텔,가족호텔업,3성,53,055-867-1111,경상남도 남해군 창선면 서부로 1503-16 (라피스가족호텔),http://www.lapishotel.co.kr,http://www.lapishotel.co.kr
+부산경남권,경상남도,밀양시,주식회사 호텔아리나,관광호텔업,3성,78,055-350-7000,경상남도 밀양시 삼문강변로 82 호텔아리나 (삼문동),http://www.hotelarina.com/,http://www.hotelarina.com/
+부산경남권,경상남도,산청군,산청한방가족호텔,가족호텔업,3성,108,055-972-7000,경상남도 산청군 금서면 동의보감로479번길 43,https://thesancheong.com/kor/kor_rese/gsprod/view.do?hjgjyeobu=false&jjkey=1&startDate=2025-10-04&endDate=2025-10-05&people=1,https://thesancheong.com/kor/kor_rese/gsprod/view.do?hjgjyeobu=false&jjkey=1&startDate=2025-10-04&endDate=2025-10-05&people=1
+부산경남권,경상남도,양산시,베니키아 양산 호텔,관광호텔업,3성,82,055-384-0093,경상남도 양산시 동면 금오10길 51,http://www.benikeayangsan.co.kr,http://www.benikeayangsan.co.kr
+부산경남권,경상남도,진주시,동방관광호텔,관광호텔업,3성,83,055-760-1700,경상남도 진주시 논개길 103 (옥봉동),http://www.hoteldongbang.com,http://www.hoteldongbang.com
+부산경남권,경상남도,창원시,베스트 루이스 해밀턴 호텔,관광호텔업,3성,70,055-261-2525,경상남도 창원시 성산구 마디미로70번길 10 베스트루이스해밀턴호텔 (상남동),http://www.bestlouishamilton.com/,http://www.bestlouishamilton.com/
+부산경남권,경상남도,창원시,스카이뷰관광호텔,관광호텔업,3성,94,055-248-2700,경상남도 창원시 마산합포구 해안대로 317 (주) (신포동2가),https://www.skyviewhotel.kr/,https://www.skyviewhotel.kr/
+부산경남권,경상남도,창원시,에비뉴관광호텔,관광호텔업,3성,67,055-263-7200,경상남도 창원시 성산구 용지로169번길 5 (용호동),http://www.hotelavenue.co.kr,http://www.hotelavenue.co.kr
+부산경남권,경상남도,창원시,크라운관광호텔 창원,관광호텔업,3성,72,055-237-1001,경상남도 창원시 의창구 창원대로363번길 22-5 (팔용동),https://www.crownhotel.kr/,https://www.crownhotel.kr/
+부산경남권,경상남도,창원시,토요코인 창원,관광호텔업,3성,339,055-282-1045,경상남도 창원시 성산구 중앙대로 93 (중앙동),http://www.toyoko-inn.co.kr/,http://www.toyoko-inn.co.kr/
+부산경남권,경상남도,통영시,클럽이에스 통영리조트,가족호텔업,3성,106,055-644-0096,경상남도 통영시 산양읍 척포길 628-113,https://www.clubes.co.kr/,https://www.clubes.co.kr/
+부산경남권,경상남도,통영시,포르투나호텔,관광호텔업,3성,64,055-643-7000,경상남도 통영시 미수해안로 152 (봉평동),http://www.bestfortuna.com,http://www.bestfortuna.com
+부산경남권,부산광역시,기장군,에이치에비뉴 기장일광점,관광호텔업,3성,71,051-723-7970,부산광역시 기장군 일광읍 해송4로 3,https://www.havenuehotel-ig.com/,https://www.havenuehotel-ig.com/
+부산경남권,부산광역시,부산진구,부산 비즈니스 호텔,관광호텔업,3성,233,051-808-2000,부산광역시 부산진구 부전로 67 (부전동),http://www.busanbusinesshotel.com,http://www.busanbusinesshotel.com
+부산경남권,부산광역시,부산진구,이비스 앰배서더 부산시티센터,관광호텔업,3성,207,051-930-1100,부산광역시 부산진구 중앙대로 777 (부전동),https://www.ambatel.com/ibis/busan/ko/main.do,https://www.ambatel.com/ibis/busan/ko/main.do
+부산경남권,부산광역시,부산진구,티티호텔,관광호텔업,3성,103,051-808-5514,부산광역시 부산진구 새싹로 35 (부전동),http://www.hoteltt.co.kr/,http://www.hoteltt.co.kr/
+부산경남권,부산광역시,북구,티티호텔 구포,관광호텔업,3성,163,051-343-5518,부산광역시 북구 낙동대로 1684 호텔티티 구포 (구포동),http://www.hoteltt.co.kr,http://www.hoteltt.co.kr
+부산경남권,부산광역시,서구,페어필드 바이 메리어트 부산 송도비치호텔,관광호텔업,3성,179,051-260-0000,부산광역시 서구 송도해변로 113 (암남동),https://www.visitbusan.net/index.do?menuCd=DOM_000000201004001000&uc_seq=820&lang_cd=ko,https://www.visitbusan.net/index.do?menuCd=DOM_000000201004001000&uc_seq=820&lang_cd=ko
+부산경남권,부산광역시,수영구,호메르스호텔(주),관광호텔업,3성,152,051-750-8000,부산광역시 수영구 광안해변로 217 호메르스호텔 (광안동),http://www.homershotel.com,http://www.homershotel.com
+부산경남권,부산광역시,수영구,호텔 센트럴베이,관광호텔업,3성,134,051-982-9700,부산광역시 수영구 광안해변로 189 (광안동),http://www.centralbay.co.kr,http://www.centralbay.co.kr
+부산경남권,부산광역시,수영구,호텔AG405,관광호텔업,3성,62,051-757-2500,부산광역시 수영구 민락수변로 141 (민락동),http://ag405hotel.com/,http://ag405hotel.com/
+부산경남권,부산광역시,수영구,호텔아쿠아펠리스지점,관광호텔업,3성,110,051-790-2300,부산광역시 수영구 광안해변로 225 (광안동),http://www.aquapalace.co.kr/,http://www.aquapalace.co.kr/
+부산경남권,부산광역시,연제구,부산 시티 호텔,관광호텔업,3성,122,051-851-1122,부산광역시 연제구 신촌로 19 (연산동),,
+부산경남권,부산광역시,연제구,아르반 시티 호텔,관광호텔업,3성,137,051-851-9949,부산광역시 연제구 반송로 20 (연산동),https://codybooking.com/reservation/?code=h0176,https://codybooking.com/reservation/?code=h0176
+부산경남권,부산광역시,중구,(주)부산관광호텔,관광호텔업,3성,275,051-241-4301,부산광역시 중구 광복로97번길 23 (동광동2가),http://www.busanhotel.kr/,http://www.busanhotel.kr/
+부산경남권,부산광역시,중구,스탠포드 호텔 부산,관광호텔업,3성,132,051-795-7700,부산광역시 중구 구덕로 53 (남포동5가),http://www.stanfordbusan.com/,http://www.stanfordbusan.com/
+부산경남권,부산광역시,중구,타워힐 호텔,관광호텔업,3성,116,051-250-6100,부산광역시 중구 백산길 20 (동광동3가),http://towerhill.co.kr,http://towerhill.co.kr
+부산경남권,부산광역시,해운대구,더쿨리스트호텔,관광호텔업,3성,53,051-703-3121,부산광역시 해운대구 송정광어골로 11 (송정동),https://www.thecoolesthotel.net/en,https://www.thecoolesthotel.net/en
+부산경남권,부산광역시,해운대구,마리안느 호텔,관광호텔업,3성,127,051-606-0600,부산광역시 해운대구 해운대해변로 310 1층 (중동),http://www.mariannehotel.net,http://www.mariannehotel.net
+부산경남권,부산광역시,해운대구,메르드로브,관광호텔업,3성,33,051-759-6093,부산광역시 해운대구 송정광어골로 80 (송정동),http://www.merdelaube.com/,http://www.merdelaube.com/
+부산경남권,부산광역시,해운대구,베니키아 프리미어 호텔 해운대,관광호텔업,3성,166,051-760-7000,부산광역시 해운대구 해운대해변로 317 (중동),http://www.hotelhaeundae.com/,http://www.hotelhaeundae.com/
+부산경남권,부산광역시,해운대구,소노문 해운대,관광호텔업,3성,235,051-772-7001,부산광역시 해운대구 해운대해변로237번길 12 (우동),https://www.sonohotelsresorts.com/moon_hd,https://www.sonohotelsresorts.com/moon_hd
+부산경남권,부산광역시,해운대구,일루아 호텔,관광호텔업,3성,57,051-744-1331,부산광역시 해운대구 달맞이길 97 (중동),http://www.hotelillua.com,http://www.hotelillua.com
+부산경남권,부산광역시,해운대구,해운대센트럴호텔,관광호텔업,3성,132,051-760-9000,부산광역시 해운대구 해운대해변로298번길 33 1층 (중동),http://www.centralhotel.kr,http://www.centralhotel.kr
+부산경남권,울산광역시,남구,롯데 시티 호텔 울산,관광호텔업,3성,349,052-990-1313,울산광역시 남구 삼산로 204 (달동),https://www.lottehotel.com/ulsan-city/ko.html,https://www.lottehotel.com/ulsan-city/ko.html
+부산경남권,울산광역시,남구,스타즈 호텔 울산점,관광호텔업,3성,345,02-1644-7694,울산광역시 남구 남중로 65 (삼산동),http://stazhotelulsan.com,http://stazhotelulsan.com
+부산경남권,울산광역시,남구,신라스테이 울산,관광호텔업,3성,335,052-900-9100,울산광역시 남구 삼산로 200 (달동),http://www.shillastay.com/ulsan,http://www.shillastay.com/ulsan
+부산경남권,울산광역시,남구,에쉬튼 호텔,관광호텔업,3성,57,052-265-6081,울산광역시 남구 중앙로213번길 8 (신정동),http://ashtonhotel.co.kr/,http://ashtonhotel.co.kr/
+부산경남권,울산광역시,동구,호텔 굿모닝,관광호텔업,3성,75,052-251-3000,울산광역시 동구 바드래1길 15 (전하동),,
+대구경북권,경상북도,경주시,라한호텔 경주,관광호텔업,5성,430,054-779-7602,경상북도 경주시 보문로 338 (신평동),http://www.lahanhotels.com,http://www.lahanhotels.com
+대구경북권,경상북도,경주시,힐튼경주,관광호텔업,5성,330,054-745-7788,경상북도 경주시 보문로 484-7 (신평동),http://www.hiltongyeongju.co.kr,http://www.hiltongyeongju.co.kr
+대구경북권,대구광역시,북구,인터불고 엑스코,관광호텔업,5성,304,053-380-0406,대구광역시 북구 유통단지로 80 (산격동),http://ibhotel.com,http://ibhotel.com
+대구경북권,대구광역시,수성구,호텔 인터불고 대구,관광호텔업,5성,325,053-602-7114,대구광역시 수성구 팔현길 212 (만촌동),http://www.hotel-interburgo-daegu.com,http://www.hotel-interburgo-daegu.com
+대구경북권,경상북도,경주시,경주 코오롱 호텔,관광호텔업,4성,317,054-746-9001,경상북도 경주시 불국로 289-17 (마동),http://www.kolonhotel.co.kr,http://www.kolonhotel.co.kr
+대구경북권,경상북도,경주시,더케이호텔경주,관광호텔업,4성,278,054-745-8100,경상북도 경주시 엑스포로 45 (신평동),,
+대구경북권,경상북도,경주시,코모도 호텔 경주,관광호텔업,4성,276,054-740-8100,경상북도 경주시 보문로 422 (신평동),http://commodore.co.kr,http://commodore.co.kr
+대구경북권,경상북도,구미시,호텔 금오산,관광호텔업,4성,130,054-450-4000,경상북도 구미시 금오산로 400 (남통동),https://www.hotelgeumosan.com/,https://www.hotelgeumosan.com/
+대구경북권,대구광역시,수성구,(주)대구그랜드호텔,관광호텔업,4성,150,053-742-0001,대구광역시 수성구 동대구로 305 (범어동),http://www.daegugrand.co.kr/,http://www.daegugrand.co.kr/
+대구경북권,대구광역시,수성구,호텔 라온제나,관광호텔업,4성,93,053-718-7000,대구광역시 수성구 범어천로 73 (범어동),http://www.hotellaonzena.com/,http://www.hotellaonzena.com/
+대구경북권,대구광역시,수성구,호텔 수성,관광호텔업,4성,180,053-770-5413,대구광역시 수성구 용학로 106-7 (두산동),http://www.hotelsusung.co.kr/,http://www.hotelsusung.co.kr/
+대구경북권,대구광역시,중구,엘디스 리젠트 호텔,관광호텔업,4성,110,053-253-7711,대구광역시 중구 달구벌대로 2033 (동산동),http://www.eldishotel.com/,http://www.eldishotel.com/
+대구경북권,경상북도,경주시,경주 지지 관광호텔,관광호텔업,3성,53,054-701-0090,경상북도 경주시 태종로699번길 3 (노서동),http://www.gghotel.co.kr/,http://www.gghotel.co.kr/
+대구경북권,경상북도,경주시,베니키아 스위스로젠 호텔,관광호텔업,3성,60,054-748-4848,경상북도 경주시 보문로 465-37 (신평동),https://www.swissrosen.co.kr/,https://www.swissrosen.co.kr/
+대구경북권,경상북도,구미시,구미 센츄리 호텔,관광호텔업,3성,131,054-478-0100,경상북도 구미시 3공단1로 296 (임수동),http://www.gumicentury.co.kr,http://www.gumicentury.co.kr
+대구경북권,경상북도,구미시,스테이더공단호텔,관광호텔업,3성,43,054-464-3000,경상북도 구미시 1공단로5길 86-15 (공단동),,
+대구경북권,경상북도,안동시,안동 씨엠파크 호텔,관광호텔업,3성,62,054-853-7800,경상북도 안동시 풍천면 검무로 10-17,http://www.cmparkhotel.com,http://www.cmparkhotel.com
+대구경북권,경상북도,안동시,안동그랜드호텔,관광호텔업,3성,82,054-851-9000,경상북도 안동시 관광단지로 346-84 (성곡동),http://www.andonggrandhotel.com,http://www.andonggrandhotel.com
+대구경북권,경상북도,울진군,호텔덕구온천,관광호텔업,3성,95,054-782-0677,경상북도 울진군 북면 덕구온천로 924,,
+대구경북권,경상북도,칠곡군,센트로 관광호텔,관광호텔업,3성,54,054-972-2777,경상북도 칠곡군 왜관읍 중앙로 152-3,http://www.centrohotel.co.kr/,http://www.centrohotel.co.kr/
+대구경북권,경상북도,포항시,라한호텔 포항,관광호텔업,3성,160,054-230-7000,경상북도 포항시 북구 삼호로265번길 1 (두호동),http://www.lahanhotels.com,http://www.lahanhotels.com
+대구경북권,대구광역시,달서구,에이더블유 호텔,관광호텔업,3성,54,053-589-6700,대구광역시 달서구 성서로 413 (이곡동),http://www.awhotel.co.kr,http://www.awhotel.co.kr
+대구경북권,대구광역시,동구,이스턴 호텔,관광호텔업,3성,70,053-759-5355,대구광역시 동구 동부로22길 24 (신천동),http://www.easternhotel.co.kr,http://www.easternhotel.co.kr
+대구경북권,대구광역시,동구,제이비관광호텔,관광호텔업,3성,57,053-964-2000,대구광역시 동구 율암로 162 호텔 (상매동),http://www.제이비호텔.com,http://www.제이비호텔.com
+대구경북권,대구광역시,동구,팔공 에밀리아 호텔,관광호텔업,3성,40,053-623-1000,대구광역시 동구 팔공산로 1121 (용수동),http://www.emillia.co.kr,http://www.emillia.co.kr
+대구경북권,대구광역시,수성구,대구수성아르코호텔,관광호텔업,3성,49,053-791-9000,대구광역시 수성구 알파시티1로40길 6 (대흥동),,
+대구경북권,대구광역시,수성구,에이시티 관광호텔,관광호텔업,3성,80,053-793-0000,대구광역시 수성구 알파시티1로32길 28-17 (대흥동),http://www.acthotel.co.kr,http://www.acthotel.co.kr
+대구경북권,대구광역시,수성구,호텔아리아나,관광호텔업,3성,53,053-763-9000,대구광역시 수성구 동대구로 27 (두산동),,
+"광주호남(전남, 전북)권",전라남도,여수시,소노캄 여수,관광호텔업,5성,311,061-660-5800,전라남도 여수시 오동도로 111 소노캄 여수 (수정동),http://www.sonohotelsresorts.com/yeosu,http://www.sonohotelsresorts.com/yeosu
+"광주호남(전남, 전북)권",광주광역시,동구,라마다플라자 충장호텔,관광호텔업,4성,95,062-717-1000,광주광역시 동구 천변우로 369 (호남동),,
+"광주호남(전남, 전북)권",광주광역시,서구,라마다 프라자 광주 호텔,관광호텔업,4성,123,062-717-7000,광주광역시 서구 상무자유로 149 (치평동),http://www.ramadagwangju.com,http://www.ramadagwangju.com
+"광주호남(전남, 전북)권",광주광역시,서구,홀리데이 인 광주 호텔,관광호텔업,4성,203,062-610-7000,광주광역시 서구 상무누리로 55 (치평동),http://higwangju.com,http://higwangju.com
+"광주호남(전남, 전북)권",전라남도,여수시,벨메르 바이 한화호텔앤드리조트,관광호텔업,4성,100,061-924-1500,전라남도 여수시 웅천남4로 17 3층 벨메르 (웅천동),https://www.hanwharesort.co.kr/irsweb/resort3/netindex_.do?utm_source=naver_bs&utm_campaign=main&utm_content=mainpage,https://www.hanwharesort.co.kr/irsweb/resort3/netindex_.do?utm_source=naver_bs&utm_campaign=main&utm_content=mainpage
+"광주호남(전남, 전북)권",전라남도,여수시,신라스테이 여수,관광호텔업,4성,315,061-924-5300,전라남도 여수시 수정3길 8 (수정동),https://www.shillastay.com/yeosu/index.do,https://www.shillastay.com/yeosu/index.do
+"광주호남(전남, 전북)권",전라남도,여수시,주식회사 히든베이호텔,관광호텔업,4성,131,061-680-3000,전라남도 여수시 신월로 496-25 (신월동),https://www.hiddenbay.co.kr/,https://www.hiddenbay.co.kr/
+"광주호남(전남, 전북)권",전라남도,여수시,호텔JCS여수,관광호텔업,4성,151,061-643-5000,전라남도 여수시 돌산읍 돌산로 3169-14,http://www.hoteljcs.com,http://www.hoteljcs.com
+"광주호남(전남, 전북)권",전라남도,영암군,호텔현대 바이 라한 목포,관광호텔업,4성,208,061-463-2233,전라남도 영암군 삼호읍 대불로 91,http://www.lahanhotels.com/mokpo,http://www.lahanhotels.com/mokpo
+"광주호남(전남, 전북)권",전라남도,진도군,쏠비치 호텔 진도,관광호텔업,4성,98,061-899-7000,전라남도 진도군 의신면 송군길 30-40,,
+"광주호남(전남, 전북)권",전라북도,군산시,라마다 군산 호텔,관광호텔업,4성,137,063-441-8000,전라북도 군산시 대학로 400 (나운동),,
+"광주호남(전남, 전북)권",전라북도,부안군,소노벨 변산,가족호텔업,4성,504,02-1588-4888,전라북도 부안군 변산면 변산해변로 51,http://www.sonohotelsresorts.com/bs,http://www.sonohotelsresorts.com/bs
+"광주호남(전남, 전북)권",전라북도,익산시,웨스턴라이프호텔,관광호텔업,4성,155,063-720-3000,전라북도 익산시 동서로 380 (영등동),http://www.westernlife.co.kr/,http://www.westernlife.co.kr/
+"광주호남(전남, 전북)권",전라북도,전주시,라한호텔 전주,관광호텔업,4성,195,063-907-7410,전라북도 전주시 완산구 기린대로 85 (풍남동3가),https://lahanhotels.com/jeonju/index.do,https://lahanhotels.com/jeonju/index.do
+"광주호남(전남, 전북)권",전북특별자치도,남원시,스위트 호텔 남원,관광호텔업,4성,59,063-630-7100,전북특별자치도 남원시 주천면 원천로 217 스위트호텔남원,,
+"광주호남(전남, 전북)권",전북특별자치도,무주군,호텔 티롤,관광호텔업,4성,118,063-320-7617,전북특별자치도 무주군 설천면 만선로 185,,
+"광주호남(전남, 전북)권",전북특별자치도,전주시,더 메이 호텔,관광호텔업,4성,51,063-246-5555,전북특별자치도 전주시 덕진구 기린대로 800 (팔복동1가),http://www.themay.co.kr,http://www.themay.co.kr
+"광주호남(전남, 전북)권",광주광역시,동구,ACC DESIGN 호텔,관광호텔업,3성,76,062-234-8000,광주광역시 동구 금남로 226-11 ACC디자인호텔 (금남로2가),http://acchotel.kr/,http://acchotel.kr/
+"광주호남(전남, 전북)권",광주광역시,동구,컬쳐호텔 람,관광호텔업,3성,43,062-223-1500,광주광역시 동구 서석로 89 (대의동),,
+"광주호남(전남, 전북)권",광주광역시,동구,호텔아트하임,관광호텔업,3성,92,062-236-5881,광주광역시 동구 서석로10번길 5 (불로동),http://hotelartheim.co.kr,http://hotelartheim.co.kr
+"광주호남(전남, 전북)권",광주광역시,북구,에이치원호텔,관광호텔업,3성,87,062-376-3000,광주광역시 북구 대자로106번길 10-6 (운암동),http://www.h1hotel.co.kr,http://www.h1hotel.co.kr
+"광주호남(전남, 전북)권",전라남도,구례군,더 케이 지리산 가족 호텔,가족호텔업,3성,134,061-783-8100,전라남도 구례군 산동면 지리산온천로 317,https://www.thek-hotel.co.kr/jrmh/index.do,https://www.thek-hotel.co.kr/jrmh/index.do
+"광주호남(전남, 전북)권",전라남도,목포시,목포 신안 비치 호텔,관광호텔업,3성,128,061-243-3399,전라남도 목포시 해안로 2 (죽교동),http://www.shinanbeachhotel.com,http://www.shinanbeachhotel.com
+"광주호남(전남, 전북)권",전라남도,목포시,샹그리아비치호텔,관광호텔업,3성,71,061-285-0100,전라남도 목포시 평화로 79 (상동),http://www.shangriahotel.co.kr,http://www.shangriahotel.co.kr
+"광주호남(전남, 전북)권",전라남도,여수시,(주)여수관광레저(호텔더시티),관광호텔업,3성,55,061-808-8000,전라남도 여수시 좌수영로 641 (둔덕동),http://www.citypark.co.kr/,http://www.citypark.co.kr/
+"광주호남(전남, 전북)권",전라남도,여수시,여수 디오션 호텔,관광호텔업,3성,136,061-689-0858,전라남도 여수시 소호로 295 (소호동),https://theoceanresort.co.kr/intro.do,https://theoceanresort.co.kr/intro.do
+"광주호남(전남, 전북)권",전라남도,여수시,호텔마띠유 여수,관광호텔업,3성,43,061-662-3131,전라남도 여수시 오동도로 20 (공화동),http://matthieuyeosu.com/main.html,http://matthieuyeosu.com/main.html
+"광주호남(전남, 전북)권",전라남도,영광군,호텔 더 스타,관광호텔업,3성,42,061-350-7900,전라남도 영광군 영광읍 옥당로 74,,
+"광주호남(전남, 전북)권",전라남도,해남군,파인비치골프호텔,관광호텔업,3성,42,061-530-7700,전라남도 해남군 화원면 시아로 224 파인비치 골프호텔,,
+"광주호남(전남, 전북)권",전라북도,부안군,모항 해나루 호텔,가족호텔업,3성,112,063-580-0800,전라북도 부안군 변산면 모항해변길 73,http://www.haenaruhotel.co.kr/,http://www.haenaruhotel.co.kr/
+"광주호남(전남, 전북)권",전라북도,전주시,그랜드힐스턴,관광호텔업,3성,100,063-251-8000,전라북도 전주시 완산구 온고을로 211 (효자동3가),http://www.grandhillstone.com,http://www.grandhillstone.com
+"광주호남(전남, 전북)권",전라북도,전주시,엔브릿지호텔,관광호텔업,3성,32,063-232-6000,전라북도 전주시 완산구 전주천서로 81 (동서학동),,
+"광주호남(전남, 전북)권",전라북도,전주시,전주관광 호텔 꽃심,관광호텔업,3성,101,063-232-5353,전라북도 전주시 완산구 팔달로 171 (경원동1가),http://www.hotelkkotsim.com/,http://www.hotelkkotsim.com/
+"광주호남(전남, 전북)권",전북특별자치도,군산시,호텔은파팰리스,관광호텔업,3성,65,063-467-7000,전북특별자치도 군산시 은파순환길 20 (나운동),https://h-eunpapalace.com/,https://h-eunpapalace.com/
+"광주호남(전남, 전북)권",전북특별자치도,전주시,이비스 스타일 앰배서더 호텔,관광호텔업,3성,81,063-249-5000,전북특별자치도 전주시 완산구 전주객사4길 74-50 (고사동),https://all.accor.com/ssr/app/accor/rates/c2g2/index.ko.shtml?compositions=1&datein=2024-11-09&nights=1&hidehoteldetails=false&hidewdr=false&destination=jeonju-si-jeonbuk-state-south-korea,https://all.accor.com/ssr/app/accor/rates/c2g2/index.ko.shtml?compositions=1&datein=2024-11-09&nights=1&hidehoteldetails=false&hidewdr=false&destination=jeonju-si-jeonbuk-state-south-korea
+충청권,대전광역시,유성구,호텔 오노마 오토그래프 컬렉션,관광호텔업,5성,171,042-259-8007,대전광역시 유성구 엑스포로 1 (도룡동),http://www.hotel-onoma.com/,http://www.hotel-onoma.com/
+충청권,대전광역시,유성구,롯데시티호텔대전,관광호텔업,4성,306,042-333-1000,대전광역시 유성구 엑스포로123번길 33 (도룡동),https://www.lottehotel.com,https://www.lottehotel.com
+충청권,대전광역시,유성구,호텔 인터시티,관광호텔업,4성,216,042-600-6000,대전광역시 유성구 온천로 92 (봉명동),https://www.hotelinterciti.com,https://www.hotelinterciti.com
+충청권,충청남도,보령시,호텔 쏠레르,관광호텔업,4성,100,041-934-1111,충청남도 보령시 해수욕장8길 28 (신흑동),http://www.hotelsolaire.co.kr,http://www.hotelsolaire.co.kr
+충청권,충청남도,서산시,베니키아호텔서산,관광호텔업,4성,194,041-661-3500,충청남도 서산시 안견로 465 베니키아호텔 (갈산동),https://seosanbenikea.com/,https://seosanbenikea.com/
+충청권,충청북도,제천시,청풍리조트 레이크 호텔,관광호텔업,4성,180,043-640-7000,충청북도 제천시 청풍면 청풍호로 1798,https://www.cheongpungresort.co.kr,https://www.cheongpungresort.co.kr
+충청권,대전광역시,유성구,계룡스파텔,관광호텔업,3성,143,042-602-1111,대전광역시 유성구 온천로 81 (봉명동),http://welfare.army.mil.kr,http://welfare.army.mil.kr
+충청권,대전광역시,유성구,베니키아 테크노밸리 호텔,관광호텔업,3성,73,042-671-0500,대전광역시 유성구 테크노중앙로 57 (관평동),http://www.hoteltechnovalley.com/main/index.asp,http://www.hoteltechnovalley.com/main/index.asp
+충청권,대전광역시,유성구,호텔 ICC,관광호텔업,3성,75,042-866-5000,대전광역시 유성구 엑스포로123번길 55 (도룡동),http://www.hotelicc.com,http://www.hotelicc.com
+충청권,대전광역시,유성구,호텔스카이파크 대전1호점,관광호텔업,3성,100,042-323-4500,대전광역시 유성구 테크노중앙로 161 (용산동),http://www.skyparkhotel.com,http://www.skyparkhotel.com
+충청권,충청남도,아산시,(주)온양관광호텔,관광호텔업,3성,175,041-540-1000,충청남도 아산시 온천대로 1459 (온천동),http://www.onyanghotel.co.kr,http://www.onyanghotel.co.kr
+충청권,충청남도,아산시,온양제일호텔,관광호텔업,3성,141,041-547-2500,충청남도 아산시 온천대로 1462 (온천동),http://www.cheilhotel.co.kr,http://www.cheilhotel.co.kr
+충청권,충청남도,천안시,베니키아 천안관광호텔,관광호텔업,3성,55,041-592-0000,충청남도 천안시 서북구 양지21길 42 (성정동),https://cheonanhotel.co.kr/,https://cheonanhotel.co.kr/
+충청권,충청남도,천안시,슈바이처도르프 호텔,관광호텔업,3성,51,041-565-9955,충청남도 천안시 서북구 성정공원5로 42 (성정동),http://www.schweizerdorf.com,http://www.schweizerdorf.com
+충청권,충청남도,천안시,신라스테이 천안,관광호텔업,3성,305,041-415-9000,충청남도 천안시 서북구 동서대로 177 (성정동),https://www.shillastay.com/cheonan/index.do?lang=ko,https://www.shillastay.com/cheonan/index.do?lang=ko
+충청권,충청남도,천안시,천안상록가족호텔,가족호텔업,3성,116,041-560-9114,충청남도 천안시 동남구 수신면 수신로 576 천안상록리조트,https://www.sangnokresort.co.kr/,https://www.sangnokresort.co.kr/
+충청권,충청북도,단양군,단양관광호텔,관광호텔업,3성,77,043-423-7070,충청북도 단양군 단양읍 삼봉로 31 단양관광호텔,http://www.danyanghotel.com,http://www.danyanghotel.com
+충청권,충청북도,영동군,일라이트호텔,관광호텔업,3성,102,043-740-0000,충청북도 영동군 영동읍 영동힐링로 159,http://illitegolfnresort.co.kr,http://illitegolfnresort.co.kr
+충청권,충청북도,제천시,청풍리조트 힐하우스,가족호텔업,3성,50,043-640-7000,충청북도 제천시 청풍면 청풍호로 1763,https://www.cheongpungresort.co.kr,https://www.cheongpungresort.co.kr
+충청권,충청북도,청주시,관광호텔 뮤제오,관광호텔업,3성,59,043-267-3200,충청북도 청주시 흥덕구 가로수로1164번길 41-20 (강서동),https://www.hotelmuseo.co.kr,https://www.hotelmuseo.co.kr
+충청권,충청북도,충주시,수안보 상록 호텔,관광호텔업,3성,101,043-880-3731,충청북도 충주시 수안보면 주정산로 22 수안보상록호텔,http://sangnokresort.co.kr,http://sangnokresort.co.kr
+제주도,제주특별자치도,서귀포시,JW 메리어트 제주 리조트&스파,관광호텔업,5성,89,064-738-7765,서귀포시 태평로 152,,
+제주도,제주특별자치도,서귀포시,WE호텔,관광호텔업,5성,86,730-1200~1202,서귀포시 1100로 453-95(회수동),,
+제주도,제주특별자치도,서귀포시,㈜교원 스위트호텔 제주,관광호텔업,5성,90,064-738-3800,서귀포시 중문관광로72번길 67 (색달동),,
+제주도,제주특별자치도,서귀포시,㈜조선호텔앤리조트 그랜드조선 제주,관광호텔업,5성,248,064-735-8966,서귀포시 중문관광로 72번길 60(색달동),,
+제주도,제주특별자치도,서귀포시,㈜호텔롯데 롯데호텔 제주,관광호텔업,5성,500,064-731-1000,서귀포시 중문관광로72번길 35 (색달동),,
+제주도,제주특별자치도,서귀포시,㈜호텔신라 제주신라,관광호텔업,5성,429,064-735-5114,서귀포시 중문관광로72번길 75 (색달동),,
+제주도,제주특별자치도,서귀포시,더 시에나 프리모,가족호텔업,5성,99,064-735-7000,서귀포시 용흥로66번길158-7(강정동),,
+제주도,제주특별자치도,서귀포시,서귀포KAL호텔,관광호텔업,5성,225,064-732-9851,서귀포시 칠십리로 242 (토평동),,
+제주도,제주특별자치도,서귀포시,씨에스호텔앤리조트,한국전통호텔업,5성,26,064-735-3000,서귀포시 중문관광로 198,,
+제주도,제주특별자치도,서귀포시,제주 부영호텔&리조트,관광호텔업,5성,262,064-731-5500,서귀포시 중문관광로 222(중문동),,
+제주도,제주특별자치도,서귀포시,제주신화월드 호텔 앤 리조트,관광호텔업,5성,1720,064-908-6000,서귀포시 안덕면 신화역사로 304번길 38,,
+제주도,제주특별자치도,서귀포시,카세로지,소형호텔업,5성,23,064-735-0311,서귀포시 표선면 가시로 383,,
+제주도,제주특별자치도,서귀포시,파르나스호텔 제주,관광호텔업,5성,307,064-733-1234,서귀포시 중문관광로72번길 110,,
+제주도,제주특별자치도,서귀포시,해비치호텔,관광호텔업,5성,288,064-780-8212,서귀포시 표선면 민속해안로 537,,
+제주도,제주특별자치도,서귀포시,히든클리프호텔&네이쳐,관광호텔업,5성,250,064-752-7777,서귀포시 예래해안로 542(상예동),,
+제주도,제주특별자치도,제주시,그랜드하얏트 제주,관광호텔업,5성,750,064-795-6336,제주시 노연로 12(노형동),,
+제주도,제주특별자치도,제주시,글래드호텔앤리조트㈜ 메종글래드 제주,관광호텔업,5성,513,064-747-5000,제주시 노연로 80 (연동),,
+제주도,제주특별자치도,제주시,에코랜드 호텔,관광호텔업,5성,200,801-6000,제주시 조천읍 남조로 1982,,
+제주도,제주특별자치도,제주시,제주썬호텔,관광호텔업,5성,203,064-741-8000,제주시 삼무로 67 (연동),,
+제주도,제주특별자치도,제주시,제주오리엔탈호텔,관광호텔업,5성,321,064-752-8222,제주시 탑동로 47(삼도이동),,
+제주도,제주특별자치도,서귀포시,골드원호텔＆스위트,관광호텔업,4성,51,064-801-5000,서귀포시 이어도로 1032,,
+제주도,제주특별자치도,서귀포시,머큐어 앰배서더 제주,관광호텔업,4성,72,064-793-1000,서귀포시 안덕면 한창로 365(상창리),,
+제주도,제주특별자치도,서귀포시,야크마을,가족호텔업,4성,50,064-760-1950,서귀포시 색달중앙로 162,,
+제주도,제주특별자치도,서귀포시,제주항공우주호텔,관광호텔업,4성,110,064-798-5500,서귀포시 안덕면 녹차분재로 216,,
+제주도,제주특별자치도,서귀포시,플레이스(playce),관광호텔업,4성,235,064-766-3000,서귀포시 성산읍 동류암로 20,,
+제주도,제주특별자치도,서귀포시,호텔더본제주,관광호텔업,4성,139,064-766-8988,서귀포시 색달로 18,,
+제주도,제주특별자치도,서귀포시,호텔빠레브 주식회사,관광호텔업,4성,204,064-735-8899,서귀포시 김정문화로 15(강정동),,
+제주도,제주특별자치도,제주시,HOTEL LEO,관광호텔업,4성,95,064-754-7000,제주시 삼무로 14(연동),,
+제주도,제주특별자치도,제주시,㈜호텔샬롬,관광호텔업,4성,176,064-720-7700 064-720-7721,제주시 동광로 34,,
+제주도,제주특별자치도,제주시,그라벨 호텔,관광호텔업,4성,141,064-740-8010,제주시 일주서로 7316(외도일동),,
+제주도,제주특별자치도,제주시,난타호텔,관광호텔업,4성,204,064-727-0603,제주시 선돌목동길 56-26,,
+제주도,제주특별자치도,제주시,다인오세아노호텔,관광호텔업,4성,83,1811-0012,제주시 애월읍 애월해안로394,,
+제주도,제주특별자치도,제주시,롯데시티호텔 제주,관광호텔업,4성,262,064-730-1070,제주시 도령로 82(연동),,
+제주도,제주특별자치도,제주시,베스트웨스턴 제주호텔,가족호텔업,4성,350,064-797-6000,제주시 도령로 27 (노형동),,
+제주도,제주특별자치도,제주시,신라스테이 제주,관광호텔업,4성,301,064-717-9000,제주시 노연로 100,,
+제주도,제주특별자치도,제주시,신라스테이 플러스 이호테우,관광호텔업,4성,211,064-740-9000,제주시 연대마을길 76,,
+제주도,제주특별자치도,제주시,아스타호텔,관광호텔업,4성,130,064-710-1100,제주시 서사로 129,,
+제주도,제주특별자치도,제주시,에코그린리조트(구. 에코패밀리호텔),가족호텔업,4성,90,064-796-8333,제주시 한림읍 귀덕6길 94(귀덕리),,
+제주도,제주특별자치도,제주시,퍼시픽호텔,관광호텔업,4성,177,064-758-2500,제주시 서사로 20 (용담일동),,
+제주도,제주특별자치도,제주시,호텔더원,관광호텔업,4성,180,064-798-0001,제주시 사장3길 33(연동),,
+제주도,제주특별자치도,제주시,호텔시리우스,관광호텔업,4성,280,070-4559-1125,제주시 도령로 133(연동),,
+제주도,제주특별자치도,서귀포시,CASALOMA HOTEL,관광호텔업,3성,108,064-733-2121,서귀포시 태평로 347 (서귀동),,
+제주도,제주특별자치도,서귀포시,그랜드메르호텔 제주,관광호텔업,3성,94,064-739-7100,서귀포시 논짓물로 45(하예동),,
+제주도,제주특별자치도,서귀포시,담앤루,가족호텔업,3성,43,064-739-6617,서귀포시 이어도로 343번길 63,,
+제주도,제주특별자치도,서귀포시,더포그레이스호텔앤리조트,가족호텔업,3성,144,064-797-7700,서귀포시 성산읍 해맞이해안로 2670(시흥리 200),,
+제주도,제주특별자치도,서귀포시,베니키아 중문호텔,관광호텔업,3성,45,802-8888,서귀포시 천제연로 166(중문동),,
+제주도,제주특별자치도,서귀포시,벵가 스테이(구.코델리아리조트),가족호텔업,3성,105,070-4548-2200,서귀포시 성산읍 일주동로4120번길 23-20 (오조리 941-1),,
+제주도,제주특별자치도,서귀포시,봄그리고가을 가족호텔,가족호텔업,3성,86,064-784-2211,서귀포시 성산읍 해맞이해안로 2652(시흥리 205),,
+제주도,제주특별자치도,서귀포시,봄그리고가을리조트,가족호텔업,3성,46,064-784-2211,서귀포시 성산읍 해맞이해안로 2660(시흥리 208),,
+제주도,제주특별자치도,서귀포시,산방산호텔(구.프리뮬러호텔),가족호텔업,3성,67,064-909-9999,서귀포시 대정읍 일주서로 2093,,
+제주도,제주특별자치도,서귀포시,아리아호텔,관광호텔업,3성,51,738-8981-3,서귀포시 중문관광로 23-1(색달동),,
+제주도,제주특별자치도,서귀포시,와이리조트 제주,가족호텔업,3성,32,064-794-7007,서귀포시 안덕면 화순중앙로 124번길 75,,
+제주도,제주특별자치도,서귀포시,유어스호텔,관광호텔업,3성,83,064-733-7500,서귀포시 천제연로 178번길 21,,
+제주도,제주특별자치도,서귀포시,코델리아호텔,가족호텔업,3성,236,064-783-0053,서귀포시 성산읍 일주동로 4186(오조리 990-1),,
+제주도,제주특별자치도,서귀포시,파크선샤인제주관광호텔,관광호텔업,3성,105,064-766-1000,서귀포시 남성중로 135(서홍동),,
+제주도,제주특별자치도,서귀포시,헤이서귀포,관광호텔업,3성,134,064-732-5678 064-732-5709,서귀포시 태평로 363 (서귀동),,
+제주도,제주특별자치도,서귀포시,호텔 섬오름,가족호텔업,3성,53,064-800-7200,서귀포시 막숙포로 114(법환동 1513),,
+제주도,제주특별자치도,서귀포시,호텔 스카브로,관광호텔업,3성,41,064-738-1551,서귀포시 예래해안로 15,,
+제주도,제주특별자치도,서귀포시,호텔화인,관광호텔업,3성,96,801-8888,서귀포시 칠십리로 87(서귀동),,
+제주도,제주특별자치도,제주시,㈜블랙스톤리조트(더 힐하우스),관광호텔업,3성,36,064-795-2200,제주시 한림읍 한창로 925-122,,
+제주도,제주특별자치도,제주시,㈜아모렉스리조트,가족호텔업,3성,173,064-711-0125,제주시 서해안로 216 (도두일동),,
+제주도,제주특별자치도,제주시,베니키아호텔제주,관광호텔업,3성,88,064-799-3544,제주시 애월읍 애월해안로 554-10(신엄리),,
+제주도,제주특별자치도,제주시,블랙샌즈관광호텔,관광호텔업,3성,78,064-740-0888,제주시 선사로 8(삼양2동),,
+제주도,제주특별자치도,제주시,블루하와이호텔,가족호텔업,3성,99,064-796-8191,제주시 한림읍 한림로 75,,
+제주도,제주특별자치도,제주시,스위트캐슬,관광호텔업,3성,77,064-731-3700,제주시 조천읍 신북로 443,,
+제주도,제주특별자치도,제주시,심스호텔,관광호텔업,3성,92,064-750-8988,제주시 임항로 249(건입동),,
+제주도,제주특별자치도,제주시,씨뷰(Sea View)(구.씨앤관광호텔),관광호텔업,3성,60,064-711-7400,제주시 일주서로 7490(내도동),,
+제주도,제주특별자치도,제주시,아이진호텔,관광호텔업,3성,75,064-745-0700,제주시 신대로 22길 4,,
+제주도,제주특별자치도,제주시,애월비치호텔,관광호텔업,3성,94,064-799-9981,제주시 애월읍 애월해안로 554-10(신엄리),,
+제주도,제주특별자치도,제주시,어반아일랜드호텔,관광호텔업,3성,70,064-795-2200,제주시 삼무로 76,,
+제주도,제주특별자치도,제주시,에스호텔,관광호텔업,3성,88,064-749-9928,제주시 오일장중길 26(도두일동),,
+제주도,제주특별자치도,제주시,엘앤엘제주(구.엠버호텔),관광호텔업,3성,72,064-745-7459 064-745-7458,제주시 삼무로 12(연동),,
+제주도,제주특별자치도,제주시,오드리인,관광호텔업,3성,82,064-710-8000,제주시 서해안로 100,,
+제주도,제주특별자치도,제주시,오션그랜드호텔,관광호텔업,3성,74,064-783-0007,제주시 조천읍 조함해안로 490(함덕리),,
+제주도,제주특별자치도,제주시,올레리조트,가족호텔업,3성,53,064-799-7770,제주시 애월읍 부룡수길 33(심엄리),,
+제주도,제주특별자치도,제주시,웨이브제주호텔앤리조트,가족호텔업,3성,86,064-773-0800,제주시 한림읍 한림로 77(금능리),,
+제주도,제주특별자치도,제주시,제니아관광호텔,관광호텔업,3성,67,064-797-9000,제주시 은남1길 25(연동),,
+제주도,제주특별자치도,제주시,제주갤럭시호텔,관광호텔업,3성,85,064-750-3355,제주시 남성로 33(용담일동),,
+제주도,제주특별자치도,제주시,제주노블레스관광호텔,관광호텔업,3성,150,064-748-7161,제주시 월성로4길 19(용담이동),,
+제주도,제주특별자치도,제주시,제주인관광호텔,관광호텔업,3성,79,064-754-1111,제주시 신산마을길 20(내도동),,
+제주도,제주특별자치도,제주시,제주팔레스호텔,관광호텔업,3성,94,064-753-8811,제주시 탑동로 9(삼도이동),,
+제주도,제주특별자치도,제주시,탑스텐빌라드애월(구.부띠끄호텔빌라드애월),가족호텔업,3성,53,064-720-9000,제주시 애월읍 애월해안로 516-7(신엄리),,
+제주도,제주특별자치도,제주시,파크사이드관광호텔,관광호텔업,3성,70,064-746-4544,제주시 도령로 126(연동),,
+제주도,제주특별자치도,제주시,하이제주호텔(구.홍익제주호텔),가족호텔업,3성,96,064-723-5801,제주시 한림읍 일주서로 5125,,
+제주도,제주특별자치도,제주시,해마 호텔,관광호텔업,3성,89,064-786-6000,제주시 삼무로 28(연동),,
+제주도,제주특별자치도,제주시,호텔라온제주,관광호텔업,3성,51,064-795-8000 064-795-1192,제주시 한림읍 금능남로 127,,
+제주도,제주특별자치도,제주시,호텔스카이파크,관광호텔업,3성,147,064-797-0000 064-748-7100,제주시 삼무로 48(연동),,

@@ -85,14 +85,11 @@ export default function HomeClient({ hotelData }: { hotelData: any }) {
   };
 
   return (
-    <div className="flex flex-col w-full max-w-md mx-auto min-h-screen bg-gray-50 shadow-2xl relative ring-1 ring-gray-200 sm:rounded-none">
-      <header className="px-5 py-6 bg-gradient-to-br from-blue-700 via-indigo-700 to-indigo-900 text-white rounded-b-3xl sticky top-0 z-40 shadow-lg border-b border-indigo-500/30">
+    <div className="flex flex-col w-full max-w-7xl mx-auto min-h-screen bg-gray-50">
+      <header className="px-6 lg:px-12 py-5 bg-gradient-to-br from-blue-700 via-indigo-700 to-indigo-900 text-white sticky top-0 z-40 shadow-lg border-b border-indigo-500/30">
         <div className="flex items-center justify-between">
-          <h1 className="text-2xl font-bold tracking-tight drop-shadow-sm flex items-center gap-2">
+          <h1 className="text-2xl font-extrabold tracking-tight drop-shadow-sm">
             HotelDocKorea
-            <div className="w-6 h-6 rounded-full bg-white/10 flex items-center justify-center border border-white/20 backdrop-blur-sm shadow-inner">
-              <span className="text-[10px] font-bold text-yellow-400">Pi</span>
-            </div>
           </h1>
           {/* Language Switcher */}
           <div className="flex items-center gap-1 bg-black/20 p-1 rounded-full border border-white/10">
@@ -104,19 +101,19 @@ export default function HomeClient({ hotelData }: { hotelData: any }) {
         </div>
         <p className="text-sm text-blue-100 opacity-90 mt-1 font-medium tracking-wide">{t.appTitle}</p>
         
-        {/* Regions Horizontal Scroll */}
-        <div className="flex overflow-x-auto gap-3 mt-6 pb-2 scrollbar-none snap-x snap-mandatory">
+        {/* Regions Tab — 모바일: 가로 스크롤 / PC: 자연스럽게 펼쳐지는 flex-wrap */}
+        <div className="flex flex-wrap gap-2 mt-5 pb-1">
           {t.regions.map((regionName: string, index: number) => (
             <button
               key={index}
               onClick={() => setActiveRegionIndex(index)}
-              className={`snap-center shrink-0 px-4 py-2 text-sm font-semibold rounded-full transition-all duration-300 shadow flex items-center gap-1.5 ${
+              className={`px-4 py-2 text-sm font-semibold rounded-full transition-all duration-300 shadow flex items-center gap-1.5 ${
                 activeRegionIndex === index 
-                  ? "bg-white text-indigo-700 font-bold scale-105" 
-                  : "bg-white/10 text-indigo-50 border border-white/20 hover:bg-white/20 active:scale-95 backdrop-blur-sm"
+                  ? "bg-white text-indigo-700 font-bold shadow-md" 
+                  : "bg-white/10 text-indigo-100 border border-white/20 hover:bg-white/20 active:scale-95 backdrop-blur-sm"
               }`}
             >
-              <MapPin size={16} className={activeRegionIndex === index ? "text-blue-500" : "text-indigo-200"} />
+              <MapPin size={14} className={activeRegionIndex === index ? "text-blue-500" : "text-indigo-300"} />
               {regionName}
             </button>
           ))}
@@ -128,7 +125,7 @@ export default function HomeClient({ hotelData }: { hotelData: any }) {
          <span className="text-xs text-gray-400 border border-dashed border-gray-400 p-2 rounded w-full text-center bg-gray-100">[Ad] {t.adPlaceholder} 1 (Top)</span>
       </div>
 
-      <main className="flex-1 p-5 pb-32">
+      <main className="flex-1 px-4 lg:px-12 py-8 pb-32">
         {/* Weekly Pick: AI 자동 선정 매거진풍 UI (애드센스 정보성 강화를 위한 텍스트) */}
         <section className="mb-8 border border-indigo-100 bg-white rounded-2xl p-5 shadow-sm">
           <div className="flex items-center justify-between mb-3 border-b border-gray-100 pb-3">
@@ -142,13 +139,13 @@ export default function HomeClient({ hotelData }: { hotelData: any }) {
             이번 주 에어비앤비형 최저가 봇이 분석한 전국 520개 호텔 프로모션 중 <strong className="text-indigo-600">압도적인 가성비와 혜택</strong>을 자랑하는 베스트 3선을 엄선했습니다. 최근 호텔 업계의 트렌드는 조식을 포함하고 늦은 퇴실(Late Check-out)을 보장하는 스마트 패키지입니다. 본 리포트에서 소개하는 신라호텔 및 롯데호텔의 경우 기존 정가 대비 평균 20%~30% 할인된 특가를 구성하여 가족 여행객 및 비즈니스 투숙객에게 가장 합리적인 옵션을 제공합니다. 특히 수영장과 사우나 등 부대시설 이용이 무제한 제공되는 패키지는 조기 마감될 수 있으니 실시간 가격 비교 위젯을 참조하시길 권장합니다.
           </p>
 
-          <div className="flex overflow-x-auto gap-4 pb-2 scrollbar-none snap-x snap-mandatory">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 pb-2">
             {[
               { title: "제주 특급 풀빌라 초특가", desc: "수영장과 조식을 한 번에. 가족 여행객을 위한 최고의 5성급 혜택을 놓치지 마세요.", img: "https://www.lottehotel.com/content/dam/lotte-hotel/global/common/offer/spring-main.jpg", discount: "45%" },
               { title: "도심 속 스위트룸 호캉스", desc: "피로를 풀어줄 사우나와 이그제큐티브 라운지 권한이 포함된 비즈니스 럭셔리 패키지입니다.", img: "https://www.shillahotels.com/images/eno/sub/prom/2024/03/yoga.jpg", discount: "30%" },
               { title: "강릉 오션뷰 얼리버드", desc: "다음 달 동해안 여행을 계획하신다면 지금 예약하세요. 최저가 보상제 적용 중.", img: "https://www.josunhotel.com/images/eno/sub/prom/2024/03/family.jpg", discount: "최저가" }
             ].map((pick, i) => (
-               <div key={i} className="snap-center shrink-0 w-64 bg-gray-50 border border-gray-200 rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-shadow relative">
+               <div key={i} className="bg-gray-50 border border-gray-200 rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-shadow relative">
                  <div className="relative w-full h-32 bg-gray-200">
                     <Image src={pick.img} alt={pick.title} fill className="object-cover" />
                     <div className="absolute top-2 right-2 bg-rose-500 text-white text-[10px] font-extrabold px-1.5 py-0.5 rounded shadow-sm">
@@ -183,7 +180,7 @@ export default function HomeClient({ hotelData }: { hotelData: any }) {
           </div>
         </div>
 
-        <div className="flex flex-col gap-5">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5">
           {hotelsList.length > 0 ? (
             hotelsList.map((hotel: any, index: number) => {
               const isLuxury = activeRating === "5성";

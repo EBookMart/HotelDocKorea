@@ -60,12 +60,12 @@ async function runPipeline() {
       hotelsList.forEach(hotel => {
         // --- A. Affiliate & Official Link Preparation ---
         if (!hotel.official_link) hotel.official_link = hotel.홈페이지 || '';
-        if (!hotel.affiliate_link) {
-          // Mock affiliate link generation for Agoda
-          // In production, this maps the hotel ID to the agoda partner tag
-          const encodedName = encodeURIComponent(hotel.이름);
-          hotel.affiliate_link = `https://www.agoda.com/partners/partnersearch.aspx?cid=1896000&pcs=1&hl=ko-kr&city=0&hid=0&seoterm=${encodedName}`;
-        }
+        
+        // 아고다 검색 딥링크: 매번 최신 패턴으로 재생성
+        // /ko-kr/search?query=[호텔명]&cid=[제휴ID] → 검색창에 호텔명 자동 입력됨
+        const AGODA_CID = '1896000';
+        const encodedName = encodeURIComponent(hotel.이름);
+        hotel.affiliate_link = `https://www.agoda.com/ko-kr/search?query=${encodedName}&cid=${AGODA_CID}`;
         
         // Ensure promotions array exists
         if (!hotel.promotions) {

@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import Image from "next/image";
-import { MapPin, Star, Phone, Globe, CalendarDays, ExternalLink, Globe2 } from "lucide-react";
+import { MapPin, Star, Phone, Globe, CalendarDays, Globe2 } from "lucide-react";
 
 // 다국어 사전
 const i18n: any = {
@@ -321,26 +321,6 @@ export default function HomeClient({ hotelData }: { hotelData: any }) {
         </footer>
       </main>
 
-      {/* AdSense 명당 3: Bottom Fixed 영역 위 */}
-      <div className="fixed bottom-[90px] w-full max-w-md left-1/2 -translate-x-1/2 flex items-center justify-center z-10 pointer-events-none">
-         <div className="w-[300px] h-[50px] bg-white/80 backdrop-blur-sm border border-gray-300 rounded shadow-sm flex items-center justify-center pointer-events-auto">
-            <span className="text-[10px] text-gray-400">[Ad] {t.adPlaceholder} 3</span>
-         </div>
-      </div>
-
-      {/* Floating Action / Promo Placeholder for Pi Integration */}
-      <div className="fixed bottom-0 w-full max-w-md left-1/2 -translate-x-1/2 bg-white/90 backdrop-blur-xl border-t border-gray-200/60 p-4 pb-6 flex justify-between items-center shadow-[0_-15px_40px_-15px_rgba(0,0,0,0.1)] z-30">
-        <div className="flex flex-col gap-0.5">
-          <span className="text-[10px] font-extrabold tracking-widest text-[#f3b131] uppercase flex items-center gap-1">
-            <span className="w-1.5 h-1.5 rounded-full bg-[#f3b131] animate-pulse"></span>
-            Pi Network
-          </span>
-          <span className="text-[14px] font-bold text-gray-900 leading-tight">파이오니어 전용 패키지</span>
-        </div>
-        <button className="bg-gradient-to-br from-[#f3b131] to-[#d6961c] hover:from-[#fcd26e] hover:to-[#f3b131] text-black font-extrabold text-sm px-6 py-2.5 rounded-full shadow-lg shadow-[#f3b131]/40 transition-all transform hover:scale-105 active:scale-95 flex items-center gap-1.5 ring-2 ring-[#f3b131]/20 ring-offset-2 border border-[#fbd375]/50">
-          <span>Login</span> <ExternalLink size={14} className="opacity-80" />
-        </button>
-      </div>
     </div>
   );
 }

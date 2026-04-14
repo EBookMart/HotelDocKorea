@@ -61,11 +61,12 @@ async function runPipeline() {
         // --- A. Affiliate & Official Link Preparation ---
         if (!hotel.official_link) hotel.official_link = hotel.홈페이지 || '';
         
-        // 아고다 검색 딥링크: 매번 최신 패턴으로 재생성
-        // /ko-kr/search?query=[호텔명]&cid=[제휴ID] → 검색창에 호텔명 자동 입력됨
+        // 아고다 도시명 검색 딥링크: 도시명을 query에 삽입하면 아고다 검색창에 자동 입력됨
+        // 우선순위: 시도 → 세부지역 → 호텔명 (fallback)
         const AGODA_CID = '1896000';
-        const encodedName = encodeURIComponent(hotel.이름);
-        hotel.affiliate_link = `https://www.agoda.com/ko-kr/search?query=${encodedName}&cid=${AGODA_CID}`;
+        const cityName = hotel.시도 || hotel.세부지역 || hotel.이름;
+        const encodedCity = encodeURIComponent(cityName);
+        hotel.affiliate_link = `https://www.agoda.com/ko-kr/search?query=${encodedCity}&cid=${AGODA_CID}`;
         
         // Ensure promotions array exists
         if (!hotel.promotions) {

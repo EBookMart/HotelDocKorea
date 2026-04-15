@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect, useRef } from "react";
 import Image from "next/image";
 import { MapPin, Star, Phone, Globe, CalendarDays, Globe2 } from "lucide-react";
 
@@ -53,6 +53,110 @@ function resolveTitle(titleData: any): string {
   if (typeof titleData === "string") return titleData;
   if (typeof titleData === "object") return titleData.ko || titleData.en || "";
   return "";
+}
+
+// ─────────────────────────────────────────
+// 🌐 번역 엔진: MyMemory API (무료, API키 불필요)
+// - 한 번 번역된 내용은 localStorage에 저장 (화면 이동 후에도 즐시 표시)
+// - 세션 Map으로 추가 캐싱 (페이지 내 돈타린 API 호출 방지)
+// - API 실패 시 한국어 원문(fallback) 표시
+// ─────────────────────────────────────────
+
+// 세션 쫋번째 혹은 다른 탭에서 호출될 수 있어 모듈 레벨 Map으로 유지
+const sessionCache = new Map<string, string>();
+
+// localStorage 키 접두어
+const CACHE_PREFIX = 'hdktrans_';
+
+function getCacheKey(text: string, lang: string) {
+  return `${CACHE_PREFIX}${lang}_${text.slice(0, 30)}`;
+}
+
+async function translateText(text: string, targetLang: string): Promise<string> {
+  if (!text || targetLang === 'ko') return text;
+
+  const key = getCacheKey(text, targetLang);
+
+  // 1. 세션 Map 캐시 확인 (가장 빠름)
+  if (sessionCache.has(key)) return sessionCache.get(key)!;
+
+  // 2. localStorage 해시 연결리스트 캐시 확인 (종료 후에도 유지)
+  try {
+    const cached = localStorage.getItem(key);
+    if (cached) {
+      sessionCache.set(key, cached);
+      return cached;
+    }
+  } catch (_) {}
+
+  // 3. MyMemory 무료 번역 API 호출
+  // 언어 코드: ko→en | ko→ja
+  const langPair = `ko|${targetLang}`;
+  const url = `https://api.mymemory.translated.net/get?q=${encodeURIComponent(text)}&langpair=${langPair}`;
+
+  try {
+    const res = await fetch(url);
+    const data = await res.json();
+    const translated: string = data?.responseData?.translatedText || text;
+
+    // 두 연소에 저장
+    sessionCache.set(key, translated);
+    try { localStorage.setItem(key, translated); } catch (_) {}
+
+    return translated;
+  } catch (err) {
+    console.warn('[Translation] API 호출 실패, 한국어 원문 표시:', text);
+    return text; // Fallback: 한국어 원문
+  }
+}
+
+// ─────────────────────────────────────────
+// 🌐 TranslatedText 컴포넌트
+// - 한 구열의 텍스트를 스켈레톤 로딩 후 번역 될 것
+// - lang === 'ko'이면 번역 없이 원문 바로 표시
+// - 진행체 네임는 className으로 외부에서 주입하여 재사용 가능
+// ─────────────────────────────────────────
+
+function TranslatedText({
+  text,
+  lang,
+  className = '',
+}: {
+  text: string;
+  lang: string;
+  className?: string;
+}) {
+  const [translated, setTranslated] = useState<string>(text);
+  const [loading, setLoading] = useState(false);
+  const prevLang = useRef(lang);
+
+  useEffect(() => {
+    if (lang === 'ko') {
+      setTranslated(text);
+      return;
+    }
+    prevLang.current = lang;
+
+    // 캐시 먼저 확인 (API 호출 최소화)
+    const key = getCacheKey(text, lang);
+    const cached = sessionCache.get(key) ?? (typeof window !== 'undefined' ? localStorage.getItem(key) : null);
+    if (cached) {
+      setTranslated(cached);
+      return;
+    }
+
+    setLoading(true);
+    translateText(text, lang).then(result => {
+      setTranslated(result);
+      setLoading(false);
+    });
+  }, [text, lang]);
+
+  if (loading) {
+    return <span className={`inline-block h-4 w-24 rounded bg-gray-200 animate-pulse ${className}`} />;
+  }
+
+  return <span className={className}>{translated}</span>;
 }
 
 // ─────────────────────────────────────────────
@@ -280,9 +384,9 @@ export default function HomeClient({ hotelData }: { hotelData: any }) {
 
                   <div className="flex justify-between items-start">
                     <div>
-                      <div className="flex items-center gap-2 mb-1">
-                        <h3 className={`text-base font-bold leading-snug group-hover:opacity-80 transition-colors ${isLuxury ? 'text-yellow-800' : 'text-gray-900'}`}>
-                          {hotel.이름}
+                      <div className="flex items-center gap-2 mb-1 flex-wrap">
+                        <h3 className={`text-base font-bold leading-snug break-words min-w-0 group-hover:opacity-80 transition-colors ${isLuxury ? 'text-yellow-800' : 'text-gray-900'}`}>
+                          <TranslatedText text={hotel['\uc774\ub984']} lang={lang} />
                         </h3>
                         {/* 3성급 최저가 강조 뱃지 */}
                         {isBudget && <span className="bg-rose-500 text-white text-[10px] px-1.5 py-0.5 rounded font-extrabold animate-pulse">최저가</span>}
@@ -326,7 +430,7 @@ export default function HomeClient({ hotelData }: { hotelData: any }) {
                                  {theme && (
                                    <span className={`text-[9px] px-1.5 py-0.5 mb-1 rounded-sm w-fit font-bold border ${theme.color}`}>{theme.label}</span>
                                  )}
-                                 <span className="text-xs font-bold text-gray-800 line-clamp-2 leading-tight">{displayTitle}</span>
+                                 <TranslatedText text={displayTitle} lang={lang} className="text-xs font-bold text-gray-800 line-clamp-2 leading-tight" />
                                  <span className="text-[10px] text-gray-500 mt-1 font-medium">{promo.period}</span>
                                </div>
                             </a>

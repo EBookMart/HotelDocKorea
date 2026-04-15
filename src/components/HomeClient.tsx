@@ -55,6 +55,80 @@ function resolveTitle(titleData: any): string {
   return "";
 }
 
+// ─────────────────────────────────────────────
+// 🖼️ 호텔 이미지 카드 서브컴포넌트
+// map() 안에서 useState를 쓰면 React Hook 규칙 위반이므로
+// 별도 컴포넌트로 분리하여 Skeleton UI 상태를 안전하게 관리
+// ─────────────────────────────────────────────
+function HotelImageCard({ imageUrl, hotelName, rating, city, isLuxury, isBudget }: {
+  imageUrl?: string;
+  hotelName: string;
+  rating: string;
+  city: string;
+  isLuxury: boolean;
+  isBudget: boolean;
+}) {
+  const [loaded, setLoaded] = useState(false);
+  const stars = parseInt(rating);
+
+  // 이미지 없을 때 등급별 Unsplash 폴백
+  const fallback = isLuxury
+    ? "https://images.unsplash.com/photo-1566073771259-6a8506099945?w=800&q=80"
+    : isBudget
+    ? "https://images.unsplash.com/photo-1584132967334-10e028bd69f7?w=800&q=80"
+    : "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?w=800&q=80";
+
+  const src = (imageUrl && imageUrl.startsWith('http')) ? imageUrl : fallback;
+
+  return (
+    <div className="relative w-full aspect-video bg-gray-200 overflow-hidden">
+      {/* 스켈레톤 로딩 애니메이션 */}
+      {!loaded && (
+        <div className="absolute inset-0 animate-pulse bg-gradient-to-r from-gray-200 via-gray-100 to-gray-200 bg-[length:200%_100%]" />
+      )}
+
+      {/* 호텔 이미지 (Lazy Loading: Next.js Image 기본 적용) */}
+      <Image
+        src={src}
+        alt={hotelName}
+        fill
+        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+        className={`object-cover transition-opacity duration-700 ${loaded ? 'opacity-100' : 'opacity-0'}`}
+        onLoadingComplete={() => setLoaded(true)}
+      />
+
+      {/* 이미지 하단 그라디언트 오버레이 */}
+      <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
+
+      {/* 좌상단: 도시 뱃지 */}
+      <div className="absolute top-2 left-2">
+        <span className="bg-black/40 backdrop-blur-sm text-white text-[9px] px-2 py-0.5 rounded-full font-semibold">
+          📍 {city}
+        </span>
+      </div>
+
+      {/* 우상단: 등급 뱃지 */}
+      <div className="absolute top-2 right-2">
+        {isLuxury && (
+          <span className="bg-gradient-to-r from-yellow-400 to-amber-500 text-black text-[9px] px-2 py-0.5 rounded-full font-extrabold shadow-md">
+            ★ {stars}성 Premium
+          </span>
+        )}
+        {isBudget && (
+          <span className="bg-rose-500 text-white text-[9px] px-2 py-0.5 rounded-full font-extrabold animate-pulse">
+            {stars}성 최저가
+          </span>
+        )}
+        {!isLuxury && !isBudget && (
+          <span className="bg-indigo-500/80 backdrop-blur-sm text-white text-[9px] px-2 py-0.5 rounded-full font-bold">
+            ★ {stars}성
+          </span>
+        )}
+      </div>
+    </div>
+  );
+}
+
 export default function HomeClient({ hotelData }: { hotelData: any }) {
   const [lang, setLang] = useState<"ko" | "en" | "ja">("ko");
   const regionKeys = ["수도권", "영동권", "부산경남권", "대구경북권", "광주호남(전남, 전북)권", "충청권", "제주도"];
@@ -150,8 +224,8 @@ export default function HomeClient({ hotelData }: { hotelData: any }) {
                     <Image src={pick.img} alt={pick.title} fill className="object-cover" />
                     <div className="absolute top-2 right-2 bg-rose-500 text-white text-[10px] font-extrabold px-1.5 py-0.5 rounded shadow-sm">
                       {pick.discount}
-                    </div>
-                 </div>
+                   </div>
+                  </div>
                  <div className="p-3">
                    <h3 className="font-bold text-gray-800 text-sm truncate">{pick.title}</h3>
                    <p className="text-[10px] text-gray-500 mt-1 line-clamp-2 leading-relaxed">{pick.desc}</p>
@@ -188,14 +262,21 @@ export default function HomeClient({ hotelData }: { hotelData: any }) {
 
               return (
               <div key={index}>
-                {/* 5성급과 3성급의 UI 디자인 차별화 로직 적용 */}
-                <div className={`bg-white rounded-2xl p-5 border flex flex-col gap-3 transition-transform hover:-translate-y-1 duration-200 group relative
-                  ${isLuxury ? 'shadow-xl shadow-yellow-500/10 border-yellow-300 ring-4 ring-yellow-50 overflow-hidden' : 'shadow-md border-gray-200/80'}
+                <div className={`bg-white rounded-2xl border flex flex-col transition-all hover:-translate-y-1 duration-200 group relative overflow-hidden
+                  ${isLuxury ? 'shadow-xl shadow-yellow-500/10 border-yellow-300 ring-2 ring-yellow-100' : 'shadow-md border-gray-200/80'}
                 `}>
-                  
-                  {isLuxury && (
-                    <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-to-bl from-yellow-300/30 to-transparent -z-10 rounded-tr-2xl"></div>
-                  )}
+
+                  {/* 이미지 컴포넌트 */}
+                  <HotelImageCard
+                    imageUrl={hotel.imageUrl}
+                    hotelName={hotel.이름}
+                    rating={activeRating}
+                    city={hotel.시도}
+                    isLuxury={isLuxury}
+                    isBudget={isBudget}
+                  />
+
+                  <div className="p-4 flex flex-col gap-3">
 
                   <div className="flex justify-between items-start">
                     <div>
@@ -279,7 +360,8 @@ export default function HomeClient({ hotelData }: { hotelData: any }) {
                       </div>
                     </div>
                   </div>
-                </div>
+                </div> {/* /p-4 flex flex-col */}
+                </div> {/* /card outer */}
 
                 {/* AdSense 명당 2: In-feed (3번째 리스트 직후) */}
                 {index === 2 && (

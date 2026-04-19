@@ -3,6 +3,10 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --brand-primary: #534AB7;
+  --brand-primary-light: #7F77DD;
+  --brand-pastel-pink: #FADDDC;
+  --brand-pastel-blue: #D4E4F2;
 }
 
 @theme inline {
@@ -19,9 +23,15 @@
   }
 }
 
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
 body {
-  background: var(--background);
-  color: var(--foreground);
+  background-color: #FAFAFA;
+  color: #1A1A1A;
+  min-height: 100vh;
   font-family: Arial, Helvetica, sans-serif;
 }
 

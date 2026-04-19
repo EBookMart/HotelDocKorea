@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 200 200" role="img" aria-label="HotelDocKorea 흰색 로고">
+  <title>HotelDocKorea · White</title>
+  <rect x="10" y="10" width="180" height="180" rx="24" fill="none" stroke="#FFFFFF" stroke-width="1.5"/>
+  <g fill="#FFFFFF">
+    <rect x="33" y="35" width="17" height="118"/>
+    <rect x="33" y="84" width="54" height="17"/>
+    <rect x="70" y="35" width="17" height="118"/>
+  </g>
+  <path d="M 102 35 L 102 153 L 120 153 Q 167 153 167 94 Q 167 35 120 35 Z"
+        fill="none" stroke="#FFFFFF" stroke-width="1.5"/>
+</svg>

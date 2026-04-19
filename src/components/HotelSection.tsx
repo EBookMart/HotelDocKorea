@@ -1,0 +1,205 @@
+"use client";
+
+import Image from "next/image";
+import { useState } from "react";
+import { MapPin, Star, Phone, Globe, CalendarDays } from "lucide-react";
+import { TranslatedText } from "./HomeClient";
+
+function HotelImageCard({ imageUrl, hotelName, rating, city, isLuxury, isBudget, homepageUrl }: {
+  imageUrl?: string;
+  hotelName: string;
+  rating: string;
+  city: string;
+  isLuxury: boolean;
+  isBudget: boolean;
+  homepageUrl?: string;
+}) {
+  const [loaded, setLoaded] = useState(false);
+  const stars = parseInt(rating);
+
+  const isInvalidSource = imageUrl?.includes('source.unsplash.com');
+  const src = (imageUrl && imageUrl.startsWith('http') && !isInvalidSource) ? imageUrl : null;
+
+  return (
+    <div className="relative w-full aspect-video bg-gradient-to-br from-purple-100 to-pink-100 overflow-hidden flex items-center justify-center">
+      {!src && (
+        <div className="text-center mt-3">
+          <span className="text-4xl mb-1 block drop-shadow-sm">🏨</span>
+          <span className="text-[11px] font-bold text-purple-400">이미지 준비 중</span>
+        </div>
+      )}
+      
+      {src && (
+        <>
+          {!loaded && (
+            <div className="absolute inset-0 animate-pulse bg-gradient-to-r from-purple-200 via-pink-100 to-purple-200 bg-[length:200%_100%]" />
+          )}
+          <Image
+            src={src}
+            alt={hotelName}
+            fill
+            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+            className={`object-cover transition-opacity duration-700 ${loaded ? 'opacity-100' : 'opacity-0'}`}
+            onLoadingComplete={() => setLoaded(true)}
+          />
+        </>
+      )}
+
+      <a 
+        href={homepageUrl || '#'} 
+        target="_blank" 
+        rel="noopener noreferrer" 
+        title={`© ${hotelName}, 출처: ${hotelName} 공식 홈페이지`}
+        className="absolute inset-0 z-10 block"
+      >
+        <span className="sr-only">공식 홈페이지로 이동</span>
+      </a>
+
+      {(src || !src) && (
+        <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent pointer-events-none" />
+      )}
+      <div className="absolute top-2 left-2">
+        <span className="bg-black/40 backdrop-blur-sm text-white text-[9px] px-2 py-0.5 rounded-full font-semibold">
+          📍 {city}
+        </span>
+      </div>
+      <div className="absolute top-2 right-2">
+        {isLuxury && (
+          <span className="bg-gradient-to-r from-yellow-400 to-amber-500 text-black text-[9px] px-2 py-0.5 rounded-full font-extrabold shadow-md">
+            ★ {stars}성 Premium
+          </span>
+        )}
+        {isBudget && (
+          <span className="bg-rose-500 text-white text-[9px] px-2 py-0.5 rounded-full font-extrabold animate-pulse">
+            {stars}성 최저가
+          </span>
+        )}
+        {!isLuxury && !isBudget && (
+          <span className="bg-indigo-500/80 backdrop-blur-sm text-white text-[9px] px-2 py-0.5 rounded-full font-bold">
+            ★ {stars}성
+          </span>
+        )}
+      </div>
+    </div>
+  );
+}
+
+export default function HotelSection({ 
+  hotelsList, 
+  activeRating, 
+  lang, 
+  t, 
+  extractTheme, 
+  getPromoTitle,
+  sectionTitle
+}: any) {
+  return (
+    <section>
+      <div className="flex justify-between items-center mb-4">
+        <h2 className="text-xl font-bold text-gray-800 flex items-center gap-2">
+          ⭐ {sectionTitle || '호텔·리조트 프로모션'} 
+          <span className="text-indigo-600 font-extrabold bg-indigo-100/50 px-2.5 py-0.5 rounded-md shadow-inner text-sm">{hotelsList.length}</span>
+          <span className="text-xs font-normal text-gray-500">{t.unit}</span>
+        </h2>
+      </div>
+
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-4">
+        {hotelsList.length > 0 ? (
+          hotelsList.map((hotel: any, index: number) => {
+            const hRating = hotel.rating || activeRating || "3성";
+            const isLuxury = hRating === "5성";
+            const isBudget = hRating === "3성";
+
+            return (
+              <div key={index} className={`bg-white rounded-2xl border flex flex-col transition-all hover:-translate-y-1 duration-200 group relative overflow-hidden ${isLuxury ? 'shadow-lg shadow-yellow-500/10 border-yellow-300 ring-1 ring-yellow-100' : 'shadow-sm border-gray-200'}`}>
+                <HotelImageCard
+                  imageUrl={hotel.imageUrl}
+                  hotelName={hotel.이름}
+                  rating={hRating}
+                  city={hotel.시도}
+                  isLuxury={isLuxury}
+                  isBudget={isBudget}
+                  homepageUrl={hotel.홈페이지 || hotel.official_link}
+                />
+
+                <div className="p-4 flex flex-col gap-3">
+                  <div className="flex justify-between items-start">
+                    <div className="w-[80%]">
+                      <div className="flex items-center gap-2 mb-1 flex-wrap">
+                        <h3 className={`text-[15px] font-bold leading-snug break-words min-w-0 group-hover:opacity-80 transition-colors ${isLuxury ? 'text-yellow-800' : 'text-gray-900'}`}>
+                          <TranslatedText text={hotel['\uc774\ub984']} lang={lang} />
+                        </h3>
+                      </div>
+                      <div className={`flex items-center gap-1.5 text-[11px] mt-1 font-medium tracking-wide w-fit px-2 py-0.5 rounded-md border ${isLuxury ? 'bg-yellow-50/50 border-yellow-100 text-yellow-700' : 'bg-gray-50 border-gray-100 text-gray-500'}`}>
+                        <MapPin size={10} className={isLuxury ? 'text-yellow-600' : 'text-gray-400'} />
+                        {hotel.시도} {hotel.세부지역}
+                      </div>
+                    </div>
+                    <div className={`flex shrink-0 px-1.5 py-1 rounded-lg ${isLuxury ? 'bg-gradient-to-br from-yellow-400 to-yellow-600 text-white shadow-md shadow-yellow-500/30' : 'text-yellow-400 bg-yellow-50'}`}>
+                      <Star size={14} fill="currentColor" />
+                      <span className={`text-[11px] ml-1 mt-0.5 font-bold ${isLuxury ? 'text-white' : 'text-yellow-600'}`}>{parseInt(hotel.rating || activeRating || "3")}</span>
+                    </div>
+                  </div>
+
+                  <div className="flex flex-col gap-2mt-2 pt-3 border-t border-gray-100/80 border-dashed">
+                    {hotel.전화번호 && (
+                      <a href={`tel:${hotel.전화번호}`} className="flex items-center gap-2 text-[11px] text-gray-600 w-fit mb-2">
+                        <Phone size={12} className="text-indigo-400" /> <span>{hotel.전화번호}</span>
+                      </a>
+                    )}
+                    
+                    {hotel.promotions && hotel.promotions.length > 0 && (
+                      <div className="mt-1 flex flex-col gap-2">
+                        <span className="text-[10px] font-extrabold text-rose-500 flex items-center gap-1 bg-rose-50 w-fit px-2 py-0.5 rounded-full">🔥 {t.inProgress}</span>
+                        {hotel.promotions.map((promo: any, idx: number) => {
+                          const displayTitle = getPromoTitle(promo.title);
+                          const theme = extractTheme(promo.title);
+                          
+                          return (
+                            <a href={promo.link} target="_blank" rel="noopener noreferrer" key={idx} className="flex gap-2 bg-gray-50 rounded-xl p-1.5 hover:bg-white transition-all border border-gray-200 shadow-sm relative overflow-hidden">
+                               {promo.imageUrl && (
+                                 <div className="relative w-12 h-12 rounded-lg overflow-hidden shrink-0 bg-gray-200 ring-1 ring-black/5">
+                                   <Image src={promo.imageUrl} alt={displayTitle} fill className="object-cover" sizes="48px" />
+                                 </div>
+                               )}
+                               <div className="flex flex-col justify-center flex-1">
+                                 {theme && (
+                                   <span className={`text-[8px] px-1.5 py-0.5 mb-1 rounded-sm w-fit font-bold border ${theme.color}`}>{theme.label}</span>
+                                 )}
+                                 <TranslatedText text={displayTitle} lang={lang} className="text-[11px] font-bold text-gray-800 line-clamp-2 leading-tight" />
+                                 <span className="text-[9px] text-gray-500 mt-0.5 font-medium">{promo.period}</span>
+                               </div>
+                            </a>
+                          );
+                        })}
+                      </div>
+                    )}
+
+                    <div className="flex gap-2 mt-3 pt-3 border-t border-gray-100">
+                      <a href={hotel.홈페이지 || hotel.official_link || '#'} target="_blank" rel="noopener noreferrer" 
+                         className="flex items-center justify-center gap-1 flex-[0.7] bg-gray-100 border border-gray-200 py-2 rounded-lg text-[11px] font-semibold text-gray-600 hover:bg-gray-200 transition-all">
+                         <Globe size={12} /> {t.official}
+                      </a>
+                      <a href={hotel.affiliate_link || '#'} target="_blank" rel="noopener noreferrer" 
+                         className="flex items-center justify-center gap-1 flex-1 bg-gradient-to-r from-blue-600 via-indigo-600 to-purple-600 py-2 rounded-lg text-[12px] font-extrabold text-white shadow-md shadow-indigo-500/20 hover:brightness-110 transition-all">
+                         <CalendarDays size={14} /> {t.compare}
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            );
+          })
+        ) : (
+          <div className="col-span-full flex flex-col items-center justify-center py-12 text-center bg-white rounded-2xl shadow-sm border border-gray-100">
+            <div className="bg-gray-50 p-4 rounded-full mb-3 shadow-inner">
+               <MapPin size={24} className="text-gray-300" />
+            </div>
+            <p className="font-bold text-gray-800 text-sm">{t.empty}</p>
+            <p className="text-xs mt-1 text-gray-500 font-medium">{t.emptySub}</p>
+          </div>
+        )}
+      </div>
+    </section>
+  );
+}

@@ -14,7 +14,7 @@ export default async function Home() {
   }
 
   return (
-    <div className="bg-gray-900 w-full min-h-screen">
+    <div className="w-full min-h-screen">
       <HomeClient hotelData={hotelData} />
     </div>
   );

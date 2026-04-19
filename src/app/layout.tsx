@@ -21,22 +21,45 @@ export const viewport: Viewport = {
 };
 
 export const metadata: Metadata = {
-  title: "HotelDocKorea - AI Promotion Guide",
-  description: "전국의 3-5성급 호텔 및 리조트 프로모션 정보를 실시간 수집·분석하여 전 세계 사용자에게 최적의 리뷰를 제공합니다. 에어비앤비형 커스텀 최저가 로봇",
-  keywords: ["호텔", "프로모션", "호캉스", "할인", "호텔독코리아", "HotelDocKorea", "파이네트워크", "Pi"],
+  title: {
+    default: "HotelDocKorea — 한국 호텔 프로모션 가이드",
+    template: "%s · HotelDocKorea",
+  },
+  description:
+    "한국 3성급 이상 호텔·리조트 520여 곳의 실시간 프로모션, 주변 축제와 맛집, 기상정보까지 — 여행의 모든 정보를 한 곳에서",
+  keywords: [
+    "한국 호텔", "호텔 프로모션", "리조트", "축제", "여행", "숙박",
+    "Korea hotels", "Korean hotel deals",
+  ],
+  authors: [{ name: "HotelDocKorea" }],
+  icons: {
+    icon: "/favicon.svg",
+    apple: "/apple-touch-icon.svg",
+    shortcut: "/favicon.svg",
+  },
   openGraph: {
-    title: "HotelDocKorea - 실시간 핫딜 특가",
-    description: "AI가 찾은 이번 주 최고의 호텔을 확인하세요.",
+    type: "website",
+    locale: "ko_KR",
+    alternateLocale: ["en_US", "ja_JP", "zh_CN", "es_ES"],
     url: "https://hoteldockorea.com",
     siteName: "HotelDocKorea",
-    images: [{ url: "/icon.svg" }],
-    locale: "ko_KR",
-    type: "website",
+    title: "HotelDocKorea — 한국 호텔 프로모션 가이드",
+    description: "떠나기 전, 가장 먼저 열어보는 호텔 가이드",
+    images: [
+      {
+        url: "/logo.svg",
+        width: 200,
+        height: 200,
+        alt: "HotelDocKorea 로고",
+      },
+    ],
   },
-  manifest: "/manifest.json",
-  icons: {
-    apple: "/icon.svg"
-  }
+  twitter: {
+    card: "summary",
+    title: "HotelDocKorea",
+    description: "Your trusted doc for Korea's best hotel deals",
+    images: ["/logo.svg"],
+  },
 };
 
 export default function RootLayout({
@@ -55,7 +78,7 @@ export default function RootLayout({
            {`/* window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'G-XXXXXXXXXX'); */`}
         </Script>
       </head>
-      <body className="min-h-full flex flex-col bg-gray-50 text-gray-900">
+      <body className="min-h-full flex flex-col">
         <Script 
           src="https://sdk.minepi.com/pi-sdk.js" 
           strategy="beforeInteractive" 

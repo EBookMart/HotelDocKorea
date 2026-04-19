@@ -1,4 +1,4 @@
-const CACHE_NAME = 'hoteldoc-korea-cache-v1';
+const CACHE_NAME = 'hoteldoc-korea-cache-v2';
 const DOMAINS_TO_CACHE = [
   '/',
   '/manifest.json',

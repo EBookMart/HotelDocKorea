@@ -1,0 +1,12 @@
+﻿INPUT:  조선 팰리스 서울 강남, 럭셔리 컬렉션 호텔 (Josun Palace, a Luxury Collection Hotel, Seoul Gangnam)
+OUTPUT: 조선 팰리스 서울 강남
+
+INPUT:  그랜드 하얏트 인천 호텔 (Grand Hyatt Incheon)
+OUTPUT: 그랜드 하얏트 인천
+
+INPUT:  신라 스테이 서울 여의도
+OUTPUT: 신라 스테이 서울 여의도
+
+INPUT:  파크 하얏트 서울 (Park Hyatt Seoul)
+OUTPUT: 파크 하얏트 서울
+

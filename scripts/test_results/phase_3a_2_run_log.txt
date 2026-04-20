@@ -1,0 +1,21 @@
+﻿======================================================================
+Phase 3A-2: 전체 호텔 매칭 실행
+======================================================================
+전체 호텔 수: 520개
+.\venv\Scripts\python : Traceback (most recent call last):
+위치 줄:1 문자:1
++ .\venv\Scripts\python scripts/tour_api_matcher.py --all 2>&1 | Out-Fi ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (Traceback (most recent call last)::String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+  File "D:\HotelDocKorea\scripts\tour_api_matcher.py", line 632, in <module>
+    main()
+    ~~~~^^
+  File "D:\HotelDocKorea\scripts\tour_api_matcher.py", line 624, in main
+    run_all(resume=args.resume)
+    ~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "D:\HotelDocKorea\scripts\tour_api_matcher.py", line 482, in run_all
+    for i, hotel in enumerate(tqdm(all_hotels, desc="Matching")):
+                              ^^^^
+NameError: name 'tqdm' is not defined

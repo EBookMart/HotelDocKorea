@@ -1,0 +1,4 @@
+﻿'조선팰리스강남' -> 0gun: []
+'조선 팰리스강남' -> 0gun: []
+'조선 팰리스 강남' -> 0gun: []
+'조선 팰리스' -> 1gun: ['조선 팰리스 서울 강남, 럭셔리 컬렉션 호텔 (Josun Palace, a Luxury Collection Hotel, Seoul Gangnam)']

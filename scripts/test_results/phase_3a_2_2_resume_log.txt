@@ -1,0 +1,13 @@
+﻿======================================================================
+Phase 3A-2: 전체 호텔 매칭 실행
+======================================================================
+전체 호텔 수: 520개
+[Resume] 기존 440개 호텔 건너뜀
+venv\Scripts\python : 
+위치 줄:1 문자:1
++ venv\Scripts\python scripts\tour_api_matcher.py --all --resume 2>&1 | ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+Matching:   0%|          | 0/520 [00:00<?, ?it/s]

@@ -220,11 +220,13 @@ def generate_search_keywords(
     hotel_address: Optional[str] = None
 ) -> List[str]:
     """
-    4단계 fallback 검색 키워드 생성 (브랜드 사전 적용버전)
+    5단계 fallback 검색 키워드 생성 (브랜드 사전 적용버전)
     1단계: 원본 정규화
     2단계: '호텔', '리조트' 등 공통어 제거
     3단계: 브랜드 사전 적용 (붙여쓰기 → 공백)
     4단계: 지역 접미사 제거 + 주소 결합
+    5단계: 법인명+브랜드명 복합 패턴 → 핵심 브랜드만 추출
+            (예: '조선호텔앤리조트 그랜드조선 제주' → '그랜드조선 제주')
     """
     keywords = []
     normalized = normalize_hotel_name(hotel_name)
@@ -270,6 +272,21 @@ def generate_search_keywords(
             if trimmed and trimmed not in keywords and len(trimmed) >= 2:
                 keywords.append(trimmed)
                 break
+
+    # 5단계: 법인명+브랜드명 복합 패턴 처리
+    # 예: '조선호텔앤리조트 그랜드조선 제주' → 첫 단어 제거 후 나머지만 추출
+    _CORP_PREFIX_WORDS = {
+        '조선호텔앤리조트', '호텔롯데', '호텔신라', '롯데호텔앤리조트',
+        '파라다이스', '교원그룹', '교원',
+    }
+    parts = normalized.split()
+    if len(parts) >= 2 and parts[0] in _CORP_PREFIX_WORDS:
+        remainder = ' '.join(parts[1:])
+        if remainder and remainder not in keywords and len(remainder) >= 2:
+            keywords.append(remainder)
+        remainder_dict = apply_brand_dictionary(remainder)
+        if remainder_dict and remainder_dict not in keywords and len(remainder_dict) >= 2:
+            keywords.append(remainder_dict)
 
     # 주소 기반 지역 결합 (마지막 보조)
     if hotel_address:

@@ -39,3 +39,29 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+.env
+.env.local
+.env.production
+.env*.local
+
+# ===========================================
+# 개인 참고 문서 및 민감 정보 (커밋 방지)
+# ===========================================
+
+# API 키나 크리덴셜이 담길 수 있는 개인 문서
+*.docx
+*.pdf
+
+# 환경변수 파일
+.env
+.env.local
+.env.production
+.env*.local
+
+# Windows 시스템 파일
+desktop.ini
+Thumbs.db
+
+# macOS 시스템 파일
+.DS_Store

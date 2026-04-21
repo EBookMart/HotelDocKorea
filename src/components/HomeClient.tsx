@@ -198,15 +198,25 @@ export default function HomeClient({ hotelData }: { hotelData: any }) {
     }
   });
 
-  // 검색어 필터링 확장: 이름 + 주소 + 지역명 통합 검색
+  // 검색어 필터링 확장: 이름 + 주소 + 지역명 + 권역 등 통합 검색
   if (searchQuery.trim() !== "") {
     const q = searchQuery.toLowerCase().replace(/\s+/g, "");
     hotelsList = hotelsList.filter((h: any) => {
-      const name = resolveTitle(h.name || h.hotelName || h.호텔명 || "").toLowerCase().replace(/\s+/g, "");
-      const addr = (h.address || h.주소 || "").toLowerCase().replace(/\s+/g, "");
-      const region = (h.region || "").toLowerCase().replace(/\s+/g, "");
+      const searchableText = [
+        h.이름,
+        h.name,
+        h.hotelName,
+        h.address,
+        h.주소,
+        h.region,
+        h.권역,
+        h.city,
+        h.세부지역,
+        h.tourApiAddress,
+        h.tourApiTitle
+      ].filter(Boolean).join(" ").toLowerCase().replace(/\s+/g, "");
       
-      return name.includes(q) || addr.includes(q) || region.includes(q);
+      return searchableText.includes(q);
     });
   }
 

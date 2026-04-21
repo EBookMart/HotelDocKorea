@@ -1,0 +1,26 @@
+[
+  {
+    "target": "조선팰리스강남",
+    "exact_name": "조선팰리스강남",
+    "region": "수도권",
+    "has_img": true
+  },
+  {
+    "target": "그랜드 인터컨티넨탈 서울 파르나스",
+    "exact_name": "그랜드 인터컨티넨탈 서울 파르나스",
+    "region": "수도권",
+    "has_img": true
+  },
+  {
+    "target": "소노캄 고양",
+    "exact_name": "소노캄 고양",
+    "region": "수도권",
+    "has_img": true
+  },
+  {
+    "target": "그랜드 조선 부산",
+    "exact_name": "그랜드조선 부산",
+    "region": "부산경남권",
+    "has_img": true
+  }
+]

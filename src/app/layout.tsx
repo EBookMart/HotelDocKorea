@@ -73,12 +73,11 @@ export default function RootLayout({
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
       {/* Cloudflare or GA4 Web Analytics Placeholder */}
-      <head>
+      <head />
+      <body className="min-h-full flex flex-col">
         <Script id="analytics-init" strategy="lazyOnload">
            {`/* window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'G-XXXXXXXXXX'); */`}
         </Script>
-      </head>
-      <body className="min-h-full flex flex-col">
         <Script 
           src="https://sdk.minepi.com/pi-sdk.js" 
           strategy="beforeInteractive" 

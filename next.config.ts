@@ -7,6 +7,14 @@ const nextConfig: NextConfig = {
         protocol: 'https',
         hostname: '**',
       },
+      {
+        protocol: 'http',
+        hostname: 'tong.visitkorea.or.kr',
+      },
+      {
+        protocol: 'https',
+        hostname: 'tong.visitkorea.or.kr',
+      },
     ],
   },
 };

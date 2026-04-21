@@ -1,0 +1,36 @@
+{
+  "promotions": [
+    {
+      "hotelName": "조선팰리스강남",
+      "promoTitle": "강남 프리미엄 스테이",
+      "discount": "25% 혜택",
+      "active": true,
+      "startDate": "2026-04-01",
+      "endDate": "2026-12-31"
+    },
+    {
+      "hotelName": "그랜드 인터컨티넨탈 서울 파르나스",
+      "promoTitle": "비즈니스 & 럭셔리 패키지",
+      "discount": "최대 30%",
+      "active": true,
+      "startDate": "2026-04-01",
+      "endDate": "2026-12-31"
+    },
+    {
+      "hotelName": "소노캄 고양",
+      "promoTitle": "도심 속 리조트 휴양",
+      "discount": "40% 특가",
+      "active": true,
+      "startDate": "2026-04-01",
+      "endDate": "2026-12-31"
+    },
+    {
+      "hotelName": "그랜드 조선 부산",
+      "promoTitle": "오션뷰 스위트 + 디너",
+      "discount": "30%",
+      "active": true,
+      "startDate": "2026-04-01",
+      "endDate": "2026-12-31"
+    }
+  ]
+}

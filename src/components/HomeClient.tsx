@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import { useState, useEffect, useRef } from "react";
-import { MapPin, Globe2 } from "lucide-react";
+import { MapPin, Globe2, Search } from "lucide-react";
 import HotelSection from "./HotelSection";
 import FestivalsSection from "./FestivalsSection";
 import NearbySection from "./NearbySection";
@@ -170,6 +170,7 @@ export default function HomeClient({ hotelData }: { hotelData: any }) {
 
   const [activeRegionIndex, setActiveRegionIndex] = useState<number | null>(null);
   const [selectedGrade, setSelectedGrade] = useState<number | null>(null);
+  const [searchQuery, setSearchQuery] = useState("");
 
   // Alert handler for mock languages
   const handleUnsupportedLang = (e: React.MouseEvent, l: string) => {
@@ -196,6 +197,18 @@ export default function HomeClient({ hotelData }: { hotelData: any }) {
       });
     }
   });
+
+  // 검색어 필터링 확장: 이름 + 주소 + 지역명 통합 검색
+  if (searchQuery.trim() !== "") {
+    const q = searchQuery.toLowerCase().replace(/\s+/g, "");
+    hotelsList = hotelsList.filter((h: any) => {
+      const name = resolveTitle(h.name || h.hotelName || h.호텔명 || "").toLowerCase().replace(/\s+/g, "");
+      const addr = (h.address || h.주소 || "").toLowerCase().replace(/\s+/g, "");
+      const region = (h.region || "").toLowerCase().replace(/\s+/g, "");
+      
+      return name.includes(q) || addr.includes(q) || region.includes(q);
+    });
+  }
 
   if (selectedGrade === null) {
     // 내림차순 정렬 (5성 -> 4성 -> 3성)
@@ -269,33 +282,58 @@ export default function HomeClient({ hotelData }: { hotelData: any }) {
             </div>
           </div>
 
-          {/* Regions Tab — 모바일: 가로 스크롤 / PC: 자연스럽게 펼쳐지는 flex-wrap */}
-          <div className="flex flex-wrap gap-2 mt-5 pb-1">
-            <button
-              onClick={() => setActiveRegionIndex(null)}
-              className={`px-4 py-2 text-sm font-semibold rounded-full transition-all duration-300 shadow flex items-center gap-1.5 ${
-                activeRegionIndex === null
-                  ? "bg-white text-indigo-700 font-bold shadow-md"
-                  : "bg-white/10 text-indigo-100 border border-white/20 hover:bg-white/20 active:scale-95 backdrop-blur-sm"
-              }`}
-            >
-              <Globe2 size={14} className={activeRegionIndex === null ? "text-blue-500" : "text-indigo-300"} />
-              전국
-            </button>
-            {Object.values(t.regions).map((regionName: string, index: number) => (
+          {/* Regions Tab & Search Interface */}
+          <div className="flex flex-col lg:flex-row lg:items-center justify-between gap-4 mt-5 pb-1">
+            {/* Regions Tab — 모바일: 가로 스크롤 / PC: 자연스럽게 펼쳐지는 flex-wrap */}
+            <div className="flex flex-wrap gap-2">
               <button
-                key={index}
-                onClick={() => setActiveRegionIndex(index)}
+                onClick={() => setActiveRegionIndex(null)}
                 className={`px-4 py-2 text-sm font-semibold rounded-full transition-all duration-300 shadow flex items-center gap-1.5 ${
-                  activeRegionIndex === index
+                  activeRegionIndex === null
                     ? "bg-white text-indigo-700 font-bold shadow-md"
                     : "bg-white/10 text-indigo-100 border border-white/20 hover:bg-white/20 active:scale-95 backdrop-blur-sm"
                 }`}
               >
-                <MapPin size={14} className={activeRegionIndex === index ? "text-blue-500" : "text-indigo-300"} />
-                {regionName}
+                <Globe2 size={14} className={activeRegionIndex === null ? "text-blue-500" : "text-indigo-300"} />
+                전국
               </button>
-            ))}
+              {Object.values(t.regions).map((regionName: string, index: number) => (
+                <button
+                  key={index}
+                  onClick={() => setActiveRegionIndex(index)}
+                  className={`px-4 py-2 text-sm font-semibold rounded-full transition-all duration-300 shadow flex items-center gap-1.5 ${
+                    activeRegionIndex === index
+                      ? "bg-white text-indigo-700 font-bold shadow-md"
+                      : "bg-white/10 text-indigo-100 border border-white/20 hover:bg-white/20 active:scale-95 backdrop-blur-sm"
+                  }`}
+                >
+                  <MapPin size={14} className={activeRegionIndex === index ? "text-blue-500" : "text-indigo-300"} />
+                  {regionName}
+                </button>
+              ))}
+            </div>
+
+            {/* 오른쪽 끝 검색창 */}
+            <div className="relative w-full lg:w-72 group">
+              <div className="absolute inset-y-0 left-0 pl-3.5 flex items-center pointer-events-none">
+                <Search size={16} className="text-indigo-200 group-focus-within:text-white transition-colors" />
+              </div>
+              <input
+                type="text"
+                placeholder="호텔 이름을 검색해 보세요"
+                value={searchQuery}
+                onChange={(e) => setSearchQuery(e.target.value)}
+                className="w-full bg-white/10 border border-white/20 text-white placeholder:text-white/50 text-sm rounded-full py-2.5 pl-10 pr-4 focus:outline-none focus:ring-2 focus:ring-white/40 focus:bg-white/20 transition-all backdrop-blur-sm shadow-inner"
+              />
+              {searchQuery && (
+                <button 
+                  onClick={() => setSearchQuery("")}
+                  className="absolute inset-y-0 right-0 pr-3.5 flex items-center text-white/50 hover:text-white transition-colors"
+                >
+                  <span className="text-lg leading-none">×</span>
+                </button>
+              )}
+            </div>
           </div>
         </div>
       </header>

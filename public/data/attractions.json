@@ -1,0 +1,92 @@
+{
+  "attractions": [
+    {
+      "id": "gwangjang-market",
+      "category": "food",
+      "icon": "🍜",
+      "name": "광장시장 먹거리",
+      "address": "서울 종로구",
+      "tag": "전통시장",
+      "region": "수도권",
+      "active": true,
+      "i18n": {}
+    },
+    {
+      "id": "gangnam-michelin",
+      "category": "food",
+      "icon": "⭐",
+      "name": "강남 미슐랭 레스토랑",
+      "address": "서울 강남구",
+      "tag": "파인다이닝",
+      "region": "수도권",
+      "active": true,
+      "i18n": {}
+    },
+    {
+      "id": "itaewon-global-food",
+      "category": "food",
+      "icon": "🌮",
+      "name": "이태원 세계음식거리",
+      "address": "서울 용산구",
+      "tag": "세계음식",
+      "region": "수도권",
+      "active": true,
+      "i18n": {}
+    },
+    {
+      "id": "mapo-hanu-alley",
+      "category": "food",
+      "icon": "🍖",
+      "name": "마포 한우 골목",
+      "address": "서울 마포구",
+      "tag": "한식",
+      "region": "수도권",
+      "active": true,
+      "i18n": {}
+    },
+    {
+      "id": "gyeongbokgung-palace",
+      "category": "attraction",
+      "icon": "🏯",
+      "name": "경복궁",
+      "address": "서울 종로구",
+      "tag": "궁궐",
+      "region": "수도권",
+      "active": true,
+      "i18n": {}
+    },
+    {
+      "id": "namsan-seoul-tower",
+      "category": "attraction",
+      "icon": "🗼",
+      "name": "남산서울타워",
+      "address": "서울 중구",
+      "tag": "전망대",
+      "region": "수도권",
+      "active": true,
+      "i18n": {}
+    },
+    {
+      "id": "bukchon-hanok-village",
+      "category": "attraction",
+      "icon": "🏘️",
+      "name": "북촌한옥마을",
+      "address": "서울 종로구",
+      "tag": "전통마을",
+      "region": "수도권",
+      "active": true,
+      "i18n": {}
+    },
+    {
+      "id": "national-museum-korea",
+      "category": "attraction",
+      "icon": "🎨",
+      "name": "국립중앙박물관",
+      "address": "서울 용산구",
+      "tag": "박물관",
+      "region": "수도권",
+      "active": true,
+      "i18n": {}
+    }
+  ]
+}

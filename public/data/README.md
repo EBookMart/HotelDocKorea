@@ -25,3 +25,61 @@
 ## 3. 자동 노출 로직
 - `active`가 `true`이고, 오늘 날짜가 `startDate`와 `endDate` 사이인 항목만 최대 4개 노출됩니다.
 - 조건에 맞는 프로모션이 4개 미만인 경우, 시스템이 자동으로 5성급 호텔 중 이미지가 있는 곳을 채워넣습니다.
+
+---
+
+## 4. 축제·공연·행사 관리 (festivals.json)
+
+### 파일 위치
+`public/data/festivals.json`
+
+### 새 축제 추가 방법
+1. `festivals.json` 열기
+2. `festivals` 배열 안에 새 항목 추가:
+```json
+{
+  "id": "고유한-영문-ID",
+  "icon": "🎉",
+  "name": "축제 이름",
+  "period": "2026.05.01 ~ 05.07",
+  "startDate": "2026-05-01",
+  "endDate": "2026-05-07",
+  "location": "개최 장소",
+  "description": "한 줄 설명",
+  "region": "수도권",
+  "active": true,
+  "i18n": {}
+}
+```
+3. 저장 후 브라우저 새로고침 시 자동 반영됩니다.
+
+### 주의사항
+- **종료일 자동 제거**: `endDate`가 오늘보다 이전이면 목록에서 자동으로 제외됩니다.
+- **Region**: "수도권", "영동권", "부산경남권", "대구경북권", "광주호남권", "충청권", "제주도" 중 하나를 사용하세요.
+
+## 5. 맛집·관광지 관리 (attractions.json)
+
+### 파일 위치
+`public/data/attractions.json`
+
+### 새 장소 추가 방법
+1. `attractions.json` 열기
+2. `attractions` 배열 안에 새 항목 추가:
+```json
+{
+  "id": "고유한-영문-ID",
+  "category": "food",
+  "icon": "🍴",
+  "name": "장소명",
+  "address": "주소",
+  "tag": "카테고리 태그",
+  "region": "수도권",
+  "active": true,
+  "i18n": {}
+}
+```
+
+### 필수 필드
+- **category**: `"food"`(맛집) 또는 `"attraction"`(관광지) 중 선택
+- **id**: 영문+하이픈 조합의 중복되지 않는 고유 키
+

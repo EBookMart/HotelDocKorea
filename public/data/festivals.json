@@ -1,0 +1,69 @@
+{
+  "festivals": [
+    {
+      "id": "spring-flower-2026",
+      "icon": "🌸",
+      "name": "서울 봄꽃축제 2026",
+      "period": "2026.04.01 ~ 04.15",
+      "startDate": "2026-04-01",
+      "endDate": "2026-04-15",
+      "location": "여의도 한강공원",
+      "description": "벚꽃과 다채로운 봄꽃을 즐기는 서울 대표 축제",
+      "region": "수도권",
+      "active": true,
+      "i18n": {}
+    },
+    {
+      "id": "hangang-fireworks-2026",
+      "icon": "🎆",
+      "name": "한강 불꽃축제",
+      "period": "2026.05.04",
+      "startDate": "2026-05-04",
+      "endDate": "2026-05-04",
+      "location": "여의도 한강공원",
+      "description": "세계 각국의 불꽃 연출이 한강 위를 수놓는다",
+      "region": "수도권",
+      "active": true,
+      "i18n": {}
+    },
+    {
+      "id": "insadong-traditional-2026",
+      "icon": "🎨",
+      "name": "인사동 전통문화 주간",
+      "period": "2026.04.20 ~ 04.27",
+      "startDate": "2026-04-20",
+      "endDate": "2026-04-27",
+      "location": "인사동 일대",
+      "description": "전통 공예·다도·한복 체험 프로그램 진행",
+      "region": "수도권",
+      "active": true,
+      "i18n": {}
+    },
+    {
+      "id": "jeju-canola-2026",
+      "icon": "🌻",
+      "name": "제주 유채꽃 축제",
+      "period": "2026.04.05 ~ 04.20",
+      "startDate": "2026-04-05",
+      "endDate": "2026-04-20",
+      "location": "제주 가시리",
+      "description": "노란 유채꽃 물결이 장관을 이루는 봄 축제",
+      "region": "제주도",
+      "active": true,
+      "i18n": {}
+    },
+    {
+      "id": "busan-theatre-2026",
+      "icon": "🎭",
+      "name": "부산국제연극제",
+      "period": "2026.05.01 ~ 05.10",
+      "startDate": "2026-05-01",
+      "endDate": "2026-05-10",
+      "location": "부산 해운대·광안리",
+      "description": "세계 각국 극단의 초청 공연",
+      "region": "부산경남권",
+      "active": true,
+      "i18n": {}
+    }
+  ]
+}

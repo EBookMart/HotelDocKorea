@@ -27,7 +27,11 @@
             "id": "5a0dbb97d410273148a3996687d344d2",
             "hotelBrand": "대명소노",
             "endDate": "2024-08-31",
+<<<<<<< HEAD
             "scrapedAt": "2026-04-23T17:11:24.813Z"
+=======
+            "scrapedAt": "2026-04-22T19:58:30.566Z"
+>>>>>>> 875658e96950b06fb1fcc881df92162dd8e37575
           }
         ],
         "tourApiMatched": true,
@@ -181,7 +185,11 @@
             "id": "19f22f36a3935ff05dbaf85ff2f268cb",
             "hotelBrand": "조선호텔",
             "endDate": "2024-10-31",
+<<<<<<< HEAD
             "scrapedAt": "2026-04-23T17:11:24.813Z"
+=======
+            "scrapedAt": "2026-04-22T19:58:30.566Z"
+>>>>>>> 875658e96950b06fb1fcc881df92162dd8e37575
           },
           {
             "title": {
@@ -196,7 +204,11 @@
             "id": "e9f9aa5d550e7a0c7b716dae8fc0372b",
             "hotelBrand": "조선호텔",
             "endDate": "2024-08-31",
+<<<<<<< HEAD
             "scrapedAt": "2026-04-23T17:11:24.813Z"
+=======
+            "scrapedAt": "2026-04-22T19:58:30.566Z"
+>>>>>>> 875658e96950b06fb1fcc881df92162dd8e37575
           }
         ],
         "tourApiMatched": true,
@@ -363,7 +375,11 @@
             "id": "8fa97e2362d6df6e545ec1f429fa5189",
             "hotelBrand": "롯데호텔",
             "endDate": "2024-06-30",
+<<<<<<< HEAD
             "scrapedAt": "2026-04-23T17:11:24.502Z"
+=======
+            "scrapedAt": "2026-04-22T19:58:30.497Z"
+>>>>>>> 875658e96950b06fb1fcc881df92162dd8e37575
           },
           {
             "title": {
@@ -378,7 +394,11 @@
             "id": "e2aed8d0adb9aa338250407aa2f7181c",
             "hotelBrand": "롯데호텔",
             "endDate": "2024-12-31",
+<<<<<<< HEAD
             "scrapedAt": "2026-04-23T17:11:24.504Z"
+=======
+            "scrapedAt": "2026-04-22T19:58:30.497Z"
+>>>>>>> 875658e96950b06fb1fcc881df92162dd8e37575
           }
         ],
         "tourApiMatched": false,
@@ -664,7 +684,11 @@
             "id": "9370e86c69ab075943caafbdf03b5730",
             "hotelBrand": "신라호텔",
             "endDate": "2024-08-30",
+<<<<<<< HEAD
             "scrapedAt": "2026-04-23T17:11:24.813Z"
+=======
+            "scrapedAt": "2026-04-22T19:58:30.566Z"
+>>>>>>> 875658e96950b06fb1fcc881df92162dd8e37575
           },
           {
             "title": {
@@ -679,7 +703,11 @@
             "id": "1759a346a8ac8c58080f32468334b726",
             "hotelBrand": "신라호텔",
             "endDate": "2024-12-31",
+<<<<<<< HEAD
             "scrapedAt": "2026-04-23T17:11:24.813Z"
+=======
+            "scrapedAt": "2026-04-22T19:58:30.566Z"
+>>>>>>> 875658e96950b06fb1fcc881df92162dd8e37575
           }
         ],
         "tourApiMatched": false,
@@ -826,7 +854,11 @@
             "id": "19f22f36a3935ff05dbaf85ff2f268cb",
             "hotelBrand": "조선호텔",
             "endDate": "2024-10-31",
+<<<<<<< HEAD
             "scrapedAt": "2026-04-23T17:11:24.813Z"
+=======
+            "scrapedAt": "2026-04-22T19:58:30.566Z"
+>>>>>>> 875658e96950b06fb1fcc881df92162dd8e37575
           },
           {
             "title": {
@@ -841,7 +873,11 @@
             "id": "e9f9aa5d550e7a0c7b716dae8fc0372b",
             "hotelBrand": "조선호텔",
             "endDate": "2024-08-31",
+<<<<<<< HEAD
             "scrapedAt": "2026-04-23T17:11:24.813Z"
+=======
+            "scrapedAt": "2026-04-22T19:58:30.566Z"
+>>>>>>> 875658e96950b06fb1fcc881df92162dd8e37575
           }
         ],
         "tourApiMatched": true,
@@ -877,7 +913,11 @@
             "id": "8fa97e2362d6df6e545ec1f429fa5189",
             "hotelBrand": "롯데호텔",
             "endDate": "2024-06-30",
+<<<<<<< HEAD
             "scrapedAt": "2026-04-23T17:11:24.502Z"
+=======
+            "scrapedAt": "2026-04-22T19:58:30.497Z"
+>>>>>>> 875658e96950b06fb1fcc881df92162dd8e37575
           },
           {
             "title": {
@@ -892,7 +932,11 @@
             "id": "e2aed8d0adb9aa338250407aa2f7181c",
             "hotelBrand": "롯데호텔",
             "endDate": "2024-12-31",
+<<<<<<< HEAD
             "scrapedAt": "2026-04-23T17:11:24.504Z"
+=======
+            "scrapedAt": "2026-04-22T19:58:30.497Z"
+>>>>>>> 875658e96950b06fb1fcc881df92162dd8e37575
           }
         ],
         "tourApiMatched": false,
@@ -1116,7 +1160,11 @@
             "id": "19f22f36a3935ff05dbaf85ff2f268cb",
             "hotelBrand": "조선호텔",
             "endDate": "2024-10-31",
+<<<<<<< HEAD
             "scrapedAt": "2026-04-23T17:11:24.813Z"
+=======
+            "scrapedAt": "2026-04-22T19:58:30.566Z"
+>>>>>>> 875658e96950b06fb1fcc881df92162dd8e37575
           },
           {
             "title": {
@@ -1131,7 +1179,11 @@
             "id": "e9f9aa5d550e7a0c7b716dae8fc0372b",
             "hotelBrand": "조선호텔",
             "endDate": "2024-08-31",
+<<<<<<< HEAD
             "scrapedAt": "2026-04-23T17:11:24.813Z"
+=======
+            "scrapedAt": "2026-04-22T19:58:30.566Z"
+>>>>>>> 875658e96950b06fb1fcc881df92162dd8e37575
           }
         ],
         "tourApiMatched": false,
@@ -1411,7 +1463,11 @@
             "id": "8fa97e2362d6df6e545ec1f429fa5189",
             "hotelBrand": "롯데호텔",
             "endDate": "2024-06-30",
+<<<<<<< HEAD
             "scrapedAt": "2026-04-23T17:11:24.502Z"
+=======
+            "scrapedAt": "2026-04-22T19:58:30.497Z"
+>>>>>>> 875658e96950b06fb1fcc881df92162dd8e37575
           },
           {
             "title": {
@@ -1426,7 +1482,11 @@
             "id": "e2aed8d0adb9aa338250407aa2f7181c",
             "hotelBrand": "롯데호텔",
             "endDate": "2024-12-31",
+<<<<<<< HEAD
             "scrapedAt": "2026-04-23T17:11:24.504Z"
+=======
+            "scrapedAt": "2026-04-22T19:58:30.497Z"
+>>>>>>> 875658e96950b06fb1fcc881df92162dd8e37575
           }
         ],
         "tourApiMatched": false,
@@ -1497,7 +1557,11 @@
             "id": "9370e86c69ab075943caafbdf03b5730",
             "hotelBrand": "신라호텔",
             "endDate": "2024-08-30",
+<<<<<<< HEAD
             "scrapedAt": "2026-04-23T17:11:24.813Z"
+=======
+            "scrapedAt": "2026-04-22T19:58:30.566Z"
+>>>>>>> 875658e96950b06fb1fcc881df92162dd8e37575
           },
           {
             "title": {
@@ -1512,7 +1576,11 @@
             "id": "1759a346a8ac8c58080f32468334b726",
             "hotelBrand": "신라호텔",
             "endDate": "2024-12-31",
+<<<<<<< HEAD
             "scrapedAt": "2026-04-23T17:11:24.813Z"
+=======
+            "scrapedAt": "2026-04-22T19:58:30.566Z"
+>>>>>>> 875658e96950b06fb1fcc881df92162dd8e37575
           }
         ],
         "tourApiMatched": true,
@@ -1732,7 +1800,11 @@
             "id": "8fa97e2362d6df6e545ec1f429fa5189",
             "hotelBrand": "롯데호텔",
             "endDate": "2024-06-30",
+<<<<<<< HEAD
             "scrapedAt": "2026-04-23T17:11:24.502Z"
+=======
+            "scrapedAt": "2026-04-22T19:58:30.497Z"
+>>>>>>> 875658e96950b06fb1fcc881df92162dd8e37575
           },
           {
             "title": {
@@ -1747,7 +1819,11 @@
             "id": "e2aed8d0adb9aa338250407aa2f7181c",
             "hotelBrand": "롯데호텔",
             "endDate": "2024-12-31",
+<<<<<<< HEAD
             "scrapedAt": "2026-04-23T17:11:24.504Z"
+=======
+            "scrapedAt": "2026-04-22T19:58:30.497Z"
+>>>>>>> 875658e96950b06fb1fcc881df92162dd8e37575
           }
         ],
         "tourApiMatched": false,
@@ -1909,7 +1985,11 @@
             "id": "9370e86c69ab075943caafbdf03b5730",
             "hotelBrand": "신라호텔",
             "endDate": "2024-08-30",
+<<<<<<< HEAD
             "scrapedAt": "2026-04-23T17:11:24.813Z"
+=======
+            "scrapedAt": "2026-04-22T19:58:30.566Z"
+>>>>>>> 875658e96950b06fb1fcc881df92162dd8e37575
           },
           {
             "title": {
@@ -1924,7 +2004,11 @@
             "id": "1759a346a8ac8c58080f32468334b726",
             "hotelBrand": "신라호텔",
             "endDate": "2024-12-31",
+<<<<<<< HEAD
             "scrapedAt": "2026-04-23T17:11:24.813Z"
+=======
+            "scrapedAt": "2026-04-22T19:58:30.566Z"
+>>>>>>> 875658e96950b06fb1fcc881df92162dd8e37575
           }
         ],
         "tourApiMatched": false,
@@ -2095,7 +2179,11 @@
             "id": "19f22f36a3935ff05dbaf85ff2f268cb",
             "hotelBrand": "조선호텔",
             "endDate": "2024-10-31",
+<<<<<<< HEAD
             "scrapedAt": "2026-04-23T17:11:24.813Z"
+=======
+            "scrapedAt": "2026-04-22T19:58:30.566Z"
+>>>>>>> 875658e96950b06fb1fcc881df92162dd8e37575
           },
           {
             "title": {
@@ -2110,7 +2198,11 @@
             "id": "e9f9aa5d550e7a0c7b716dae8fc0372b",
             "hotelBrand": "조선호텔",
             "endDate": "2024-08-31",
+<<<<<<< HEAD
             "scrapedAt": "2026-04-23T17:11:24.813Z"
+=======
+            "scrapedAt": "2026-04-22T19:58:30.566Z"
+>>>>>>> 875658e96950b06fb1fcc881df92162dd8e37575
           }
         ],
         "tourApiMatched": true,
@@ -2222,7 +2314,11 @@
             "id": "19f22f36a3935ff05dbaf85ff2f268cb",
             "hotelBrand": "조선호텔",
             "endDate": "2024-10-31",
+<<<<<<< HEAD
             "scrapedAt": "2026-04-23T17:11:24.813Z"
+=======
+            "scrapedAt": "2026-04-22T19:58:30.566Z"
+>>>>>>> 875658e96950b06fb1fcc881df92162dd8e37575
           },
           {
             "title": {
@@ -2237,7 +2333,11 @@
             "id": "e9f9aa5d550e7a0c7b716dae8fc0372b",
             "hotelBrand": "조선호텔",
             "endDate": "2024-08-31",
+<<<<<<< HEAD
             "scrapedAt": "2026-04-23T17:11:24.813Z"
+=======
+            "scrapedAt": "2026-04-22T19:58:30.566Z"
+>>>>>>> 875658e96950b06fb1fcc881df92162dd8e37575
           }
         ],
         "tourApiMatched": true,
@@ -2273,7 +2373,11 @@
             "id": "8fa97e2362d6df6e545ec1f429fa5189",
             "hotelBrand": "롯데호텔",
             "endDate": "2024-06-30",
+<<<<<<< HEAD
             "scrapedAt": "2026-04-23T17:11:24.502Z"
+=======
+            "scrapedAt": "2026-04-22T19:58:30.497Z"
+>>>>>>> 875658e96950b06fb1fcc881df92162dd8e37575
           },
           {
             "title": {
@@ -2288,7 +2392,11 @@
             "id": "e2aed8d0adb9aa338250407aa2f7181c",
             "hotelBrand": "롯데호텔",
             "endDate": "2024-12-31",
+<<<<<<< HEAD
             "scrapedAt": "2026-04-23T17:11:24.504Z"
+=======
+            "scrapedAt": "2026-04-22T19:58:30.497Z"
+>>>>>>> 875658e96950b06fb1fcc881df92162dd8e37575
           }
         ],
         "tourApiMatched": false,
@@ -2358,7 +2466,11 @@
             "id": "8fa97e2362d6df6e545ec1f429fa5189",
             "hotelBrand": "롯데호텔",
             "endDate": "2024-06-30",
+<<<<<<< HEAD
             "scrapedAt": "2026-04-23T17:11:24.502Z"
+=======
+            "scrapedAt": "2026-04-22T19:58:30.497Z"
+>>>>>>> 875658e96950b06fb1fcc881df92162dd8e37575
           },
           {
             "title": {
@@ -2373,7 +2485,11 @@
             "id": "e2aed8d0adb9aa338250407aa2f7181c",
             "hotelBrand": "롯데호텔",
             "endDate": "2024-12-31",
+<<<<<<< HEAD
             "scrapedAt": "2026-04-23T17:11:24.504Z"
+=======
+            "scrapedAt": "2026-04-22T19:58:30.497Z"
+>>>>>>> 875658e96950b06fb1fcc881df92162dd8e37575
           }
         ],
         "tourApiMatched": true,
@@ -2540,7 +2656,11 @@
             "id": "19f22f36a3935ff05dbaf85ff2f268cb",
             "hotelBrand": "조선호텔",
             "endDate": "2024-10-31",
+<<<<<<< HEAD
             "scrapedAt": "2026-04-23T17:11:24.813Z"
+=======
+            "scrapedAt": "2026-04-22T19:58:30.566Z"
+>>>>>>> 875658e96950b06fb1fcc881df92162dd8e37575
           },
           {
             "title": {
@@ -2555,7 +2675,11 @@
             "id": "e9f9aa5d550e7a0c7b716dae8fc0372b",
             "hotelBrand": "조선호텔",
             "endDate": "2024-08-31",
+<<<<<<< HEAD
             "scrapedAt": "2026-04-23T17:11:24.813Z"
+=======
+            "scrapedAt": "2026-04-22T19:58:30.566Z"
+>>>>>>> 875658e96950b06fb1fcc881df92162dd8e37575
           }
         ],
         "tourApiMatched": false,
@@ -3185,7 +3309,11 @@
             "id": "9370e86c69ab075943caafbdf03b5730",
             "hotelBrand": "신라호텔",
             "endDate": "2024-08-30",
+<<<<<<< HEAD
             "scrapedAt": "2026-04-23T17:11:24.813Z"
+=======
+            "scrapedAt": "2026-04-22T19:58:30.566Z"
+>>>>>>> 875658e96950b06fb1fcc881df92162dd8e37575
           },
           {
             "title": {
@@ -3200,7 +3328,11 @@
             "id": "1759a346a8ac8c58080f32468334b726",
             "hotelBrand": "신라호텔",
             "endDate": "2024-12-31",
+<<<<<<< HEAD
             "scrapedAt": "2026-04-23T17:11:24.813Z"
+=======
+            "scrapedAt": "2026-04-22T19:58:30.566Z"
+>>>>>>> 875658e96950b06fb1fcc881df92162dd8e37575
           }
         ],
         "tourApiMatched": true,
@@ -3324,7 +3456,11 @@
             "id": "9370e86c69ab075943caafbdf03b5730",
             "hotelBrand": "신라호텔",
             "endDate": "2024-08-30",
+<<<<<<< HEAD
             "scrapedAt": "2026-04-23T17:11:24.813Z"
+=======
+            "scrapedAt": "2026-04-22T19:58:30.566Z"
+>>>>>>> 875658e96950b06fb1fcc881df92162dd8e37575
           },
           {
             "title": {
@@ -3339,7 +3475,11 @@
             "id": "1759a346a8ac8c58080f32468334b726",
             "hotelBrand": "신라호텔",
             "endDate": "2024-12-31",
+<<<<<<< HEAD
             "scrapedAt": "2026-04-23T17:11:24.813Z"
+=======
+            "scrapedAt": "2026-04-22T19:58:30.566Z"
+>>>>>>> 875658e96950b06fb1fcc881df92162dd8e37575
           }
         ],
         "tourApiMatched": false,
@@ -3628,7 +3768,11 @@
             "id": "8fa97e2362d6df6e545ec1f429fa5189",
             "hotelBrand": "롯데호텔",
             "endDate": "2024-06-30",
+<<<<<<< HEAD
             "scrapedAt": "2026-04-23T17:11:24.502Z"
+=======
+            "scrapedAt": "2026-04-22T19:58:30.497Z"
+>>>>>>> 875658e96950b06fb1fcc881df92162dd8e37575
           },
           {
             "title": {
@@ -3643,7 +3787,11 @@
             "id": "e2aed8d0adb9aa338250407aa2f7181c",
             "hotelBrand": "롯데호텔",
             "endDate": "2024-12-31",
+<<<<<<< HEAD
             "scrapedAt": "2026-04-23T17:11:24.504Z"
+=======
+            "scrapedAt": "2026-04-22T19:58:30.497Z"
+>>>>>>> 875658e96950b06fb1fcc881df92162dd8e37575
           }
         ],
         "tourApiMatched": true,
@@ -3696,7 +3844,11 @@
             "id": "8fa97e2362d6df6e545ec1f429fa5189",
             "hotelBrand": "롯데호텔",
             "endDate": "2024-06-30",
+<<<<<<< HEAD
             "scrapedAt": "2026-04-23T17:11:24.502Z"
+=======
+            "scrapedAt": "2026-04-22T19:58:30.497Z"
+>>>>>>> 875658e96950b06fb1fcc881df92162dd8e37575
           },
           {
             "title": {
@@ -3711,7 +3863,11 @@
             "id": "e2aed8d0adb9aa338250407aa2f7181c",
             "hotelBrand": "롯데호텔",
             "endDate": "2024-12-31",
+<<<<<<< HEAD
             "scrapedAt": "2026-04-23T17:11:24.504Z"
+=======
+            "scrapedAt": "2026-04-22T19:58:30.497Z"
+>>>>>>> 875658e96950b06fb1fcc881df92162dd8e37575
           }
         ],
         "tourApiMatched": true,
@@ -3875,7 +4031,11 @@
             "id": "9370e86c69ab075943caafbdf03b5730",
             "hotelBrand": "신라호텔",
             "endDate": "2024-08-30",
+<<<<<<< HEAD
             "scrapedAt": "2026-04-23T17:11:24.813Z"
+=======
+            "scrapedAt": "2026-04-22T19:58:30.566Z"
+>>>>>>> 875658e96950b06fb1fcc881df92162dd8e37575
           },
           {
             "title": {
@@ -3890,7 +4050,11 @@
             "id": "1759a346a8ac8c58080f32468334b726",
             "hotelBrand": "신라호텔",
             "endDate": "2024-12-31",
+<<<<<<< HEAD
             "scrapedAt": "2026-04-23T17:11:24.813Z"
+=======
+            "scrapedAt": "2026-04-22T19:58:30.566Z"
+>>>>>>> 875658e96950b06fb1fcc881df92162dd8e37575
           }
         ],
         "tourApiMatched": false,
@@ -3977,7 +4141,11 @@
             "id": "8fa97e2362d6df6e545ec1f429fa5189",
             "hotelBrand": "롯데호텔",
             "endDate": "2024-06-30",
+<<<<<<< HEAD
             "scrapedAt": "2026-04-23T17:11:24.502Z"
+=======
+            "scrapedAt": "2026-04-22T19:58:30.497Z"
+>>>>>>> 875658e96950b06fb1fcc881df92162dd8e37575
           },
           {
             "title": {
@@ -3992,7 +4160,11 @@
             "id": "e2aed8d0adb9aa338250407aa2f7181c",
             "hotelBrand": "롯데호텔",
             "endDate": "2024-12-31",
+<<<<<<< HEAD
             "scrapedAt": "2026-04-23T17:11:24.504Z"
+=======
+            "scrapedAt": "2026-04-22T19:58:30.497Z"
+>>>>>>> 875658e96950b06fb1fcc881df92162dd8e37575
           }
         ],
         "tourApiMatched": true,
@@ -4028,7 +4200,11 @@
             "id": "9370e86c69ab075943caafbdf03b5730",
             "hotelBrand": "신라호텔",
             "endDate": "2024-08-30",
+<<<<<<< HEAD
             "scrapedAt": "2026-04-23T17:11:24.813Z"
+=======
+            "scrapedAt": "2026-04-22T19:58:30.566Z"
+>>>>>>> 875658e96950b06fb1fcc881df92162dd8e37575
           },
           {
             "title": {
@@ -4043,7 +4219,11 @@
             "id": "1759a346a8ac8c58080f32468334b726",
             "hotelBrand": "신라호텔",
             "endDate": "2024-12-31",
+<<<<<<< HEAD
             "scrapedAt": "2026-04-23T17:11:24.813Z"
+=======
+            "scrapedAt": "2026-04-22T19:58:30.566Z"
+>>>>>>> 875658e96950b06fb1fcc881df92162dd8e37575
           }
         ],
         "tourApiMatched": false,
@@ -4130,7 +4310,11 @@
             "id": "9370e86c69ab075943caafbdf03b5730",
             "hotelBrand": "신라호텔",
             "endDate": "2024-08-30",
+<<<<<<< HEAD
             "scrapedAt": "2026-04-23T17:11:24.813Z"
+=======
+            "scrapedAt": "2026-04-22T19:58:30.566Z"
+>>>>>>> 875658e96950b06fb1fcc881df92162dd8e37575
           },
           {
             "title": {
@@ -4145,7 +4329,11 @@
             "id": "1759a346a8ac8c58080f32468334b726",
             "hotelBrand": "신라호텔",
             "endDate": "2024-12-31",
+<<<<<<< HEAD
             "scrapedAt": "2026-04-23T17:11:24.813Z"
+=======
+            "scrapedAt": "2026-04-22T19:58:30.566Z"
+>>>>>>> 875658e96950b06fb1fcc881df92162dd8e37575
           }
         ],
         "tourApiMatched": false,
@@ -4478,7 +4666,11 @@
             "id": "9370e86c69ab075943caafbdf03b5730",
             "hotelBrand": "신라호텔",
             "endDate": "2024-08-30",
+<<<<<<< HEAD
             "scrapedAt": "2026-04-23T17:11:24.813Z"
+=======
+            "scrapedAt": "2026-04-22T19:58:30.566Z"
+>>>>>>> 875658e96950b06fb1fcc881df92162dd8e37575
           },
           {
             "title": {
@@ -4493,7 +4685,11 @@
             "id": "1759a346a8ac8c58080f32468334b726",
             "hotelBrand": "신라호텔",
             "endDate": "2024-12-31",
+<<<<<<< HEAD
             "scrapedAt": "2026-04-23T17:11:24.813Z"
+=======
+            "scrapedAt": "2026-04-22T19:58:30.566Z"
+>>>>>>> 875658e96950b06fb1fcc881df92162dd8e37575
           }
         ],
         "tourApiMatched": false,
@@ -5613,7 +5809,11 @@
             "id": "5a0dbb97d410273148a3996687d344d2",
             "hotelBrand": "대명소노",
             "endDate": "2024-08-31",
+<<<<<<< HEAD
             "scrapedAt": "2026-04-23T17:11:24.813Z"
+=======
+            "scrapedAt": "2026-04-22T19:58:30.566Z"
+>>>>>>> 875658e96950b06fb1fcc881df92162dd8e37575
           }
         ],
         "tourApiMatched": false,
@@ -5663,7 +5863,11 @@
             "id": "8fa97e2362d6df6e545ec1f429fa5189",
             "hotelBrand": "롯데호텔",
             "endDate": "2024-06-30",
+<<<<<<< HEAD
             "scrapedAt": "2026-04-23T17:11:24.502Z"
+=======
+            "scrapedAt": "2026-04-22T19:58:30.497Z"
+>>>>>>> 875658e96950b06fb1fcc881df92162dd8e37575
           },
           {
             "title": {
@@ -5678,7 +5882,11 @@
             "id": "e2aed8d0adb9aa338250407aa2f7181c",
             "hotelBrand": "롯데호텔",
             "endDate": "2024-12-31",
+<<<<<<< HEAD
             "scrapedAt": "2026-04-23T17:11:24.504Z"
+=======
+            "scrapedAt": "2026-04-22T19:58:30.497Z"
+>>>>>>> 875658e96950b06fb1fcc881df92162dd8e37575
           }
         ],
         "tourApiMatched": false,
@@ -6011,7 +6219,11 @@
             "id": "8fa97e2362d6df6e545ec1f429fa5189",
             "hotelBrand": "롯데호텔",
             "endDate": "2024-06-30",
+<<<<<<< HEAD
             "scrapedAt": "2026-04-23T17:11:24.502Z"
+=======
+            "scrapedAt": "2026-04-22T19:58:30.497Z"
+>>>>>>> 875658e96950b06fb1fcc881df92162dd8e37575
           },
           {
             "title": {
@@ -6026,7 +6238,11 @@
             "id": "e2aed8d0adb9aa338250407aa2f7181c",
             "hotelBrand": "롯데호텔",
             "endDate": "2024-12-31",
+<<<<<<< HEAD
             "scrapedAt": "2026-04-23T17:11:24.504Z"
+=======
+            "scrapedAt": "2026-04-22T19:58:30.497Z"
+>>>>>>> 875658e96950b06fb1fcc881df92162dd8e37575
           }
         ],
         "tourApiMatched": true,
@@ -6124,7 +6340,11 @@
             "id": "8fa97e2362d6df6e545ec1f429fa5189",
             "hotelBrand": "롯데호텔",
             "endDate": "2024-06-30",
+<<<<<<< HEAD
             "scrapedAt": "2026-04-23T17:11:24.502Z"
+=======
+            "scrapedAt": "2026-04-22T19:58:30.497Z"
+>>>>>>> 875658e96950b06fb1fcc881df92162dd8e37575
           },
           {
             "title": {
@@ -6139,7 +6359,11 @@
             "id": "e2aed8d0adb9aa338250407aa2f7181c",
             "hotelBrand": "롯데호텔",
             "endDate": "2024-12-31",
+<<<<<<< HEAD
             "scrapedAt": "2026-04-23T17:11:24.504Z"
+=======
+            "scrapedAt": "2026-04-22T19:58:30.497Z"
+>>>>>>> 875658e96950b06fb1fcc881df92162dd8e37575
           }
         ],
         "tourApiMatched": false,
@@ -6189,7 +6413,11 @@
             "id": "8fa97e2362d6df6e545ec1f429fa5189",
             "hotelBrand": "롯데호텔",
             "endDate": "2024-06-30",
+<<<<<<< HEAD
             "scrapedAt": "2026-04-23T17:11:24.502Z"
+=======
+            "scrapedAt": "2026-04-22T19:58:30.497Z"
+>>>>>>> 875658e96950b06fb1fcc881df92162dd8e37575
           },
           {
             "title": {
@@ -6204,7 +6432,11 @@
             "id": "e2aed8d0adb9aa338250407aa2f7181c",
             "hotelBrand": "롯데호텔",
             "endDate": "2024-12-31",
+<<<<<<< HEAD
             "scrapedAt": "2026-04-23T17:11:24.504Z"
+=======
+            "scrapedAt": "2026-04-22T19:58:30.497Z"
+>>>>>>> 875658e96950b06fb1fcc881df92162dd8e37575
           }
         ],
         "tourApiMatched": true,
@@ -6240,7 +6472,11 @@
             "id": "19f22f36a3935ff05dbaf85ff2f268cb",
             "hotelBrand": "조선호텔",
             "endDate": "2024-10-31",
+<<<<<<< HEAD
             "scrapedAt": "2026-04-23T17:11:24.813Z"
+=======
+            "scrapedAt": "2026-04-22T19:58:30.566Z"
+>>>>>>> 875658e96950b06fb1fcc881df92162dd8e37575
           },
           {
             "title": {
@@ -6255,7 +6491,11 @@
             "id": "e9f9aa5d550e7a0c7b716dae8fc0372b",
             "hotelBrand": "조선호텔",
             "endDate": "2024-08-31",
+<<<<<<< HEAD
             "scrapedAt": "2026-04-23T17:11:24.813Z"
+=======
+            "scrapedAt": "2026-04-22T19:58:30.566Z"
+>>>>>>> 875658e96950b06fb1fcc881df92162dd8e37575
           }
         ],
         "tourApiMatched": true,
@@ -6291,7 +6531,11 @@
             "id": "19f22f36a3935ff05dbaf85ff2f268cb",
             "hotelBrand": "조선호텔",
             "endDate": "2024-10-31",
+<<<<<<< HEAD
             "scrapedAt": "2026-04-23T17:11:24.813Z"
+=======
+            "scrapedAt": "2026-04-22T19:58:30.566Z"
+>>>>>>> 875658e96950b06fb1fcc881df92162dd8e37575
           },
           {
             "title": {
@@ -6306,7 +6550,11 @@
             "id": "e9f9aa5d550e7a0c7b716dae8fc0372b",
             "hotelBrand": "조선호텔",
             "endDate": "2024-08-31",
+<<<<<<< HEAD
             "scrapedAt": "2026-04-23T17:11:24.813Z"
+=======
+            "scrapedAt": "2026-04-22T19:58:30.566Z"
+>>>>>>> 875658e96950b06fb1fcc881df92162dd8e37575
           }
         ],
         "tourApiMatched": true,
@@ -6383,7 +6631,11 @@
             "id": "8fa97e2362d6df6e545ec1f429fa5189",
             "hotelBrand": "롯데호텔",
             "endDate": "2024-06-30",
+<<<<<<< HEAD
             "scrapedAt": "2026-04-23T17:11:24.502Z"
+=======
+            "scrapedAt": "2026-04-22T19:58:30.497Z"
+>>>>>>> 875658e96950b06fb1fcc881df92162dd8e37575
           },
           {
             "title": {
@@ -6398,7 +6650,11 @@
             "id": "e2aed8d0adb9aa338250407aa2f7181c",
             "hotelBrand": "롯데호텔",
             "endDate": "2024-12-31",
+<<<<<<< HEAD
             "scrapedAt": "2026-04-23T17:11:24.504Z"
+=======
+            "scrapedAt": "2026-04-22T19:58:30.497Z"
+>>>>>>> 875658e96950b06fb1fcc881df92162dd8e37575
           }
         ],
         "tourApiMatched": false,
@@ -6507,7 +6763,11 @@
             "id": "9370e86c69ab075943caafbdf03b5730",
             "hotelBrand": "신라호텔",
             "endDate": "2024-08-30",
+<<<<<<< HEAD
             "scrapedAt": "2026-04-23T17:11:24.813Z"
+=======
+            "scrapedAt": "2026-04-22T19:58:30.566Z"
+>>>>>>> 875658e96950b06fb1fcc881df92162dd8e37575
           },
           {
             "title": {
@@ -6522,7 +6782,11 @@
             "id": "1759a346a8ac8c58080f32468334b726",
             "hotelBrand": "신라호텔",
             "endDate": "2024-12-31",
+<<<<<<< HEAD
             "scrapedAt": "2026-04-23T17:11:24.813Z"
+=======
+            "scrapedAt": "2026-04-22T19:58:30.566Z"
+>>>>>>> 875658e96950b06fb1fcc881df92162dd8e37575
           }
         ],
         "tourApiMatched": true,
@@ -6629,7 +6893,11 @@
             "id": "8fa97e2362d6df6e545ec1f429fa5189",
             "hotelBrand": "롯데호텔",
             "endDate": "2024-06-30",
+<<<<<<< HEAD
             "scrapedAt": "2026-04-23T17:11:24.502Z"
+=======
+            "scrapedAt": "2026-04-22T19:58:30.497Z"
+>>>>>>> 875658e96950b06fb1fcc881df92162dd8e37575
           },
           {
             "title": {
@@ -6644,7 +6912,11 @@
             "id": "e2aed8d0adb9aa338250407aa2f7181c",
             "hotelBrand": "롯데호텔",
             "endDate": "2024-12-31",
+<<<<<<< HEAD
             "scrapedAt": "2026-04-23T17:11:24.504Z"
+=======
+            "scrapedAt": "2026-04-22T19:58:30.497Z"
+>>>>>>> 875658e96950b06fb1fcc881df92162dd8e37575
           }
         ],
         "tourApiMatched": false,
@@ -6677,7 +6949,11 @@
             "id": "9370e86c69ab075943caafbdf03b5730",
             "hotelBrand": "신라호텔",
             "endDate": "2024-08-30",
+<<<<<<< HEAD
             "scrapedAt": "2026-04-23T17:11:24.813Z"
+=======
+            "scrapedAt": "2026-04-22T19:58:30.566Z"
+>>>>>>> 875658e96950b06fb1fcc881df92162dd8e37575
           },
           {
             "title": {
@@ -6692,7 +6968,11 @@
             "id": "1759a346a8ac8c58080f32468334b726",
             "hotelBrand": "신라호텔",
             "endDate": "2024-12-31",
+<<<<<<< HEAD
             "scrapedAt": "2026-04-23T17:11:24.813Z"
+=======
+            "scrapedAt": "2026-04-22T19:58:30.566Z"
+>>>>>>> 875658e96950b06fb1fcc881df92162dd8e37575
           }
         ],
         "tourApiMatched": false,
@@ -7387,7 +7667,11 @@
             "id": "5a0dbb97d410273148a3996687d344d2",
             "hotelBrand": "대명소노",
             "endDate": "2024-08-31",
+<<<<<<< HEAD
             "scrapedAt": "2026-04-23T17:11:24.813Z"
+=======
+            "scrapedAt": "2026-04-22T19:58:30.566Z"
+>>>>>>> 875658e96950b06fb1fcc881df92162dd8e37575
           }
         ],
         "tourApiMatched": true,
@@ -7456,7 +7740,11 @@
             "id": "8fa97e2362d6df6e545ec1f429fa5189",
             "hotelBrand": "롯데호텔",
             "endDate": "2024-06-30",
+<<<<<<< HEAD
             "scrapedAt": "2026-04-23T17:11:24.502Z"
+=======
+            "scrapedAt": "2026-04-22T19:58:30.497Z"
+>>>>>>> 875658e96950b06fb1fcc881df92162dd8e37575
           },
           {
             "title": {
@@ -7471,7 +7759,11 @@
             "id": "e2aed8d0adb9aa338250407aa2f7181c",
             "hotelBrand": "롯데호텔",
             "endDate": "2024-12-31",
+<<<<<<< HEAD
             "scrapedAt": "2026-04-23T17:11:24.504Z"
+=======
+            "scrapedAt": "2026-04-22T19:58:30.497Z"
+>>>>>>> 875658e96950b06fb1fcc881df92162dd8e37575
           }
         ],
         "tourApiMatched": false,
@@ -7521,7 +7813,11 @@
             "id": "9370e86c69ab075943caafbdf03b5730",
             "hotelBrand": "신라호텔",
             "endDate": "2024-08-30",
+<<<<<<< HEAD
             "scrapedAt": "2026-04-23T17:11:24.813Z"
+=======
+            "scrapedAt": "2026-04-22T19:58:30.566Z"
+>>>>>>> 875658e96950b06fb1fcc881df92162dd8e37575
           },
           {
             "title": {
@@ -7536,7 +7832,11 @@
             "id": "1759a346a8ac8c58080f32468334b726",
             "hotelBrand": "신라호텔",
             "endDate": "2024-12-31",
+<<<<<<< HEAD
             "scrapedAt": "2026-04-23T17:11:24.813Z"
+=======
+            "scrapedAt": "2026-04-22T19:58:30.566Z"
+>>>>>>> 875658e96950b06fb1fcc881df92162dd8e37575
           }
         ],
         "tourApiMatched": true,
@@ -8086,10 +8386,591 @@
         "예약페이지": "",
         "official_link": "",
         "affiliate_link": "https://www.agoda.com/ko-kr/search?query=%EB%8C%80%EA%B5%AC%EA%B4%91%EC%97%AD%EC%8B%9C&cid=1896000",
+<<<<<<< HEAD
         "promotions": [],
         "tourApiMatched": false,
         "imageUrl": "https://ak-d.tripcdn.com/images/0225w12000a8zi6jk03F4_R_960_660_R5_D.jpg",
         "thumbnailUrl": "https://search.pstatic.net/sunny/?type=b150&src=https%3A%2F%2Fak-d.tripcdn.com%2Fimages%2F0225w12000a8zi6jk03F4_R_960_660_R5_D.jpg"
+=======
+        "promotions": []
+      }
+    ]
+  },
+  "광주호남(전남, 전북)권": {
+    "5성": [
+      {
+        "시도": "전라남도",
+        "세부지역": "여수시",
+        "이름": "소노캄 여수",
+        "업종": "관광호텔업",
+        "객실수": "311",
+        "전화번호": "061-660-5800",
+        "주소": "전라남도 여수시 오동도로 111 소노캄 여수 (수정동)",
+        "홈페이지": "http://www.sonohotelsresorts.com/yeosu",
+        "예약페이지": "http://www.sonohotelsresorts.com/yeosu",
+        "official_link": "http://www.sonohotelsresorts.com/yeosu",
+        "affiliate_link": "https://www.agoda.com/ko-kr/search?query=%EC%A0%84%EB%9D%BC%EB%82%A8%EB%8F%84&cid=1896000",
+        "promotions": [
+          {
+            "title": {
+              "ko": "오션월드 특별 할인 패키지 (소노펠리체)",
+              "en": "[EN] 오션월드 특별 할인 패키지 (소노펠리체)",
+              "ja": "[JA] 오션월드 특별 할인 패키지 (소노펠리체)"
+            },
+            "imageUrl": "https://www.lottehotel.com/content/dam/lotte-hotel/global/common/offer/spring-main.jpg",
+            "period": "2024.05.01 - 2024.08.31",
+            "link": "https://www.sonohotelsresorts.com/event",
+            "category": "가족/레저/워터파크",
+            "id": "5a0dbb97d410273148a3996687d344d2",
+            "hotelBrand": "대명소노",
+            "endDate": "2024-08-31",
+            "scrapedAt": "2026-04-22T19:58:30.566Z"
+          }
+        ]
+      }
+    ],
+    "4성": [
+      {
+        "시도": "광주광역시",
+        "세부지역": "동구",
+        "이름": "라마다플라자 충장호텔",
+        "업종": "관광호텔업",
+        "객실수": "95",
+        "전화번호": "062-717-1000",
+        "주소": "광주광역시 동구 천변우로 369 (호남동)",
+        "홈페이지": "",
+        "예약페이지": "",
+        "official_link": "",
+        "affiliate_link": "https://www.agoda.com/ko-kr/search?query=%EA%B4%91%EC%A3%BC%EA%B4%91%EC%97%AD%EC%8B%9C&cid=1896000",
+        "promotions": []
+      },
+      {
+        "시도": "광주광역시",
+        "세부지역": "서구",
+        "이름": "라마다 프라자 광주 호텔",
+        "업종": "관광호텔업",
+        "객실수": "123",
+        "전화번호": "062-717-7000",
+        "주소": "광주광역시 서구 상무자유로 149 (치평동)",
+        "홈페이지": "http://www.ramadagwangju.com",
+        "예약페이지": "http://www.ramadagwangju.com",
+        "official_link": "http://www.ramadagwangju.com",
+        "affiliate_link": "https://www.agoda.com/ko-kr/search?query=%EA%B4%91%EC%A3%BC%EA%B4%91%EC%97%AD%EC%8B%9C&cid=1896000",
+        "promotions": []
+      },
+      {
+        "시도": "광주광역시",
+        "세부지역": "서구",
+        "이름": "홀리데이 인 광주 호텔",
+        "업종": "관광호텔업",
+        "객실수": "203",
+        "전화번호": "062-610-7000",
+        "주소": "광주광역시 서구 상무누리로 55 (치평동)",
+        "홈페이지": "http://higwangju.com",
+        "예약페이지": "http://higwangju.com",
+        "official_link": "http://higwangju.com",
+        "affiliate_link": "https://www.agoda.com/ko-kr/search?query=%EA%B4%91%EC%A3%BC%EA%B4%91%EC%97%AD%EC%8B%9C&cid=1896000",
+        "promotions": []
+      },
+      {
+        "시도": "전라남도",
+        "세부지역": "여수시",
+        "이름": "벨메르 바이 한화호텔앤드리조트",
+        "업종": "관광호텔업",
+        "객실수": "100",
+        "전화번호": "061-924-1500",
+        "주소": "전라남도 여수시 웅천남4로 17 3층 벨메르 (웅천동)",
+        "홈페이지": "https://www.hanwharesort.co.kr/irsweb/resort3/netindex_.do?utm_source=naver_bs&utm_campaign=main&utm_content=mainpage",
+        "예약페이지": "https://www.hanwharesort.co.kr/irsweb/resort3/netindex_.do?utm_source=naver_bs&utm_campaign=main&utm_content=mainpage",
+        "official_link": "https://www.hanwharesort.co.kr/irsweb/resort3/netindex_.do?utm_source=naver_bs&utm_campaign=main&utm_content=mainpage",
+        "affiliate_link": "https://www.agoda.com/ko-kr/search?query=%EC%A0%84%EB%9D%BC%EB%82%A8%EB%8F%84&cid=1896000",
+        "promotions": [
+          {
+            "title": {
+              "ko": "한화리조트 패밀리 피크닉 (바비큐 포함)",
+              "en": "[EN] 한화리조트 패밀리 피크닉 (바비큐 포함)",
+              "ja": "[JA] 한화리조트 패밀리 피크닉 (바비큐 포함)"
+            },
+            "imageUrl": "https://www.lottehotel.com/content/dam/lotte-hotel/global/common/offer/spring-main.jpg",
+            "period": "2024.04.10 - 2024.09.30",
+            "link": "https://www.hanwharesort.co.kr/irsweb/resort3/event/event_view.do",
+            "category": "가족/레저",
+            "id": "9378b678db1abd089571b5e67ec9094c",
+            "hotelBrand": "한화리조트",
+            "endDate": "2024-09-30",
+            "scrapedAt": "2026-04-22T19:58:30.566Z"
+          }
+        ]
+      },
+      {
+        "시도": "전라남도",
+        "세부지역": "여수시",
+        "이름": "신라스테이 여수",
+        "업종": "관광호텔업",
+        "객실수": "315",
+        "전화번호": "061-924-5300",
+        "주소": "전라남도 여수시 수정3길 8 (수정동)",
+        "홈페이지": "https://www.shillastay.com/yeosu/index.do",
+        "예약페이지": "https://www.shillastay.com/yeosu/index.do",
+        "official_link": "https://www.shillastay.com/yeosu/index.do",
+        "affiliate_link": "https://www.agoda.com/ko-kr/search?query=%EC%A0%84%EB%9D%BC%EB%82%A8%EB%8F%84&cid=1896000",
+        "promotions": [
+          {
+            "title": {
+              "ko": "어번 아일랜드 문라이트 요가 (수영장 포함)",
+              "en": "[EN] 어번 아일랜드 문라이트 요가 (수영장 포함)",
+              "ja": "[JA] 어번 아일랜드 문라이트 요가 (수영장 포함)"
+            },
+            "imageUrl": "https://www.shillahotels.com/images/eno/sub/prom/2024/03/yoga.jpg",
+            "period": "2024.04.01 - 2024.08.30",
+            "link": "https://www.shillahotels.com/offers/yoga",
+            "category": "체험/액티비티",
+            "id": "9370e86c69ab075943caafbdf03b5730",
+            "hotelBrand": "신라호텔",
+            "endDate": "2024-08-30",
+            "scrapedAt": "2026-04-22T19:58:30.566Z"
+          },
+          {
+            "title": {
+              "ko": "Stay & Dine in Excellence (투숙객 조식 뷔페 특가)",
+              "en": "[EN] Stay & Dine in Excellence (투숙객 조식 뷔페 특가)",
+              "ja": "[JA] Stay & Dine in Excellence (투숙객 조식 뷔페 특가)"
+            },
+            "imageUrl": "https://www.shillahotels.com/images/eno/sub/prom/2024/03/dine.jpg",
+            "period": "2024.03.01 - 2024.12.31",
+            "link": "https://www.shillahotels.com/offers/dine",
+            "category": "다이닝/조식",
+            "id": "1759a346a8ac8c58080f32468334b726",
+            "hotelBrand": "신라호텔",
+            "endDate": "2024-12-31",
+            "scrapedAt": "2026-04-22T19:58:30.566Z"
+          }
+        ]
+      },
+      {
+        "시도": "전라남도",
+        "세부지역": "여수시",
+        "이름": "주식회사 히든베이호텔",
+        "업종": "관광호텔업",
+        "객실수": "131",
+        "전화번호": "061-680-3000",
+        "주소": "전라남도 여수시 신월로 496-25 (신월동)",
+        "홈페이지": "https://www.hiddenbay.co.kr/",
+        "예약페이지": "https://www.hiddenbay.co.kr/",
+        "official_link": "https://www.hiddenbay.co.kr/",
+        "affiliate_link": "https://www.agoda.com/ko-kr/search?query=%EC%A0%84%EB%9D%BC%EB%82%A8%EB%8F%84&cid=1896000",
+        "promotions": []
+      },
+      {
+        "시도": "전라남도",
+        "세부지역": "여수시",
+        "이름": "호텔JCS여수",
+        "업종": "관광호텔업",
+        "객실수": "151",
+        "전화번호": "061-643-5000",
+        "주소": "전라남도 여수시 돌산읍 돌산로 3169-14",
+        "홈페이지": "http://www.hoteljcs.com",
+        "예약페이지": "http://www.hoteljcs.com",
+        "official_link": "http://www.hoteljcs.com",
+        "affiliate_link": "https://www.agoda.com/ko-kr/search?query=%EC%A0%84%EB%9D%BC%EB%82%A8%EB%8F%84&cid=1896000",
+        "promotions": []
+      },
+      {
+        "시도": "전라남도",
+        "세부지역": "영암군",
+        "이름": "호텔현대 바이 라한 목포",
+        "업종": "관광호텔업",
+        "객실수": "208",
+        "전화번호": "061-463-2233",
+        "주소": "전라남도 영암군 삼호읍 대불로 91",
+        "홈페이지": "http://www.lahanhotels.com/mokpo",
+        "예약페이지": "http://www.lahanhotels.com/mokpo",
+        "official_link": "http://www.lahanhotels.com/mokpo",
+        "affiliate_link": "https://www.agoda.com/ko-kr/search?query=%EC%A0%84%EB%9D%BC%EB%82%A8%EB%8F%84&cid=1896000",
+        "promotions": []
+      },
+      {
+        "시도": "전라남도",
+        "세부지역": "진도군",
+        "이름": "쏠비치 호텔 진도",
+        "업종": "관광호텔업",
+        "객실수": "98",
+        "전화번호": "061-899-7000",
+        "주소": "전라남도 진도군 의신면 송군길 30-40",
+        "홈페이지": "",
+        "예약페이지": "",
+        "official_link": "",
+        "affiliate_link": "https://www.agoda.com/ko-kr/search?query=%EC%A0%84%EB%9D%BC%EB%82%A8%EB%8F%84&cid=1896000",
+        "promotions": []
+      },
+      {
+        "시도": "전라북도",
+        "세부지역": "군산시",
+        "이름": "라마다 군산 호텔",
+        "업종": "관광호텔업",
+        "객실수": "137",
+        "전화번호": "063-441-8000",
+        "주소": "전라북도 군산시 대학로 400 (나운동)",
+        "홈페이지": "",
+        "예약페이지": "",
+        "official_link": "",
+        "affiliate_link": "https://www.agoda.com/ko-kr/search?query=%EC%A0%84%EB%9D%BC%EB%B6%81%EB%8F%84&cid=1896000",
+        "promotions": []
+      },
+      {
+        "시도": "전라북도",
+        "세부지역": "부안군",
+        "이름": "소노벨 변산",
+        "업종": "가족호텔업",
+        "객실수": "504",
+        "전화번호": "02-1588-4888",
+        "주소": "전라북도 부안군 변산면 변산해변로 51",
+        "홈페이지": "http://www.sonohotelsresorts.com/bs",
+        "예약페이지": "http://www.sonohotelsresorts.com/bs",
+        "official_link": "http://www.sonohotelsresorts.com/bs",
+        "affiliate_link": "https://www.agoda.com/ko-kr/search?query=%EC%A0%84%EB%9D%BC%EB%B6%81%EB%8F%84&cid=1896000",
+        "promotions": [
+          {
+            "title": {
+              "ko": "오션월드 특별 할인 패키지 (소노펠리체)",
+              "en": "[EN] 오션월드 특별 할인 패키지 (소노펠리체)",
+              "ja": "[JA] 오션월드 특별 할인 패키지 (소노펠리체)"
+            },
+            "imageUrl": "https://www.lottehotel.com/content/dam/lotte-hotel/global/common/offer/spring-main.jpg",
+            "period": "2024.05.01 - 2024.08.31",
+            "link": "https://www.sonohotelsresorts.com/event",
+            "category": "가족/레저/워터파크",
+            "id": "5a0dbb97d410273148a3996687d344d2",
+            "hotelBrand": "대명소노",
+            "endDate": "2024-08-31",
+            "scrapedAt": "2026-04-22T19:58:30.566Z"
+          }
+        ]
+      },
+      {
+        "시도": "전라북도",
+        "세부지역": "익산시",
+        "이름": "웨스턴라이프호텔",
+        "업종": "관광호텔업",
+        "객실수": "155",
+        "전화번호": "063-720-3000",
+        "주소": "전라북도 익산시 동서로 380 (영등동)",
+        "홈페이지": "http://www.westernlife.co.kr/",
+        "예약페이지": "http://www.westernlife.co.kr/",
+        "official_link": "http://www.westernlife.co.kr/",
+        "affiliate_link": "https://www.agoda.com/ko-kr/search?query=%EC%A0%84%EB%9D%BC%EB%B6%81%EB%8F%84&cid=1896000",
+        "promotions": []
+      },
+      {
+        "시도": "전라북도",
+        "세부지역": "전주시",
+        "이름": "라한호텔 전주",
+        "업종": "관광호텔업",
+        "객실수": "195",
+        "전화번호": "063-907-7410",
+        "주소": "전라북도 전주시 완산구 기린대로 85 (풍남동3가)",
+        "홈페이지": "https://lahanhotels.com/jeonju/index.do",
+        "예약페이지": "https://lahanhotels.com/jeonju/index.do",
+        "official_link": "https://lahanhotels.com/jeonju/index.do",
+        "affiliate_link": "https://www.agoda.com/ko-kr/search?query=%EC%A0%84%EB%9D%BC%EB%B6%81%EB%8F%84&cid=1896000",
+        "promotions": []
+      },
+      {
+        "시도": "전북특별자치도",
+        "세부지역": "남원시",
+        "이름": "스위트 호텔 남원",
+        "업종": "관광호텔업",
+        "객실수": "59",
+        "전화번호": "063-630-7100",
+        "주소": "전북특별자치도 남원시 주천면 원천로 217 스위트호텔남원",
+        "홈페이지": "",
+        "예약페이지": "",
+        "official_link": "",
+        "affiliate_link": "https://www.agoda.com/ko-kr/search?query=%EC%A0%84%EB%B6%81%ED%8A%B9%EB%B3%84%EC%9E%90%EC%B9%98%EB%8F%84&cid=1896000",
+        "promotions": []
+      },
+      {
+        "시도": "전북특별자치도",
+        "세부지역": "무주군",
+        "이름": "호텔 티롤",
+        "업종": "관광호텔업",
+        "객실수": "118",
+        "전화번호": "063-320-7617",
+        "주소": "전북특별자치도 무주군 설천면 만선로 185",
+        "홈페이지": "",
+        "예약페이지": "",
+        "official_link": "",
+        "affiliate_link": "https://www.agoda.com/ko-kr/search?query=%EC%A0%84%EB%B6%81%ED%8A%B9%EB%B3%84%EC%9E%90%EC%B9%98%EB%8F%84&cid=1896000",
+        "promotions": []
+      },
+      {
+        "시도": "전북특별자치도",
+        "세부지역": "전주시",
+        "이름": "더 메이 호텔",
+        "업종": "관광호텔업",
+        "객실수": "51",
+        "전화번호": "063-246-5555",
+        "주소": "전북특별자치도 전주시 덕진구 기린대로 800 (팔복동1가)",
+        "홈페이지": "http://www.themay.co.kr",
+        "예약페이지": "http://www.themay.co.kr",
+        "official_link": "http://www.themay.co.kr",
+        "affiliate_link": "https://www.agoda.com/ko-kr/search?query=%EC%A0%84%EB%B6%81%ED%8A%B9%EB%B3%84%EC%9E%90%EC%B9%98%EB%8F%84&cid=1896000",
+        "promotions": []
+      }
+    ],
+    "3성": [
+      {
+        "시도": "광주광역시",
+        "세부지역": "동구",
+        "이름": "ACC DESIGN 호텔",
+        "업종": "관광호텔업",
+        "객실수": "76",
+        "전화번호": "062-234-8000",
+        "주소": "광주광역시 동구 금남로 226-11 ACC디자인호텔 (금남로2가)",
+        "홈페이지": "http://acchotel.kr/",
+        "예약페이지": "http://acchotel.kr/",
+        "official_link": "http://acchotel.kr/",
+        "affiliate_link": "https://www.agoda.com/ko-kr/search?query=%EA%B4%91%EC%A3%BC%EA%B4%91%EC%97%AD%EC%8B%9C&cid=1896000",
+        "promotions": []
+      },
+      {
+        "시도": "광주광역시",
+        "세부지역": "동구",
+        "이름": "컬쳐호텔 람",
+        "업종": "관광호텔업",
+        "객실수": "43",
+        "전화번호": "062-223-1500",
+        "주소": "광주광역시 동구 서석로 89 (대의동)",
+        "홈페이지": "",
+        "예약페이지": "",
+        "official_link": "",
+        "affiliate_link": "https://www.agoda.com/ko-kr/search?query=%EA%B4%91%EC%A3%BC%EA%B4%91%EC%97%AD%EC%8B%9C&cid=1896000",
+        "promotions": []
+      },
+      {
+        "시도": "광주광역시",
+        "세부지역": "동구",
+        "이름": "호텔아트하임",
+        "업종": "관광호텔업",
+        "객실수": "92",
+        "전화번호": "062-236-5881",
+        "주소": "광주광역시 동구 서석로10번길 5 (불로동)",
+        "홈페이지": "http://hotelartheim.co.kr",
+        "예약페이지": "http://hotelartheim.co.kr",
+        "official_link": "http://hotelartheim.co.kr",
+        "affiliate_link": "https://www.agoda.com/ko-kr/search?query=%EA%B4%91%EC%A3%BC%EA%B4%91%EC%97%AD%EC%8B%9C&cid=1896000",
+        "promotions": []
+      },
+      {
+        "시도": "광주광역시",
+        "세부지역": "북구",
+        "이름": "에이치원호텔",
+        "업종": "관광호텔업",
+        "객실수": "87",
+        "전화번호": "062-376-3000",
+        "주소": "광주광역시 북구 대자로106번길 10-6 (운암동)",
+        "홈페이지": "http://www.h1hotel.co.kr",
+        "예약페이지": "http://www.h1hotel.co.kr",
+        "official_link": "http://www.h1hotel.co.kr",
+        "affiliate_link": "https://www.agoda.com/ko-kr/search?query=%EA%B4%91%EC%A3%BC%EA%B4%91%EC%97%AD%EC%8B%9C&cid=1896000",
+        "promotions": []
+      },
+      {
+        "시도": "전라남도",
+        "세부지역": "구례군",
+        "이름": "더 케이 지리산 가족 호텔",
+        "업종": "가족호텔업",
+        "객실수": "134",
+        "전화번호": "061-783-8100",
+        "주소": "전라남도 구례군 산동면 지리산온천로 317",
+        "홈페이지": "https://www.thek-hotel.co.kr/jrmh/index.do",
+        "예약페이지": "https://www.thek-hotel.co.kr/jrmh/index.do",
+        "official_link": "https://www.thek-hotel.co.kr/jrmh/index.do",
+        "affiliate_link": "https://www.agoda.com/ko-kr/search?query=%EC%A0%84%EB%9D%BC%EB%82%A8%EB%8F%84&cid=1896000",
+        "promotions": []
+      },
+      {
+        "시도": "전라남도",
+        "세부지역": "목포시",
+        "이름": "목포 신안 비치 호텔",
+        "업종": "관광호텔업",
+        "객실수": "128",
+        "전화번호": "061-243-3399",
+        "주소": "전라남도 목포시 해안로 2 (죽교동)",
+        "홈페이지": "http://www.shinanbeachhotel.com",
+        "예약페이지": "http://www.shinanbeachhotel.com",
+        "official_link": "http://www.shinanbeachhotel.com",
+        "affiliate_link": "https://www.agoda.com/ko-kr/search?query=%EC%A0%84%EB%9D%BC%EB%82%A8%EB%8F%84&cid=1896000",
+        "promotions": []
+      },
+      {
+        "시도": "전라남도",
+        "세부지역": "목포시",
+        "이름": "샹그리아비치호텔",
+        "업종": "관광호텔업",
+        "객실수": "71",
+        "전화번호": "061-285-0100",
+        "주소": "전라남도 목포시 평화로 79 (상동)",
+        "홈페이지": "http://www.shangriahotel.co.kr",
+        "예약페이지": "http://www.shangriahotel.co.kr",
+        "official_link": "http://www.shangriahotel.co.kr",
+        "affiliate_link": "https://www.agoda.com/ko-kr/search?query=%EC%A0%84%EB%9D%BC%EB%82%A8%EB%8F%84&cid=1896000",
+        "promotions": []
+      },
+      {
+        "시도": "전라남도",
+        "세부지역": "여수시",
+        "이름": "(주)여수관광레저(호텔더시티)",
+        "업종": "관광호텔업",
+        "객실수": "55",
+        "전화번호": "061-808-8000",
+        "주소": "전라남도 여수시 좌수영로 641 (둔덕동)",
+        "홈페이지": "http://www.citypark.co.kr/",
+        "예약페이지": "http://www.citypark.co.kr/",
+        "official_link": "http://www.citypark.co.kr/",
+        "affiliate_link": "https://www.agoda.com/ko-kr/search?query=%EC%A0%84%EB%9D%BC%EB%82%A8%EB%8F%84&cid=1896000",
+        "promotions": []
+      },
+      {
+        "시도": "전라남도",
+        "세부지역": "여수시",
+        "이름": "여수 디오션 호텔",
+        "업종": "관광호텔업",
+        "객실수": "136",
+        "전화번호": "061-689-0858",
+        "주소": "전라남도 여수시 소호로 295 (소호동)",
+        "홈페이지": "https://theoceanresort.co.kr/intro.do",
+        "예약페이지": "https://theoceanresort.co.kr/intro.do",
+        "official_link": "https://theoceanresort.co.kr/intro.do",
+        "affiliate_link": "https://www.agoda.com/ko-kr/search?query=%EC%A0%84%EB%9D%BC%EB%82%A8%EB%8F%84&cid=1896000",
+        "promotions": []
+      },
+      {
+        "시도": "전라남도",
+        "세부지역": "여수시",
+        "이름": "호텔마띠유 여수",
+        "업종": "관광호텔업",
+        "객실수": "43",
+        "전화번호": "061-662-3131",
+        "주소": "전라남도 여수시 오동도로 20 (공화동)",
+        "홈페이지": "http://matthieuyeosu.com/main.html",
+        "예약페이지": "http://matthieuyeosu.com/main.html",
+        "official_link": "http://matthieuyeosu.com/main.html",
+        "affiliate_link": "https://www.agoda.com/ko-kr/search?query=%EC%A0%84%EB%9D%BC%EB%82%A8%EB%8F%84&cid=1896000",
+        "promotions": []
+      },
+      {
+        "시도": "전라남도",
+        "세부지역": "영광군",
+        "이름": "호텔 더 스타",
+        "업종": "관광호텔업",
+        "객실수": "42",
+        "전화번호": "061-350-7900",
+        "주소": "전라남도 영광군 영광읍 옥당로 74",
+        "홈페이지": "",
+        "예약페이지": "",
+        "official_link": "",
+        "affiliate_link": "https://www.agoda.com/ko-kr/search?query=%EC%A0%84%EB%9D%BC%EB%82%A8%EB%8F%84&cid=1896000",
+        "promotions": []
+      },
+      {
+        "시도": "전라남도",
+        "세부지역": "해남군",
+        "이름": "파인비치골프호텔",
+        "업종": "관광호텔업",
+        "객실수": "42",
+        "전화번호": "061-530-7700",
+        "주소": "전라남도 해남군 화원면 시아로 224 파인비치 골프호텔",
+        "홈페이지": "",
+        "예약페이지": "",
+        "official_link": "",
+        "affiliate_link": "https://www.agoda.com/ko-kr/search?query=%EC%A0%84%EB%9D%BC%EB%82%A8%EB%8F%84&cid=1896000",
+        "promotions": []
+      },
+      {
+        "시도": "전라북도",
+        "세부지역": "부안군",
+        "이름": "모항 해나루 호텔",
+        "업종": "가족호텔업",
+        "객실수": "112",
+        "전화번호": "063-580-0800",
+        "주소": "전라북도 부안군 변산면 모항해변길 73",
+        "홈페이지": "http://www.haenaruhotel.co.kr/",
+        "예약페이지": "http://www.haenaruhotel.co.kr/",
+        "official_link": "http://www.haenaruhotel.co.kr/",
+        "affiliate_link": "https://www.agoda.com/ko-kr/search?query=%EC%A0%84%EB%9D%BC%EB%B6%81%EB%8F%84&cid=1896000",
+        "promotions": []
+      },
+      {
+        "시도": "전라북도",
+        "세부지역": "전주시",
+        "이름": "그랜드힐스턴",
+        "업종": "관광호텔업",
+        "객실수": "100",
+        "전화번호": "063-251-8000",
+        "주소": "전라북도 전주시 완산구 온고을로 211 (효자동3가)",
+        "홈페이지": "http://www.grandhillstone.com",
+        "예약페이지": "http://www.grandhillstone.com",
+        "official_link": "http://www.grandhillstone.com",
+        "affiliate_link": "https://www.agoda.com/ko-kr/search?query=%EC%A0%84%EB%9D%BC%EB%B6%81%EB%8F%84&cid=1896000",
+        "promotions": []
+      },
+      {
+        "시도": "전라북도",
+        "세부지역": "전주시",
+        "이름": "엔브릿지호텔",
+        "업종": "관광호텔업",
+        "객실수": "32",
+        "전화번호": "063-232-6000",
+        "주소": "전라북도 전주시 완산구 전주천서로 81 (동서학동)",
+        "홈페이지": "",
+        "예약페이지": "",
+        "official_link": "",
+        "affiliate_link": "https://www.agoda.com/ko-kr/search?query=%EC%A0%84%EB%9D%BC%EB%B6%81%EB%8F%84&cid=1896000",
+        "promotions": []
+      },
+      {
+        "시도": "전라북도",
+        "세부지역": "전주시",
+        "이름": "전주관광 호텔 꽃심",
+        "업종": "관광호텔업",
+        "객실수": "101",
+        "전화번호": "063-232-5353",
+        "주소": "전라북도 전주시 완산구 팔달로 171 (경원동1가)",
+        "홈페이지": "http://www.hotelkkotsim.com/",
+        "예약페이지": "http://www.hotelkkotsim.com/",
+        "official_link": "http://www.hotelkkotsim.com/",
+        "affiliate_link": "https://www.agoda.com/ko-kr/search?query=%EC%A0%84%EB%9D%BC%EB%B6%81%EB%8F%84&cid=1896000",
+        "promotions": []
+      },
+      {
+        "시도": "전북특별자치도",
+        "세부지역": "군산시",
+        "이름": "호텔은파팰리스",
+        "업종": "관광호텔업",
+        "객실수": "65",
+        "전화번호": "063-467-7000",
+        "주소": "전북특별자치도 군산시 은파순환길 20 (나운동)",
+        "홈페이지": "https://h-eunpapalace.com/",
+        "예약페이지": "https://h-eunpapalace.com/",
+        "official_link": "https://h-eunpapalace.com/",
+        "affiliate_link": "https://www.agoda.com/ko-kr/search?query=%EC%A0%84%EB%B6%81%ED%8A%B9%EB%B3%84%EC%9E%90%EC%B9%98%EB%8F%84&cid=1896000",
+        "promotions": []
+      },
+      {
+        "시도": "전북특별자치도",
+        "세부지역": "전주시",
+        "이름": "이비스 스타일 앰배서더 호텔",
+        "업종": "관광호텔업",
+        "객실수": "81",
+        "전화번호": "063-249-5000",
+        "주소": "전북특별자치도 전주시 완산구 전주객사4길 74-50 (고사동)",
+        "홈페이지": "https://all.accor.com/ssr/app/accor/rates/c2g2/index.ko.shtml?compositions=1&datein=2024-11-09&nights=1&hidehoteldetails=false&hidewdr=false&destination=jeonju-si-jeonbuk-state-south-korea",
+        "예약페이지": "https://all.accor.com/ssr/app/accor/rates/c2g2/index.ko.shtml?compositions=1&datein=2024-11-09&nights=1&hidehoteldetails=false&hidewdr=false&destination=jeonju-si-jeonbuk-state-south-korea",
+        "official_link": "https://all.accor.com/ssr/app/accor/rates/c2g2/index.ko.shtml?compositions=1&datein=2024-11-09&nights=1&hidehoteldetails=false&hidewdr=false&destination=jeonju-si-jeonbuk-state-south-korea",
+        "affiliate_link": "https://www.agoda.com/ko-kr/search?query=%EC%A0%84%EB%B6%81%ED%8A%B9%EB%B3%84%EC%9E%90%EC%B9%98%EB%8F%84&cid=1896000",
+        "promotions": []
+>>>>>>> 875658e96950b06fb1fcc881df92162dd8e37575
       }
     ]
   },
@@ -8144,7 +9025,11 @@
             "id": "8fa97e2362d6df6e545ec1f429fa5189",
             "hotelBrand": "롯데호텔",
             "endDate": "2024-06-30",
+<<<<<<< HEAD
             "scrapedAt": "2026-04-23T17:11:24.502Z"
+=======
+            "scrapedAt": "2026-04-22T19:58:30.497Z"
+>>>>>>> 875658e96950b06fb1fcc881df92162dd8e37575
           },
           {
             "title": {
@@ -8159,7 +9044,11 @@
             "id": "e2aed8d0adb9aa338250407aa2f7181c",
             "hotelBrand": "롯데호텔",
             "endDate": "2024-12-31",
+<<<<<<< HEAD
             "scrapedAt": "2026-04-23T17:11:24.504Z"
+=======
+            "scrapedAt": "2026-04-22T19:58:30.497Z"
+>>>>>>> 875658e96950b06fb1fcc881df92162dd8e37575
           }
         ],
         "tourApiMatched": false,
@@ -8422,7 +9311,11 @@
             "id": "9370e86c69ab075943caafbdf03b5730",
             "hotelBrand": "신라호텔",
             "endDate": "2024-08-30",
+<<<<<<< HEAD
             "scrapedAt": "2026-04-23T17:11:24.813Z"
+=======
+            "scrapedAt": "2026-04-22T19:58:30.566Z"
+>>>>>>> 875658e96950b06fb1fcc881df92162dd8e37575
           },
           {
             "title": {
@@ -8437,7 +9330,11 @@
             "id": "1759a346a8ac8c58080f32468334b726",
             "hotelBrand": "신라호텔",
             "endDate": "2024-12-31",
+<<<<<<< HEAD
             "scrapedAt": "2026-04-23T17:11:24.813Z"
+=======
+            "scrapedAt": "2026-04-22T19:58:30.566Z"
+>>>>>>> 875658e96950b06fb1fcc881df92162dd8e37575
           }
         ],
         "tourApiMatched": true,
@@ -8633,7 +9530,11 @@
             "id": "19f22f36a3935ff05dbaf85ff2f268cb",
             "hotelBrand": "조선호텔",
             "endDate": "2024-10-31",
+<<<<<<< HEAD
             "scrapedAt": "2026-04-23T17:11:24.813Z"
+=======
+            "scrapedAt": "2026-04-22T19:58:30.566Z"
+>>>>>>> 875658e96950b06fb1fcc881df92162dd8e37575
           },
           {
             "title": {
@@ -8648,7 +9549,11 @@
             "id": "e9f9aa5d550e7a0c7b716dae8fc0372b",
             "hotelBrand": "조선호텔",
             "endDate": "2024-08-31",
+<<<<<<< HEAD
             "scrapedAt": "2026-04-23T17:11:24.813Z"
+=======
+            "scrapedAt": "2026-04-22T19:58:30.566Z"
+>>>>>>> 875658e96950b06fb1fcc881df92162dd8e37575
           }
         ],
         "tourApiMatched": false,
@@ -8681,7 +9586,11 @@
             "id": "8fa97e2362d6df6e545ec1f429fa5189",
             "hotelBrand": "롯데호텔",
             "endDate": "2024-06-30",
+<<<<<<< HEAD
             "scrapedAt": "2026-04-23T17:11:24.502Z"
+=======
+            "scrapedAt": "2026-04-22T19:58:30.497Z"
+>>>>>>> 875658e96950b06fb1fcc881df92162dd8e37575
           },
           {
             "title": {
@@ -8696,7 +9605,11 @@
             "id": "e2aed8d0adb9aa338250407aa2f7181c",
             "hotelBrand": "롯데호텔",
             "endDate": "2024-12-31",
+<<<<<<< HEAD
             "scrapedAt": "2026-04-23T17:11:24.504Z"
+=======
+            "scrapedAt": "2026-04-22T19:58:30.497Z"
+>>>>>>> 875658e96950b06fb1fcc881df92162dd8e37575
           }
         ],
         "tourApiMatched": false,
@@ -8729,7 +9642,11 @@
             "id": "9370e86c69ab075943caafbdf03b5730",
             "hotelBrand": "신라호텔",
             "endDate": "2024-08-30",
+<<<<<<< HEAD
             "scrapedAt": "2026-04-23T17:11:24.813Z"
+=======
+            "scrapedAt": "2026-04-22T19:58:30.566Z"
+>>>>>>> 875658e96950b06fb1fcc881df92162dd8e37575
           },
           {
             "title": {
@@ -8744,7 +9661,11 @@
             "id": "1759a346a8ac8c58080f32468334b726",
             "hotelBrand": "신라호텔",
             "endDate": "2024-12-31",
+<<<<<<< HEAD
             "scrapedAt": "2026-04-23T17:11:24.813Z"
+=======
+            "scrapedAt": "2026-04-22T19:58:30.566Z"
+>>>>>>> 875658e96950b06fb1fcc881df92162dd8e37575
           }
         ],
         "tourApiMatched": false,
@@ -9249,7 +10170,11 @@
             "id": "8fa97e2362d6df6e545ec1f429fa5189",
             "hotelBrand": "롯데호텔",
             "endDate": "2024-06-30",
+<<<<<<< HEAD
             "scrapedAt": "2026-04-23T17:11:24.502Z"
+=======
+            "scrapedAt": "2026-04-22T19:58:30.497Z"
+>>>>>>> 875658e96950b06fb1fcc881df92162dd8e37575
           },
           {
             "title": {
@@ -9264,7 +10189,11 @@
             "id": "e2aed8d0adb9aa338250407aa2f7181c",
             "hotelBrand": "롯데호텔",
             "endDate": "2024-12-31",
+<<<<<<< HEAD
             "scrapedAt": "2026-04-23T17:11:24.504Z"
+=======
+            "scrapedAt": "2026-04-22T19:58:30.497Z"
+>>>>>>> 875658e96950b06fb1fcc881df92162dd8e37575
           }
         ],
         "tourApiMatched": false,
@@ -9314,7 +10243,11 @@
             "id": "9370e86c69ab075943caafbdf03b5730",
             "hotelBrand": "신라호텔",
             "endDate": "2024-08-30",
+<<<<<<< HEAD
             "scrapedAt": "2026-04-23T17:11:24.813Z"
+=======
+            "scrapedAt": "2026-04-22T19:58:30.566Z"
+>>>>>>> 875658e96950b06fb1fcc881df92162dd8e37575
           },
           {
             "title": {
@@ -9329,7 +10262,11 @@
             "id": "1759a346a8ac8c58080f32468334b726",
             "hotelBrand": "신라호텔",
             "endDate": "2024-12-31",
+<<<<<<< HEAD
             "scrapedAt": "2026-04-23T17:11:24.813Z"
+=======
+            "scrapedAt": "2026-04-22T19:58:30.566Z"
+>>>>>>> 875658e96950b06fb1fcc881df92162dd8e37575
           }
         ],
         "tourApiMatched": false,
@@ -9361,7 +10298,11 @@
             "id": "9370e86c69ab075943caafbdf03b5730",
             "hotelBrand": "신라호텔",
             "endDate": "2024-08-30",
+<<<<<<< HEAD
             "scrapedAt": "2026-04-23T17:11:24.813Z"
+=======
+            "scrapedAt": "2026-04-22T19:58:30.566Z"
+>>>>>>> 875658e96950b06fb1fcc881df92162dd8e37575
           },
           {
             "title": {
@@ -9376,7 +10317,11 @@
             "id": "1759a346a8ac8c58080f32468334b726",
             "hotelBrand": "신라호텔",
             "endDate": "2024-12-31",
+<<<<<<< HEAD
             "scrapedAt": "2026-04-23T17:11:24.813Z"
+=======
+            "scrapedAt": "2026-04-22T19:58:30.566Z"
+>>>>>>> 875658e96950b06fb1fcc881df92162dd8e37575
           }
         ],
         "tourApiMatched": false,

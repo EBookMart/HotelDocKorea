@@ -1,0 +1,52 @@
+{
+  "lateNightBuses": [
+    {
+      "id": "N6000",
+      "name": "N6000 (Gangnam Station)",
+      "terminals": {
+        "T1": { "platform": "1F 6A", "firstBus": "23:50", "lastBus": "04:10" }
+      },
+      "stops": ["Incheon Int'l Airport T1", "Songjeong St.", "Yeomchang St.", "Gangnam St."],
+      "priceKrw": 10000
+    },
+    {
+      "id": "N6001",
+      "name": "N6001 (Seoul Station)",
+      "terminals": {
+        "T1": { "platform": "1F 6A", "firstBus": "00:00", "lastBus": "04:40" }
+      },
+      "stops": ["Incheon Int'l Airport T1", "Songjeong St.", "Yeomchang St.", "Seoul St."],
+      "priceKrw": 10000
+    },
+    {
+      "id": "N6002",
+      "name": "N6002 (Seoul Station / Dongdaemun)",
+      "terminals": {
+        "T2": { "platform": "B1 25", "firstBus": "23:40", "lastBus": "04:00" },
+        "T1": { "platform": "1F 6A", "firstBus": "00:00", "lastBus": "04:20" }
+      },
+      "stops": ["Incheon Int'l Airport", "Songjeong St.", "Seoul St.", "Dongdaemun"],
+      "priceKrw": 10000
+    },
+    {
+      "id": "N6701",
+      "name": "N6701 (K-Limousine - Gangnam/Jamsil)",
+      "terminals": {
+        "T2": { "platform": "B1 18", "firstBus": "23:50", "lastBus": "04:00" },
+        "T1": { "platform": "1F 3B", "firstBus": "00:10", "lastBus": "04:20" }
+      },
+      "stops": ["Incheon Int'l Airport", "Banpo St.", "COEX", "Jamsil St."],
+      "priceKrw": 18000
+    },
+    {
+      "id": "N6703",
+      "name": "N6703 (K-Limousine - Dong대문/Seoul St.)",
+      "terminals": {
+        "T2": { "platform": "B1 17", "firstBus": "23:40", "lastBus": "03:50" },
+        "T1": { "platform": "1F 3B", "firstBus": "00:00", "lastBus": "04:10" }
+      },
+      "stops": ["Incheon Int'l Airport", "Mapo St.", "Seoul St.", "Dongdaemun"],
+      "priceKrw": 18000
+    }
+  ]
+}

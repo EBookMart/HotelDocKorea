@@ -10,6 +10,7 @@ import WeatherSection from "./WeatherSection";
 import HotPicksSection from "./HotPicksSection";
 import GradeFilter from "./GradeFilter";
 import { LANGUAGES, translations, type Language } from "@/lib/i18n/translations";
+import glossaryData from "@/data/glossary.json";
 
 // 하위 호환성 (HotelSection 내부 사용)
 const localI18n: any = {
@@ -76,8 +77,24 @@ function getCacheKey(text: string, lang: string) {
   return `${CACHE_PREFIX}${lang}_${text.slice(0, 30)}`;
 }
 
+function normalizeText(text: string) {
+  return text.toLowerCase().replace(/\s+/g, '');
+}
+
 async function translateText(text: string, targetLang: string): Promise<string> {
   if (!text || targetLang === 'ko') return text;
+
+  // --- 0. Glossary Check (User defined mappings) ---
+  // 유연한 매칭: 대소문자 및 공백 무시
+  const normalizedInput = normalizeText(text);
+  const glossary: Record<string, string> = glossaryData;
+  
+  for (const [key, value] of Object.entries(glossary)) {
+    if (normalizeText(key) === normalizedInput) {
+      console.log(`[Glossary] Matched: ${text} -> ${value}`);
+      return value;
+    }
+  }
 
   const key = getCacheKey(text, targetLang);
 

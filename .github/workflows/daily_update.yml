@@ -1,0 +1,35 @@
+name: Daily Hotel Data Update
+
+on:
+  schedule:
+    - cron: '0 18 * * *' # 매일 한국 시간 새벽 3시 (UTC 18:00)
+  workflow_dispatch: # 수동 실행 버튼 추가
+
+jobs:
+  update-data:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      - name: Install Dependencies
+        run: npm install
+
+      - name: Run Automation Pipeline
+        env:
+          TOUR_API_KEY: ${{ secrets.TOUR_API_KEY }}
+        run: node scripts/pipeline.js
+
+      - name: Commit and Push Changes
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add public/data/hotels.json
+          git diff --quiet && git diff --staged --quiet || (git commit -m "chore: daily hotel data update [skip ci]" && git push)

@@ -2,8 +2,10 @@
 
 import Image from "next/image";
 import { useState } from "react";
-import { MapPin, Star, Phone, Globe, CalendarDays } from "lucide-react";
+import { MapPin, Star, Phone, Globe, CalendarDays, ArrowRightCircle } from "lucide-react";
 import { TranslatedText } from "./HomeClient";
+import AirportGuide from "./AirportGuide";
+import airportRoutesData from "../../public/data/airport-routes.json";
 
 function HotelImageCard({ imageUrl, hotelName, rating, city, isLuxury, isBudget, homepageUrl }: {
   imageUrl?: string;
@@ -93,6 +95,11 @@ export default function HotelSection({
   getPromoTitle,
   sectionTitle
 }: any) {
+  const [expandedHotel, setExpandedHotel] = useState<string | null>(null);
+
+  const toggleGuide = (hotelName: string) => {
+    setExpandedHotel(expandedHotel === hotelName ? null : hotelName);
+  };
   return (
     <section>
       <div className="flex justify-between items-center mb-4">
@@ -175,18 +182,66 @@ export default function HotelSection({
                       </div>
                     )}
 
-                    <div className="flex gap-2 mt-3 pt-3 border-t border-gray-100">
-                      <a href={hotel.홈페이지 || hotel.official_link || '#'} target="_blank" rel="noopener noreferrer" 
-                         className="flex items-center justify-center gap-1 flex-[0.7] bg-gray-100 border border-gray-200 py-2 rounded-lg text-[11px] font-semibold text-gray-600 hover:bg-gray-200 transition-all">
-                         <Globe size={12} /> {t.official}
-                      </a>
-                      <a href={hotel.affiliate_link || '#'} target="_blank" rel="noopener noreferrer" 
-                         className="flex items-center justify-center gap-1 flex-1 bg-gradient-to-r from-blue-600 via-indigo-600 to-purple-600 py-2 rounded-lg text-[12px] font-extrabold text-white shadow-md shadow-indigo-500/20 hover:brightness-110 transition-all">
-                         <CalendarDays size={14} /> {t.compare}
-                      </a>
+                    {/* 💰 아고다 수익 모델 고도화: 위젯 스타일 배너 */}
+                    <div className="mt-4 pt-4 border-t border-gray-100">
+                      <div className="flex flex-col gap-2">
+                        <div className="flex items-center justify-between px-1 mb-1">
+                          <span className="text-[10px] font-bold text-gray-400 uppercase tracking-wider">Lowest Price Guarantee</span>
+                          <Image src="https://www.agoda.com/favicon.ico" alt="Agoda" width={12} height={12} className="opacity-70" />
+                        </div>
+                        
+                        <a href={hotel.affiliate_link || '#'} target="_blank" rel="noopener noreferrer" 
+                           className="relative flex items-center justify-between w-full bg-gradient-to-r from-[#003580] to-[#0051ba] p-3 rounded-xl shadow-lg shadow-blue-900/10 hover:scale-[1.02] transition-all group overflow-hidden">
+                           {/* 빛나는 효과 */}
+                           <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/10 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-1000" />
+                           
+                           <div className="flex flex-col items-start z-10">
+                             <span className="text-[10px] text-blue-200 font-medium mb-0.5">Agoda Real-time Deal</span>
+                             <span className="text-[13px] font-extrabold text-white flex items-center gap-1.5">
+                               <CalendarDays size={14} className="text-yellow-400" />
+                               <TranslatedText 
+                                 text={lang === 'ko' ? "오늘의 최저가 확인하기" : lang === 'ja' ? "本日の最安値を確認" : "Check Today's Lowest Price"} 
+                                 lang={lang} 
+                               />
+                             </span>
+                           </div>
+                           
+                           <div className="bg-yellow-400 text-[#003580] px-3 py-1.5 rounded-lg text-[12px] font-black shadow-sm group-hover:bg-white transition-colors z-10">
+                             GO &gt;
+                           </div>
+                        </a>
+
+                        <div className="flex gap-2 mt-1">
+                          <a href={hotel.홈페이지 || hotel.official_link || '#'} target="_blank" rel="noopener noreferrer" 
+                             className="flex items-center justify-center gap-1.5 flex-1 bg-white border border-gray-200 py-2 rounded-lg text-[11px] font-bold text-gray-500 hover:bg-gray-50 transition-all">
+                             <Globe size={12} className="text-gray-400" /> {t.official}
+                          </a>
+                          <button 
+                             onClick={() => toggleGuide(hotel.이름)}
+                             className={`flex items-center justify-center gap-1.5 flex-1 py-2 rounded-lg text-[11px] font-bold transition-all border ${
+                               expandedHotel === hotel.이름 
+                               ? 'bg-blue-600 text-white border-blue-600' 
+                               : 'bg-blue-50 text-blue-700 border-blue-100 hover:bg-blue-100'
+                             }`}
+                          >
+                             <ArrowRightCircle size={12} className={expandedHotel === hotel.이름 ? 'text-blue-200' : 'text-blue-400'} />
+                             {lang === 'ko' ? "공항 이동 가이드" : "Airport Guide"}
+                          </button>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
+
+                {expandedHotel === hotel.이름 && (
+                  <div className="px-4 pb-4 animate-in slide-in-from-top-1 duration-300">
+                    <AirportGuide 
+                      hotelName={hotel.이름} 
+                      lang={lang} 
+                      routeData={(airportRoutesData as any)[hotel.이름]} 
+                    />
+                  </div>
+                )}
               </div>
             );
           })

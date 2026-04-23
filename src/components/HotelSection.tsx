@@ -2,10 +2,11 @@
 
 import Image from "next/image";
 import { useState } from "react";
-import { MapPin, Star, Phone, Globe, CalendarDays, ArrowRightCircle } from "lucide-react";
+import { MapPin, Star, Phone, Globe, CalendarDays, ArrowRightCircle, Award, ThumbsUp } from "lucide-react";
 import { TranslatedText } from "./HomeClient";
 import AirportGuide from "./AirportGuide";
 import airportRoutesData from "../../public/data/airport-routes.json";
+import reputationData from "../../public/data/reputation.json";
 
 function HotelImageCard({ imageUrl, hotelName, rating, city, isLuxury, isBudget, homepageUrl }: {
   imageUrl?: string;
@@ -100,6 +101,16 @@ export default function HotelSection({
   const toggleGuide = (hotelName: string) => {
     setExpandedHotel(expandedHotel === hotelName ? null : hotelName);
   };
+
+  // 베이지안 랭킹 점수(weightedScore)에 따라 정렬 (Task 2 구현)
+  const sortedHotels = [...hotelsList].sort((a: any, b: any) => {
+    const repA = (reputationData as any)[a.이름];
+    const repB = (reputationData as any)[b.이름];
+    const scoreA = repA ? repA.weightedScore : 0;
+    const scoreB = repB ? repB.weightedScore : 0;
+    return scoreB - scoreA;
+  });
+
   return (
     <section>
       <div className="flex justify-between items-center mb-4">
@@ -111,11 +122,16 @@ export default function HotelSection({
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-4">
-        {hotelsList.length > 0 ? (
-          hotelsList.map((hotel: any, index: number) => {
+        {sortedHotels.length > 0 ? (
+          sortedHotels.map((hotel: any, index: number) => {
             const hRating = hotel.rating || activeRating || "3성";
             const isLuxury = hRating === "5성";
             const isBudget = hRating === "3성";
+            
+            // 평판 데이터 가져오기 (Task 4: Fallback 처리 포함)
+            const rep = (reputationData as any)[hotel.이름] || { originalRating: 0, reviewCount: 0 };
+            const hasPromo = hotel.promotions && hotel.promotions.length > 0;
+            const isTopRanked = index === 0 && !hasPromo; // 프로모션이 없고 1위인 경우 뱃지 대상
 
             return (
               <div key={index} className={`bg-white rounded-2xl border flex flex-col transition-all hover:-translate-y-1 duration-200 group relative overflow-hidden ${isLuxury ? 'shadow-lg shadow-yellow-500/10 border-yellow-300 ring-1 ring-yellow-100' : 'shadow-sm border-gray-200'}`}>
@@ -131,7 +147,20 @@ export default function HotelSection({
 
                 <div className="p-4 flex flex-col gap-3">
                   <div className="flex justify-between items-start">
-                    <div className="w-[80%]">
+                    <div className="w-[75%]">
+                      {isTopRanked && (
+                        <div className="flex items-center gap-1.5 mb-2 bg-emerald-50 text-emerald-700 w-fit px-2 py-0.5 rounded-md border border-emerald-100 animate-bounce">
+                          <Award size={12} className="text-emerald-500" />
+                          <span className="text-[10px] font-black uppercase tracking-tight">Traveler's Pick</span>
+                        </div>
+                      )}
+                      {!isTopRanked && rep.originalRating >= 4.5 && (
+                         <div className="flex items-center gap-1 bg-blue-50 text-blue-600 w-fit px-1.5 py-0.5 rounded-md mb-2 border border-blue-100">
+                             <ThumbsUp size={10} />
+                             <span className="text-[9px] font-bold">Highly Rated</span>
+                         </div>
+                      )}
+                      
                       <div className="flex items-center gap-2 mb-1 flex-wrap">
                         <h3 className={`text-[15px] font-bold leading-snug break-words min-w-0 group-hover:opacity-80 transition-colors ${isLuxury ? 'text-yellow-800' : 'text-gray-900'}`}>
                           <TranslatedText text={hotel['\uc774\ub984']} lang={lang} />
@@ -142,9 +171,17 @@ export default function HotelSection({
                         {hotel.시도} {hotel.세부지역}
                       </div>
                     </div>
-                    <div className={`flex shrink-0 px-1.5 py-1 rounded-lg ${isLuxury ? 'bg-gradient-to-br from-yellow-400 to-yellow-600 text-white shadow-md shadow-yellow-500/30' : 'text-yellow-400 bg-yellow-50'}`}>
-                      <Star size={14} fill="currentColor" />
-                      <span className={`text-[11px] ml-1 mt-0.5 font-bold ${isLuxury ? 'text-white' : 'text-yellow-600'}`}>{parseInt(hotel.rating || activeRating || "3")}</span>
+                    {/* Google 평판 데이터 노출 (v, R) */}
+                    <div className={`flex flex-col items-end shrink-0 px-2 py-1.5 rounded-xl ${isLuxury ? 'bg-gradient-to-br from-yellow-400 to-yellow-600 text-white shadow-md shadow-yellow-500/30' : 'bg-gray-50 border border-gray-100'}`}>
+                      <div className="flex items-center gap-1">
+                        <Star size={13} fill="currentColor" className={isLuxury ? 'text-white' : 'text-yellow-400'} />
+                        <span className={`text-[13px] font-black ${isLuxury ? 'text-white' : 'text-gray-800'}`}>
+                          {rep.originalRating > 0 ? rep.originalRating : parseInt(hotel.rating || activeRating || "3")}
+                        </span>
+                      </div>
+                      <div className={`text-[9px] font-bold mt-0.5 ${isLuxury ? 'text-yellow-100' : 'text-gray-400'}`}>
+                        {rep.reviewCount > 0 ? `${rep.reviewCount.toLocaleString()} Reviews` : 'Verified Info'}
+                      </div>
                     </div>
                   </div>
 
@@ -190,26 +227,35 @@ export default function HotelSection({
                           <Image src="https://www.agoda.com/favicon.ico" alt="Agoda" width={12} height={12} className="opacity-70" />
                         </div>
                         
-                        <a href={hotel.affiliate_link || '#'} target="_blank" rel="noopener noreferrer" 
-                           className="relative flex items-center justify-between w-full bg-gradient-to-r from-[#003580] to-[#0051ba] p-3 rounded-xl shadow-lg shadow-blue-900/10 hover:scale-[1.02] transition-all group overflow-hidden">
-                           {/* 빛나는 효과 */}
-                           <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/10 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-1000" />
-                           
-                           <div className="flex flex-col items-start z-10">
-                             <span className="text-[10px] text-blue-200 font-medium mb-0.5">Agoda Real-time Deal</span>
-                             <span className="text-[13px] font-extrabold text-white flex items-center gap-1.5">
-                               <CalendarDays size={14} className="text-yellow-400" />
-                               <TranslatedText 
-                                 text={lang === 'ko' ? "오늘의 최저가 확인하기" : lang === 'ja' ? "本日の最安値を確認" : "Check Today's Lowest Price"} 
-                                 lang={lang} 
-                               />
-                             </span>
-                           </div>
-                           
-                           <div className="bg-yellow-400 text-[#003580] px-3 py-1.5 rounded-lg text-[12px] font-black shadow-sm group-hover:bg-white transition-colors z-10">
-                             GO &gt;
-                           </div>
-                        </a>
+                        {(() => {
+                           const isEnglish = lang === 'en';
+                           const bookingUrl = `https://www.booking.com/searchresults.html?ss=${encodeURIComponent(hotel.이름)}&aid=2311236`;
+                           const agodaUrl = hotel.affiliate_link || `https://www.agoda.com/ko-kr/search?query=${encodeURIComponent(hotel.이름)}&cid=1896000`;
+                           const finalAffiliateUrl = isEnglish ? bookingUrl : agodaUrl;
+
+                           return (
+                             <a href={finalAffiliateUrl} target="_blank" rel="noopener noreferrer" 
+                                className="relative flex items-center justify-between w-full bg-gradient-to-r from-[#003580] to-[#0051ba] p-3 rounded-xl shadow-lg shadow-blue-900/10 hover:scale-[1.02] transition-all group overflow-hidden">
+                                {/* 빛나는 효과 */}
+                                <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/10 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-1000" />
+                                
+                                <div className="flex flex-col items-start z-10">
+                                  <span className="text-[10px] text-blue-200 font-medium mb-0.5">{isEnglish ? 'Special Booking Deal' : 'Agoda Real-time Deal'}</span>
+                                  <span className="text-[13px] font-extrabold text-white flex items-center gap-1.5">
+                                    <CalendarDays size={14} className="text-yellow-400" />
+                                    <TranslatedText 
+                                      text={lang === 'ko' ? "오늘의 최저가 확인하기" : lang === 'ja' ? "本日の最安値を確認" : "Check Today's Lowest Price"} 
+                                      lang={lang} 
+                                    />
+                                  </span>
+                                </div>
+                                
+                                <div className="bg-yellow-400 text-[#003580] px-3 py-1.5 rounded-lg text-[12px] font-black shadow-sm group-hover:bg-white transition-colors z-10">
+                                  GO &gt;
+                                </div>
+                             </a>
+                           );
+                        })()}
 
                         <div className="flex gap-2 mt-1">
                           <a href={hotel.홈페이지 || hotel.official_link || '#'} target="_blank" rel="noopener noreferrer" 

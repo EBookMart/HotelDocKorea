@@ -17,7 +17,6 @@ interface Festival {
 
 export default function FestivalsSection({ selectedRegion }: { selectedRegion: string | null }) {
   const [festivals, setFestivals] = useState<Festival[]>([]);
-  const [searchTerm, setSearchTerm] = useState("");
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
@@ -43,32 +42,15 @@ export default function FestivalsSection({ selectedRegion }: { selectedRegion: s
     return true;
   });
 
-  // 2. 권역 + 검색어 필터링
-  const filtered = activeFestivals.filter((f) => {
-    // 권역 필터
-    const regionMatch = !selectedRegion || f.region === selectedRegion;
-    if (!regionMatch) return false;
+  // 2. 권역 필터링
+  const filtered = selectedRegion 
+    ? activeFestivals.filter((f) => f.region === selectedRegion) 
+    : activeFestivals;
 
-    // 검색어 필터
-    if (searchTerm.trim()) {
-      const searchable = [
-        f.name || "",
-        f.location || "",
-        f.description || "",
-        f.region || ""
-      ].join(" ").toLowerCase().replace(/\s+/g, "");
-      
-      const query = searchTerm.toLowerCase().replace(/\s+/g, "");
-      return searchable.includes(query);
-    }
-
-    return true;
-  });
-
-  // 3. 표시 리스트 (필터 결과가 있으면 그것을, 없는데 검색 중이면 빈 배열, 검색 중 아니면 기본 4개)
-  const displayList = searchTerm.trim() 
-    ? filtered 
-    : (filtered.length > 0 ? filtered.slice(0, 4) : activeFestivals.slice(0, 4));
+  // 3. 표시 리스트 (최대 4개, 필터 결과 없으면 전체 활성 중 4개)
+  const displayList = filtered.length > 0 
+    ? filtered.slice(0, 4) 
+    : activeFestivals.slice(0, 4);
 
   if (loading) {
     return (
@@ -90,33 +72,6 @@ export default function FestivalsSection({ selectedRegion }: { selectedRegion: s
         <h2 className="text-xl font-bold text-gray-900">축제 · 공연 · 행사</h2>
         <span className="ml-auto text-[10px] bg-blue-100 text-blue-700 px-2 py-0.5 rounded">🔗 TourAPI 연동 예정</span>
       </div>
-
-      {/* 검색창 추가 */}
-      <div className="relative mb-4">
-        <input
-          type="text"
-          value={searchTerm}
-          onChange={(e) => setSearchTerm(e.target.value)}
-          placeholder="축제·행사명 또는 지역 검색..."
-          className="w-full px-4 py-2 pr-10 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-400 text-sm"
-        />
-        {searchTerm && (
-          <button
-            onClick={() => setSearchTerm("")}
-            className="absolute right-3 top-1/2 -translate-y-1/2 text-gray-400 hover:text-gray-600"
-            aria-label="검색어 지우기"
-          >
-            ✕
-          </button>
-        )}
-      </div>
-
-      {searchTerm && (
-        <div className="text-xs text-gray-500 mb-3 px-1">
-          &quot;{searchTerm}&quot; 검색 결과: {filtered.length}개
-        </div>
-      )}
-
       <div className="space-y-3">
         {displayList.length > 0 ? (
           displayList.map((f) => (
@@ -130,21 +85,7 @@ export default function FestivalsSection({ selectedRegion }: { selectedRegion: s
             </div>
           ))
         ) : (
-          <div className="text-center py-10">
-            <p className="text-sm text-gray-400">
-              {searchTerm 
-                ? `"${searchTerm}"에 해당하는 축제·행사가 없습니다.` 
-                : "진행 중인 행사가 없습니다."}
-            </p>
-            {searchTerm && (
-              <button
-                onClick={() => setSearchTerm("")}
-                className="mt-2 text-xs text-purple-500 hover:underline"
-              >
-                검색어 지우기
-              </button>
-            )}
-          </div>
+          <p className="text-sm text-gray-400 text-center py-10">진행 중인 행사가 없습니다.</p>
         )}
       </div>
     </div>

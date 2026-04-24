@@ -15,7 +15,6 @@ interface Attraction {
 
 export default function NearbySection({ selectedRegion }: { selectedRegion: string | null }) {
   const [items, setItems] = useState<Attraction[]>([]);
-  const [searchTerm, setSearchTerm] = useState("");
   const [loading, setLoading] = useState(true);
   const [tab, setTab] = useState<"food" | "attractions">("food");
 
@@ -32,35 +31,17 @@ export default function NearbySection({ selectedRegion }: { selectedRegion: stri
       });
   }, []);
 
-  // 2. 권역 + 탭 + 검색어 필터링
-  const filtered = items.filter((item) => {
-    if (!item.active) return false;
+  // 1. 활성 상태 필터링
+  const activeItems = items.filter((item) => item.active);
 
-    // 카테고리 필터
-    const categoryKey = tab === "food" ? "food" : "attraction";
-    if (item.category !== categoryKey) return false;
+  // 2. 권역 필터링 (전국이 아닐 경우)
+  const regionFiltered = selectedRegion 
+    ? activeItems.filter((item) => item.region === selectedRegion) 
+    : activeItems;
 
-    // 권역 필터
-    const regionMatch = !selectedRegion || item.region === selectedRegion;
-    if (!regionMatch) return false;
-
-    // 검색어 필터
-    if (searchTerm.trim()) {
-      const searchable = [
-        item.name || "",
-        item.address || "",
-        item.tag || "",
-        item.region || ""
-      ].join(" ").toLowerCase().replace(/\s+/g, "");
-      
-      const query = searchTerm.toLowerCase().replace(/\s+/g, "");
-      return searchable.includes(query);
-    }
-
-    return true;
-  });
-
-  const displayList = filtered;
+  // 3. 탭(카테고리) 필터링
+  const categoryKey = tab === "food" ? "food" : "attraction";
+  const displayList = regionFiltered.filter((item) => item.category === categoryKey);
 
   if (loading) {
     return (
@@ -104,33 +85,6 @@ export default function NearbySection({ selectedRegion }: { selectedRegion: stri
           관광지
         </button>
       </div>
-
-      {/* 검색창 추가 */}
-      <div className="relative mb-4">
-        <input
-          type="text"
-          value={searchTerm}
-          onChange={(e) => setSearchTerm(e.target.value)}
-          placeholder={tab === "food" ? "맛집명 또는 지역 검색..." : "관광지명 또는 지역 검색..."}
-          className="w-full px-4 py-2 pr-10 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-400 text-sm"
-        />
-        {searchTerm && (
-          <button
-            onClick={() => setSearchTerm("")}
-            className="absolute right-3 top-1/2 -translate-y-1/2 text-gray-400 hover:text-gray-600"
-            aria-label="검색어 지우기"
-          >
-            ✕
-          </button>
-        )}
-      </div>
-
-      {searchTerm && (
-        <div className="text-xs text-gray-500 mb-3 px-1">
-          &quot;{searchTerm}&quot; 검색 결과: {displayList.length}개
-        </div>
-      )}
-
       <div className="space-y-3">
         {displayList.length > 0 ? (
           displayList.map((item) => (
@@ -146,21 +100,7 @@ export default function NearbySection({ selectedRegion }: { selectedRegion: stri
             </div>
           ))
         ) : (
-          <div className="text-center py-10">
-            <p className="text-sm text-gray-400">
-              {searchTerm 
-                ? `"${searchTerm}"에 해당하는 ${tab === "food" ? "맛집이" : "관광지가"} 없습니다.` 
-                : "정보가 없습니다."}
-            </p>
-            {searchTerm && (
-              <button
-                onClick={() => setSearchTerm("")}
-                className="mt-2 text-xs text-purple-500 hover:underline"
-              >
-                검색어 지우기
-              </button>
-            )}
-          </div>
+          <p className="text-sm text-gray-400 text-center py-10">정보가 없습니다.</p>
         )}
       </div>
     </div>

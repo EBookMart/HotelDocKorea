@@ -80,7 +80,7 @@ export default function RootLayout({
         </Script>
         <Script 
           src="https://sdk.minepi.com/pi-sdk.js" 
-          strategy="beforeInteractive" 
+          strategy="afterInteractive" 
         />
         <Script id="pi-init" strategy="afterInteractive">
           {`

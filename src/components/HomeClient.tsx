@@ -2,13 +2,14 @@
 
 import Image from "next/image";
 import { useState, useEffect, useRef } from "react";
-import { MapPin, Globe2, Search } from "lucide-react";
+import { MapPin, Globe2, Search, ArrowUp } from "lucide-react";
 import HotelSection from "./HotelSection";
 import FestivalsSection from "./FestivalsSection";
 import NearbySection from "./NearbySection";
 import WeatherSection from "./WeatherSection";
 import HotPicksSection from "./HotPicksSection";
 import GradeFilter from "./GradeFilter";
+import EmergencyHelpSection from "./EmergencyHelpSection";
 import { LANGUAGES, translations, type Language } from "@/lib/i18n/translations";
 import glossaryData from "@/data/glossary.json";
 
@@ -188,6 +189,29 @@ export default function HomeClient({ hotelData }: { hotelData: any }) {
   const [activeRegionIndex, setActiveRegionIndex] = useState<number | null>(null);
   const [selectedGrade, setSelectedGrade] = useState<number | null>(null);
   const [searchQuery, setSearchQuery] = useState("");
+  const [showBackToTop, setShowBackToTop] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollY = window.scrollY;
+      const height = document.documentElement.scrollHeight - window.innerHeight;
+      if (scrollY > height * 0.5) {
+        setShowBackToTop(true);
+      } else {
+        setShowBackToTop(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
+  const scrollToSection = (id: string) => {
+    const el = document.getElementById(id);
+    if (el) {
+      el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  };
 
   // Alert handler for mock languages
   const handleUnsupportedLang = (e: React.MouseEvent, l: string) => {
@@ -287,27 +311,55 @@ export default function HomeClient({ hotelData }: { hotelData: any }) {
                   {t.subtitle}
                 </p>
               </div>
-            </div>
+              </div>
+  
+              {/* 언어 전환 버튼 & Emergency 버튼 */}
+              <div className="flex flex-col items-end gap-3 px-1">
+                <div className="flex items-center gap-3">
+                  <div className="flex items-center gap-1 bg-white/10 rounded-full p-1 h-fit">
+                    {LANGUAGES.map((l) => (
+                      <button
+                        key={l.code}
+                        onClick={() => setLang(l.code as Language)}
+                        className={`flex items-center gap-1 px-2.5 py-1.5 rounded-full text-xs transition ${
+                          lang === l.code
+                            ? "bg-white text-purple-700 font-semibold shadow-sm"
+                            : "text-white/80 hover:bg-white/10 hover:text-white"
+                        }`}
+                        aria-label={`Switch to ${l.shortLabel}`}
+                      >
+                        <span className="text-sm">{l.flag}</span>
+                        <span className="hidden sm:inline-block tracking-tight">{l.shortLabel}</span>
+                      </button>
+                    ))}
+                  </div>
 
-            {/* 언어 전환 버튼 5개 */}
-            <div className="flex items-center gap-1 bg-white/10 rounded-full p-1">
-              {LANGUAGES.map((l) => (
-                <button
-                  key={l.code}
-                  onClick={() => setLang(l.code as Language)}
-                  className={`flex items-center gap-1 px-2.5 py-1.5 rounded-full text-xs transition ${
-                    lang === l.code
-                      ? "bg-white text-purple-700 font-semibold shadow-sm"
-                      : "text-white/80 hover:bg-white/10 hover:text-white"
-                  }`}
-                  aria-label={`Switch to ${l.shortLabel}`}
-                >
-                  <span className="text-sm">{l.flag}</span>
-                  <span className="hidden sm:inline-block tracking-tight">{l.shortLabel}</span>
-                </button>
-              ))}
+                  <button
+                    onClick={() => document.getElementById('emergency-section')?.scrollIntoView({ behavior: 'smooth' })}
+                    className="bg-red-500 hover:bg-red-600 text-white px-4 py-2.5 rounded-full text-xs font-black shadow-lg shadow-red-900/20 flex items-center gap-2 animate-bounce-subtle transition-all active:scale-95"
+                  >
+                    <span className="text-sm">🚨</span>
+                    <span className="hidden md:inline">Emergency & Help In KOREA</span>
+                  </button>
+                </div>
+
+                {/* Weather Quick Links Pin UI (Position Fixed to Right) */}
+                <div className="flex gap-2">
+                  <button
+                    onClick={() => scrollToSection('weather-section-today')}
+                    className="flex items-center gap-2 px-3 py-1.5 bg-white/10 border border-white/20 rounded-full text-[10px] font-bold hover:bg-white/20 transition-all backdrop-blur-sm"
+                  >
+                    {t.sections.weatherToday}
+                  </button>
+                  <button
+                    onClick={() => scrollToSection('weather-section-weekly')}
+                    className="flex items-center gap-2 px-3 py-1.5 bg-white/10 border border-white/20 rounded-full text-[10px] font-bold hover:bg-white/20 transition-all backdrop-blur-sm"
+                  >
+                    {t.sections.weatherWeekly}
+                  </button>
+                </div>
+              </div>
             </div>
-          </div>
 
           {/* Regions Tab & Search Interface */}
           <div className="flex flex-col lg:flex-row lg:items-center justify-between gap-4 mt-5 pb-1">
@@ -412,6 +464,13 @@ export default function HomeClient({ hotelData }: { hotelData: any }) {
           </div>
         </section>
 
+        {/* Emergency & Help Section (NEW) */}
+        <section className="w-full bg-white py-14">
+          <div className="max-w-7xl mx-auto px-4 lg:px-10">
+            <EmergencyHelpSection lang={lang} />
+          </div>
+        </section>
+
         {/* Subscription Newsletter Section (배경: 흰색) */}
         <section className="w-full bg-white border-b border-gray-200">
           <div className="max-w-3xl mx-auto px-4 py-16 text-center">
@@ -439,6 +498,16 @@ export default function HomeClient({ hotelData }: { hotelData: any }) {
         </footer>
       </main>
 
+      {/* Back to Top Button */}
+      {showBackToTop && (
+        <button
+          onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+          className="fixed bottom-8 right-8 z-50 bg-white text-indigo-600 p-4 rounded-full shadow-2xl shadow-indigo-900/20 border border-indigo-100 hover:scale-110 active:scale-95 transition-all animate-in fade-in zoom-in slide-in-from-bottom-5 duration-300 flex items-center justify-center"
+          aria-label="Back to Top"
+        >
+          <ArrowUp size={24} />
+        </button>
+      )}
     </div>
   );
 }

@@ -1,0 +1,199 @@
+{
+  "hotlines": [
+    {
+      "id": "police",
+      "name": "Police",
+      "ko": "경찰",
+      "number": "112",
+      "icon": "🚔",
+      "desc": "Crime, Theft, Violence"
+    },
+    {
+      "id": "ambulance",
+      "name": "Ambulance/Fire",
+      "ko": "응급의료/화재",
+      "number": "119",
+      "icon": "🚑",
+      "desc": "Medical Emergency, Fire"
+    },
+    {
+      "id": "tourist",
+      "name": "Tourist Information",
+      "ko": "관광안내/통역",
+      "number": "1330",
+      "icon": "📞",
+      "desc": "24/7 Translation & Info"
+    }
+  ],
+  "hospitals": [
+    {
+      "name": "Seoul St. Mary's Hospital",
+      "ko": "서울성모병원",
+      "address": "222 Banpo-daero, Seocho-gu, Seoul",
+      "phone": "+82-2-1588-1511",
+      "tags": ["International Clinic", "Emergency"],
+      "region": "Seoul"
+    },
+    {
+      "name": "Sinchon Severance Hospital",
+      "ko": "신촌 세브란스병원",
+      "address": "50-1 Yonsei-ro, Seodaemun-gu, Seoul",
+      "phone": "+82-2-2228-5050",
+      "tags": ["JCI Accredited", "International Healthcare Center"],
+      "region": "Seoul"
+    },
+    {
+      "name": "Asan Medical Center",
+      "ko": "서울아산병원",
+      "address": "88 Olympic-ro 43-gil, Songpa-gu, Seoul",
+      "phone": "+82-2-3010-5001",
+      "tags": ["International Clinic"],
+      "region": "Seoul"
+    },
+    {
+      "name": "Samsung Medical Center",
+      "ko": "삼성서울병원",
+      "address": "81 Irwon-ro, Gangnam-gu, Seoul",
+      "phone": "+82-2-3410-0200",
+      "tags": ["International Healthcare Center"],
+      "region": "Seoul"
+    }
+  ],
+  "embassies": [
+    {
+      "country": "USA",
+      "name": "U.S. Embassy Seoul",
+      "address": "188 Sejong-daero, Jongno-gu, Seoul",
+      "phone": "+82-2-397-4114",
+      "hours": "08:30 - 17:00 (Mon-Fri)"
+    },
+    {
+      "country": "UK",
+      "name": "British Embassy Seoul",
+      "address": "24 Sejong-daero 19-gil, Jongno-gu, Seoul",
+      "phone": "+82-2-3210-5500",
+      "hours": "09:00 - 17:00 (Mon-Fri)"
+    },
+    {
+      "country": "Japan",
+      "name": "Embassy of Japan",
+      "address": "6 Yulgok-ro, Jongno-gu, Seoul",
+      "phone": "+82-2-2170-5200",
+      "hours": "09:30 - 12:15, 13:15 - 17:30 (Mon-Fri)"
+    },
+    {
+      "country": "China",
+      "name": "Embassy of China",
+      "address": "27 Myeongdong 2-gil, Jung-gu, Seoul",
+      "phone": "+82-2-738-1038",
+      "hours": "09:00 - 12:00, 13:30 - 17:30 (Mon-Fri)"
+    }
+  ],
+  "cardNews": {
+    "hospital": [
+      {
+        "id": "h1",
+        "title": "Free 119 Ambulance",
+        "titleKo": "119 구급차 무료 호출",
+        "desc": "In Korea, 119 ambulance and medical transport are completely FREE for everyone, including foreign tourists. Do not hesitate to call.",
+        "descKo": "한국에서 119 구급차와 병원 이송 서비스는 내/외국인 차별 없이 전액 무료입니다. 주저 말고 호출하세요.",
+        "icon": "🚑",
+        "actionText": "Call 119 Now",
+        "actionUrl": "tel:119",
+        "color": "from-red-500 to-rose-600"
+      },
+      {
+        "id": "h2",
+        "title": "24/7 Translation",
+        "titleKo": "24시간 다국어 지원",
+        "desc": "119 provides 3-way interpretation in 16 languages. Just call and speak your language; they will connect a translator immediately.",
+        "descKo": "119에 전화하면 한국어를 몰라도 16개 언어를 지원하는 통역 요원과 연결되어 긴급 처치를 받을 수 있습니다.",
+        "icon": "🗣️",
+        "actionText": "Call for Help",
+        "actionUrl": "tel:119",
+        "color": "from-indigo-500 to-purple-600"
+      },
+      {
+        "id": "h3",
+        "title": "Visit Local Clinics (Walk-in)",
+        "titleKo": "예약 없는 동네 의원 방문",
+        "desc": "For mild illness like cold or stomachache, visit local 'Clinics (의원)'. Walk-in is welcome, very fast, and extremely affordable professional care.",
+        "descKo": "가벼운 배탈이나 감기는 응급실 대신 동네 의원을 찾으세요. 예약 없이도 저렴하고 신속하게 진료받을 수 있습니다.",
+        "icon": "🏥",
+        "actionText": "Find Nearby Clinic",
+        "actionUrl": "https://www.google.com/maps/search/clinic+near+me",
+        "color": "from-emerald-500 to-teal-600"
+      }
+    ],
+    "lost": [
+      {
+        "id": "l1",
+        "title": "Go Back to the Place",
+        "titleKo": "잃어버린 장소로 먼저 돌아가세요",
+        "desc": "Korea has a very safe culture. Your item is likely still there or kept by the staff. Go back to the cafe or restaurant first.",
+        "descKo": "한국은 타인의 물건을 손대지 않는 문화가 강합니다. 식당이나 카페에 두고 온 물건은 직원이 보관 중일 확률이 매우 높습니다.",
+        "icon": "🏬",
+        "actionText": "General Info (1330)",
+        "actionUrl": "tel:1330",
+        "color": "from-blue-500 to-indigo-600"
+      },
+      {
+        "id": "l2",
+        "title": "Lost on Subway?",
+        "titleKo": "지하철에 두고 내렸을 때",
+        "desc": "Note: 1. Arrival Time 2. Direction 3. Train Car Number (number on the floor). Tell this to the station customer center immediately.",
+        "descKo": "하차 시간, 열차 방향, 탑승했던 칸 번호(바닥 번호)를 고객센터에 알려주면 실시간으로 유실물을 추적할 수 있습니다.",
+        "icon": "🚇",
+        "actionText": "Call Subway Info",
+        "actionUrl": "tel:1577-1234",
+        "color": "from-orange-500 to-amber-600"
+      },
+      {
+        "id": "l3",
+        "title": "Police LOST112 System",
+        "titleKo": "경찰청 유실물 통합포털",
+        "desc": "Register your lost item or search at www.lost112.go.kr. Recovered items are kept safely for 6 months by law.",
+        "descKo": "경찰청 유실물 포털에 신고를 등록하세요. 습득물은 유실물법에 따라 6개월간 안전하게 보관됩니다.",
+        "icon": "👮",
+        "actionText": "Go to LOST112",
+        "actionUrl": "https://www.lost112.go.kr/find/findList.do",
+        "color": "from-slate-600 to-slate-800"
+      }
+    ],
+    "passport": [
+      {
+        "id": "p1",
+        "title": "Get a Police Report",
+        "titleKo": "폴리스 리포트 발급",
+        "desc": "Priority 1: Visit the nearest police station for a 'Police Report'. Without this, you cannot get an emergency passport or leave Korea.",
+        "descKo": "가장 먼저 경찰서를 방문해 '분실증명 확인서(Police Report)'를 받으세요. 대사관 방문 및 출국을 위한 필수 서류입니다.",
+        "icon": "📝",
+        "actionText": "Find Police Station",
+        "actionUrl": "https://www.google.com/maps/search/police+station",
+        "color": "from-rose-500 to-red-600"
+      },
+      {
+        "id": "p2",
+        "title": "Photos & Embassy",
+        "titleKo": "여권 사진 및 대사관 방문",
+        "desc": "Bring 2 passport photos and the Police Report to your Embassy. They will issue an emergency travel document.",
+        "descKo": "여권용 사진 2매와 경찰서 서류를 지참하여 자국 대사관을 방문하세요. 긴급 여권 발급 절차를 안내받을 수 있습니다.",
+        "icon": "🏢",
+        "actionText": "Embassy List",
+        "actionUrl": "#",
+        "color": "from-cyan-600 to-blue-700"
+      },
+      {
+        "id": "p3",
+        "title": "For Insurance Claims",
+        "titleKo": "여행자 보험 청구 준비",
+        "desc": "Keep your Police Report safely. It is the core evidence needed for traveler's insurance claims for stolen luggage back home.",
+        "descKo": "도난의 경우 경찰서 서류를 소중히 보관하세요. 귀국 후 여행자 보험 청구 시 반드시 필요한 증빙 서류가 됩니다.",
+        "icon": "🛡️",
+        "actionText": "Call Translation Service",
+        "actionUrl": "tel:1588-5644",
+        "color": "from-violet-600 to-purple-700"
+      }
+    ]
+  }
+}

@@ -15,25 +15,32 @@ const regionWeathers = [
 
 export default function WeatherSection({ sectionTitle }: { sectionTitle?: string }) {
   return (
-    <section className="bg-white p-5 rounded-2xl border border-gray-200 shadow-sm w-full mt-6">
-      <div className="flex justify-between items-center mb-4">
-        <h2 className="text-lg font-bold text-gray-800 flex items-center gap-2">
-          🌤️ {sectionTitle || '권역별 기상정보'}
-        </h2>
-        <span className="text-[10px] text-indigo-600 bg-indigo-50 px-2 py-0.5 rounded font-bold border border-indigo-100">🔗 TourAPI 연동 예정</span>
-      </div>
+    <div className="space-y-6">
+      <section id="weather-section-today" className="bg-white p-5 rounded-2xl border border-gray-200 shadow-sm w-full">
+        <div className="flex justify-between items-center mb-4">
+          <h2 className="text-lg font-bold text-gray-800 flex items-center gap-2">
+            🌤️ {sectionTitle || '권역별 기상정보'}
+          </h2>
+          <span className="text-[10px] text-indigo-600 bg-indigo-50 px-2 py-0.5 rounded font-bold border border-indigo-100">🔗 TourAPI 연동 예정</span>
+        </div>
 
-      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-7 gap-3">
-        {regionWeathers.map((w, i) => (
-          <div key={i} className="flex flex-col items-center justify-center p-3 bg-blue-50/50 rounded-xl border border-blue-100 hover:bg-blue-50 transition-colors">
-            <span className="text-xs font-bold text-gray-600 mb-2">{w.region}</span>
-            {w.icon === "sun" && <Sun size={24} className="text-yellow-500 mb-1" />}
-            {w.icon === "cloud" && <Cloud size={24} className="text-gray-400 mb-1" />}
-            {w.icon === "cloud-rain" && <CloudRain size={24} className="text-blue-400 mb-1" />}
-            <span className="text-sm font-extrabold text-gray-800 mt-1">{w.temp}</span>
-          </div>
-        ))}
-      </div>
-    </section>
+        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-7 gap-3">
+          {regionWeathers.map((w, i) => (
+            <div key={i} className="flex flex-col items-center justify-center p-3 bg-blue-50/50 rounded-xl border border-blue-100 hover:bg-blue-50 transition-colors">
+              <span className="text-xs font-bold text-gray-600 mb-2">{w.region}</span>
+              {w.icon === "sun" && <Sun size={24} className="text-yellow-500 mb-1" />}
+              {w.icon === "cloud" && <Cloud size={24} className="text-gray-400 mb-1" />}
+              {w.icon === "cloud-rain" && <CloudRain size={24} className="text-blue-400 mb-1" />}
+              <span className="text-sm font-extrabold text-gray-800 mt-1">{w.temp}</span>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      <section id="weather-section-weekly" className="bg-indigo-900/5 p-6 rounded-3xl border border-indigo-100 border-dashed text-center">
+         <h3 className="text-sm font-black text-indigo-900/60 uppercase tracking-widest mb-2">Weekly Weather Forecast</h3>
+         <p className="text-xs text-indigo-600/70 font-bold italic">Detailed weekly forecast integration is coming soon with TourAPI 4.0</p>
+      </section>
+    </div>
   );
 }

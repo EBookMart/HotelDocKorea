@@ -11,7 +11,7 @@ export const LANGUAGES = [
 export const translations = {
   ko: {
     brandName: "HotelDocKorea",
-    subtitle: "떠나기 전, 가장 먼저 열어보는 호텔 가이드",
+    subtitle: "떠나기 전, 가장 먼저 열어보는 호텔 리조트 가이드",
     metaDescription:
       "한국 3성급 이상 호텔·리조트 520여 곳의 실시간 프로모션, 주변 축제와 맛집, 기상정보까지 — 여행의 모든 정보를 한 곳에서",
     regions: {
@@ -28,6 +28,8 @@ export const translations = {
       festivals: "축제 · 공연 · 행사",
       nearby:    "주변 맛집 · 관광지",
       weather:   "권역별 기상정보",
+      weatherToday: "🌤️ 오늘의 날씨",
+      weatherWeekly: "📅 주간 날씨",
     },
   },
   en: {
@@ -49,6 +51,8 @@ export const translations = {
       festivals: "Festivals & Events",
       nearby:    "Nearby Food & Attractions",
       weather:   "Regional Weather",
+      weatherToday: "🌤️ Today's Weather",
+      weatherWeekly: "📅 Weekly Weather",
     },
   },
   ja: {
@@ -69,7 +73,9 @@ export const translations = {
       hotels:    "ホテル・リゾートプロモーション",
       festivals: "お祭り・イベント",
       nearby:    "周辺のグルメ・観光地",
-      weather:   "地域別気象情報",
+      weather:   "地域別気상情報",
+      weatherToday: "🌤️ 今日の天気",
+      weatherWeekly: "📅 週間天気",
     },
   },
   zh: {
@@ -91,6 +97,8 @@ export const translations = {
       festivals: "庆典 · 活动",
       nearby:    "周边美食 · 景点",
       weather:   "区域气象信息",
+      weatherToday: "🌤️ 今日天气",
+      weatherWeekly: "📅 本周天气",
     },
   },
   es: {
@@ -112,6 +120,8 @@ export const translations = {
       festivals: "Festivales y Eventos",
       nearby:    "Comida y Atracciones Cercanas",
       weather:   "Clima Regional",
+      weatherToday: "🌤️ El tiempo de hoy",
+      weatherWeekly: "📅 El tiempo de la semana",
     },
   },
 };

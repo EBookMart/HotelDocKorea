@@ -1,0 +1,121 @@
+{
+  "brandName": "HotelDocKorea",
+  "subtitle": "Your trusted doc for Korea's best hotel deals",
+  "metaDescription": "Real-time promotions from 520+ premium hotels and resorts in Korea, plus local festivals and restaurants — all in one place.",
+  "regions": {
+    "capital": "Seoul & Capital Area",
+    "yeongdong": "East Coast",
+    "busan": "Busan & Gyeongnam",
+    "daegu": "Daegu & Gyeongbuk",
+    "honam": "Gwangju & Honam",
+    "chungcheong": "Chungcheong",
+    "jeju": "Jeju Island"
+  },
+  "sections": {
+    "hotels": "Hotels & Resorts",
+    "festivals": "Festivals & Events",
+    "nearby": "Nearby Food & Attractions",
+    "highlyRated": "👍 Highly Rated",
+    "premium": "★ Premium"
+  },
+  "header": {
+    "allRegions": "All Regions",
+    "searchPlaceholder": "Search by hotel name",
+    "emergencyButton": "Emergency & Help"
+  },
+  "hotels": {
+    "fullPromotionsTitle": "All Hotel & Resort Promotions ({count})"
+  },
+  "footer": {
+    "terms": "Terms of Service",
+    "privacy": "Privacy Policy",
+    "imageNotice": "[Notice] Hotel images shown on this site are referenced in real-time from each hotel's official website Open Graph metadata, with copyright belonging to the respective hotels. Hotels wishing to have images removed may contact us and we will comply promptly. (Contact: contact@hoteldockorea.com)",
+    "copyright": "© 2026 HotelDocKorea. All rights reserved."
+  },
+  "gradeFilter": {
+    "label": "Rating",
+    "grade": "{n}-Star",
+    "clear": "Clear All",
+    "results": "Results: <c>{count}</c>"
+  },
+  "emergency": {
+    "title": "Emergency & Help In KOREA Guide",
+    "subtitle": "Official Protection System Guide for Foreign Tourists",
+    "tabs": {
+      "hospital": "Medical / Hospitals",
+      "lost": "Lost & Found",
+      "passport": "Lost Passport"
+    },
+    "quickTip": "Step-by-Step Action Guide",
+    "swipeTip": "Swipe cards to see detailed instructions",
+    "supportHotline": "Support Hotline",
+    "helpDesk": "24/7 Multilingual Tourism Helpline",
+    "lesson": "STEP {n}",
+    "lostTip": "Recommended Action: Check your recent credit card history.",
+    "hospitalTip": "Dial 119 directly; GPS will track your location automatically.",
+    "footer": {
+      "policePortal": "Police Lost & Found",
+      "passportHelp": "Passport Help",
+      "translation": "Translation",
+      "embassyGuide": "Embassy Guide"
+    },
+    "cards": {
+      "hospital": {
+        "h1": {
+          "title": "Free 119 Ambulance",
+          "desc": "In Korea, 119 ambulance and medical transport are completely FREE for everyone, including foreign tourists. Do not hesitate to call.",
+          "action": "Call 119 Now"
+        },
+        "h2": {
+          "title": "24/7 Translation",
+          "desc": "119 provides 3-way interpretation in 16 languages. Just call and speak your language; they will connect a translator immediately.",
+          "action": "Call for Help"
+        },
+        "h3": {
+          "title": "Visit Local Clinics (Walk-in)",
+          "desc": "For mild illness like cold or stomachache, visit local 'Clinics (의원)'. Walk-in is welcome, very fast, and extremely affordable professional care.",
+          "action": "Find Nearby Clinic"
+        }
+      },
+      "lost": {
+        "l1": {
+          "title": "Go Back to the Place",
+          "desc": "Korea has a very safe culture. Your item is likely still there or kept by the staff. Go back to the cafe or restaurant first.",
+          "action": "General Info (1330)"
+        },
+        "l2": {
+          "title": "Lost on Subway?",
+          "desc": "Note: 1. Arrival Time 2. Direction 3. Train Car Number (number on the floor). Tell this to the station customer center immediately.",
+          "action": "Call Subway Info"
+        },
+        "l3": {
+          "title": "Police LOST112 System",
+          "desc": "Register your lost item or search at www.lost112.go.kr. Recovered items are kept safely for 6 months by law.",
+          "action": "Go to LOST112"
+        }
+      },
+      "passport": {
+        "p1": {
+          "title": "Get a Police Report",
+          "desc": "Priority 1: Visit the nearest police station for a 'Police Report'. Without this, you cannot get an emergency passport or leave Korea.",
+          "action": "Find Police Station"
+        },
+        "p2": {
+          "title": "Photos & Embassy",
+          "desc": "Bring 2 passport photos and the Police Report to your Embassy. They will issue an emergency travel document.",
+          "action": "Embassy List"
+        },
+        "p3": {
+          "title": "For Insurance Claims",
+          "desc": "Keep your Police Report safely. It is the core evidence needed for traveler's insurance claims for stolen luggage back home.",
+          "action": "Call Translation Service"
+        }
+      }
+    },
+    "hotlines": {
+      "police": "Crime, Theft, Violence",
+      "ambulance": "Medical Emergency, Fire",
+      "tourist": "24/7 Tourism Helpline"
+    }
+  }
+}

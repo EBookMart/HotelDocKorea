@@ -1,4 +1,13 @@
-export default function TermsOfService() {
+import { setRequestLocale } from "next-intl/server";
+
+export default async function TermsOfService({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}) {
+  const { locale } = await params;
+  setRequestLocale(locale);
+
   return (
     <div className="max-w-2xl mx-auto p-8 font-sans text-gray-800 bg-white min-h-screen">
       <h1 className="text-3xl font-extrabold mb-6 text-indigo-900 border-b pb-4">서비스 이용약관 (Terms of Service)</h1>

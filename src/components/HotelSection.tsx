@@ -2,13 +2,13 @@
 
 import Image from "next/image";
 import { useState } from "react";
-import { MapPin, Star, Phone, Globe, CalendarDays, ArrowRightCircle, Award, ThumbsUp } from "lucide-react";
+import { MapPin, Star, Phone, Globe, CalendarDays, ArrowRightCircle, Award, ThumbsUp, Copy, Check, Package } from "lucide-react";
 import { TranslatedText } from "./HomeClient";
 import AirportGuide from "./AirportGuide";
 import airportRoutesData from "../../public/data/airport-routes.json";
 import reputationData from "../../public/data/reputation.json";
 
-function HotelImageCard({ imageUrl, hotelName, rating, city, isLuxury, isBudget, homepageUrl }: {
+function HotelImageCard({ imageUrl, hotelName, rating, city, isLuxury, isBudget, homepageUrl, lang }: {
   imageUrl?: string;
   hotelName: string;
   rating: string;
@@ -16,6 +16,7 @@ function HotelImageCard({ imageUrl, hotelName, rating, city, isLuxury, isBudget,
   isLuxury: boolean;
   isBudget: boolean;
   homepageUrl?: string;
+  lang: string;
 }) {
   const [loaded, setLoaded] = useState(false);
   const stars = parseInt(rating);
@@ -61,8 +62,8 @@ function HotelImageCard({ imageUrl, hotelName, rating, city, isLuxury, isBudget,
       {(src || !src) && (
         <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent pointer-events-none" />
       )}
-      <div className="absolute top-2 left-2">
-        <span className="bg-black/40 backdrop-blur-sm text-white text-[9px] px-2 py-0.5 rounded-full font-semibold">
+      <div className="absolute top-2 left-2 flex flex-col gap-1">
+        <span className="bg-black/40 backdrop-blur-sm text-white text-[9px] px-2 py-0.5 rounded-full font-semibold w-fit">
           📍 {city}
         </span>
       </div>
@@ -97,9 +98,18 @@ export default function HotelSection({
   sectionTitle
 }: any) {
   const [expandedHotel, setExpandedHotel] = useState<string | null>(null);
+  const [copiedId, setCopiedId] = useState<string | null>(null);
 
   const toggleGuide = (hotelName: string) => {
     setExpandedHotel(expandedHotel === hotelName ? null : hotelName);
+  };
+
+  const copyAddress = (hotel: any) => {
+    const text = `[${hotel.이름}] 주소: ${hotel.주소 || hotel.address || hotel.tourApiAddress}`;
+    navigator.clipboard.writeText(text).then(() => {
+      setCopiedId(hotel.이름);
+      setTimeout(() => setCopiedId(null), 2000);
+    });
   };
 
   // 베이지안 랭킹 점수(weightedScore)에 따라 정렬 (Task 2 구현)
@@ -134,7 +144,7 @@ export default function HotelSection({
             const isTopRanked = index === 0 && !hasPromo; // 프로모션이 없고 1위인 경우 뱃지 대상
 
             return (
-              <div key={index} className={`bg-white rounded-2xl border flex flex-col transition-all hover:-translate-y-1 duration-200 group relative overflow-hidden ${isLuxury ? 'shadow-lg shadow-yellow-500/10 border-yellow-300 ring-1 ring-yellow-100' : 'shadow-sm border-gray-200'}`}>
+              <div key={index} id={`hotel-${index}`} className={`bg-white rounded-2xl border flex flex-col transition-all hover:-translate-y-1 duration-200 group relative overflow-hidden ${isLuxury ? 'shadow-lg shadow-yellow-500/10 border-yellow-300 ring-1 ring-yellow-100' : 'shadow-sm border-gray-200'}`}>
                 <HotelImageCard
                   imageUrl={hotel.imageUrl}
                   hotelName={hotel.이름}
@@ -143,25 +153,34 @@ export default function HotelSection({
                   isLuxury={isLuxury}
                   isBudget={isBudget}
                   homepageUrl={hotel.홈페이지 || hotel.official_link}
+                  lang={lang}
                 />
 
                 <div className="p-4 flex flex-col gap-3">
                   <div className="flex justify-between items-start">
                     <div className="w-[75%]">
-                      {isTopRanked && (
-                        <div className="flex items-center gap-1.5 mb-2 bg-emerald-50 text-emerald-700 w-fit px-2 py-0.5 rounded-md border border-emerald-100">
-                          <Award size={12} className="text-emerald-500 animate-pulse" />
-                          <span className="text-[10px] font-black uppercase tracking-tight">
-                            {lang === 'ko' ? "여행자가 검증한 최고의 숙소" : "HotelDocKorea's Data-Driven Pick"}
-                          </span>
-                        </div>
-                      )}
-                      {!isTopRanked && rep.originalRating >= 4.5 && (
-                         <div className="flex items-center gap-1 bg-blue-50 text-blue-600 w-fit px-1.5 py-0.5 rounded-md mb-2 border border-blue-100">
-                             <ThumbsUp size={10} />
-                             <span className="text-[9px] font-bold">{t.sections.highlyRated}</span>
-                         </div>
-                      )}
+                      <div className="flex items-center gap-2 mb-2 flex-wrap">
+                        {isTopRanked && (
+                          <div className="flex items-center gap-1.5 bg-emerald-50 text-emerald-700 w-fit px-2 py-0.5 rounded-md border border-emerald-100">
+                            <Award size={12} className="text-emerald-500 animate-pulse" />
+                            <span className="text-[10px] font-black uppercase tracking-tight">
+                              {lang === 'ko' ? "PICK" : "PICK"}
+                            </span>
+                          </div>
+                        )}
+                        {!isTopRanked && rep.originalRating >= 4.5 && (
+                           <div className="flex items-center gap-1 bg-blue-50 text-blue-600 w-fit px-1.5 py-0.5 rounded-md border border-blue-100">
+                               <ThumbsUp size={10} />
+                               <span className="text-[9px] font-bold">{t.sections.highlyRated}</span>
+                           </div>
+                        )}
+                        {hotel.zimcarry_registered && (
+                           <div className="flex items-center gap-1 bg-emerald-50 text-emerald-600 w-fit px-1.5 py-0.5 rounded-md border border-emerald-100" title={`Baggage Delivery Available (Deadline: ${hotel.zimcarry_deadline})`}>
+                              <Package size={10} className="text-emerald-500" />
+                              <span className="text-[9px] font-bold">{lang === 'ko' ? "수하물 배송" : "Baggage Service"}</span>
+                           </div>
+                        )}
+                      </div>
                       
                       <div className="flex items-center gap-2 mb-1 flex-wrap">
                         <h3 className={`text-[15px] font-bold leading-snug break-words min-w-0 group-hover:opacity-80 transition-colors ${isLuxury ? 'text-yellow-800' : 'text-gray-900'}`}>
@@ -188,11 +207,25 @@ export default function HotelSection({
                   </div>
 
                   <div className="flex flex-col gap-2mt-2 pt-3 border-t border-gray-100/80 border-dashed">
-                    {hotel.전화번호 && (
-                      <a href={`tel:${hotel.전화번호}`} className="flex items-center gap-2 text-[11px] text-gray-600 w-fit mb-2">
-                        <Phone size={12} className="text-indigo-400" /> <span>{hotel.전화번호}</span>
-                      </a>
-                    )}
+                    <div className="flex items-center justify-between gap-2 mb-2">
+                      {hotel.전화번호 && (
+                        <a href={`tel:${hotel.전화번호}`} className="flex items-center gap-2 text-[11px] text-gray-600">
+                          <Phone size={12} className="text-indigo-400" /> <span>{hotel.전화번호}</span>
+                        </a>
+                      )}
+                      {/* 주소 복사 버튼 */}
+                      <button 
+                         onClick={() => copyAddress(hotel)}
+                         className={`flex items-center gap-1.5 px-2 py-1 rounded-lg text-[10px] font-bold transition-all border ${
+                            copiedId === hotel.이름 
+                            ? 'bg-emerald-500 text-white border-emerald-500' 
+                            : 'bg-slate-100 text-slate-600 border-slate-200 hover:bg-slate-200'
+                         }`}
+                      >
+                         {copiedId === hotel.이름 ? <Check size={10} /> : <Copy size={10} />}
+                         {lang === 'ko' ? "택시용 주소복사" : "Copy for Taxi"}
+                      </button>
+                    </div>
                     
                     {hotel.promotions && hotel.promotions.length > 0 && (
                       <div className="mt-1 flex flex-col gap-2">
@@ -275,9 +308,9 @@ export default function HotelSection({
                           <button 
                              onClick={() => toggleGuide(hotel.이름)}
                              className={`flex items-center justify-center gap-1.5 flex-1 py-2 rounded-lg text-[11px] font-bold transition-all border ${
-                               expandedHotel === hotel.이름 
-                               ? 'bg-blue-600 text-white border-blue-600' 
-                               : 'bg-blue-50 text-blue-700 border-blue-100 hover:bg-blue-100'
+                                expandedHotel === hotel.이름 
+                                ? 'bg-blue-600 text-white border-blue-600' 
+                                : 'bg-blue-50 text-blue-700 border-blue-100 hover:bg-blue-100'
                              }`}
                           >
                              <ArrowRightCircle size={12} className={expandedHotel === hotel.이름 ? 'text-blue-200' : 'text-blue-400'} />
@@ -295,6 +328,8 @@ export default function HotelSection({
                       hotelName={hotel.이름} 
                       lang={lang} 
                       routeData={(airportRoutesData as any)[hotel.이름]} 
+                      isZimCarryRegistered={hotel.zimcarry_registered}
+                      zimCarryDeadline={hotel.zimcarry_deadline}
                     />
                   </div>
                 )}

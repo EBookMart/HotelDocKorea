@@ -1,0 +1,121 @@
+{
+  "brandName": "HotelDocKorea",
+  "subtitle": "Tu guía de hoteles coreanos, antes de partir",
+  "metaDescription": "Promociones en tiempo real de más de 520 hoteles y resorts premium en Corea, festivales locales y restaurantes — todo en un solo lugar.",
+  "regions": {
+    "capital": "Área de Seúl",
+    "yeongdong": "Costa Este",
+    "busan": "Busan y Gyeongnam",
+    "daegu": "Daegu y Gyeongbuk",
+    "honam": "Gwangju y Honam",
+    "chungcheong": "Chungcheong",
+    "jeju": "Isla de Jeju"
+  },
+  "sections": {
+    "hotels": "Hoteles y Resorts",
+    "festivals": "Festivales y Eventos",
+    "nearby": "Comida y Atracciones Cercanas",
+    "highlyRated": "👍 Muy valorado",
+    "premium": "★ Premium"
+  },
+  "header": {
+    "allRegions": "Todas las regiones",
+    "searchPlaceholder": "Buscar por nombre de hotel",
+    "emergencyButton": "Emergencias"
+  },
+  "hotels": {
+    "fullPromotionsTitle": "Promociones de hoteles y resorts ({count})"
+  },
+  "footer": {
+    "terms": "Términos de servicio",
+    "privacy": "Política de privacidad",
+    "imageNotice": "[Aviso] Las imágenes de hoteles mostradas en este sitio se referencian en tiempo real desde los metadatos Open Graph del sitio web oficial de cada hotel, y los derechos de autor pertenecen a cada hotel. Los hoteles que deseen que se retiren sus imágenes pueden contactarnos y procederemos de inmediato. (Contacto: contact@hoteldockorea.com)",
+    "copyright": "© 2026 HotelDocKorea. Todos los derechos reservados."
+  },
+  "gradeFilter": {
+    "label": "Categoría",
+    "grade": "{n} estrellas",
+    "clear": "Limpiar",
+    "results": "Resultados: <c>{count}</c>"
+  },
+  "emergency": {
+    "title": "Guía de Emergencias en KOREA",
+    "subtitle": "Guía oficial del sistema de protección para turistas extranjeros",
+    "tabs": {
+      "hospital": "Médico / Hospitales",
+      "lost": "Objetos Perdidos",
+      "passport": "Pasaporte Perdido"
+    },
+    "quickTip": "Guía de acción rápida",
+    "swipeTip": "Desliza las tarjetas para ver instrucciones detalladas",
+    "supportHotline": "Línea de Ayuda",
+    "helpDesk": "Asistencia turística multilingüe 24/7",
+    "lesson": "STEP {n}",
+    "lostTip": "Acción recomendada: Revisa el historial de tu tarjeta de crédito.",
+    "hospitalTip": "Llama directamente al 119. El GPS rastreará tu ubicación automáticamente.",
+    "footer": {
+      "policePortal": "Portal Policial",
+      "passportHelp": "Ayuda con Pasaporte",
+      "translation": "Traducción",
+      "embassyGuide": "Guía de Embajada"
+    },
+    "cards": {
+      "hospital": {
+        "h1": {
+          "title": "Ambulancia 119 Gratuita",
+          "desc": "En Corea, la ambulancia 119 y el transporte médico son totalmente GRATUITOS para todos, incluidos los turistas extranjeros. No dudes en llamar.",
+          "action": "Llamar al 119 ahora"
+        },
+        "h2": {
+          "title": "Traducción 24/7",
+          "desc": "El 119 ofrece interpretación a tres bandas en 16 idiomas. Solo llama y habla en tu idioma; conectarán a un traductor inmediatamente.",
+          "action": "Pedir ayuda"
+        },
+        "h3": {
+          "title": "Clínicas Locales Sin Cita",
+          "desc": "Para dolencias leves como resfriado o dolor de estómago, visita una clínica local (의원). Te atienden sin cita, rápidamente y a precios muy asequibles.",
+          "action": "Buscar clínica cercana"
+        }
+      },
+      "lost": {
+        "l1": {
+          "title": "Vuelve al Lugar",
+          "desc": "Corea tiene una cultura muy respetuosa con las pertenencias ajenas. Tu objeto probablemente siga allí o lo haya guardado el personal. Vuelve primero al café o restaurante.",
+          "action": "Información (1330)"
+        },
+        "l2": {
+          "title": "¿Perdido en el Metro?",
+          "desc": "Anota: 1. Hora de llegada 2. Dirección 3. Número de vagón (número en el suelo). Comunícalo al centro de atención de la estación inmediatamente.",
+          "action": "Llamar al Metro"
+        },
+        "l3": {
+          "title": "Sistema Policial LOST112 System",
+          "desc": "Registra tu objeto perdido o búscalo en www.lost112.go.kr. Los objetos recuperados se conservan 6 meses por ley.",
+          "action": "Ir a LOST112"
+        }
+      },
+      "passport": {
+        "p1": {
+          "title": "Obtén un Informe Policial",
+          "desc": "Prioridad 1: Visita la comisaría más cercana para obtener un 'Informe Policial'. Sin él, no podrás conseguir un pasaporte de emergencia ni salir de Corea.",
+          "action": "Buscar Comisaría"
+        },
+        "p2": {
+          "title": "Fotos y Embajada",
+          "desc": "Lleva 2 fotos tamaño pasaporte y el Informe Policial a tu Embajada. Emitirán un documento de viaje de emergencia.",
+          "action": "Lista de Embajadas"
+        },
+        "p3": {
+          "title": "Reclamación de Seguro",
+          "desc": "Guarda bien tu Informe Policial. Es la prueba clave para reclamar al seguro de viaje por equipaje robado al volver a casa.",
+          "action": "Llamar a Traducción"
+        }
+      }
+    },
+    "hotlines": {
+      "police": "Crimen, Robo, Violencia",
+      "ambulance": "Emergencia Médica, Incendio",
+      "tourist": "Asistencia turística 24/7"
+    }
+  }
+}

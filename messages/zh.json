@@ -1,0 +1,121 @@
+{
+  "brandName": "HotelDocKorea",
+  "subtitle": "出发前,最先打开的韩国酒店指南",
+  "metaDescription": "韩国3星级以上520余家酒店·度假村的实时促销、周边庆典、美食信息 — 旅行所需一站尽览。",
+  "regions": {
+    "capital": "首都圈",
+    "yeongdong": "岭东圈",
+    "busan": "釜山庆南圈",
+    "daegu": "大邱庆北圈",
+    "honam": "光州湖南圈",
+    "chungcheong": "忠清圈",
+    "jeju": "济州岛"
+  },
+  "sections": {
+    "hotels": "酒店 · 度假村促销",
+    "festivals": "庆典 · 活动",
+    "nearby": "周边美食 · 景点",
+    "highlyRated": "👍 评价极佳",
+    "premium": "★ 高级"
+  },
+  "header": {
+    "allRegions": "全国",
+    "searchPlaceholder": "搜索酒店名称",
+    "emergencyButton": "紧急・求助"
+  },
+  "hotels": {
+    "fullPromotionsTitle": "酒店·度假村全部促销 {count}条"
+  },
+  "footer": {
+    "terms": "服务条款",
+    "privacy": "隐私政策",
+    "imageNotice": "[提示] 本网站显示的酒店图片实时引用自各酒店官方网站的公开元数据（Open Graph），版权归各酒店所有。如有酒店希望停止图片刊登，请联系我们,我们将立即处理。（联系方式: contact@hoteldockorea.com）",
+    "copyright": "© 2026 HotelDocKorea. 版权所有。"
+  },
+  "gradeFilter": {
+    "label": "星级",
+    "grade": "{n}星级",
+    "clear": "全部清除",
+    "results": "搜索结果: <c>{count}</c>条"
+  },
+  "emergency": {
+    "title": "紧急情况指南 Emergency & Help In KOREA",
+    "subtitle": "面向外国游客的官方保护系统指南",
+    "tabs": {
+      "hospital": "医疗 / 医院",
+      "lost": "失物处理",
+      "passport": "护照遗失/被盗"
+    },
+    "quickTip": "快速行动指南",
+    "swipeTip": "滑动卡片查看详细指引",
+    "supportHotline": "支援热线",
+    "helpDesk": "24小时多语言旅游咨询",
+    "lesson": "STEP {n}",
+    "lostTip": "建议: 请检查您最近的信用卡消费记录。",
+    "hospitalTip": "请直接拨打119, GPS会自动追踪您的位置。",
+    "footer": {
+      "policePortal": "警察厅失物招领",
+      "passportHelp": "护照协助",
+      "translation": "翻译支援",
+      "embassyGuide": "使馆指南"
+    },
+    "cards": {
+      "hospital": {
+        "h1": {
+          "title": "119救护车免费",
+          "desc": "在韩国,119救护车和医院转运服务对所有人完全免费,包括外国游客。请不要犹豫,直接拨打。",
+          "action": "立即拨打119"
+        },
+        "h2": {
+          "title": "24小时多语翻译",
+          "desc": "拨打119可获得16种语言的三方通话翻译服务。用您的语言说话,翻译员会立即接入。",
+          "action": "呼叫求助"
+        },
+        "h3": {
+          "title": "免预约的社区诊所",
+          "desc": "感冒、腹泻等轻症,请选择社区\"의원(诊所)\"而非急诊室。无需预约,费用低廉,诊治快速专业。",
+          "action": "查找附近诊所"
+        }
+      },
+      "lost": {
+        "l1": {
+          "title": "先回到丢失地点",
+          "desc": "韩国有不碰他人物品的良好文化。遗落在咖啡厅或餐厅的物品,很可能仍在原处或由店员保管。",
+          "action": "旅游咨询 1330"
+        },
+        "l2": {
+          "title": "落在地铁上时",
+          "desc": "请记下: 1. 下车时间 2. 列车方向 3. 车厢号(地板上的编号)。立即告知站内客服中心即可实时追踪。",
+          "action": "拨打地铁咨询"
+        },
+        "l3": {
+          "title": "警察厅LOST112 system",
+          "desc": "在警察厅失物招领门户登记申报或搜索。拾得物品依法将安全保管6个月。",
+          "action": "前往LOST112"
+        }
+      },
+      "passport": {
+        "p1": {
+          "title": "申领警方报告",
+          "desc": "首要任务: 前往最近的警察局申领「遗失证明(Police Report)」。没有这份文件,无法办理紧急护照或离境。",
+          "action": "查找警察局"
+        },
+        "p2": {
+          "title": "证件照与大使馆",
+          "desc": "携带2张护照照片和警方报告前往本国大使馆,他们将为您办理紧急旅行证件。",
+          "action": "大使馆列表"
+        },
+        "p3": {
+          "title": "旅行保险理赔准备",
+          "desc": "如遇盗窃,请妥善保管警方报告。这是回国后申请旅行保险理赔的核心证据。",
+          "action": "拨打翻译服务"
+        }
+      }
+    },
+    "hotlines": {
+      "police": "犯罪·暴力·盗窃报案",
+      "ambulance": "急救医疗·火灾报警",
+      "tourist": "24小时多语言旅游咨询"
+    }
+  }
+}

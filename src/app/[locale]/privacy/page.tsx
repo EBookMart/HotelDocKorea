@@ -1,4 +1,13 @@
-export default function PrivacyPolicy() {
+import { setRequestLocale } from "next-intl/server";
+
+export default async function PrivacyPolicy({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}) {
+  const { locale } = await params;
+  setRequestLocale(locale);
+
   return (
     <div className="max-w-2xl mx-auto p-8 font-sans text-gray-800 bg-white min-h-screen">
       <h1 className="text-3xl font-extrabold mb-6 text-indigo-900 border-b pb-4">개인정보 처리방침 (Privacy Policy)</h1>

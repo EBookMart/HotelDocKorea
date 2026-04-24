@@ -1,9 +1,9 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { Lock, TrendingUp, AlertTriangle, CheckCircle, Smartphone } from "lucide-react";
 
-export default function AdminDashboard() {
+export default function AdminDashboardClient() {
   const [isAuthenticated, setIsAuthenticated] = useState(false);
   const [pin, setPin] = useState("");
 

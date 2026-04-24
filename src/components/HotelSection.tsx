@@ -69,17 +69,17 @@ function HotelImageCard({ imageUrl, hotelName, rating, city, isLuxury, isBudget,
       <div className="absolute top-2 right-2">
         {isLuxury && (
           <span className="bg-gradient-to-r from-yellow-400 to-amber-500 text-black text-[9px] px-2 py-0.5 rounded-full font-extrabold shadow-md">
-            ★ {stars}성 Premium
+            ★ {stars} {lang === 'ko' ? "성 프리미엄" : "Star Premium"}
           </span>
         )}
         {isBudget && (
           <span className="bg-rose-500 text-white text-[9px] px-2 py-0.5 rounded-full font-extrabold animate-pulse">
-            {stars}성 최저가
+            {stars} {lang === 'ko' ? "성 최저가" : "Star Budget"}
           </span>
         )}
         {!isLuxury && !isBudget && (
           <span className="bg-indigo-500/80 backdrop-blur-sm text-white text-[9px] px-2 py-0.5 rounded-full font-bold">
-            ★ {stars}성
+            ★ {stars} {lang === 'ko' ? "성" : "Star"}
           </span>
         )}
       </div>
@@ -149,15 +149,17 @@ export default function HotelSection({
                   <div className="flex justify-between items-start">
                     <div className="w-[75%]">
                       {isTopRanked && (
-                        <div className="flex items-center gap-1.5 mb-2 bg-emerald-50 text-emerald-700 w-fit px-2 py-0.5 rounded-md border border-emerald-100 animate-bounce">
-                          <Award size={12} className="text-emerald-500" />
-                          <span className="text-[10px] font-black uppercase tracking-tight">Traveler's Pick</span>
+                        <div className="flex items-center gap-1.5 mb-2 bg-emerald-50 text-emerald-700 w-fit px-2 py-0.5 rounded-md border border-emerald-100">
+                          <Award size={12} className="text-emerald-500 animate-pulse" />
+                          <span className="text-[10px] font-black uppercase tracking-tight">
+                            {lang === 'ko' ? "여행자가 검증한 최고의 숙소" : "HotelDocKorea's Data-Driven Pick"}
+                          </span>
                         </div>
                       )}
                       {!isTopRanked && rep.originalRating >= 4.5 && (
                          <div className="flex items-center gap-1 bg-blue-50 text-blue-600 w-fit px-1.5 py-0.5 rounded-md mb-2 border border-blue-100">
                              <ThumbsUp size={10} />
-                             <span className="text-[9px] font-bold">Highly Rated</span>
+                             <span className="text-[9px] font-bold">{t.sections.highlyRated}</span>
                          </div>
                       )}
                       
@@ -227,28 +229,36 @@ export default function HotelSection({
                           <Image src="https://www.agoda.com/favicon.ico" alt="Agoda" width={12} height={12} className="opacity-70" />
                         </div>
                         
-                        {(() => {
-                           const isEnglish = lang === 'en';
-                           const bookingUrl = `https://www.booking.com/searchresults.html?ss=${encodeURIComponent(hotel.이름)}&aid=2311236`;
-                           const agodaUrl = hotel.affiliate_link || `https://www.agoda.com/ko-kr/search?query=${encodeURIComponent(hotel.이름)}&cid=1896000`;
-                           const finalAffiliateUrl = isEnglish ? bookingUrl : agodaUrl;
+                         {(() => {
+                            // Geotargeting Logic (based on timezone as proxy for IP Country)
+                            const timeZone = Intl.DateTimeFormat().resolvedOptions().timeZone;
+                            const isWestern = timeZone.includes('Europe') || timeZone.includes('America');
+                            
+                            const bookingUrl = `https://www.booking.com/searchresults.html?ss=${encodeURIComponent(hotel.이름)}&aid=2311236`;
+                            const agodaUrl = hotel.affiliate_link || `https://www.agoda.com/ko-kr/search?query=${encodeURIComponent(hotel.이름)}&cid=1896000`;
+                            
+                            // User request: North America/Europe -> Booking, SE Asia/Others -> Agoda
+                            const finalAffiliateUrl = isWestern ? bookingUrl : agodaUrl;
+                            const providerName = isWestern ? "Booking.com" : "Agoda";
 
-                           return (
-                             <a href={finalAffiliateUrl} target="_blank" rel="noopener noreferrer" 
-                                className="relative flex items-center justify-between w-full bg-gradient-to-r from-[#003580] to-[#0051ba] p-3 rounded-xl shadow-lg shadow-blue-900/10 hover:scale-[1.02] transition-all group overflow-hidden">
-                                {/* 빛나는 효과 */}
-                                <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/10 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-1000" />
-                                
-                                <div className="flex flex-col items-start z-10">
-                                  <span className="text-[10px] text-blue-200 font-medium mb-0.5">{isEnglish ? 'Special Booking Deal' : 'Agoda Real-time Deal'}</span>
-                                  <span className="text-[13px] font-extrabold text-white flex items-center gap-1.5">
-                                    <CalendarDays size={14} className="text-yellow-400" />
-                                    <TranslatedText 
-                                      text={lang === 'ko' ? "오늘의 최저가 확인하기" : lang === 'ja' ? "本日の最安値を確認" : "Check Today's Lowest Price"} 
-                                      lang={lang} 
-                                    />
-                                  </span>
-                                </div>
+                            return (
+                              <a href={finalAffiliateUrl} target="_blank" rel="noopener noreferrer" 
+                                 className="relative flex items-center justify-between w-full bg-gradient-to-r from-[#003580] to-[#0051ba] p-3 rounded-xl shadow-lg shadow-blue-900/10 hover:scale-[1.02] transition-all group overflow-hidden">
+                                 {/* Shine Effect */}
+                                 <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/10 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-1000" />
+                                 
+                                 <div className="flex flex-col items-start z-10">
+                                   <span className="text-[10px] text-blue-200 font-medium mb-0.5">
+                                      {providerName} {lang === 'ko' ? '실시간 연동 완료' : 'Real-time Linked'}
+                                   </span>
+                                   <span className="text-[13px] font-extrabold text-white flex items-center gap-1.5">
+                                     <CalendarDays size={14} className="text-yellow-400" />
+                                     <TranslatedText 
+                                       text={lang === 'ko' ? "오늘의 최저가 확인하기" : lang === 'ja' ? "本日の最安値を確認" : "Check Today's Lowest Price"} 
+                                       lang={lang} 
+                                     />
+                                   </span>
+                                 </div>
                                 
                                 <div className="bg-yellow-400 text-[#003580] px-3 py-1.5 rounded-lg text-[12px] font-black shadow-sm group-hover:bg-white transition-colors z-10">
                                   GO &gt;

@@ -30,6 +30,8 @@ export const translations = {
       weather:   "권역별 기상정보",
       weatherToday: "🌤️ 오늘의 날씨",
       weatherWeekly: "📅 주간 날씨",
+      highlyRated: "👍 평판 우수",
+      premium: "★ 프리미엄",
     },
   },
   en: {
@@ -53,6 +55,8 @@ export const translations = {
       weather:   "Regional Weather",
       weatherToday: "🌤️ Today's Weather",
       weatherWeekly: "📅 Weekly Weather",
+      highlyRated: "👍 Highly Rated",
+      premium: "★ Premium",
     },
   },
   ja: {
@@ -76,6 +80,8 @@ export const translations = {
       weather:   "地域別気상情報",
       weatherToday: "🌤️ 今日の天気",
       weatherWeekly: "📅 週間天気",
+      highlyRated: "👍 評判が良い",
+      premium: "★ プレミアム",
     },
   },
   zh: {
@@ -99,6 +105,8 @@ export const translations = {
       weather:   "区域气象信息",
       weatherToday: "🌤️ 今日天气",
       weatherWeekly: "📅 本周天气",
+      highlyRated: "👍 评价极佳",
+      premium: "★ 高级",
     },
   },
   es: {
@@ -122,6 +130,8 @@ export const translations = {
       weather:   "Clima Regional",
       weatherToday: "🌤️ El tiempo de hoy",
       weatherWeekly: "📅 El tiempo de la semana",
+      highlyRated: "👍 Muy valorado",
+      premium: "★ Premium",
     },
   },
 };

@@ -194,8 +194,7 @@ export default function HomeClient({ hotelData }: { hotelData: any }) {
   useEffect(() => {
     const handleScroll = () => {
       const scrollY = window.scrollY;
-      const height = document.documentElement.scrollHeight - window.innerHeight;
-      if (scrollY > height * 0.5) {
+      if (scrollY > 300) {
         setShowBackToTop(true);
       } else {
         setShowBackToTop(false);
@@ -502,10 +501,10 @@ export default function HomeClient({ hotelData }: { hotelData: any }) {
       {showBackToTop && (
         <button
           onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
-          className="fixed bottom-8 right-8 z-50 bg-white text-indigo-600 p-4 rounded-full shadow-2xl shadow-indigo-900/20 border border-indigo-100 hover:scale-110 active:scale-95 transition-all animate-in fade-in zoom-in slide-in-from-bottom-5 duration-300 flex items-center justify-center"
+          className="fixed bottom-8 right-8 z-[100] bg-indigo-600 text-white p-4 rounded-full shadow-2xl shadow-indigo-900/40 hover:bg-indigo-700 hover:scale-110 active:scale-95 transition-all animate-in fade-in zoom-in slide-in-from-bottom-5 duration-300 flex items-center justify-center group"
           aria-label="Back to Top"
         >
-          <ArrowUp size={24} />
+          <ArrowUp size={24} className="group-hover:-translate-y-1 transition-transform" />
         </button>
       )}
     </div>

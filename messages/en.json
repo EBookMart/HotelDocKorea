@@ -24,7 +24,26 @@
     "emergencyButton": "Emergency & Help"
   },
   "hotels": {
-    "fullPromotionsTitle": "All Hotel & Resort Promotions ({count})"
+    "fullPromotionsTitle": "All Hotel & Resort Promotions ({count})",
+    "results": "results",
+    "emptyTitle": "No hotel promotions match these filters.",
+    "emptySubtitle": "Try a different rating or region.",
+    "officialSite": "Official Site",
+    "copyAddress": "Copy for Taxi",
+    "copied": "Copied",
+    "airportGuide": "Airport Guide",
+    "activePromotion": "Active Promotion",
+    "verifiedInfo": "Verified Info",
+    "reviews": "{count} Reviews",
+    "lowestPrice": "Lowest Price Guarantee",
+    "realtimeLinked": "Real-time Linked",
+    "checkLowestPrice": "Check Today's Lowest Price",
+    "premiumBadge": "Star Premium",
+    "budgetBadge": "Star Budget",
+    "starBadge": "Star",
+    "pick": "PICK",
+    "baggageService": "Baggage Service",
+    "imagePreparing": "Image Preparing"
   },
   "footer": {
     "terms": "Terms of Service",
@@ -117,5 +136,32 @@
       "ambulance": "Medical Emergency, Fire",
       "tourist": "24/7 Tourism Helpline"
     }
+  },
+  "festivals": {
+    "title": "Festivals & Events",
+    "searchPlaceholder": "Search by festival name or region...",
+    "searchResult": "\"{query}\" results: {count}",
+    "noResults": "No festivals matching \"{query}\".",
+    "noActive": "No ongoing events at the moment.",
+    "noActiveInRegion": "No ongoing festivals in the selected region.",
+    "clearSearch": "Clear search"
+  },
+  "nearby": {
+    "title": "Nearby Food & Attractions",
+    "tabFood": "Food",
+    "tabAttractions": "Attractions",
+    "searchPlaceholderFood": "Search restaurants or regions...",
+    "searchPlaceholderAttractions": "Search attractions or regions...",
+    "noData": "No information available."
+  },
+  "hotPicks": {
+    "promoTitle": "{region} HOT Promotions",
+    "recommendedTitle": "{region} Featured Hotels",
+    "editorPick": "EDITOR'S PICK",
+    "stayPick": "STAY PICK",
+    "viewDetail": "VIEW DETAIL",
+    "imagePreparing": "IMAGE PREPARING",
+    "recommended": "Featured",
+    "preparing": "Promotions matching these filters are coming soon."
   }
 }

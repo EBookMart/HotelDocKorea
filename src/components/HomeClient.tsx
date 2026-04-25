@@ -186,7 +186,13 @@ export function TranslatedText({
   return <span className={className}>{translated}</span>;
 }
 
-export default function HomeClient({ hotelData }: { hotelData: any }) {
+export default function HomeClient({
+  hotelData,
+  hotPicksData,
+}: {
+  hotelData: any;
+  hotPicksData: { promotions: any[] };
+}) {
   const t = useTranslations();
   const locale = useLocale();
   const pathname = usePathname();
@@ -377,6 +383,7 @@ export default function HomeClient({ hotelData }: { hotelData: any }) {
           selectedRegion={activeRegionKey}
           selectedGrade={selectedGrade}
           fallbackHotels={hotelsList}
+          promotions={hotPicksData?.promotions || []}
         />
 
         <section className="w-full bg-white">
@@ -393,8 +400,6 @@ export default function HomeClient({ hotelData }: { hotelData: any }) {
             <HotelSection
               hotelsList={hotelsList}
               activeRating={selectedGrade ? `${selectedGrade}성` : null}
-              lang={locale as any}
-              t={legacyT}
               extractTheme={extractTheme}
               getPromoTitle={getPromoTitle}
               sectionTitle={t('hotels.fullPromotionsTitle', { count: hotelsList.length })}

@@ -17,7 +17,6 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-// OpenGraph 로케일 매핑 (BCP-47 → OG 표준)
 const OG_LOCALE_MAP: Record<string, string> = {
   ko: "ko_KR",
   en: "en_US",
@@ -30,15 +29,12 @@ export const viewport: Viewport = {
   themeColor: "#4338ca",
   width: "device-width",
   initialScale: 1,
-  // maximumScale 제거: 모바일 확대 허용 (접근성)
 };
 
-// 빌드 타임에 5개 로케일 정적 페이지 사전 생성
 export function generateStaticParams() {
   return routing.locales.map((locale) => ({ locale }));
 }
 
-// 로케일별 동적 메타데이터 생성
 export async function generateMetadata({
   params,
 }: {
@@ -107,12 +103,10 @@ type Props = {
 export default async function LocaleLayout({ children, params }: Props) {
   const { locale } = await params;
 
-  // 유효하지 않은 로케일이면 404
   if (!hasLocale(routing.locales, locale)) {
     notFound();
   }
 
-  // 정적 렌더링 활성화 (SEO의 핵심)
   setRequestLocale(locale);
 
   return (
@@ -122,12 +116,10 @@ export default async function LocaleLayout({ children, params }: Props) {
     >
       <head />
       <body className="min-h-full flex flex-col">
-        {/* GA4 Analytics Placeholder */}
         <Script id="analytics-init" strategy="lazyOnload">
           {`/* window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'G-XXXXXXXXXX'); */`}
         </Script>
 
-        {/* Pi Network SDK */}
         <Script
           src="https://sdk.minepi.com/pi-sdk.js"
           strategy="afterInteractive"
@@ -140,7 +132,6 @@ export default async function LocaleLayout({ children, params }: Props) {
           `}
         </Script>
 
-        {/* Service Worker Registration */}
         <Script id="sw-init" strategy="afterInteractive">
           {`
             if ('serviceWorker' in navigator) {

@@ -1,18 +1,19 @@
 {
-  "name": "temp-app",
+  "name": "hoteldockorea",
   "version": "0.1.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
+    "prebuild": "node scripts/fetch-festivals.mjs",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "festivals:refresh": "node scripts/fetch-festivals.mjs"
   },
   "dependencies": {
     "lucide-react": "^1.8.0",
     "next": "16.2.3",
     "next-intl": "^4.9.1",
-    "puppeteer": "^24.40.0",
     "react": "19.2.4",
     "react-dom": "19.2.4"
   },
@@ -23,6 +24,7 @@
     "@types/react-dom": "^19",
     "eslint": "^9",
     "eslint-config-next": "16.2.3",
+    "puppeteer": "^24.40.0",
     "tailwindcss": "^4",
     "typescript": "^5"
   }

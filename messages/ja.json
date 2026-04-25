@@ -24,7 +24,26 @@
     "emergencyButton": "緊急・サポート"
   },
   "hotels": {
-    "fullPromotionsTitle": "ホテル・リゾート全プロモーション {count}件"
+    "fullPromotionsTitle": "ホテル・リゾート全プロモーション {count}件",
+    "results": "件",
+    "emptyTitle": "条件에 맞는 ホテルプロモーションはありません。",
+    "emptySubtitle": "別のランクまたは地域を選択してください。",
+    "officialSite": "公式サイト予約",
+    "copyAddress": "タクシー用に住所コピー",
+    "copied": "コピー済み",
+    "airportGuide": "空港アクセスガイド",
+    "activePromotion": "開催中のプロモ",
+    "verifiedInfo": "Verified Info",
+    "reviews": "{count}件のレビュー",
+    "lowestPrice": "最安値保証",
+    "realtimeLinked": "リアルタイム連携",
+    "checkLowestPrice": "本日の最安値を確認",
+    "premiumBadge": "つ星プレミアム",
+    "budgetBadge": "つ星お得",
+    "starBadge": "つ星",
+    "pick": "PICK",
+    "baggageService": "手荷物配送",
+    "imagePreparing": "画像準備中"
   },
   "footer": {
     "terms": "利用規約",
@@ -117,5 +136,32 @@
       "ambulance": "救急医療・火災通報",
       "tourist": "24時間多言語観光案内"
     }
+  },
+  "festivals": {
+    "title": "お祭り・イベント",
+    "searchPlaceholder": "イベント名または地域で検索...",
+    "searchResult": "「{query}」の検索結果: {count}件",
+    "noResults": "「{query}」에 해당하는 축제·행사가 없습니다.",
+    "noActive": "현재 진행 중인 행사가 없습니다.",
+    "noActiveInRegion": "選択された地域で開催中のイベントはありません。",
+    "clearSearch": "検索をクリア"
+  },
+  "nearby": {
+    "title": "周辺のグルメ・観光地",
+    "tabFood": "グルメ",
+    "tabAttractions": "観光地",
+    "searchPlaceholderFood": "店名 또는 지역 검색...",
+    "searchPlaceholderAttractions": "관광지명 또는 지역 검색...",
+    "noData": "情報がありません。"
+  },
+  "hotPicks": {
+    "promoTitle": "{region}のHOTプロモーション",
+    "recommendedTitle": "{region}のおすすめホテル",
+    "editorPick": "EDITOR'S PICK",
+    "stayPick": "STAY PICK",
+    "viewDetail": "詳細を見る",
+    "imagePreparing": "画像準備中",
+    "recommended": "人気のおすすめ",
+    "preparing": "条件に合うプロモーション를 準備中です。"
   }
 }

@@ -11,19 +11,25 @@ export default async function Home({
   const { locale } = await params;
   setRequestLocale(locale);
 
-  const filePath = path.join(process.cwd(), 'public', 'data', 'hotels.json');
+  const publicDir = path.join(process.cwd(), 'public', 'data');
+
   let hotelData = {};
-  
   try {
-    const fileData = fs.readFileSync(filePath, 'utf8');
-    hotelData = JSON.parse(fileData);
+    hotelData = JSON.parse(fs.readFileSync(path.join(publicDir, 'hotels.json'), 'utf8'));
   } catch (err) {
     console.error("Failed to load hotels.json", err);
   }
 
+  let hotPicksData: { promotions: any[] } = { promotions: [] };
+  try {
+    hotPicksData = JSON.parse(fs.readFileSync(path.join(publicDir, 'hot-picks.json'), 'utf8'));
+  } catch (err) {
+    console.error("Failed to load hot-picks.json", err);
+  }
+
   return (
     <div className="w-full min-h-screen">
-      <HomeClient hotelData={hotelData} />
+      <HomeClient hotelData={hotelData} hotPicksData={hotPicksData} />
     </div>
   );
 }

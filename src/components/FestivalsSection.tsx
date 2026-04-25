@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
+import { useTranslations } from "next-intl";
 
 interface Festival {
   id: string;
@@ -16,6 +17,7 @@ interface Festival {
 }
 
 export default function FestivalsSection({ selectedRegion }: { selectedRegion: string | null }) {
+  const t = useTranslations("festivals");
   const [festivals, setFestivals] = useState<Festival[]>([]);
   const [searchTerm, setSearchTerm] = useState("");
   const [loading, setLoading] = useState(true);
@@ -28,14 +30,13 @@ export default function FestivalsSection({ selectedRegion }: { selectedRegion: s
         setLoading(false);
       })
       .catch((err) => {
-        console.error("축제 데이터를 불러오지 못했습니다:", err);
+        console.error("Failed to load festivals:", err);
         setLoading(false);
       });
   }, []);
 
   const today = new Date().toISOString().split("T")[0];
 
-  // 1. 활성 상태 및 날짜 필터링
   const activeFestivals = festivals.filter((f) => {
     if (!f.active) return false;
     if (f.startDate && f.startDate > today) return false;
@@ -43,32 +44,30 @@ export default function FestivalsSection({ selectedRegion }: { selectedRegion: s
     return true;
   });
 
-  // 2. 권역 + 검색어 필터링
   const filtered = activeFestivals.filter((f) => {
-    // 권역 필터
     const regionMatch = !selectedRegion || f.region === selectedRegion;
     if (!regionMatch) return false;
 
-    // 검색어 필터
     if (searchTerm.trim()) {
-      const searchable = [
-        f.name || "",
-        f.location || "",
-        f.description || "",
-        f.region || ""
-      ].join(" ").toLowerCase().replace(/\s+/g, "");
-      
+      const searchable = [f.name, f.location, f.description, f.region]
+        .filter(Boolean)
+        .join(" ")
+        .toLowerCase()
+        .replace(/\s+/g, "");
       const query = searchTerm.toLowerCase().replace(/\s+/g, "");
       return searchable.includes(query);
     }
-
     return true;
   });
 
-  // 3. 표시 리스트 (필터 결과가 있으면 그것을, 없는데 검색 중이면 빈 배열, 검색 중 아니면 기본 4개)
-  const displayList = searchTerm.trim() 
-    ? filtered 
-    : (filtered.length > 0 ? filtered.slice(0, 4) : activeFestivals.slice(0, 4));
+  // 검색 중: 검색 결과만 표시
+  // 권역 선택 시: 해당 권역 결과만 표시 (없으면 빈 상태)
+  // 전국 + 검색 없음: 최대 4개 노출 (초기 진입 화면)
+  const displayList = searchTerm.trim()
+    ? filtered
+    : selectedRegion
+    ? filtered.slice(0, 4)
+    : filtered.slice(0, 4);
 
   if (loading) {
     return (
@@ -87,24 +86,22 @@ export default function FestivalsSection({ selectedRegion }: { selectedRegion: s
     <div className="bg-white rounded-xl p-6 border border-gray-200">
       <div className="flex items-center gap-2 mb-4">
         <span className="text-2xl">📅</span>
-        <h2 className="text-xl font-bold text-gray-900">축제 · 공연 · 행사</h2>
-        <span className="ml-auto text-[10px] bg-blue-100 text-blue-700 px-2 py-0.5 rounded">🔗 TourAPI 연동 예정</span>
+        <h2 className="text-xl font-bold text-gray-900">{t("title")}</h2>
       </div>
 
-      {/* 검색창 추가 */}
       <div className="relative mb-4">
         <input
           type="text"
           value={searchTerm}
           onChange={(e) => setSearchTerm(e.target.value)}
-          placeholder="축제·행사명 또는 지역 검색..."
+          placeholder={t("searchPlaceholder")}
           className="w-full px-4 py-2 pr-10 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-400 text-sm"
         />
         {searchTerm && (
           <button
             onClick={() => setSearchTerm("")}
             className="absolute right-3 top-1/2 -translate-y-1/2 text-gray-400 hover:text-gray-600"
-            aria-label="검색어 지우기"
+            aria-label={t("clearSearch")}
           >
             ✕
           </button>
@@ -113,35 +110,44 @@ export default function FestivalsSection({ selectedRegion }: { selectedRegion: s
 
       {searchTerm && (
         <div className="text-xs text-gray-500 mb-3 px-1">
-          &quot;{searchTerm}&quot; 검색 결과: {filtered.length}개
+          {t("searchResult", { query: searchTerm, count: filtered.length })}
         </div>
       )}
 
       <div className="space-y-3">
         {displayList.length > 0 ? (
           displayList.map((f) => (
-            <div key={f.id} className="flex gap-3 p-3 rounded-lg hover:bg-purple-50 transition cursor-pointer">
+            <div
+              key={f.id}
+              className="flex gap-3 p-3 rounded-lg hover:bg-purple-50 transition"
+            >
               <span className="text-3xl">{f.icon}</span>
               <div className="flex-1 min-w-0">
                 <h3 className="font-semibold text-gray-900 truncate">{f.name}</h3>
-                <p className="text-xs text-gray-500 mt-0.5">{f.period} · {f.location}</p>
-                <p className="text-sm text-gray-700 mt-1 line-clamp-2">{f.description}</p>
+                <p className="text-xs text-gray-500 mt-0.5">
+                  {f.period} · {f.location}
+                </p>
+                {f.description && (
+                  <p className="text-sm text-gray-700 mt-1 line-clamp-2">{f.description}</p>
+                )}
               </div>
             </div>
           ))
         ) : (
           <div className="text-center py-10">
             <p className="text-sm text-gray-400">
-              {searchTerm 
-                ? `"${searchTerm}"에 해당하는 축제·행사가 없습니다.` 
-                : "진행 중인 행사가 없습니다."}
+              {searchTerm
+                ? t("noResults", { query: searchTerm })
+                : selectedRegion
+                ? t("noActiveInRegion")
+                : t("noActive")}
             </p>
             {searchTerm && (
               <button
                 onClick={() => setSearchTerm("")}
                 className="mt-2 text-xs text-purple-500 hover:underline"
               >
-                검색어 지우기
+                {t("clearSearch")}
               </button>
             )}
           </div>

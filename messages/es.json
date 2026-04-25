@@ -24,7 +24,26 @@
     "emergencyButton": "Emergencias"
   },
   "hotels": {
-    "fullPromotionsTitle": "Promociones de hoteles y resorts ({count})"
+    "fullPromotionsTitle": "Todas las promociones de hoteles y resorts ({count})",
+    "results": "resultados",
+    "emptyTitle": "No hay promociones que coincidan con estos filtros.",
+    "emptySubtitle": "Prueba con otra categoría o región.",
+    "officialSite": "Reserva Oficial",
+    "copyAddress": "Copiar para taxi",
+    "copied": "Copiado",
+    "airportGuide": "Guía al aeropuerto",
+    "activePromotion": "Promoción activa",
+    "verifiedInfo": "Verified Info",
+    "reviews": "{count} reseñas",
+    "lowestPrice": "Precio más bajo garantizado",
+    "realtimeLinked": "Conectado en tiempo real",
+    "checkLowestPrice": "Ver precio más bajo de hoy",
+    "premiumBadge": "estrellas Premium",
+    "budgetBadge": "estrellas Económico",
+    "starBadge": "estrellas",
+    "pick": "PICK",
+    "baggageService": "Envío de equipaje",
+    "imagePreparing": "Imagen en preparación"
   },
   "footer": {
     "terms": "Términos de servicio",
@@ -117,5 +136,32 @@
       "ambulance": "Emergencia Médica, Incendio",
       "tourist": "Asistencia turística 24/7"
     }
+  },
+  "festivals": {
+    "title": "Festivales y Eventos",
+    "searchPlaceholder": "Buscar festival o región...",
+    "searchResult": "Resultados de \"{query}\": {count}",
+    "noResults": "No hay festivales que coincidan con \"{query}\".",
+    "noActive": "No hay eventos en curso en este momento.",
+    "noActiveInRegion": "No hay festivales en curso en la región seleccionada.",
+    "clearSearch": "Borrar búsqueda"
+  },
+  "nearby": {
+    "title": "Comida y Atracciones Cercanas",
+    "tabFood": "Comida",
+    "tabAttractions": "Atracciones",
+    "searchPlaceholderFood": "Buscar restaurantes o regiones...",
+    "searchPlaceholderAttractions": "Buscar atracciones o regiones...",
+    "noData": "No hay información disponible."
+  },
+  "hotPicks": {
+    "promoTitle": "Promociones HOT de {region}",
+    "recommendedTitle": "Hoteles Destacados de {region}",
+    "editorPick": "EDITOR'S PICK",
+    "stayPick": "STAY PICK",
+    "viewDetail": "Ver detalle",
+    "imagePreparing": "Imagen en preparación",
+    "recommended": "Destacado",
+    "preparing": "Estamos preparando promociones para estos filtros."
   }
 }

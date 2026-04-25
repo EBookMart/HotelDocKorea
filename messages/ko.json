@@ -24,7 +24,26 @@
     "emergencyButton": "긴급·도움 안내"
   },
   "hotels": {
-    "fullPromotionsTitle": "호텔·리조트 전체 프로모션 {count}건"
+    "fullPromotionsTitle": "호텔·리조트 전체 프로모션 {count}건",
+    "results": "건",
+    "emptyTitle": "조건에 맞는 호텔 프로모션이 없습니다.",
+    "emptySubtitle": "다른 등급이나 권역을 선택해 보세요.",
+    "officialSite": "공식홈 예약",
+    "copyAddress": "택시용 주소복사",
+    "copied": "복사됨",
+    "airportGuide": "공항 이동 가이드",
+    "activePromotion": "진행중인 프로모션",
+    "verifiedInfo": "Verified Info",
+    "reviews": "리뷰 {count}건",
+    "lowestPrice": "최저가 보장",
+    "realtimeLinked": "실시간 연동 완료",
+    "checkLowestPrice": "오늘의 최저가 확인하기",
+    "premiumBadge": "성 프리미엄",
+    "budgetBadge": "성 최저가",
+    "starBadge": "성",
+    "pick": "PICK",
+    "baggageService": "수하물 배송",
+    "imagePreparing": "이미지 준비 중"
   },
   "footer": {
     "terms": "이용약관",
@@ -117,5 +136,32 @@
       "ambulance": "응급의료·화재 신고",
       "tourist": "24시간 다국어 관광 안내"
     }
+  },
+  "festivals": {
+    "title": "축제 · 공연 · 행사",
+    "searchPlaceholder": "축제·행사명 또는 지역 검색...",
+    "searchResult": "\"{query}\" 검색 결과: {count}개",
+    "noResults": "\"{query}\"에 해당하는 축제·행사가 없습니다.",
+    "noActive": "진행 중인 행사가 없습니다.",
+    "noActiveInRegion": "선택하신 권역에 현재 진행 중인 축제가 없습니다.",
+    "clearSearch": "검색어 지우기"
+  },
+  "nearby": {
+    "title": "주변 맛집 · 관광지",
+    "tabFood": "맛집",
+    "tabAttractions": "관광지",
+    "searchPlaceholderFood": "맛집명 또는 지역 검색...",
+    "searchPlaceholderAttractions": "관광지명 또는 지역 검색...",
+    "noData": "정보가 없습니다."
+  },
+  "hotPicks": {
+    "promoTitle": "{region} HOT 프로모션",
+    "recommendedTitle": "{region} 추천 호텔",
+    "editorPick": "EDITOR'S PICK",
+    "stayPick": "STAY PICK",
+    "viewDetail": "자세히 보기",
+    "imagePreparing": "이미지 준비 중",
+    "recommended": "인기 추천",
+    "preparing": "해당 조건에 맞는 프로모션을 준비 중입니다."
   }
 }

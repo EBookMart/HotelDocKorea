@@ -163,5 +163,94 @@
     "imagePreparing": "이미지 준비 중",
     "recommended": "인기 추천",
     "preparing": "해당 조건에 맞는 프로모션을 준비 중입니다."
+  },
+  "airportGuide": {
+    "title": "공항에서 호텔까지",
+    "subtitle": "{hotel} · ICN/GMP 도착",
+    "intermodalTitle": "복합 교통 가이드",
+    "tabs": {
+      "arex": "공항철도 (AREX)",
+      "taxi": "택시",
+      "bus": "리무진 버스",
+      "subway": "지하철 (9호선)",
+      "ktx": "KTX",
+      "domesticFlight": "국내선 환승"
+    },
+    "labels": {
+      "express": "급행",
+      "local": "일반",
+      "fastest": "최단",
+      "luggageToggle": "무거운 짐이 있나요?",
+      "luggageOn": "엘리베이터 우선 경로",
+      "luggageOff": "일반 경로",
+      "stepByStep": "단계별 이동 경로",
+      "bookNow": "예약하기",
+      "verifiedFor": "해외 카드 사용 가능 · 즉시 e-티켓",
+      "musthaveApp": "필수 앱"
+    },
+    "preparing": {
+      "title": "교통 가이드 준비 중",
+      "desc": "전국 호텔의 교통 데이터를 정밀 검수하고 있습니다. 곧 더 정확한 안내를 제공합니다.",
+      "linkNotice": "일반 교통 정보는 아래 공식 사이트를 참고하세요:",
+      "busLink": "인천공항 공항버스 안내 (공식)",
+      "domesticLink": "김포공항 국내선 안내 (공식)"
+    },
+    "general": {
+      "expressTrainLabel": "급행 열차",
+      "localTrainLabel": "일반 열차",
+      "expressDuration": "43분",
+      "localDuration": "59분",
+      "expressTo": "서울역까지 / 14,800원",
+      "localTo": "서울역까지 / 4,750원",
+      "qrTitle": "QR 바우처 교환 안내",
+      "qrDesc": "급행열차 바우처가 있다면, 자동발권기에 일련번호를 입력하면 실물 QR 티켓을 받을 수 있습니다.",
+      "intlTaxiTag": "외국인 추천",
+      "intlTaxiTitle": "International Taxi",
+      "intlTaxiDesc": "권역별 정액 요금 (70,000~95,000원). 영어·일본어·중국어 가능 기사.",
+      "zoneA": "Zone A: 7만",
+      "zoneB": "Zone B: 8만",
+      "t1Desk": "T1 데스크: 4번, 39번",
+      "surchargeTitle": "30% 할증 주의",
+      "surchargeDesc": "ICN에서 서울로 택시 이용 시, 'SEOUL' 번호판 차량을 선택해야 30% 시외 할증을 피할 수 있습니다.",
+      "limousineTitle": "Airport Limousine",
+      "limousineSub": "주요 호텔 정류 노선",
+      "limousineFare": "17,000원",
+      "limousineRate": "기본 요금",
+      "lateNightTitle": "심야 도착? (자정 이후)",
+      "lateNightDesc": "심야버스 N6000, N6001, N6002가 1터미널 1층 6A 정류장에서 출발합니다.",
+      "lateNightCheck": "심야 시간표 확인",
+      "expressRouteDesc": "주요 역만 정차. 강남행에 최적.",
+      "localRouteDesc": "모든 역 정차.",
+      "applePayTitle": "Apple Pay T-money 사용 가능?",
+      "applePayDesc": "Mobile T-money의 'Foreigner' 메뉴에서 충전.",
+      "wowpassButton": "WOWPASS 카드",
+      "climateButton": "Climate 카드",
+      "applePayNotice": "Apple Pay: 해외 발행 카드는 T-money 충전이 제한될 수 있습니다. 실물 WOWPASS 카드를 권장합니다.",
+      "luggageHeader": "수하물 배송 서비스",
+      "luggageSendDirect": "직접 배송 가능 (마감: {deadline})",
+      "luggageHandsFree": "공항에서 호텔까지 짐을 먼저 보내고 빈손으로 여행하세요."
+    },
+    "regional": {
+      "summary": "{hotel}까지의 권장 이동 경로입니다.",
+      "operatorPrefix": "운영사:",
+      "instantTicket": "즉시 e-티켓"
+    },
+    "mobility": {
+      "title": "외국인 특화 호출 앱",
+      "desc": "본인인증 없이 해외 카드로 바로 이용하세요.",
+      "krideTitle": "k.ride - 외국인 1위 택시 호출",
+      "krideDesc": "133개국 언어 지원 · 글로벌 신용카드 자동결제",
+      "krideInstall": "k.ride 설치 ›",
+      "krideBenefits": "한국 전화번호 불필요 · 자동 결제 가능"
+    },
+    "luggage": {
+      "title": "핸즈프리 수하물 배송",
+      "desc": "인천공항에서 호텔까지 짐을 먼저 보내고 빈손으로 여행하세요.",
+      "notSupported": "이 호텔은 직접 배송이 지원되지 않습니다. 외부 SAFEX 허브를 이용하세요.",
+      "deadlineNote": "마감: {deadline}"
+    },
+    "footer": {
+      "credit": "HotelDocKorea Data Engine 제공 · {month} 업데이트"
+    }
   }
 }

@@ -163,5 +163,94 @@
     "imagePreparing": "图片准备中",
     "recommended": "人气推荐",
     "preparing": "符合条件的促销即将上线。"
+  },
+  "airportGuide": {
+    "title": "从机场到酒店",
+    "subtitle": "{hotel} · ICN/GMP 到达",
+    "intermodalTitle": "联程交通指南",
+    "tabs": {
+      "arex": "机场快线 (AREX)",
+      "taxi": "出租车",
+      "bus": "机场大巴",
+      "subway": "地铁 (9号线)",
+      "ktx": "KTX",
+      "domesticFlight": "国内航班转机"
+    },
+    "labels": {
+      "express": "直达",
+      "local": "普通",
+      "fastest": "最短",
+      "luggageToggle": "携带大件行李?",
+      "luggageOn": "电梯优先路线",
+      "luggageOff": "普通路线",
+      "stepByStep": "分步路线",
+      "bookNow": "立即预订",
+      "verifiedFor": "支持海外卡 · 即时电子票",
+      "musthaveApp": "必备应用"
+    },
+    "preparing": {
+      "title": "交通指南更新中",
+      "desc": "正在精心核对各地区酒店的交通数据,即将提供更准确的信息。",
+      "linkNotice": "一般交通信息请参考以下官方链接:",
+      "busLink": "仁川机场大巴指南 (官方)",
+      "domesticLink": "金浦机场国内航班指南 (官方)"
+    },
+    "general": {
+      "expressTrainLabel": "直达列车",
+      "localTrainLabel": "普通列车",
+      "expressDuration": "43分钟",
+      "localDuration": "59分钟",
+      "expressTo": "至首尔站 / 14,800韩元",
+      "localTo": "至首尔站 / 4,750韩元",
+      "qrTitle": "二维码兑换说明",
+      "qrDesc": "如持有直达列车凭证,在自动售票机输入序列号即可领取实体二维码票。",
+      "intlTaxiTag": "推荐给外国人",
+      "intlTaxiTitle": "International Taxi",
+      "intlTaxiDesc": "按区域固定收费 (70,000~95,000韩元)。司机会英语·日语·中文。",
+      "zoneA": "Zone A: 7万",
+      "zoneB": "Zone B: 8万",
+      "t1Desk": "T1服务台: 4号, 39号",
+      "surchargeTitle": "注意30%加价",
+      "surchargeDesc": "从ICN前往首尔时,务必选择'SEOUL'车牌的出租车,以避免30%的市外加价。",
+      "limousineTitle": "Airport Limousine",
+      "limousineSub": "主要酒店固定路线",
+      "limousineFare": "17,000韩元",
+      "limousineRate": "标准票价",
+      "lateNightTitle": "深夜到达? (午夜后)",
+      "lateNightDesc": "夜间巴士 N6000, N6001, N6002 从第1航站楼1楼6A站台出发。",
+      "lateNightCheck": "查看夜间时刻表",
+      "expressRouteDesc": "仅停靠主要车站。最适合江南地区。",
+      "localRouteDesc": "每站停靠。",
+      "applePayTitle": "Apple Pay T-money可用?",
+      "applePayDesc": "通过Mobile T-money의 'Foreigner' 菜单充值。",
+      "wowpassButton": "WOWPASS 卡",
+      "climateButton": "Climate 卡",
+      "applePayNotice": "Apple Pay: 海外发行的卡充值T-money可能受限,建议使用WOWPASS实体卡。",
+      "luggageHeader": "行李配送服务",
+      "luggageSendDirect": "支持直接配送 (截止: {deadline})",
+      "luggageHandsFree": "从机场将行李先送至酒店,轻装出行。"
+    },
+    "regional": {
+      "summary": "前往{hotel}的推荐路线。",
+      "operatorPrefix": "运营商:",
+      "instantTicket": "即时电子票"
+    },
+    "mobility": {
+      "title": "外国人专用打车应用",
+      "desc": "无需韩国本人认证,可直接用海外卡使用。",
+      "krideTitle": "k.ride — 外国人打车应用第一",
+      "krideDesc": "支持133国语言 · 全球信用卡自动结算",
+      "krideInstall": "安装 k.ride ›",
+      "krideBenefits": "无需韩国电话 · 自动支付就绪"
+    },
+    "luggage": {
+      "title": "免提行李配送",
+      "desc": "从ICN将行李直接送到酒店,轻松出行。",
+      "notSupported": "本酒店不支持直接配送。请使用外部SAFEX中转点。",
+      "deadlineNote": "截止: {deadline}"
+    },
+    "footer": {
+      "credit": "由HotelDocKorea Data Engine提供 · 更新于{month}"
+    }
   }
 }

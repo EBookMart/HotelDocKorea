@@ -162,6 +162,95 @@
     "viewDetail": "詳細を見る",
     "imagePreparing": "画像準備中",
     "recommended": "人気のおすすめ",
-    "preparing": "条件に合うプロモーション를 準備中です。"
+    "preparing": "条件に合うプロモーションを準備中です。"
+  },
+  "airportGuide": {
+    "title": "空港からホテルへのアクセス",
+    "subtitle": "{hotel} · ICN/GMP 到着",
+    "intermodalTitle": "複合交通ガイド",
+    "tabs": {
+      "arex": "空港鉄道 (AREX)",
+      "taxi": "タクシー",
+      "bus": "リムジンバス",
+      "subway": "地下鉄 (9号線)",
+      "ktx": "KTX",
+      "domesticFlight": "国内線乗継"
+    },
+    "labels": {
+      "express": "急行",
+      "local": "各停",
+      "fastest": "最短",
+      "luggageToggle": "お荷物は重いですか?",
+      "luggageOn": "エレベーター優先ルート",
+      "luggageOff": "通常ルート",
+      "stepByStep": "ステップバイステップ経路",
+      "bookNow": "予約する",
+      "verifiedFor": "海外カード利用可 · e-チケット即時発行",
+      "musthaveApp": "必携アプリ"
+    },
+    "preparing": {
+      "title": "交通ガイド整備中",
+      "desc": "全国のホテル交通データを精査しています。より正確な情報を順次提供いたします。",
+      "linkNotice": "一般的な交通情報は以下の公式リンクをご参照ください:",
+      "busLink": "仁川空港リムジンバス案内 (公式)",
+      "domesticLink": "金浦空港国内線案内 (公式)"
+    },
+    "general": {
+      "expressTrainLabel": "急行列車",
+      "localTrainLabel": "各駅停車",
+      "expressDuration": "43分",
+      "localDuration": "59分",
+      "expressTo": "ソウル駅まで / 14,800ウォン",
+      "localTo": "ソウル駅まで / 4,750ウォン",
+      "qrTitle": "QRバウチャー引換案内",
+      "qrDesc": "急行列車のバウチャーをお持ちの場合、自動発券機にシリアル番号を入力すると実物のQRチケットを受け取れます。",
+      "intlTaxiTag": "外国人向けおすすめ",
+      "intlTaxiTitle": "International Taxi",
+      "intlTaxiDesc": "ゾーン別の定額料金 (70,000~95,000ウォン)。英語・日本語・中国語対応のドライバー。",
+      "zoneA": "Zone A: 7万",
+      "zoneB": "Zone B: 8万",
+      "t1Desk": "T1デスク: 4番, 39番",
+      "surchargeTitle": "30%割増にご注意",
+      "surchargeDesc": "ICNからソウルへタクシーを利用する際、「SEOUL」ナンバーの車を選ぶと30%の市外割増を避けられます。",
+      "limousineTitle": "Airport Limousine",
+      "limousineSub": "主要ホテル経由ルート",
+      "limousineFare": "17,000ウォン",
+      "limousineRate": "基本料金",
+      "lateNightTitle": "深夜到着? (24時以降)",
+      "lateNightDesc": "深夜バス N6000, N6001, N6002 が第1ターミナル1階6A乗り場から出発します。",
+      "lateNightCheck": "深夜時刻表を確認",
+      "expressRouteDesc": "主要駅のみ停車。江南方面に最適。",
+      "localRouteDesc": "全駅停車。",
+      "applePayTitle": "Apple Pay T-money 利用可能?",
+      "applePayDesc": "Mobile T-moneyの「Foreigner」メニューでチャージ。",
+      "wowpassButton": "WOWPASSカード",
+      "climateButton": "Climateカード",
+      "applePayNotice": "Apple Pay: 海外発行カードによるT-moneyチャージは制限される場合があります. 実物のWOWPASSカードを推奨します。",
+      "luggageHeader": "手荷物配送サービス",
+      "luggageSendDirect": "直接配送可能 (締切: {deadline})",
+      "luggageHandsFree": "空港からホテルへ荷物を先に送り、手ぶらで旅行できます."
+    },
+    "regional": {
+      "summary": "{hotel}までの推奨経路です.",
+      "operatorPrefix": "運営:",
+      "instantTicket": "e-チケット即時発行"
+    },
+    "mobility": {
+      "title": "外国人向け配車アプリ",
+      "desc": "韓国の電話認証なしで、海外カードでそのまま利用可能。",
+      "krideTitle": "k.ride — 外国人向けタクシー配車No.1",
+      "krideDesc": "133ヶ国語対応 · グローバルカード自動決済",
+      "krideInstall": "k.ride をインストール ›",
+      "krideBenefits": "韓国の電話番号不要 · 自動決済対応"
+    },
+    "luggage": {
+      "title": "ハンズフリー手荷物配送",
+      "desc": "ICNからホテルへ荷物を先に送り、身軽に旅しましょう。",
+      "notSupported": "このホテルは直接配送に対応していません. 外部のSAFEXハブをご利用ください。",
+      "deadlineNote": "締切: {deadline}"
+    },
+    "footer": {
+      "credit": "HotelDocKorea Data Engine 提供 · {month} 更新"
+    }
   }
 }

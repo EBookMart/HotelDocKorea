@@ -163,5 +163,94 @@
     "imagePreparing": "IMAGE PREPARING",
     "recommended": "Featured",
     "preparing": "Promotions matching these filters are coming soon."
+  },
+  "airportGuide": {
+    "title": "Airport to Hotel Guide",
+    "subtitle": "{hotel} · ICN/GMP Arrival",
+    "intermodalTitle": "Intermodal Transport Guide",
+    "tabs": {
+      "arex": "AREX Train",
+      "taxi": "Taxi",
+      "bus": "Limousine Bus",
+      "subway": "Subway (Line 9)",
+      "ktx": "KTX",
+      "domesticFlight": "Domestic Flight Transfer"
+    },
+    "labels": {
+      "express": "Express",
+      "local": "Local",
+      "fastest": "FASTEST",
+      "luggageToggle": "Heavy Luggage?",
+      "luggageOn": "Elevator-priority route",
+      "luggageOff": "Standard route",
+      "stepByStep": "Step-by-Step Route",
+      "bookNow": "Book Now",
+      "verifiedFor": "Verified for Foreign Cards · Instant e-Ticket",
+      "musthaveApp": "Must-Have App"
+    },
+    "preparing": {
+      "title": "Transport Guide Updating",
+      "desc": "We are verifying regional transport data to provide more accurate information.",
+      "linkNotice": "Please refer to the official sources for general transport info:",
+      "busLink": "Incheon Airport Bus Guide (Official)",
+      "domesticLink": "Gimpo Airport Domestic Flight (Official)"
+    },
+    "general": {
+      "expressTrainLabel": "Express Train",
+      "localTrainLabel": "All-stop Train",
+      "expressDuration": "43 min",
+      "localDuration": "59 min",
+      "expressTo": "to Seoul St. / 14,800 KRW",
+      "localTo": "to Seoul St. / 4,750 KRW",
+      "qrTitle": "QR Voucher Exchange",
+      "qrDesc": "If you have an Express Train voucher, enter the serial number at the Automatic Ticket Machine to receive a physical QR ticket.",
+      "intlTaxiTag": "Recommended for Foreigners",
+      "intlTaxiTitle": "International Taxi",
+      "intlTaxiDesc": "Fixed fares by zone (70,000~95,000 KRW). Drivers speak English, Japanese, Chinese.",
+      "zoneA": "Zone A: 70k",
+      "zoneB": "Zone B: 80k",
+      "t1Desk": "T1 Desk: 4, 39",
+      "surchargeTitle": "30% Surcharge Warning",
+      "surchargeDesc": "When taking a taxi from ICN to Seoul, always pick a taxi with a 'SEOUL' license plate to avoid the 30% out-of-city surcharge.",
+      "limousineTitle": "Airport Limousine",
+      "limousineSub": "Fixed routes to major hotels",
+      "limousineFare": "17,000 KRW",
+      "limousineRate": "Standard Rate",
+      "lateNightTitle": "Arriving Late? (After Midnight)",
+      "lateNightDesc": "Late-night buses N6000, N6001, N6002 are available from Terminal 1, 1F Platform 6A.",
+      "lateNightCheck": "Check Midnight Schedule",
+      "expressRouteDesc": "Stops at major stations only. Best for Gangnam.",
+      "localRouteDesc": "Stops at every station.",
+      "applePayTitle": "Apple Pay T-money Ready?",
+      "applePayDesc": "Top-up via 'Foreigner' menu in Mobile T-money.",
+      "wowpassButton": "WOWPASS Card",
+      "climateButton": "Climate Card",
+      "applePayNotice": "Apple Pay: Charging T-money via foreign-issued cards may be restricted. WOWPASS physical card is recommended.",
+      "luggageHeader": "Luggage Delivery Services",
+      "luggageSendDirect": "Direct delivery available (Deadline: {deadline})",
+      "luggageHandsFree": "Send your bags from the airport to your hotel and travel hands-free."
+    },
+    "regional": {
+      "summary": "Recommended route to {hotel}.",
+      "operatorPrefix": "Operator:",
+      "instantTicket": "Instant e-Ticket"
+    },
+    "mobility": {
+      "title": "Mobility Apps for Foreigners",
+      "desc": "No Korean phone authentication required. Use international cards directly.",
+      "krideTitle": "k.ride — #1 Taxi App for Foreigners",
+      "krideDesc": "Supports 133 languages · Global card auto-pay",
+      "krideInstall": "Install k.ride ›",
+      "krideBenefits": "No Korean phone needed · Auto-pay ready"
+    },
+    "luggage": {
+      "title": "Hands-Free Luggage Delivery",
+      "desc": "Send your bags from ICN to your hotel and travel light.",
+      "notSupported": "Direct delivery is not supported for this hotel. Use external SAFEX hubs.",
+      "deadlineNote": "Deadline: {deadline}"
+    },
+    "footer": {
+      "credit": "Pathways suggested by HotelDocKorea Data Engine · Updated {month}"
+    }
   }
 }

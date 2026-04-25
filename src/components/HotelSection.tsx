@@ -8,6 +8,7 @@ import {
 } from "lucide-react";
 import { useTranslations, useLocale } from "next-intl";
 import { TranslatedText } from "./HomeClient";
+import { translateHotelName, translateHotelAddress } from "@/lib/translations";
 import AirportGuide from "./AirportGuide";
 import airportRoutesData from "../../public/data/airport-routes.json";
 import reputationData from "../../public/data/reputation.json";
@@ -118,7 +119,9 @@ export default function HotelSection({
   };
 
   const copyAddress = (hotel: any) => {
-    const text = `[${hotel.이름}] ${hotel.주소 || hotel.address || hotel.tourApiAddress}`;
+    const koreanAddr = hotel.주소 || hotel.address || hotel.tourApiAddress || "";
+    // 택시 기사용 주소는 한국어 원본 유지 (택시 기사가 한국어로 읽음)
+    const text = `[${hotel.이름}] ${koreanAddr}`;
     navigator.clipboard.writeText(text).then(() => {
       setCopiedId(hotel.이름);
       setTimeout(() => setCopiedId(null), 2000);
@@ -215,7 +218,7 @@ export default function HotelSection({
                             isLuxury ? "text-yellow-800" : "text-gray-900"
                           }`}
                         >
-                          <TranslatedText text={hotel["이름"]} lang={locale} />
+                          {translateHotelName(hotel["이름"], locale)}
                         </h3>
                       </div>
                       <div
@@ -383,7 +386,7 @@ export default function HotelSection({
                 {expandedHotel === hotel.이름 && (
                   <div className="px-4 pb-4 animate-in slide-in-from-top-1 duration-300">
                     <AirportGuide
-                      hotelName={hotel.이름}
+                      hotelName={translateHotelName(hotel.이름, locale)}
                       lang={locale}
                       routeData={(airportRoutesData as any)[hotel.이름]}
                       isZimCarryRegistered={hotel.zimcarry_registered}

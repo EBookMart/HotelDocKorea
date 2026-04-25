@@ -1,7 +1,8 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import { useTranslations } from "next-intl";
+import { useTranslations, useLocale } from "next-intl";
+import { translateFestivalName, translateFestivalLocation, translateFestivalDescription } from "@/lib/translations";
 
 interface Festival {
   id: string;
@@ -18,6 +19,7 @@ interface Festival {
 
 export default function FestivalsSection({ selectedRegion }: { selectedRegion: string | null }) {
   const t = useTranslations("festivals");
+  const locale = useLocale();
   const [festivals, setFestivals] = useState<Festival[]>([]);
   const [searchTerm, setSearchTerm] = useState("");
   const [loading, setLoading] = useState(true);
@@ -123,12 +125,16 @@ export default function FestivalsSection({ selectedRegion }: { selectedRegion: s
             >
               <span className="text-3xl">{f.icon}</span>
               <div className="flex-1 min-w-0">
-                <h3 className="font-semibold text-gray-900 truncate">{f.name}</h3>
+                <h3 className="font-semibold text-gray-900 truncate">
+                  {translateFestivalName(f.name, locale)}
+                </h3>
                 <p className="text-xs text-gray-500 mt-0.5">
-                  {f.period} · {f.location}
+                  {f.period} · {translateFestivalLocation(f.location, locale)}
                 </p>
                 {f.description && (
-                  <p className="text-sm text-gray-700 mt-1 line-clamp-2">{f.description}</p>
+                  <p className="text-sm text-gray-700 mt-1 line-clamp-2">
+                    {translateFestivalDescription(f.description, locale)}
+                  </p>
                 )}
               </div>
             </div>

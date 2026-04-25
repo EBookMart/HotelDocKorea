@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import { useTranslations, useLocale } from "next-intl";
+import { translateHotelName, translateHotelAddress, translatePromoTitle, translatePromoDiscount } from "@/lib/translations";
 
 interface HotPickData {
   hotelName: string;
@@ -214,11 +215,13 @@ export default function HotPicksSection({
                   </div>
 
                   <h3 className="font-bold text-gray-900 text-base mb-1 line-clamp-1 group-hover:text-purple-700 transition-colors">
-                    {item.hotelName}
+                    {translateHotelName(item.hotelName, locale)}
                   </h3>
 
                   <p className="text-xs text-gray-500 mb-4 line-clamp-2 leading-snug min-h-[32px]">
-                    {item.promoTitle}
+                    {item.isPromo
+                      ? translatePromoTitle(item.promoTitle, locale)
+                      : translateHotelAddress(item.promoTitle, locale)}
                   </p>
 
                   <div className="flex items-center justify-between mt-auto pt-2 border-t border-gray-50">
@@ -227,7 +230,7 @@ export default function HotPicksSection({
                         item.isPromo ? "bg-red-50 text-red-600" : "bg-gray-50 text-gray-400"
                       }`}
                     >
-                      {item.discount}
+                      {item.isPromo ? translatePromoDiscount(item.discount, locale) : t("recommended")}
                     </div>
                     <span className="text-[10px] font-bold text-indigo-600 flex items-center gap-0.5">
                       {t("viewDetail")} <span className="text-xs">→</span>

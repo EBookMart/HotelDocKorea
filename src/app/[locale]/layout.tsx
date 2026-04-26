@@ -92,6 +92,11 @@ export async function generateMetadata({
         routing.locales.map((l) => [l, `https://hoteldockorea.com/${l}`])
       ),
     },
+    verification: {
+      // Google Search Console 인증 메타 태그
+      // 사용자님이 코드를 받으시면 아래 'GOOGLE_VERIFICATION_CODE' 부분을 실제 코드로 교체해주세요.
+      google: "GOOGLE_VERIFICATION_CODE",
+    },
   };
 }
 

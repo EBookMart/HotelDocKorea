@@ -1,7 +1,7 @@
 {
-  "_generatedAt": "2026-04-25T04:07:02.708Z",
+  "_generatedAt": "2026-04-26T04:56:15.519Z",
   "_source": "TourAPI 4.0 / KorService2 / searchFestival2",
-  "_apiTotalCount": 236,
+  "_apiTotalCount": 233,
   "festivals": [
     {
       "id": "fest-3443073",
@@ -436,18 +436,6 @@
       "endDate": "2026-11-15"
     },
     {
-      "id": "fest-2608888",
-      "icon": "🎪",
-      "name": "광주국가유산야행",
-      "period": "2026.04.24 - 2026.04.25",
-      "location": "광주광역시 동구 문화전당로 38 (광산동)",
-      "description": "",
-      "region": "광주호남권",
-      "active": true,
-      "startDate": "2026-04-24",
-      "endDate": "2026-04-25"
-    },
-    {
       "id": "fest-629718",
       "icon": "🎵",
       "name": "광주왕실도자페스티벌",
@@ -494,18 +482,6 @@
       "active": true,
       "startDate": "2026-04-24",
       "endDate": "2026-04-26"
-    },
-    {
-      "id": "fest-3108284",
-      "icon": "🎪",
-      "name": "우도 소라축제",
-      "period": "2026.04.24 - 2026.04.25",
-      "location": "제주특별자치도 제주시 우도면 우도해안길 86",
-      "description": "",
-      "region": "제주도",
-      "active": true,
-      "startDate": "2026-04-24",
-      "endDate": "2026-04-25"
     },
     {
       "id": "fest-527710",
@@ -580,18 +556,6 @@
       "endDate": "2026-04-26"
     },
     {
-      "id": "fest-3487939",
-      "icon": "🎪",
-      "name": "강서어린이 동화축제",
-      "period": "2026.04.25 - 2026.04.25",
-      "location": "서울특별시 강서구 금낭화로 178 (방화동)",
-      "description": "",
-      "region": "수도권",
-      "active": true,
-      "startDate": "2026-04-25",
-      "endDate": "2026-04-25"
-    },
-    {
       "id": "fest-1998564",
       "icon": "🎪",
       "name": "궁중문화축전",
@@ -652,18 +616,6 @@
       "endDate": "2026-04-26"
     },
     {
-      "id": "fest-4054203",
-      "icon": "🎪",
-      "name": "이순신 축제",
-      "period": "2026.04.25 - 2026.04.25",
-      "location": "서울특별시 중구 마른내로 47 (초동)",
-      "description": "",
-      "region": "수도권",
-      "active": true,
-      "startDate": "2026-04-25",
-      "endDate": "2026-04-25"
-    },
-    {
       "id": "fest-2818837",
       "icon": "🎪",
       "name": "종묘 묘현례",
@@ -686,18 +638,6 @@
       "active": true,
       "startDate": "2026-04-25",
       "endDate": "2026-05-05"
-    },
-    {
-      "id": "fest-2949644",
-      "icon": "🎪",
-      "name": "2026 스프링워크서울",
-      "period": "2026.04.25 - 2026.04.25",
-      "location": "서울특별시 중구 회현동1가 100-115",
-      "description": "",
-      "region": "수도권",
-      "active": true,
-      "startDate": "2026-04-25",
-      "endDate": "2026-04-25"
     },
     {
       "id": "fest-506473",
@@ -1933,6 +1873,18 @@
       "region": "수도권",
       "active": true,
       "startDate": "2026-06-24",
+      "endDate": "2026-06-28"
+    },
+    {
+      "id": "fest-2976568",
+      "icon": "🎵",
+      "name": "와인뮤직페스티발",
+      "period": "2026.06.25 - 2026.06.28",
+      "location": "경기도 수원시 영통구 광교중앙로 140 (하동)",
+      "description": "",
+      "region": "수도권",
+      "active": true,
+      "startDate": "2026-06-25",
       "endDate": "2026-06-28"
     }
   ]

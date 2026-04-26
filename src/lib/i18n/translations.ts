@@ -1,11 +1,11 @@
 export type Language = "ko" | "en" | "ja" | "zh" | "es";
 
 export const LANGUAGES = [
-  { code: "ko", shortLabel: "한국어",  flag: "🇰🇷" },
-  { code: "en", shortLabel: "English", flag: "🇺🇸" },
-  { code: "ja", shortLabel: "日本語",   flag: "🇯🇵" },
-  { code: "zh", shortLabel: "中文",     flag: "🇨🇳" },
-  { code: "es", shortLabel: "Español",  flag: "🇪🇸" },
+  { code: "ko", shortLabel: "한국어",  flag: "KR" },
+  { code: "en", shortLabel: "English", flag: "EN" },
+  { code: "ja", shortLabel: "日本語",   flag: "JP" },
+  { code: "zh", shortLabel: "中文",     flag: "CN" },
+  { code: "es", shortLabel: "Español",  flag: "ES" },
 ];
 
 export const translations = {

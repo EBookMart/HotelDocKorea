@@ -11,6 +11,7 @@ import NearbySection from "./NearbySection";
 import HotPicksSection from "./HotPicksSection";
 import GradeFilter from "./GradeFilter";
 import EmergencyHelpSection from "./EmergencyHelpSection";
+import SOSFloatingButton from "./SOSFloatingButton";
 import { LANGUAGES } from "@/lib/i18n/translations";
 import glossaryData from "@/data/glossary.json";
 
@@ -410,6 +411,7 @@ export default function HomeClient({
         <section className="w-full bg-white py-14">
           <div className="max-w-7xl mx-auto px-4 lg:px-10">
             <EmergencyHelpSection />
+            <SOSFloatingButton />
           </div>
         </section>
 

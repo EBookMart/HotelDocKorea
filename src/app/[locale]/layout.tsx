@@ -93,9 +93,11 @@ export async function generateMetadata({
       ),
     },
     verification: {
-      // Google Search Console 인증 메타 태그
-      // 사용자님이 코드를 받으시면 아래 'GOOGLE_VERIFICATION_CODE' 부분을 실제 코드로 교체해주세요.
-      google: "GOOGLE_VERIFICATION_CODE",
+      // Google Search Console은 DNS 기반으로 자동 인증 완료. 메타 태그 불필요.
+      // Naver Webmaster Tools 인증
+      other: {
+        "naver-site-verification": "1120c0492d19d34b98e9fa8823580665c4646812",
+      },
     },
   };
 }

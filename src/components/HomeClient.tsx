@@ -295,7 +295,7 @@ export default function HomeClient({
                       key={l.code}
                       href={pathname}
                       locale={l.code as any}
-                      className={`flex items-center gap-1 px-2.5 py-1.5 rounded-full text-xs transition ${
+                      className={`flex items-center gap-1 px-1.5 py-1 md:px-2.5 md:py-1.5 rounded-full text-xs transition ${
                         locale === l.code
                           ? "bg-white text-purple-700 font-semibold shadow-sm"
                           : "text-white/80 hover:bg-white/10 hover:text-white"
@@ -310,7 +310,7 @@ export default function HomeClient({
 
                 <button
                   onClick={() => document.getElementById('emergency-section')?.scrollIntoView({ behavior: 'smooth' })}
-                  className="bg-red-500 hover:bg-red-600 text-white px-4 py-2.5 rounded-full text-xs font-black shadow-lg shadow-red-900/20 flex items-center gap-2 animate-bounce-subtle transition-all active:scale-95"
+                  className="hidden md:flex bg-red-500 hover:bg-red-600 text-white px-4 py-2.5 rounded-full text-xs font-black shadow-lg shadow-red-900/20 items-center gap-2 animate-bounce-subtle transition-all active:scale-95"
                 >
                   <span className="text-sm">🚨</span>
                   <span className="hidden md:inline">{t('header.emergencyButton')}</span>
@@ -437,7 +437,7 @@ export default function HomeClient({
       {showBackToTop && (
         <button
           onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
-          className="fixed bottom-8 right-8 z-[100] bg-indigo-600 text-white p-4 rounded-full shadow-2xl shadow-indigo-900/40 hover:bg-indigo-700 hover:scale-110 active:scale-95 transition-all animate-in fade-in zoom-in slide-in-from-bottom-5 duration-300 flex items-center justify-center group"
+          className="fixed bottom-24 right-4 z-[100] bg-indigo-600 text-white p-4 rounded-full shadow-2xl shadow-indigo-900/40 hover:bg-indigo-700 hover:scale-110 active:scale-95 transition-all animate-in fade-in zoom-in slide-in-from-bottom-5 duration-300 flex items-center justify-center group"
           aria-label="Back to Top"
         >
           <ArrowUp size={24} className="group-hover:-translate-y-1 transition-transform" />

@@ -7,7 +7,6 @@ import {
   Award, ThumbsUp, Copy, Check, Package,
 } from "lucide-react";
 import { useTranslations, useLocale } from "next-intl";
-import { TranslatedText } from "./HomeClient";
 import { translateHotelName, translateHotelAddress } from "@/lib/translations";
 import AirportGuide from "./AirportGuide";
 import airportRoutesData from "../../public/data/airport-routes.json";
@@ -311,11 +310,9 @@ export default function HotelSection({
                                     {theme.label}
                                   </span>
                                 )}
-                                <TranslatedText
-                                  text={displayTitle}
-                                  lang={locale}
-                                  className="text-[11px] font-bold text-gray-800 line-clamp-2 leading-tight"
-                                />
+                                <span className="text-[11px] font-bold text-gray-800 line-clamp-2 leading-tight">
+                                  {displayTitle}
+                                </span>
                                 <span className="text-[9px] text-gray-500 mt-0.5 font-medium">{promo.period}</span>
                               </div>
                             </a>

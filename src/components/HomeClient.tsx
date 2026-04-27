@@ -13,7 +13,6 @@ import GradeFilter from "./GradeFilter";
 import EmergencyHelpSection from "./EmergencyHelpSection";
 import SOSFloatingButton from "./SOSFloatingButton";
 import { LANGUAGES } from "@/lib/i18n/translations";
-import glossaryData from "@/data/glossary.json";
 
 // ⚠️ Phase 2B-2에서 제거 예정: 하위 컴포넌트가 아직 useTranslations()로 전환되지 않아 임시 유지
 const localI18n: any = {
@@ -91,101 +90,6 @@ function resolveTitle(titleData: any): string {
   return "";
 }
 
-// ─────────────────────────────────────────
-// 🌐 번역 엔진 (Phase 2B-3에서 빌드 타임 번역으로 전환 예정)
-// ─────────────────────────────────────────
-const sessionCache = new Map<string, string>();
-const CACHE_PREFIX = 'hdktrans_';
-
-function getCacheKey(text: string, lang: string) {
-  return `${CACHE_PREFIX}${lang}_${text.slice(0, 30)}`;
-}
-
-function normalizeText(text: string) {
-  return text.toLowerCase().replace(/\s+/g, '');
-}
-
-async function translateText(text: string, targetLang: string): Promise<string> {
-  if (!text || targetLang === 'ko') return text;
-
-  const normalizedInput = normalizeText(text);
-  const glossary: Record<string, string> = glossaryData;
-
-  for (const [key, value] of Object.entries(glossary)) {
-    if (normalizeText(key) === normalizedInput) {
-      return value;
-    }
-  }
-
-  const key = getCacheKey(text, targetLang);
-  if (sessionCache.has(key)) return sessionCache.get(key)!;
-
-  try {
-    const cached = localStorage.getItem(key);
-    if (cached) {
-      sessionCache.set(key, cached);
-      return cached;
-    }
-  } catch (_) { }
-
-  const langPair = `ko|${targetLang}`;
-  const url = `https://api.mymemory.translated.net/get?q=${encodeURIComponent(text)}&langpair=${langPair}`;
-
-  try {
-    const res = await fetch(url);
-    const data = await res.json();
-    const translated: string = data?.responseData?.translatedText || text;
-
-    sessionCache.set(key, translated);
-    try { localStorage.setItem(key, translated); } catch (_) { }
-
-    return translated;
-  } catch (err) {
-    console.warn('[Translation] API 호출 실패, 한국어 원문 표시:', text);
-    return text;
-  }
-}
-
-export function TranslatedText({
-  text,
-  lang,
-  className = '',
-}: {
-  text: string;
-  lang: string;
-  className?: string;
-}) {
-  const [translated, setTranslated] = useState<string>(text);
-  const [loading, setLoading] = useState(false);
-  const prevLang = useRef(lang);
-
-  useEffect(() => {
-    if (lang === 'ko') {
-      setTranslated(text);
-      return;
-    }
-    prevLang.current = lang;
-
-    const key = getCacheKey(text, lang);
-    const cached = sessionCache.get(key) ?? (typeof window !== 'undefined' ? localStorage.getItem(key) : null);
-    if (cached) {
-      setTranslated(cached);
-      return;
-    }
-
-    setLoading(true);
-    translateText(text, lang).then(result => {
-      setTranslated(result);
-      setLoading(false);
-    });
-  }, [text, lang]);
-
-  if (loading) {
-    return <span className={`inline-block h-4 w-24 rounded bg-gray-200 animate-pulse ${className}`} />;
-  }
-
-  return <span className={className}>{translated}</span>;
-}
 
 export default function HomeClient({
   hotelData,

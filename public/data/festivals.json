@@ -1,8 +1,20 @@
 {
-  "_generatedAt": "2026-04-26T12:07:57.329Z",
+  "_generatedAt": "2026-04-27T05:01:47.164Z",
   "_source": "TourAPI 4.0 / KorService2 / searchFestival2",
-  "_apiTotalCount": 233,
+  "_apiTotalCount": 229,
   "festivals": [
+    {
+      "id": "fest-3481597",
+      "icon": "🎪",
+      "name": "페인터즈",
+      "period": "2022.11.01 - 2026.12.31",
+      "location": "서울특별시 중구 정동길 3 (정동)",
+      "description": "",
+      "region": "수도권",
+      "active": true,
+      "startDate": "2022-11-01",
+      "endDate": "2026-12-31"
+    },
     {
       "id": "fest-3443073",
       "icon": "🎪",
@@ -208,18 +220,6 @@
       "endDate": "2026-11-12"
     },
     {
-      "id": "fest-142186",
-      "icon": "🎪",
-      "name": "생거진천 농다리축제",
-      "period": "2026.04.04 - 2026.04.26",
-      "location": "충청북도 진천군 문백면 구산동리",
-      "description": "",
-      "region": "충청권",
-      "active": true,
-      "startDate": "2026-04-04",
-      "endDate": "2026-04-26"
-    },
-    {
       "id": "fest-293030",
       "icon": "🎪",
       "name": "안성 남사당바우덕이 풍물단 상설 공연 ‘곰뱅이텄다’",
@@ -340,18 +340,6 @@
       "endDate": "2026-10-30"
     },
     {
-      "id": "fest-4053719",
-      "icon": "🌸",
-      "name": "서울 불암산 철쭉제",
-      "period": "2026.04.16 - 2026.04.26",
-      "location": "서울특별시 노원구 한글비석로12길 51-27 (중계동)",
-      "description": "",
-      "region": "수도권",
-      "active": true,
-      "startDate": "2026-04-16",
-      "endDate": "2026-04-26"
-    },
-    {
       "id": "fest-1291408",
       "icon": "🎪",
       "name": "창덕궁 달빛기행",
@@ -362,18 +350,6 @@
       "active": true,
       "startDate": "2026-04-16",
       "endDate": "2026-05-31"
-    },
-    {
-      "id": "fest-4054430",
-      "icon": "🌸",
-      "name": "화순 봄꽃 축제",
-      "period": "2026.04.17 - 2026.04.26",
-      "location": "전라남도 화순군 화순읍 대리 481",
-      "description": "",
-      "region": "광주호남권",
-      "active": true,
-      "startDate": "2026-04-17",
-      "endDate": "2026-04-26"
     },
     {
       "id": "fest-2849025",
@@ -448,42 +424,6 @@
       "endDate": "2026-05-05"
     },
     {
-      "id": "fest-292977",
-      "icon": "🎪",
-      "name": "기장멸치축제",
-      "period": "2026.04.24 - 2026.04.26",
-      "location": "부산광역시 기장군 기장읍 기장해안로 605",
-      "description": "",
-      "region": "부산경남권",
-      "active": true,
-      "startDate": "2026-04-24",
-      "endDate": "2026-04-26"
-    },
-    {
-      "id": "fest-292835",
-      "icon": "🎎",
-      "name": "단종문화제",
-      "period": "2026.04.24 - 2026.04.26",
-      "location": "강원특별자치도 영월군 영월읍 하송리",
-      "description": "",
-      "region": "영동권",
-      "active": true,
-      "startDate": "2026-04-24",
-      "endDate": "2026-04-26"
-    },
-    {
-      "id": "fest-2755521",
-      "icon": "🎪",
-      "name": "밀양국가유산야행",
-      "period": "2026.04.24 - 2026.04.26",
-      "location": "경상남도 밀양시 중앙로 324 (내일동)",
-      "description": "",
-      "region": "부산경남권",
-      "active": true,
-      "startDate": "2026-04-24",
-      "endDate": "2026-04-26"
-    },
-    {
       "id": "fest-527710",
       "icon": "🏺",
       "name": "이천도자기축제",
@@ -494,18 +434,6 @@
       "active": true,
       "startDate": "2026-04-24",
       "endDate": "2026-05-05"
-    },
-    {
-      "id": "fest-2982690",
-      "icon": "🎪",
-      "name": "태백 천상의 산나물 축제",
-      "period": "2026.04.24 - 2026.04.26",
-      "location": "강원특별자치도 태백시 장성1길 175-1 (장성동)",
-      "description": "",
-      "region": "영동권",
-      "active": true,
-      "startDate": "2026-04-24",
-      "endDate": "2026-04-26"
     },
     {
       "id": "fest-507598",
@@ -520,18 +448,6 @@
       "endDate": "2026-05-05"
     },
     {
-      "id": "fest-2952027",
-      "icon": "🎪",
-      "name": "2026 대한민국 과학축제 in 경기",
-      "period": "2026.04.24 - 2026.04.26",
-      "location": "경기도 고양시 일산서구 킨텍스로 217-60 (대화동)",
-      "description": "",
-      "region": "수도권",
-      "active": true,
-      "startDate": "2026-04-24",
-      "endDate": "2026-04-26"
-    },
-    {
       "id": "fest-4058499",
       "icon": "🎪",
       "name": "2026 실경역사뮤지컬 의기논개",
@@ -542,18 +458,6 @@
       "active": true,
       "startDate": "2026-04-24",
       "endDate": "2026-05-16"
-    },
-    {
-      "id": "fest-4057755",
-      "icon": "🎪",
-      "name": "2026 아시아 이스포츠 대회",
-      "period": "2026.04.24 - 2026.04.26",
-      "location": "경상남도 진주시 남강로 1655 (초전동)",
-      "description": "",
-      "region": "부산경남권",
-      "active": true,
-      "startDate": "2026-04-24",
-      "endDate": "2026-04-26"
     },
     {
       "id": "fest-1998564",
@@ -580,18 +484,6 @@
       "endDate": "2026-10-31"
     },
     {
-      "id": "fest-3112269",
-      "icon": "🎪",
-      "name": "두릅 산나물 축제",
-      "period": "2026.04.25 - 2026.04.26",
-      "location": "경기도 가평군 설악면 묵안로 906",
-      "description": "",
-      "region": "수도권",
-      "active": true,
-      "startDate": "2026-04-25",
-      "endDate": "2026-04-26"
-    },
-    {
       "id": "fest-2434545",
       "icon": "🎪",
       "name": "새연교 주말 문화공연 '금토금토 새연쇼'",
@@ -602,18 +494,6 @@
       "active": true,
       "startDate": "2026-04-25",
       "endDate": "2026-10-31"
-    },
-    {
-      "id": "fest-1574707",
-      "icon": "🎪",
-      "name": "윤봉길 평화축제",
-      "period": "2026.04.25 - 2026.04.26",
-      "location": "충청남도 예산군 덕산면 덕산온천로 183-5",
-      "description": "",
-      "region": "충청권",
-      "active": true,
-      "startDate": "2026-04-25",
-      "endDate": "2026-04-26"
     },
     {
       "id": "fest-2818837",
@@ -782,6 +662,30 @@
       "active": true,
       "startDate": "2026-05-01",
       "endDate": "2026-05-03"
+    },
+    {
+      "id": "fest-2974166",
+      "icon": "🎪",
+      "name": "차전장군 노국공주축제",
+      "period": "2026.05.01 - 2026.05.05",
+      "location": "경상북도 안동시 경동로 684",
+      "description": "",
+      "region": "대구경북권",
+      "active": true,
+      "startDate": "2026-05-01",
+      "endDate": "2026-05-05"
+    },
+    {
+      "id": "fest-3352029",
+      "icon": "🎪",
+      "name": "포천 한탄강 가든페스타",
+      "period": "2026.05.01 - 2026.06.07",
+      "location": "경기도 포천시 관인면 창동로 832",
+      "description": "",
+      "region": "수도권",
+      "active": true,
+      "startDate": "2026-05-01",
+      "endDate": "2026-06-07"
     },
     {
       "id": "fest-507383",
@@ -976,6 +880,18 @@
       "endDate": "2026-05-05"
     },
     {
+      "id": "fest-557467",
+      "icon": "🎪",
+      "name": "진주 논개제",
+      "period": "2026.05.02 - 2026.05.05",
+      "location": "경상남도 진주시 남강로 626-71 (남성동)",
+      "description": "",
+      "region": "부산경남권",
+      "active": true,
+      "startDate": "2026-05-02",
+      "endDate": "2026-05-05"
+    },
+    {
       "id": "fest-727285",
       "icon": "🎪",
       "name": "청춘양구 곰취축제",
@@ -1120,13 +1036,13 @@
       "endDate": "2026-05-05"
     },
     {
-      "id": "fest-2974166",
+      "id": "fest-2978145",
       "icon": "🎪",
-      "name": "차전장군 노국공주축제",
+      "name": "2026 생물사랑 어린이 축제",
       "period": "2026.05.05 - 2026.05.05",
-      "location": "경상북도 안동시 경동로 684",
+      "location": "인천광역시 서구 환경로 42",
       "description": "",
-      "region": "대구경북권",
+      "region": "수도권",
       "active": true,
       "startDate": "2026-05-05",
       "endDate": "2026-05-05"
@@ -1211,6 +1127,30 @@
       "location": "대전광역시 유성구 어은로 27 (봉명동)",
       "description": "",
       "region": "충청권",
+      "active": true,
+      "startDate": "2026-05-08",
+      "endDate": "2026-05-10"
+    },
+    {
+      "id": "fest-3113671",
+      "icon": "🎪",
+      "name": "전국빵지자랑",
+      "period": "2026.05.08 - 2026.05.10",
+      "location": "서울특별시 송파구 양재대로 932 (가락동)",
+      "description": "",
+      "region": "수도권",
+      "active": true,
+      "startDate": "2026-05-08",
+      "endDate": "2026-05-10"
+    },
+    {
+      "id": "fest-4060158",
+      "icon": "🎵",
+      "name": "한강 서래섬 피크닉 콘서트",
+      "period": "2026.05.08 - 2026.05.10",
+      "location": "서울특별시 서초구 신반포로11길 40 (반포동)",
+      "description": "",
+      "region": "수도권",
       "active": true,
       "startDate": "2026-05-08",
       "endDate": "2026-05-10"
@@ -1310,6 +1250,18 @@
       "active": true,
       "startDate": "2026-05-11",
       "endDate": "2026-05-11"
+    },
+    {
+      "id": "fest-2601364",
+      "icon": "🎪",
+      "name": "수라간 시식공감",
+      "period": "2026.05.13 - 2026.05.24",
+      "location": "서울특별시 종로구 사직로 161 (세종로)",
+      "description": "",
+      "region": "수도권",
+      "active": true,
+      "startDate": "2026-05-13",
+      "endDate": "2026-05-24"
     },
     {
       "id": "fest-4059522",

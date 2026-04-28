@@ -21,6 +21,7 @@ interface HotelImageCardProps {
   isLuxury: boolean;
   isBudget: boolean;
   lang: string;
+  rep?: any;
 }
 
 function HotelImageCard({
@@ -31,6 +32,7 @@ function HotelImageCard({
   isLuxury,
   isBudget,
   lang,
+  rep,
 }: HotelImageCardProps) {
   const t = useTranslations("hotels");
   const [loaded, setLoaded] = useState(false);
@@ -66,11 +68,13 @@ function HotelImageCard({
 
       <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent pointer-events-none" />
 
-      <div className="absolute top-2 left-2 flex flex-col gap-1 pointer-events-none">
-        <span className="bg-black/40 backdrop-blur-sm text-white text-[9px] px-2 py-0.5 rounded-full font-semibold w-fit">
-          📍 {city}
-        </span>
-      </div>
+      {rep && rep.originalRating > 0 && (
+        <div className="absolute top-2 left-2 pointer-events-none flex items-center gap-1 bg-white/95 backdrop-blur-sm px-2 py-1 rounded-lg shadow-md">
+          <span className="text-yellow-500 text-xs">★</span>
+          <span className="text-gray-800 text-xs font-bold">{rep.originalRating.toFixed(1)}</span>
+          <span className="text-gray-500 text-[10px]">({rep.reviewCount.toLocaleString()})</span>
+        </div>
+      )}
       <div className="absolute top-2 right-2 pointer-events-none">
         {isLuxury && (
           <span className="bg-gradient-to-r from-yellow-400 to-amber-500 text-black text-[9px] px-2 py-0.5 rounded-full font-extrabold shadow-md">
@@ -156,6 +160,7 @@ export default function HotelSection({
             const rep = (reputationData as any)[hotel.이름] || { originalRating: 0, reviewCount: 0 };
             const hasPromo = hotel.promotions && hotel.promotions.length > 0;
             const isTopRanked = index === 0 && !hasPromo;
+            const koreanAddr = hotel.주소 || hotel.address || hotel.tourApiAddress || "";
 
             const affiliateUrl = buildAffiliateUrl(hotel.이름, locale);
             const providerName = getAffiliateProviderName(locale);
@@ -178,25 +183,18 @@ export default function HotelSection({
                   isLuxury={isLuxury}
                   isBudget={isBudget}
                   lang={locale}
+                  rep={rep}
                 />
 
                 <div className="p-4 flex flex-col gap-3">
                   <div className="flex justify-between items-start">
-                    <div className="w-[75%]">
+                    <div className="w-full">
                       <div className="flex items-center gap-2 mb-2 flex-wrap">
                         {isTopRanked && (
                           <div className="flex items-center gap-1.5 bg-emerald-50 text-emerald-700 w-fit px-2 py-0.5 rounded-md border border-emerald-100">
                             <Award size={12} className="text-emerald-500 animate-pulse" />
                             <span className="text-[10px] font-black uppercase tracking-tight">
                               {t("pick")}
-                            </span>
-                          </div>
-                        )}
-                        {!isTopRanked && rep.originalRating >= 4.5 && (
-                          <div className="flex items-center gap-1 bg-blue-50 text-blue-600 w-fit px-1.5 py-0.5 rounded-md border border-blue-100">
-                            <ThumbsUp size={10} />
-                            <span className="text-[9px] font-bold">
-                              {tSections("highlyRated")}
                             </span>
                           </div>
                         )}
@@ -220,59 +218,44 @@ export default function HotelSection({
                           {translateHotelName(hotel["이름"], locale)}
                         </h3>
                       </div>
-                      <div
-                        className={`flex items-center gap-1.5 text-[11px] mt-1 font-medium tracking-wide w-fit px-2 py-0.5 rounded-md border ${
-                          isLuxury
-                            ? "bg-yellow-50/50 border-yellow-100 text-yellow-700"
-                            : "bg-gray-50 border-gray-100 text-gray-500"
-                        }`}
-                      >
-                        <MapPin size={10} className={isLuxury ? "text-yellow-600" : "text-gray-400"} />
-                        {hotel.시도} {hotel.세부지역}
-                      </div>
-                    </div>
 
-                    <div
-                      className={`flex flex-col items-end shrink-0 px-2 py-1.5 rounded-xl ${
-                        isLuxury
-                          ? "bg-gradient-to-br from-yellow-400 to-yellow-600 text-white shadow-md shadow-yellow-500/30"
-                          : "bg-gray-50 border border-gray-100"
-                      }`}
-                    >
-                      <div className="flex items-center gap-1">
-                        <Star size={13} fill="currentColor" className={isLuxury ? "text-white" : "text-yellow-400"} />
-                        <span className={`text-[13px] font-black ${isLuxury ? "text-white" : "text-gray-800"}`}>
-                          {rep.originalRating > 0 ? rep.originalRating : parseInt(hotel.rating || activeRating || "3")}
-                        </span>
-                      </div>
-                      <div className={`text-[9px] font-bold mt-0.5 ${isLuxury ? "text-yellow-100" : "text-gray-400"}`}>
-                        {rep.reviewCount > 0
-                          ? t("reviews", { count: rep.reviewCount.toLocaleString() })
-                          : t("verifiedInfo")}
+                      {/* 위치 정보 통합 묶음 (⑦+⑧+⑨) */}
+                      <div className="flex flex-col gap-1.5 mt-2">
+                        {/* ⑦ 주소 */}
+                        <div className="flex items-center gap-2 text-[11px] text-gray-600">
+                          <MapPin size={12} className="text-gray-400 shrink-0" />
+                          <span className="line-clamp-1">{koreanAddr}</span>
+                        </div>
+                        
+                        {/* ⑧ 전화번호 */}
+                        {hotel.전화번호 && (
+                          <div className="flex items-center gap-2 text-[11px] text-gray-600">
+                            <Phone size={12} className="text-gray-400 shrink-0" />
+                            <a href={`tel:${hotel.전화번호}`} className="hover:underline">
+                              {hotel.전화번호}
+                            </a>
+                          </div>
+                        )}
+                        
+                        {/* ⑨ Copy for Taxi 버튼 */}
+                        {koreanAddr && (
+                          <button
+                            onClick={(e) => {
+                              e.stopPropagation();
+                              copyAddress(hotel);
+                            }}
+                            className="flex items-center gap-1 text-[11px] text-blue-600 hover:text-blue-800 self-start transition-colors"
+                          >
+                            {copiedId === hotel.이름 ? <Check size={12} /> : <Copy size={12} />}
+                            <span>{t("copyAddress")}</span>
+                          </button>
+                        )}
                       </div>
                     </div>
                   </div>
 
                   <div className="flex flex-col gap-2 mt-2 pt-3 border-t border-gray-100/80 border-dashed">
-                    <div className="flex items-center justify-between gap-2 mb-2">
-                      {hotel.전화번호 && (
-                        <a href={`tel:${hotel.전화번호}`} className="flex items-center gap-2 text-[11px] text-gray-600">
-                          <Phone size={12} className="text-indigo-400" />
-                          <span>{hotel.전화번호}</span>
-                        </a>
-                      )}
-                      <button
-                        onClick={() => copyAddress(hotel)}
-                        className={`flex items-center gap-1.5 px-2 py-1 rounded-lg text-[10px] font-bold transition-all border ${
-                          copiedId === hotel.이름
-                            ? "bg-emerald-500 text-white border-emerald-500"
-                            : "bg-slate-100 text-slate-600 border-slate-200 hover:bg-slate-200"
-                        }`}
-                      >
-                        {copiedId === hotel.이름 ? <Check size={10} /> : <Copy size={10} />}
-                        {copiedId === hotel.이름 ? t("copied") : t("copyAddress")}
-                      </button>
-                    </div>
+
 
                     {hasPromo && (
                       <div className="mt-1 flex flex-col gap-2">

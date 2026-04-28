@@ -1,7 +1,7 @@
 {
-  "_generatedAt": "2026-04-27T05:01:47.164Z",
+  "_generatedAt": "2026-04-28T15:27:08.550Z",
   "_source": "TourAPI 4.0 / KorService2 / searchFestival2",
-  "_apiTotalCount": 229,
+  "_apiTotalCount": 234,
   "festivals": [
     {
       "id": "fest-3481597",
@@ -35,6 +35,18 @@
       "location": "부산광역시 수영구 광안해변로 219 (광안동)",
       "description": "",
       "region": "부산경남권",
+      "active": true,
+      "startDate": "2026-01-01",
+      "endDate": "2026-12-31"
+    },
+    {
+      "id": "fest-4060434",
+      "icon": "🎪",
+      "name": "국악공연 진연",
+      "period": "2026.01.01 - 2026.12.31",
+      "location": "서울특별시 종로구 인사동5길 10 (인사동)",
+      "description": "",
+      "region": "수도권",
       "active": true,
       "startDate": "2026-01-01",
       "endDate": "2026-12-31"
@@ -496,18 +508,6 @@
       "endDate": "2026-10-31"
     },
     {
-      "id": "fest-2818837",
-      "icon": "🎪",
-      "name": "종묘 묘현례",
-      "period": "2026.04.25 - 2026.04.27",
-      "location": "서울특별시 종로구 종로 157 (훈정동)",
-      "description": "",
-      "region": "수도권",
-      "active": true,
-      "startDate": "2026-04-25",
-      "endDate": "2026-04-27"
-    },
-    {
       "id": "fest-4058391",
       "icon": "🎪",
       "name": "회룡포 봄나들이 축제",
@@ -770,6 +770,30 @@
       "active": true,
       "startDate": "2026-05-01",
       "endDate": "2026-05-03"
+    },
+    {
+      "id": "fest-717124",
+      "icon": "🌸",
+      "name": "황매산철쭉제",
+      "period": "2026.05.01 - 2026.05.10",
+      "location": "경상남도 합천군 가회면 황매산공원길 331",
+      "description": "",
+      "region": "부산경남권",
+      "active": true,
+      "startDate": "2026-05-01",
+      "endDate": "2026-05-10"
+    },
+    {
+      "id": "fest-2720203",
+      "icon": "🎪",
+      "name": "2026 서울거리공연 구석구석라이브",
+      "period": "2026.05.01 - 2026.12.31",
+      "location": "서울특별시 종로구 세종대로 지하172 (세종로)",
+      "description": "",
+      "region": "수도권",
+      "active": true,
+      "startDate": "2026-05-01",
+      "endDate": "2026-12-31"
     },
     {
       "id": "fest-1591019",
@@ -1108,6 +1132,18 @@
       "endDate": "2026-05-10"
     },
     {
+      "id": "fest-1634216",
+      "icon": "🌸",
+      "name": "두위봉 철쭉축제&산맥페스티벌",
+      "period": "2026.05.08 - 2026.05.10",
+      "location": "강원특별자치도 정선군 신동읍 예미1길 44",
+      "description": "",
+      "region": "영동권",
+      "active": true,
+      "startDate": "2026-05-08",
+      "endDate": "2026-05-10"
+    },
+    {
       "id": "fest-538458",
       "icon": "🎪",
       "name": "울산쇠부리축제",
@@ -1139,6 +1175,18 @@
       "location": "서울특별시 송파구 양재대로 932 (가락동)",
       "description": "",
       "region": "수도권",
+      "active": true,
+      "startDate": "2026-05-08",
+      "endDate": "2026-05-10"
+    },
+    {
+      "id": "fest-4060618",
+      "icon": "🎪",
+      "name": "칠서 청보리 작약 축제",
+      "period": "2026.05.08 - 2026.05.10",
+      "location": "경상남도 함안군 칠서면 이룡리 998",
+      "description": "",
+      "region": "부산경남권",
       "active": true,
       "startDate": "2026-05-08",
       "endDate": "2026-05-10"
@@ -1696,18 +1744,6 @@
       "endDate": "2026-06-14"
     },
     {
-      "id": "fest-3486730",
-      "icon": "🎪",
-      "name": "경기미 김밥페스타",
-      "period": "2026.06.13 - 2026.06.14",
-      "location": "경기도 수원시 영통구 광교중앙로 140 (하동)",
-      "description": "",
-      "region": "수도권",
-      "active": true,
-      "startDate": "2026-06-13",
-      "endDate": "2026-06-14"
-    },
-    {
       "id": "fest-530450",
       "icon": "🎎",
       "name": "고양행주문화제",
@@ -1804,6 +1840,18 @@
       "endDate": "2026-06-21"
     },
     {
+      "id": "fest-2725188",
+      "icon": "🎎",
+      "name": "경흥대로 도봉옛길 문화제",
+      "period": "2026.06.20 - 2026.06.20",
+      "location": "서울특별시 도봉구 도봉동",
+      "description": "",
+      "region": "수도권",
+      "active": true,
+      "startDate": "2026-06-20",
+      "endDate": "2026-06-20"
+    },
+    {
       "id": "fest-2656070",
       "icon": "🎪",
       "name": "RAPBEAT",
@@ -1816,18 +1864,6 @@
       "endDate": "2026-06-21"
     },
     {
-      "id": "fest-228985",
-      "icon": "🎪",
-      "name": "2026 서울국제도서전",
-      "period": "2026.06.24 - 2026.06.28",
-      "location": "서울특별시 강남구 영동대로 513 (삼성동)",
-      "description": "",
-      "region": "수도권",
-      "active": true,
-      "startDate": "2026-06-24",
-      "endDate": "2026-06-28"
-    },
-    {
       "id": "fest-2976568",
       "icon": "🎵",
       "name": "와인뮤직페스티발",
@@ -1837,6 +1873,18 @@
       "region": "수도권",
       "active": true,
       "startDate": "2026-06-25",
+      "endDate": "2026-06-28"
+    },
+    {
+      "id": "fest-2390168",
+      "icon": "🎵",
+      "name": "부산원아시아페스티벌(BOF) with NOL",
+      "period": "2026.06.27 - 2026.06.28",
+      "location": "부산광역시 연제구 월드컵대로 344 (거제동)",
+      "description": "",
+      "region": "부산경남권",
+      "active": true,
+      "startDate": "2026-06-27",
       "endDate": "2026-06-28"
     }
   ]

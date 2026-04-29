@@ -288,95 +288,32 @@ export default function HotelSection({
                           <span className="line-clamp-1">{koreanAddr}</span>
                         </div>
                         
-                        {/* ⑧ 전화번호 */}
-                        {hotel.전화번호 && (
-                          <div className="flex items-center gap-2 text-[11px] text-gray-600">
-                            <Phone size={12} className="text-gray-400 shrink-0" />
-                            <a href={`tel:${hotel.전화번호}`} className="hover:underline">
-                              {hotel.전화번호}
-                            </a>
-                          </div>
-                        )}
-                        
-                        {/* ⑨ Copy for Taxi 버튼 */}
-                        {koreanAddr && (
-                          <button
-                            onClick={(e) => {
-                              e.stopPropagation();
-                              copyAddress(hotel);
-                            }}
-                            className="flex items-center gap-1 text-[11px] text-blue-600 hover:text-blue-800 self-start transition-colors"
-                          >
-                            {copiedId === hotel.이름 ? <Check size={12} /> : <Copy size={12} />}
-                            <span>{t("copyAddress")}</span>
-                          </button>
-                        )}
+                        {/* ⑧ 전화번호 + ⑨ Copy for Taxi 통합 (인라인) */}
+                        <div className="flex items-center gap-x-3 gap-y-1.5 flex-wrap text-[11px] text-gray-600">
+                          {hotel.전화번호 && (
+                            <div className="flex items-center gap-2">
+                              <Phone size={12} className="text-gray-400 shrink-0" />
+                              <a href={`tel:${hotel.전화번호}`} className="hover:underline">
+                                {hotel.전화번호}
+                              </a>
+                            </div>
+                          )}
+                          {koreanAddr && (
+                            <button
+                              onClick={(e) => {
+                                e.stopPropagation();
+                                copyAddress(hotel);
+                              }}
+                              className="flex items-center gap-1 text-blue-600 hover:text-blue-800 transition-colors"
+                            >
+                              {copiedId === hotel.이름 ? <Check size={12} /> : <Copy size={12} />}
+                              <span>{t("copyAddress")}</span>
+                            </button>
+                          )}
+                        </div>
                       </div>
 
-                      {/* ⑬ Nearby Info Display (moved from expanded area) */}
-                      {nearbyType && expandedNearbyHotel === hotel.이름 && (
-                        <div className="mt-3 mb-1 bg-gray-50/50 rounded-xl p-3 border border-gray-100">
-                          <div className="space-y-2 animate-in fade-in slide-in-from-top-1 duration-200">
-                            {(() => {
-                              const list = nearbyType === 'festivals'
-                                ? (festivalsData.festivals || []).filter((f: any) => f.region === hotel.region)
-                                : (attractionsData.attractions || []).filter((a: any) => a.region === hotel.region);
-                              
-                              if (list.length === 0) {
-                                return (
-                                  <p className="text-[11px] text-gray-400 text-center py-2">
-                                    {({
-                                      ko: "정보 없음", en: "No data", ja: "情報なし", zh: "暂无数据", es: "Sin datos"
-                                    } as any)[locale] || "No data"}
-                                  </p>
-                                );
-                              }
 
-                              const displayList = showAllNearby ? list : list.slice(0, 5);
-
-                              return (
-                                <>
-                                  {displayList.map((item: any, idx: number) => (
-                                    <div key={idx} className="bg-white p-2.5 rounded-lg border border-gray-100 flex items-start gap-2.5 shadow-sm">
-                                      <span className="text-lg shrink-0">{item.icon}</span>
-                                      <div className="flex-1 min-w-0">
-                                        <p className="text-[11px] font-bold text-gray-800 truncate">{item.name}</p>
-                                        <p className="text-[10px] text-gray-500 flex items-center gap-1 mt-0.5">
-                                          {nearbyType === 'festivals' ? (
-                                            <>
-                                              <CalendarDays size={10} className="shrink-0" />
-                                              <span className="truncate">{item.period}</span>
-                                              <span className="mx-1">•</span>
-                                              <span className="truncate">{item.location}</span>
-                                            </>
-                                          ) : (
-                                            <>
-                                              <Award size={10} className="shrink-0" />
-                                              <span className="truncate">{item.tag}</span>
-                                              <span className="mx-1">•</span>
-                                              <span className="truncate">{item.address}</span>
-                                            </>
-                                          )}
-                                        </p>
-                                      </div>
-                                    </div>
-                                  ))}
-                                  {list.length > 5 && !showAllNearby && (
-                                    <button
-                                      onClick={() => setShowAllNearby(true)}
-                                      className="w-full py-1.5 text-[10px] font-bold text-blue-600 hover:bg-blue-50 rounded-lg transition-colors border border-dashed border-blue-200 mt-1"
-                                    >
-                                      {({
-                                        ko: "더 보기", en: "Show More", ja: "もっと見る", zh: "查看更多", es: "Ver más"
-                                      } as any)[locale] || "More"} (+{list.length - 5})
-                                    </button>
-                                  )}
-                                </>
-                              );
-                            })()}
-                          </div>
-                        </div>
-                      )}
                     </div>
                   </div>
 
@@ -459,6 +396,71 @@ export default function HotelSection({
                             GO &gt;
                           </div>
                         </a>
+
+                        {/* ⑬ Nearby Info Display - relocated to bottom for natural decision flow */}
+                        {nearbyType && expandedNearbyHotel === hotel.이름 && (
+                          <div className="mt-4 mb-2 bg-gray-50/50 rounded-xl p-3 border border-gray-100">
+                            <div className="space-y-2 animate-in fade-in slide-in-from-top-1 duration-200">
+                              {(() => {
+                                const list = nearbyType === 'festivals'
+                                  ? (festivalsData.festivals || []).filter((f: any) => f.region === hotel.region)
+                                  : (attractionsData.attractions || []).filter((a: any) => a.region === hotel.region);
+                                
+                                if (list.length === 0) {
+                                  return (
+                                    <p className="text-[11px] text-gray-400 text-center py-2">
+                                      {({
+                                        ko: "정보 없음", en: "No data", ja: "情報なし", zh: "暂无数据", es: "Sin datos"
+                                      } as any)[locale] || "No data"}
+                                    </p>
+                                  );
+                                }
+
+                                const displayList = showAllNearby ? list : list.slice(0, 5);
+
+                                return (
+                                  <>
+                                    {displayList.map((item: any, idx: number) => (
+                                      <div key={idx} className="bg-white p-2.5 rounded-lg border border-gray-100 flex items-start gap-2.5 shadow-sm">
+                                        <span className="text-lg shrink-0">{item.icon}</span>
+                                        <div className="flex-1 min-w-0">
+                                          <p className="text-[11px] font-bold text-gray-800 truncate">{item.name}</p>
+                                          <p className="text-[10px] text-gray-500 flex items-center gap-1 mt-0.5">
+                                            {nearbyType === 'festivals' ? (
+                                              <>
+                                                <CalendarDays size={10} className="shrink-0" />
+                                                <span className="truncate">{item.period}</span>
+                                                <span className="mx-1">•</span>
+                                                <span className="truncate">{item.location}</span>
+                                              </>
+                                            ) : (
+                                              <>
+                                                <Award size={10} className="shrink-0" />
+                                                <span className="truncate">{item.tag}</span>
+                                                <span className="mx-1">•</span>
+                                                <span className="truncate">{item.address}</span>
+                                              </>
+                                            )}
+                                          </p>
+                                        </div>
+                                      </div>
+                                    ))}
+                                    {list.length > 5 && !showAllNearby && (
+                                      <button
+                                        onClick={() => setShowAllNearby(true)}
+                                        className="w-full py-1.5 text-[10px] font-bold text-blue-600 hover:bg-blue-50 rounded-lg transition-colors border border-dashed border-blue-200 mt-1"
+                                      >
+                                        {({
+                                          ko: "더 보기", en: "Show More", ja: "もっと見る", zh: "查看更多", es: "Ver más"
+                                        } as any)[locale] || "More"} (+{list.length - 5})
+                                      </button>
+                                    )}
+                                  </>
+                                );
+                              })()}
+                            </div>
+                          </div>
+                        )}
 
                         <div className="flex gap-2 mt-1">
                           <a

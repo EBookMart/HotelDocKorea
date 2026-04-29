@@ -217,14 +217,60 @@ export default function HotelSection({
                         )}
                       </div>
 
-                      <div className="flex items-center gap-2 mb-1 flex-wrap">
+                      <div className="flex items-center justify-between gap-2 mb-1">
                         <h3
-                          className={`text-[15px] font-bold leading-snug break-words min-w-0 group-hover:opacity-80 transition-colors ${
+                          className={`text-[15px] font-bold leading-snug truncate min-w-0 group-hover:opacity-80 transition-colors ${
                             isLuxury ? "text-yellow-800" : "text-gray-900"
                           }`}
                         >
                           {translateHotelName(hotel["이름"], locale)}
                         </h3>
+
+                        {/* ⑬ Nearby Toggle Buttons (Header) */}
+                        <div className="flex items-center gap-1.5 shrink-0">
+                          <button
+                            onClick={(e) => {
+                              e.stopPropagation();
+                              if (expandedHotel !== hotel.이름) {
+                                setExpandedHotel(hotel.이름);
+                              }
+                              setNearbyType(nearbyType === 'festivals' && expandedHotel === hotel.이름 ? null : 'festivals');
+                              setShowAllNearby(false);
+                            }}
+                            className={`flex items-center gap-1.5 px-2 md:px-3 py-1.5 rounded-lg text-[11px] font-bold transition-all border ${
+                              expandedHotel === hotel.이름 && nearbyType === 'festivals'
+                                ? "bg-blue-600 text-white border-blue-600 shadow-md"
+                                : "bg-white text-gray-700 border-gray-200 hover:bg-gray-50"
+                            }`}
+                            aria-label={({ko: "주변 축제", en: "Nearby Festivals", ja: "周辺のお祭り", zh: "附近庆典", es: "Festivales"} as any)[locale] || "Festivals"}
+                          >
+                            <Ticket size={14} />
+                            <span className="hidden md:inline">
+                              {({ko: "주변 축제", en: "Festivals", ja: "祭り", zh: "庆典", es: "Festivales"} as any)[locale] || "Festivals"}
+                            </span>
+                          </button>
+                          <button
+                            onClick={(e) => {
+                              e.stopPropagation();
+                              if (expandedHotel !== hotel.이름) {
+                                setExpandedHotel(hotel.이름);
+                              }
+                              setNearbyType(nearbyType === 'attractions' && expandedHotel === hotel.이름 ? null : 'attractions');
+                              setShowAllNearby(false);
+                            }}
+                            className={`flex items-center gap-1.5 px-2 md:px-3 py-1.5 rounded-lg text-[11px] font-bold transition-all border ${
+                              expandedHotel === hotel.이름 && nearbyType === 'attractions'
+                                ? "bg-blue-600 text-white border-blue-600 shadow-md"
+                                : "bg-white text-gray-700 border-gray-200 hover:bg-gray-50"
+                            }`}
+                            aria-label={({ko: "주변 명소", en: "Nearby Spots", ja: "周辺の名所", zh: "附近景点", es: "Lugares"} as any)[locale] || "Spots"}
+                          >
+                            <Map size={14} />
+                            <span className="hidden md:inline">
+                              {({ko: "주변 명소", en: "Spots", ja: "名所", zh: "景点", es: "Lugares"} as any)[locale] || "Spots"}
+                            </span>
+                          </button>
+                        </div>
                       </div>
 
                       {/* 위치 정보 통합 묶음 (⑦+⑧+⑨) */}
@@ -373,44 +419,9 @@ export default function HotelSection({
 
                 {expandedHotel === hotel.이름 && (
                   <div className="px-4 pb-4 animate-in slide-in-from-top-1 duration-300">
-                    {/* ⑬ Nearby Info Section */}
-                    <div className="mb-4 bg-gray-50/50 rounded-xl p-3 border border-gray-100">
-                      <div className="flex gap-2 mb-3">
-                        <button
-                          onClick={() => {
-                            setNearbyType(nearbyType === 'festivals' ? null : 'festivals');
-                            setShowAllNearby(false);
-                          }}
-                          className={`flex-1 flex items-center justify-center gap-2 py-2 rounded-lg text-xs font-bold transition-all border ${
-                            nearbyType === 'festivals'
-                              ? "bg-blue-600 text-white border-blue-600 shadow-md"
-                              : "bg-white text-gray-700 border-gray-200 hover:bg-gray-50"
-                          }`}
-                        >
-                          <Ticket size={14} />
-                          {({
-                            ko: "주변 축제", en: "Nearby Festivals", ja: "周辺のお祭り", zh: "附近庆典", es: "Festivales"
-                          } as any)[locale] || "Festivals"}
-                        </button>
-                        <button
-                          onClick={() => {
-                            setNearbyType(nearbyType === 'attractions' ? null : 'attractions');
-                            setShowAllNearby(false);
-                          }}
-                          className={`flex-1 flex items-center justify-center gap-2 py-2 rounded-lg text-xs font-bold transition-all border ${
-                            nearbyType === 'attractions'
-                              ? "bg-blue-600 text-white border-blue-600 shadow-md"
-                              : "bg-white text-gray-700 border-gray-200 hover:bg-gray-50"
-                          }`}
-                        >
-                          <Map size={14} />
-                          {({
-                            ko: "주변 명소", en: "Nearby Spots", ja: "周辺の名所", zh: "附近景点", es: "Lugares"
-                          } as any)[locale] || "Spots"}
-                        </button>
-                      </div>
-
-                      {nearbyType && (
+                    {/* ⑬ Nearby Info Display (buttons moved to header) */}
+                    {nearbyType && (
+                      <div className="mb-4 bg-gray-50/50 rounded-xl p-3 border border-gray-100">
                         <div className="space-y-2 animate-in fade-in slide-in-from-top-1 duration-200">
                           {(() => {
                             const list = nearbyType === 'festivals'
@@ -470,8 +481,8 @@ export default function HotelSection({
                             );
                           })()}
                         </div>
-                      )}
-                    </div>
+                      </div>
+                    )}
 
                     <AirportGuide
                       hotelName={translateHotelName(hotel.이름, locale)}

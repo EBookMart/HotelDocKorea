@@ -4,13 +4,15 @@ import Image from "next/image";
 import { useState } from "react";
 import {
   MapPin, Star, Phone, Globe, CalendarDays, ArrowRightCircle,
-  Award, ThumbsUp, Copy, Check, Package,
+  Award, ThumbsUp, Copy, Check, Package, Ticket, Map,
 } from "lucide-react";
 import { useTranslations, useLocale } from "next-intl";
 import { translateHotelName, translateHotelAddress } from "@/lib/translations";
 import AirportGuide from "./AirportGuide";
 import airportRoutesData from "../../public/data/airport-routes.json";
 import reputationData from "../../public/data/reputation.json";
+import festivalsData from "../../public/data/festivals.json";
+import attractionsData from "../../public/data/attractions.json";
 import { buildAffiliateUrl, getAffiliateProviderName } from "@/lib/affiliate";
 
 interface HotelImageCardProps {
@@ -116,8 +118,14 @@ export default function HotelSection({
   const locale = useLocale();
   const [expandedHotel, setExpandedHotel] = useState<string | null>(null);
   const [copiedId, setCopiedId] = useState<string | null>(null);
+  const [nearbyType, setNearbyType] = useState<'festivals' | 'attractions' | null>(null);
+  const [showAllNearby, setShowAllNearby] = useState(false);
 
   const toggleGuide = (hotelName: string) => {
+    if (expandedHotel !== hotelName) {
+      setNearbyType(null);
+      setShowAllNearby(false);
+    }
     setExpandedHotel(expandedHotel === hotelName ? null : hotelName);
   };
 
@@ -365,6 +373,106 @@ export default function HotelSection({
 
                 {expandedHotel === hotel.이름 && (
                   <div className="px-4 pb-4 animate-in slide-in-from-top-1 duration-300">
+                    {/* ⑬ Nearby Info Section */}
+                    <div className="mb-4 bg-gray-50/50 rounded-xl p-3 border border-gray-100">
+                      <div className="flex gap-2 mb-3">
+                        <button
+                          onClick={() => {
+                            setNearbyType(nearbyType === 'festivals' ? null : 'festivals');
+                            setShowAllNearby(false);
+                          }}
+                          className={`flex-1 flex items-center justify-center gap-2 py-2 rounded-lg text-xs font-bold transition-all border ${
+                            nearbyType === 'festivals'
+                              ? "bg-blue-600 text-white border-blue-600 shadow-md"
+                              : "bg-white text-gray-700 border-gray-200 hover:bg-gray-50"
+                          }`}
+                        >
+                          <Ticket size={14} />
+                          {({
+                            ko: "주변 축제", en: "Nearby Festivals", ja: "周辺のお祭り", zh: "附近庆典", es: "Festivales"
+                          } as any)[locale] || "Festivals"}
+                        </button>
+                        <button
+                          onClick={() => {
+                            setNearbyType(nearbyType === 'attractions' ? null : 'attractions');
+                            setShowAllNearby(false);
+                          }}
+                          className={`flex-1 flex items-center justify-center gap-2 py-2 rounded-lg text-xs font-bold transition-all border ${
+                            nearbyType === 'attractions'
+                              ? "bg-blue-600 text-white border-blue-600 shadow-md"
+                              : "bg-white text-gray-700 border-gray-200 hover:bg-gray-50"
+                          }`}
+                        >
+                          <Map size={14} />
+                          {({
+                            ko: "주변 명소", en: "Nearby Spots", ja: "周辺の名所", zh: "附近景点", es: "Lugares"
+                          } as any)[locale] || "Spots"}
+                        </button>
+                      </div>
+
+                      {nearbyType && (
+                        <div className="space-y-2 animate-in fade-in slide-in-from-top-1 duration-200">
+                          {(() => {
+                            const list = nearbyType === 'festivals'
+                              ? (festivalsData.festivals || []).filter((f: any) => f.region === hotel.region)
+                              : (attractionsData.attractions || []).filter((a: any) => a.region === hotel.region);
+                            
+                            if (list.length === 0) {
+                              return (
+                                <p className="text-[11px] text-gray-400 text-center py-2">
+                                  {({
+                                    ko: "정보 없음", en: "No data", ja: "情報なし", zh: "暂无数据", es: "Sin datos"
+                                  } as any)[locale] || "No data"}
+                                </p>
+                              );
+                            }
+
+                            const displayList = showAllNearby ? list : list.slice(0, 5);
+
+                            return (
+                              <>
+                                {displayList.map((item: any, idx: number) => (
+                                  <div key={idx} className="bg-white p-2.5 rounded-lg border border-gray-100 flex items-start gap-2.5 shadow-sm">
+                                    <span className="text-lg shrink-0">{item.icon}</span>
+                                    <div className="flex-1 min-w-0">
+                                      <p className="text-[11px] font-bold text-gray-800 truncate">{item.name}</p>
+                                      <p className="text-[10px] text-gray-500 flex items-center gap-1 mt-0.5">
+                                        {nearbyType === 'festivals' ? (
+                                          <>
+                                            <CalendarDays size={10} className="shrink-0" />
+                                            <span className="truncate">{item.period}</span>
+                                            <span className="mx-1">•</span>
+                                            <span className="truncate">{item.location}</span>
+                                          </>
+                                        ) : (
+                                          <>
+                                            <Award size={10} className="shrink-0" />
+                                            <span className="truncate">{item.tag}</span>
+                                            <span className="mx-1">•</span>
+                                            <span className="truncate">{item.address}</span>
+                                          </>
+                                        )}
+                                      </p>
+                                    </div>
+                                  </div>
+                                ))}
+                                {list.length > 5 && !showAllNearby && (
+                                  <button
+                                    onClick={() => setShowAllNearby(true)}
+                                    className="w-full py-1.5 text-[10px] font-bold text-blue-600 hover:bg-blue-50 rounded-lg transition-colors border border-dashed border-blue-200 mt-1"
+                                  >
+                                    {({
+                                      ko: "더 보기", en: "Show More", ja: "もっと見る", zh: "查看更多", es: "Ver más"
+                                    } as any)[locale] || "More"} (+{list.length - 5})
+                                  </button>
+                                )}
+                              </>
+                            );
+                          })()}
+                        </div>
+                      )}
+                    </div>
+
                     <AirportGuide
                       hotelName={translateHotelName(hotel.이름, locale)}
                       lang={locale}

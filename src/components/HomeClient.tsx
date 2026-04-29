@@ -6,8 +6,6 @@ import { MapPin, Globe2, Search, ArrowUp } from "lucide-react";
 import { useTranslations, useLocale } from "next-intl";
 import { Link, usePathname } from "@/i18n/navigation";
 import HotelSection from "./HotelSection";
-import FestivalsSection from "./FestivalsSection";
-import NearbySection from "./NearbySection";
 import HotPicksSection from "./HotPicksSection";
 import GradeFilter from "./GradeFilter";
 import EmergencyHelpSection from "./EmergencyHelpSection";
@@ -291,14 +289,6 @@ export default function HomeClient({
           promotions={hotPicksData?.promotions || []}
         />
 
-        <section className="w-full bg-white">
-          <div className="max-w-7xl mx-auto px-4 lg:px-10 py-10">
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 w-full">
-              <FestivalsSection selectedRegion={activeRegionKey} />
-              <NearbySection selectedRegion={activeRegionKey} />
-            </div>
-          </div>
-        </section>
 
         <section className="w-full bg-gray-100 py-10">
           <div className="max-w-7xl mx-auto px-4 lg:px-10">

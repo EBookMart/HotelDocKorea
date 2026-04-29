@@ -320,6 +320,43 @@ export default function HotelSection({
                   <div className="flex flex-col gap-2 mt-2 pt-3 border-t border-gray-100/80 border-dashed">
 
 
+                    <div className="flex gap-2 mb-4">
+                      <a
+                        href={hotel.홈페이지 || hotel.official_link || "#"}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="flex items-center justify-center gap-1.5 flex-1 bg-white border border-gray-200 py-2 rounded-lg text-[11px] font-bold text-gray-500 hover:bg-gray-50 transition-all"
+                      >
+                        <Globe size={12} className="text-gray-400" /> {t("officialSite")}
+                      </a>
+                      <button
+                        onClick={() => toggleGuide(hotel.이름)}
+                        className={`flex items-center justify-center gap-1.5 flex-1 py-2 rounded-lg text-[11px] font-bold transition-all border ${
+                          expandedHotel === hotel.이름
+                            ? "bg-blue-600 text-white border-blue-600"
+                            : "bg-blue-50 text-blue-700 border-blue-100 hover:bg-blue-100"
+                        }`}
+                      >
+                        <ArrowRightCircle
+                          size={12}
+                          className={expandedHotel === hotel.이름 ? "text-blue-200" : "text-blue-400"}
+                        />
+                        {t("airportGuide")}
+                      </button>
+                    </div>
+
+                    {expandedHotel === hotel.이름 && (
+                      <div className="mb-4 animate-in slide-in-from-top-1 duration-300">
+                        <AirportGuide
+                          hotelName={translateHotelName(hotel.이름, locale)}
+                          lang={locale}
+                          routeData={(airportRoutesData as any)[hotel.이름]}
+                          isZimCarryRegistered={hotel.zimcarry_registered}
+                          zimCarryDeadline={hotel.zimcarry_deadline}
+                        />
+                      </div>
+                    )}
+
                     {hasPromo && (
                       <div className="mt-1 flex flex-col gap-2">
                         <span className="text-[10px] font-extrabold text-rose-500 flex items-center gap-1 bg-rose-50 w-fit px-2 py-0.5 rounded-full">
@@ -462,46 +499,12 @@ export default function HotelSection({
                           </div>
                         )}
 
-                        <div className="flex gap-2 mt-1">
-                          <a
-                            href={hotel.홈페이지 || hotel.official_link || "#"}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="flex items-center justify-center gap-1.5 flex-1 bg-white border border-gray-200 py-2 rounded-lg text-[11px] font-bold text-gray-500 hover:bg-gray-50 transition-all"
-                          >
-                            <Globe size={12} className="text-gray-400" /> {t("officialSite")}
-                          </a>
-                          <button
-                            onClick={() => toggleGuide(hotel.이름)}
-                            className={`flex items-center justify-center gap-1.5 flex-1 py-2 rounded-lg text-[11px] font-bold transition-all border ${
-                              expandedHotel === hotel.이름
-                                ? "bg-blue-600 text-white border-blue-600"
-                                : "bg-blue-50 text-blue-700 border-blue-100 hover:bg-blue-100"
-                            }`}
-                          >
-                            <ArrowRightCircle
-                              size={12}
-                              className={expandedHotel === hotel.이름 ? "text-blue-200" : "text-blue-400"}
-                            />
-                            {t("airportGuide")}
-                          </button>
-                        </div>
+
                       </div>
                     </div>
                   </div>
                 </div>
 
-                {expandedHotel === hotel.이름 && (
-                  <div className="px-4 pb-4 animate-in slide-in-from-top-1 duration-300">
-                    <AirportGuide
-                      hotelName={translateHotelName(hotel.이름, locale)}
-                      lang={locale}
-                      routeData={(airportRoutesData as any)[hotel.이름]}
-                      isZimCarryRegistered={hotel.zimcarry_registered}
-                      zimCarryDeadline={hotel.zimcarry_deadline}
-                    />
-                  </div>
-                )}
               </div>
             );
           })
